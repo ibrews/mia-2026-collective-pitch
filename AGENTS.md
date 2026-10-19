@@ -1,5 +1,12 @@
 # Spatial Deck — Codex Instructions
 
+## This fork: MIA 2026 Collective Pitch
+
+Talk content lives in `talk/pitch.json` (shared slide pool + two talks), NOT in a hand-edited SECTIONS array.
+Edit the JSON, then run `python tools/build_pitch.py` (validates, splices into index.html between the
+PITCH-JSON sentinels, regenerates TALKS.md). Never hand-edit the JSON blob inside index.html or TALKS.md.
+`?talk=b` selects Talk B. Unverified facts stay as `[FILL: ...]` markers; never replace one with a guess.
+
 ## What This Is
 
 Spatial Deck is a single-file HTML presentation framework. Everything lives in `index.html` — CSS, JS, config, content. No build process, no npm, no bundler.

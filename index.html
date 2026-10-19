@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Is XR Right For Your Project? — A Spatial Deck Presentation</title>
+<title>MIA XR Collective Pitch — Agile Lens</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta name="description" content="A framework for spatial decisions — before you pick a headset or a studio. Built with Spatial Deck.">
-<meta property="og:title" content="Is XR Right For Your Project?">
-<meta property="og:description" content="3 lessons. 6 case studies. A framework for spatial decisions.">
+<meta name="description" content="Alex Coulombe at the MIA XR Collective Pitch, Rome, 22 October 2026: two 10-minute talks from one shared slide pool. Built with Spatial Deck.">
+<meta property="og:title" content="MIA XR Collective Pitch — Agile Lens">
+<meta property="og:description" content="Old Stories, New Doors and Engine Mastery × Craft: two 10-minute pitches for producers, distributors and IP holders.">
 <meta property="og:image" content="https://ibrews.github.io/spatial-deck/social.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,45 +38,543 @@
               Optional title/subtitle renders as frosted-glass overlay.
    'IFRAME:'  Prefix c.img with 'IFRAME:' to embed a URL (YouTube, etc.)
    ======================================================================= */
-const SECTIONS = [
-  { year: 'CH 1', accent: 'teal',
-    lesson: { title:'Define the Spatial Problem First.\nThe Technology Follows.', short:'SPACE > TECH', tagline:'Every successful XR project starts with a question about space \u2014 not a question about headsets. \u201cWhat does it feel like to stand here?\u201d beats \u201cShould we use Quest or Vision Pro?\u201d every time.', tags:'Architecture \u00b7 Theater \u00b7 Pre-Visualization' },
-    cases: [
-      { title:'The Building That Didn\u2019t Exist Yet', subtitle:'Pre-construction visualization for a 200-room hotel',
-        img:'images/ch1-case1-archviz.png', bullets:['The client\u2019s architect shipped 400 pages of drawings. Nobody could agree on the lobby ceiling height.','Forty-five minutes in VR replaced three months of revision cycles','The breakthrough wasn\u2019t the headset \u2014 it was standing inside an unbuilt room and pointing at a problem'] },
-      { title:'The Rehearsal That Saved the Set', subtitle:'A theater company tests blocking before load-in',
-        img:'images/ch1-case2-theater.png', bullets:['Physical set pieces cost $40K to build. Virtual ones cost an afternoon.','The director found a sightline problem on day one \u2014 not opening night','The actors didn\u2019t need to be gamers. They needed to walk, look, and point.'] },
-    ] },
-  { year: 'CH 2', accent: 'purple',
-    lesson: { title:'Match the Platform\nto the Friction Budget.', short:'FRICTION BUDGET', tagline:'Your users have a finite tolerance for setup, tutorials, and cables. Photorealism doesn\u2019t matter if the headset never leaves the pelican case. Pick the platform that your actual audience will actually put on.', tags:'Quest \u00b7 PCVR \u00b7 OpenXR \u00b7 WebXR' },
-    cases: [
-      { title:'PCVR vs. Standalone', subtitle:'It\u2019s not about specs \u2014 it\u2019s about friction',
-        img:'images/ch2-case1-platforms.png', bullets:['Standalone (Quest): 10-second setup, runs anywhere, good enough for 90% of training and review','Tethered PCVR: photorealistic fidelity, but someone has to manage cables and a gaming PC','Wireless backpack PCVR: best of both \u2014 if your project justifies the hardware investment'] },
-      { title:'The OpenXR Question', subtitle:'Build once, or build for the room you\u2019re in?',
-        img:'images/ch2-case2-flowchart.svg', bullets:['OpenXR promises write-once, deploy-anywhere. Reality: input mapping and performance still diverge.','If your audience is fixed (e.g., a sales center), optimize for one platform ruthlessly','If your audience is unknown (e.g., a downloadable app), OpenXR + graceful fallbacks is the move'] },
-    ] },
-  { year: 'CH 3', accent: 'amber',
-    lesson: { title:'Iteration Speed Is\nthe Only Spec That Matters.', short:'ITERATION SPEED', tagline:'Polygon counts and refresh rates are table stakes. The studio that can show you a change on Tuesday that you asked about on Monday \u2014 that\u2019s the one that finishes the project. Everything else is a demo reel.', tags:'Unreal Engine \u00b7 Real-Time \u00b7 Multiplayer' },
-    cases: [
-      { title:'Five Questions for Any XR Studio', subtitle:'A checklist before you sign the SOW',
-        img:'images/ch3-case1-checklist.svg', bullets:['Can they show you a working prototype in two weeks, or just a pitch deck in two months?','Do they build in a real-time engine (Unreal, Unity) or pre-render everything? Real-time means you can iterate.','Ask: \u201cWhat happens when we change the floor plan halfway through?\u201d The answer tells you everything.'] },
-      { title:'The Red Flags', subtitle:'How to spot a studio that\u2019ll burn your budget',
-        img:'images/ch3-case2-redflags.png', bullets:['They demo on hardware you\u2019ll never own. If the pitch is on a $10K rig, ask what deployment looks like.','\u201cWe\u2019ll figure out multiplayer later.\u201d Networking is architectural \u2014 it can\u2019t be bolted on in month six.','No one on the team has shipped a project that ran for more than one day. Trade shows \u2260 production.'] },
-    ] },
-  { year: 'CH 4', accent: 'rose',
-    lesson: { title:'Your Deck Is Data.\nTreat It Like Code.', short:'DECK AS CODE', tagline:'Spatial Deck\u2019s <code>tools/</code> directory turns slides into a pipeline: a local Ollama fleet handles structured-JSON cleanup while frontier models stay reserved for judgment. Every importer has a mirror exporter, every change has a diff, every chapter has a peer review.<br><br>You don\u2019t rewrite a deck anymore \u2014 you <em>refactor</em> it.', tags:'Fleet \u00b7 Ollama \u00b7 Python \u00b7 Zero-Build' },
-    cases: [
-      { title:'Bring Any Format In.\nGet Any Format Out.', subtitle:'Markdown \u2194 HTML \u2194 PPTX \u2194 PDF \u2014 round-trip, not one-way',
-        img:'images/ch4-case1-roundtrip.svg', bullets:['Importers: <code>import_md</code> / <code>import_html</code> / <code>import_pptx</code> / <code>import_pdf</code> / <code>import_tokens</code> \u2014 all emit the same SECTIONS-shape JSON','Exporters: <code>export_md</code> / <code>export_html</code> / <code>export_pptx</code> \u2014 round-trip verified (<code>diff_decks</code> reports 0 changes)','Structural extraction in pure Python; the fleet only rewrites prose. Single-pass, never \u201cplease fix your JSON.\u201d'] },
-      { title:'Let a Local Model\nRead Your Deck.', subtitle:'Peer review + lint + alt-text + timing \u2014 all offline, all fleet-powered',
-        img:'images/ch4-case2-peerreview.svg', bullets:['<code>peer_review.py</code>: two model families (llama3.1:8b \u00b7 qwen2.5-coder:14b) critique the same chapter \u2014 agreement is signal, disagreement is the interesting edge','<code>lint_deck</code>, <code>estimate_timing</code>, <code>gen_alt_text</code>, <code>extract_palette</code>: single-purpose QA tools, JSON-patch output only, never mutate <code>index.html</code> in one shot','Claude stays reserved for what local models fail at: architectural decisions, narrative judgment, UX trade-offs'] },
-      { title:'Merge, Diff, Ship.', subtitle:'Multi-deck merge + sentinel splicing + conflict reporting',
-        img:'images/ch4-case3-mergediff.svg', bullets:['<code>merge_decks.py</code>: concat N sources, flag year collisions, duplicate titles, Jaccard near-duplicates \u2014 writes a <code>.conflicts.md</code> for the editorial pass','<code>merge_sections.py</code>: idempotent splice between <code>// \u2500\u2500 IMPORTED START/END \u2500\u2500</code> sentinels \u2014 re-import as many times as you like','<code>diff_decks.py</code>: chapter/case-level diffs with bullet <code>difflib</code>. Your PR reviewer will thank you.'] },
-    ] },
-];
+/* ── MIA 2026 COLLECTIVE PITCH ──────────────────────────────────────────
+   One shared slide POOL feeds two talks. Every pool slide carries:
+     talks: 'A' | 'B' | 'A+B'   which talk(s) use it
+     pace:  'FLASH' | 'DWELL'   10-second visual beat vs ~1-minute story beat
+     sec:   target seconds (tools/pool_report.py sums these per talk)
+   TALKS lists each talk as ordered acts of pool ids. ?talk=b opens Talk B; default is Talk A.
+   Everything between the PITCH-JSON sentinels is strict JSON so tools can parse it. */
+const PITCH = /* PITCH-JSON START */
+{
+ "event": "MIA XR Collective Pitch &middot; Rome &middot; 22 October 2026",
+ "event_plain": "MIA XR Collective Pitch, Rome, 22 October 2026",
+ "speaker": "Alex Coulombe",
+ "company": "CEO, Agile Lens: Immersive Design",
+ "close": {
+  "eyebrow": "Grazie",
+  "title": "Let’s Build the Way In.",
+  "sub": "IP-extension partnerships &middot; Co-productions with immersive in the plan from day one",
+  "contacts": [
+   [
+    "Web",
+    "agilelens.com"
+   ],
+   [
+    "Find us",
+    "Demo area, Sala Trianon"
+   ]
+  ],
+  "qr": [
+   {
+    "url": "https://agilelens.com",
+    "label": "Agile Lens",
+    "badge": "Say hello"
+   }
+  ]
+ },
+ "talks": {
+  "a": {
+   "title": "Old Stories,\nNew Doors",
+   "subtitle": "What five winters of <i>A Christmas Carol VR</i> taught us about classic IP",
+   "thesis": "Beloved stories need new audiences and new revenue beyond the stage and screen. Live immersive theater is a working model for the audience half, and the right partnership supplies the rest.",
+   "takeaway": "The curtain comes down. The story doesn’t have to.",
+   "cover_sec": 5,
+   "acts": [
+    {
+     "year": "ACT I",
+     "accent": "amber",
+     "lesson": "a-hook",
+     "cases": [
+      "who",
+      "carol-origin",
+      "carol-what",
+      "carol-inside",
+      "carol-how",
+      "carol-quote",
+      "carol-proved",
+      "carol-afterlife"
+     ]
+    },
+    {
+     "year": "ACT II",
+     "accent": "purple",
+     "lesson": "act-a2",
+     "cases": [
+      "rsc",
+      "heavenue",
+      "lincoln",
+      "fs-flash",
+      "joby"
+     ]
+    },
+    {
+     "year": "ACT III",
+     "accent": "teal",
+     "lesson": "ask",
+     "cases": [
+      "ask-ip",
+      "ask-copro",
+      "ask-first",
+      "a-takehome"
+     ]
+    }
+   ]
+  },
+  "b": {
+   "title": "Engine Mastery\n× Craft",
+   "subtitle": "Why the studios winning in immersive need both",
+   "thesis": "The companies winning in immersive pair engine mastery with craft: photoreal work that runs on the hardware audiences actually have, built by people who know how to give an audience a role.",
+   "takeaway": "Craft makes them care. Engineering makes sure they can.",
+   "cover_sec": 5,
+   "acts": [
+    {
+     "year": "ACT I",
+     "accent": "teal",
+     "lesson": "b-hook",
+     "cases": [
+      "who",
+      "teach",
+      "optimization",
+      "rc",
+      "pico"
+     ]
+    },
+    {
+     "year": "ACT II",
+     "accent": "amber",
+     "lesson": "act-b2",
+     "cases": [
+      "fs-dwell",
+      "fs-dbox",
+      "joby",
+      "logos"
+     ]
+    },
+    {
+     "year": "ACT III",
+     "accent": "purple",
+     "lesson": "act-b3",
+     "cases": [
+      "carol-what",
+      "carol-quote",
+      "rsc",
+      "heavenue"
+     ]
+    },
+    {
+     "year": "ACT IV",
+     "accent": "rose",
+     "lesson": "ask",
+     "cases": [
+      "ask-ip",
+      "ask-copro",
+      "ask-first",
+      "b-takehome"
+     ]
+    }
+   ]
+  }
+ },
+ "pool": [
+  {
+   "id": "a-hook",
+   "talks": "A",
+   "pace": "DWELL",
+   "sec": 40,
+   "title": "Every Beloved Story\nHits the Same Ceiling.",
+   "short": "THE CEILING",
+   "bullets": [
+    "The run ends. The season closes. The house only has so many seats.",
+    "The audience that loves it is getting older, and the next one needs a new way in.",
+    "Classic IP needs new audiences and new revenue beyond the stage and the screen."
+   ],
+   "tags": "IP value &middot; Audience development &middot; New revenue",
+   "notes": "Everyone in this room knows this math. You have a story people love. But a run ends, a release window closes, a theater only has so many seats, and the audience that grew up with the story is getting older. The question isn't whether the story still works. It's where the next audience meets it, and who pays for that meeting. We spent five winters working on that question with one very old story."
+  },
+  {
+   "id": "who",
+   "talks": "A+B",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "big",
+   "title": "Agile Lens: Immersive Design",
+   "bigText": "100+ spatial experiences\nshipped since 2016.",
+   "bigCaption": "New York &middot; Real-time studio &middot; Theater, culture and luxury brands",
+   "notes": "I'm Alex Coulombe. Agile Lens is a New York immersive studio: more than a hundred spatial experiences shipped since 2016, all built in real time.",
+   "bigScale": 0.8
+  },
+  {
+   "id": "carol-origin",
+   "talks": "A",
+   "pace": "DWELL",
+   "sec": 40,
+   "title": "It Started as a Small Ask",
+   "subtitle": "With Actors Theatre of Louisville &middot; 2021",
+   "img": "media/carol/key-art.jpg",
+   "bullets": [
+    "Actors Theatre of Louisville asked us for production assets: digital characters and some video.",
+    "We came back with a bigger idea: a full live production of <i>A Christmas Carol</i>, in VR.",
+    "They said yes, then gave us their blessing to remount it every year."
+   ],
+   "notes": "In 2021, Actors Theatre of Louisville asked us for production assets. Digital characters, some video. Not a VR show. We did the research and came back with a bigger idea: if we're building the sets, the characters and the costumes anyway, why not stage the whole thing, live, in virtual reality? They said yes, and then gave us their blessing to remount it every year. That's the part I want producers to hear: the theater didn't hand off its story. It extended it, with a partner, into a new format."
+  },
+  {
+   "id": "carol-what",
+   "talks": "A+B",
+   "pace": "DWELL",
+   "sec": 50,
+   "title": "A Christmas Carol VR",
+   "subtitle": "Live actors. Live audiences. One shared virtual stage.",
+   "img": "media/carol/xmas-carol.jpg",
+   "bullets": [
+    "Live actors with facial and motion capture perform on the streets of a virtual Victorian London",
+    "Fully remote: actors, crew and audience each join from wherever they are",
+    "Five holiday seasons, 2021–2025 &middot; [FILL: total performances and total audience]"
+   ],
+   "notes": "Here's what it was. A Christmas Carol, performed live inside virtual reality. Live actors, with facial and motion capture, performing on the streets of a virtual Victorian London: Ari Tarr as Dickens, Scrooge and others, Debbie Deer as the Ghosts, directed for VR by David Gochfeld. It's fully remote. The actors, the crew and the audience are all in different places, and they share one stage. Forty-five minutes, a curtain time, a house. We ran it for five holiday seasons, 2021 through 2025. [FILL: total performances and audience. The FMX deck lists '150+ shows'; confirm it is a five-season total before saying it.]"
+  },
+  {
+   "id": "carol-inside",
+   "talks": "A",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "full",
+   "img": "media/carol/Dancing.png",
+   "notes": "This is the audience's view. Not row M of a theater: inside the room, with the characters."
+  },
+  {
+   "id": "carol-how",
+   "talks": "A",
+   "pace": "DWELL",
+   "sec": 45,
+   "title": "How Audiences Experienced It",
+   "subtitle": "Not watching a story. Standing inside one.",
+   "img": "media/carol/AICharlesDickens01.png",
+   "bullets": [
+    "Eye contact: the actor sees you, and plays the scene to you",
+    "AI Dickens, a digital host voiced with the lead actor’s permission, welcomes guests before curtain",
+    "After the show, a live Q&amp;A with the actors"
+   ],
+   "notes": "What did it feel like? Intimate. Scrooge can turn and look you in the eye, because the actor can actually see you. Before curtain, guests are welcomed by AI Dickens, a digital host built with our lead actor's voice, cloned with his permission and paid for, so the human performer can save his energy for the show. And afterwards the actors stay for a live Q&A. The audience isn't watching a recording of a play. They're part of a night that only happens once."
+  },
+  {
+   "id": "carol-quote",
+   "talks": "A+B",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "big",
+   "title": "Stephanie Riggs, on the 2021 premiere",
+   "bigText": "“Gorgeous. Captivating.\nHaunting.”",
+   "bigCaption": "Raindance Immersive 2025: [FILL: Official Selection or nominee — KB records both]",
+   "notes": "Stephanie Riggs saw the very first season: gorgeous, captivating, haunting. And in its final year it was at Raindance Immersive. [FILL: say 'official selection' or 'nominated' once confirmed.]"
+  },
+  {
+   "id": "carol-proved",
+   "talks": "A",
+   "pace": "DWELL",
+   "sec": 55,
+   "title": "What It Proved About Classic IP",
+   "img": "media/carol/s62-00-c5d5db35.png",
+   "bullets": [
+    "A story audiences already love lowers the barrier to a brand-new format",
+    "A live show without a building: the house can be anywhere",
+    "The value outlived the run: characters, sets, an AI host and live-performance tools we reuse"
+   ],
+   "notes": "So what did five winters prove? One: familiarity is an asset. A story people already love lowers the barrier to trying something new. Two: the house can be anywhere. A live show doesn't need a building, so the audience isn't limited to who can get to one. [FILL: one sentence on reach, if you have a number you trust.] Three: the value wasn't only the show. The characters, the sets, the AI host and the live-performance pipeline carried into our next projects. And I'll be candid about what it didn't prove on its own: we made work that taught us a lot and still needed a different funding and distribution model. A strong experience needs a partner who understands how its audience finds it.",
+   "subtitle": "Five winters, three lessons"
+  },
+  {
+   "id": "carol-afterlife",
+   "talks": "A",
+   "pace": "DWELL",
+   "sec": 30,
+   "title": "The Show Closed.\nThe Assets Didn’t.",
+   "subtitle": "December 2025",
+   "img": "media/carol/marley.png",
+   "bullets": [
+    "The final shows were fully booked a week before closing",
+    "The final performance was captured in 3D and can be replayed from any seat",
+    "Its rehearsal and live-performance tools now power our other theater work"
+   ],
+   "notes": "We closed it in December 2025, after five seasons, and the final shows were fully booked a week out. But the work didn't disappear. We captured the final performance in 3D, so it can be replayed from any seat in the house: a live show with a second life. [FILL: only mention a Vision Pro release if it is announced; the port is unreleased.] And its tools now run our other theater work."
+  },
+  {
+   "id": "act-a2",
+   "talks": "A",
+   "pace": "FLASH",
+   "sec": 10,
+   "title": "The Same Model,\nOther Stages.",
+   "short": "OTHER STAGES",
+   "tagline": "Theater, culture and brands that need audiences to step inside.",
+   "notes": "Carol is the clearest example. It isn't the only one."
+  },
+  {
+   "id": "rsc",
+   "talks": "A+B",
+   "pace": "DWELL",
+   "sec": 40,
+   "title": "Royal Shakespeare Company",
+   "subtitle": "Virtual rehearsal tools, developed with the RSC",
+   "img": "media/rsc/RSC_compare.png",
+   "bullets": [
+    "Actors rehearse in a 1:1 scan of the Swan Theatre; directors follow along from a laptop",
+    "Built with theater people, for theater people: the script stays in your hand, like paper",
+    "An R&amp;D grant with XR Network+, 2024–2025: tested with drama students, shown in Stratford"
+   ],
+   "notes": "With the Royal Shakespeare Company, through an R&D grant with XR Network+, we developed virtual rehearsal tools: a one-to-one laser scan of the Swan Theatre in Stratford that actors can rehearse inside, while directors follow from a laptop. On the left, the real Swan; on the right, ours. We tried every clever way to float a script in space. Every actor wanted the same thing: a script they could hold, and put down on the floor. Same as paper. Respect the craft, and the technology disappears."
+  },
+  {
+   "id": "heavenue",
+   "talks": "A+B",
+   "pace": "DWELL",
+   "sec": 35,
+   "layout": "big",
+   "title": "Heavenue",
+   "bigText": "Live performance,\nno building required.",
+   "bigCaption": "Our cloud platform for live performance in virtual space: <i>A Christmas Carol</i>’s first season, then <i>The Orchard</i> Off-Broadway",
+   "notes": "Because we kept needing it, we built Heavenue: a cloud platform for live performance in virtual space. Its first show was Carol's first season. Then The Orchard, Off-Broadway, a Chekhov production with Mikhail Baryshnikov and Jessica Hecht, where we built the virtual side: the same performance on a physical stage and in VR at once. [FILL: Heavenue's current status. The KB lists it as a previous venture, so check the tense before saying 'we run'.]"
+  },
+  {
+   "id": "lincoln",
+   "talks": "A",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "full",
+   "img": "media/lc/DavidGeffenHall01.jpg",
+   "title": "Lincoln Center &middot; David Geffen Hall",
+   "subtitle": "Sightline and railing studies, with Fisher Dachs Associates",
+   "notes": "At Lincoln Center: sightline and railing studies for David Geffen Hall with Fisher Dachs Associates, and previz for Song of the Ambassadors at Alice Tully Hall. [FILL: confirm photo rights; FDA project imagery needs clearance.]"
+  },
+  {
+   "id": "fs-flash",
+   "talks": "A",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "full",
+   "img": "media/fs/re-fourseasons-holodeck-session.jpg",
+   "title": "Four Seasons Private Residences, Lake Austin",
+   "notes": "Same craft, different audience: for Four Seasons, buyers walk full-scale, photoreal residences years before they're built."
+  },
+  {
+   "id": "joby",
+   "talks": "A+B",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "big",
+   "title": "Joby Aviation",
+   "bigText": "Take the flight\nbefore it exists.",
+   "bigCaption": "A passenger-seat air-taxi flight over New York, with a real-time version in progress",
+   "notes": "For Joby Aviation: a passenger-seat air-taxi flight over New York, before anyone can book one. [FILL: credit wording for the NYC flight; the KB names an original project author.]"
+  },
+  {
+   "id": "logos",
+   "talks": "B",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "big",
+   "title": "Worked with",
+   "bigText": "Royal Shakespeare Company &middot; Lincoln Center\nFour Seasons &middot; Joby Aviation\nRoyal Caribbean &middot; Samsung",
+   "bigCaption": "Supported by Google’s Android XR Developer Catalyst Program",
+   "notes": "A few names we've worked with, plus support from Google's Android XR program.",
+   "bigScale": 0.5
+  },
+  {
+   "id": "b-hook",
+   "talks": "B",
+   "pace": "DWELL",
+   "sec": 40,
+   "title": "Beautiful Demos Are Easy.\nShipping Them Isn’t.",
+   "short": "TWO HALVES",
+   "bullets": [
+    "Immersive work lives or dies in the gap between the trailer and the headset",
+    "Engine mastery: it runs, beautifully, on the hardware audiences actually have",
+    "Craft: once they’re inside, they care"
+   ],
+   "tags": "Engine mastery &middot; Craft",
+   "notes": "Most of you have seen a gorgeous immersive trailer for something that never reached an audience, or reached one and stuttered. That gap is where immersive projects live or die. The companies winning in this space do two things at once. Engine mastery: the work runs, beautifully, on the hardware audiences actually own. And craft: once people are inside, they care. Either one alone isn't enough."
+  },
+  {
+   "id": "teach",
+   "talks": "B",
+   "pace": "DWELL",
+   "sec": 35,
+   "layout": "big",
+   "title": "We teach the engine we build in",
+   "bigText": "300+ classes taught.\n40+ courses written.",
+   "bigCaption": "Authorized Unreal Engine instructor since the program’s first cohort, 2020 &middot; [FILL: confirm Authorized Training Center status is current]",
+   "notes": "Engine mastery first. I've been an authorized Unreal Engine instructor since the program's first cohort in 2020: more than 300 classes taught, more than 40 courses written. The people who teach the engine are the people who build your project. [FILL: only say 'Authorized Training Center' if the certification is current; the bio lists it as expiring Feb 2026.]"
+  },
+  {
+   "id": "optimization",
+   "talks": "B",
+   "pace": "DWELL",
+   "sec": 45,
+   "title": "Photoreal That Actually Runs",
+   "subtitle": "Heavy scenes, real hardware",
+   "img": "media/carol/ScroogeDickens.jpg",
+   "bullets": [
+    "We optimized photoreal digital humans to run on standalone headsets",
+    "That moved <i>A Christmas Carol VR</i> from gaming PCs to headsets audiences already own",
+    "Increasing access is worth the work, as long as the artistic vision survives"
+   ],
+   "notes": "Here's what engine mastery buys you. We optimized photoreal digital humans to run on standalone headsets, no gaming PC required. In 2024 that moved Christmas Carol onto headsets people already own, and that season had our biggest show yet. Our rule: increasing access is always worth the work, as long as the artistic vision survives the trip."
+  },
+  {
+   "id": "rc",
+   "talks": "B",
+   "pace": "DWELL",
+   "sec": 40,
+   "layout": "big",
+   "title": "Royal Caribbean &middot; Perfect Day Mexico",
+   "bigText": "Six guests. One sky.\nNo internet required.",
+   "bigCaption": "A shared hot-air-balloon ride on standalone headsets, fully offline, run from an operator tablet &middot; 1,000+ riders",
+   "notes": "And it has to run where the audience is. For Royal Caribbean we built a hot-air-balloon ride for six guests at once, on standalone headsets, fully offline, run by staff from a tablet. More than a thousand riders, and one motion-sickness incident. Reset time, staff training and battery plans sound unglamorous. On a ship, they decide how many guests ride."
+  },
+  {
+   "id": "pico",
+   "talks": "B",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "big",
+   "title": "PICO",
+   "bigText": "[FILL: PICO line]",
+   "bigCaption": "Hold until PICO confirms in writing what can be said publicly",
+   "notes": "[FILL: the PICO launch-demo line, only once PICO has cleared it for public use. If it isn't cleared by Thursday, drop this slide from Talk B.]"
+  },
+  {
+   "id": "act-b2",
+   "talks": "B",
+   "pace": "FLASH",
+   "sec": 10,
+   "title": "Fidelity\nThat Converts.",
+   "short": "FIDELITY",
+   "tagline": "Luxury brands don’t buy demos. They buy belief.",
+   "notes": "Now, why does fidelity matter to a business? Because people believe what looks real."
+  },
+  {
+   "id": "fs-dwell",
+   "talks": "B",
+   "pace": "DWELL",
+   "sec": 55,
+   "title": "Four Seasons Private Residences",
+   "subtitle": "Lake Austin: luxury homes, toured from a headset",
+   "img": "media/fs/re-fourseasons-holodeck-session.jpg",
+   "bullets": [
+    "Buyers walk full-scale, photoreal residences years before they’re built",
+    "A wireless holodeck, 82 by 65 feet: families tour together, no cables",
+    "We built it, set it up, and ran its first six months of operation"
+   ],
+   "notes": "Four Seasons Private Residences in Lake Austin. Buyers put on a headset and walk the residence: the light, the view, the finishes, years before it exists. We built a wireless holodeck, 82 by 65 feet, so a family can tour together with no cables, and we staffed and ran its first six months. As I said on Voices of VR: it's binary. Without this VR experience, the project would not be happening. And that's the pattern we see again and again: photoreal, client-branded demos turn foot traffic into qualified conversations."
+  },
+  {
+   "id": "fs-dbox",
+   "talks": "B",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "big",
+   "title": "Four Seasons tours at DBOX, New York",
+   "bigText": "Headset on in New York.\nStanding in Austin.",
+   "notes": "And because it runs on real hardware, the same tours ran in New York: headset on in Manhattan, standing in Austin.",
+   "bigScale": 0.8
+  },
+  {
+   "id": "act-b3",
+   "talks": "B",
+   "pace": "FLASH",
+   "sec": 10,
+   "title": "Craft Is\nthe Other Half.",
+   "short": "CRAFT",
+   "tagline": "Engine mastery gets the scene running. Craft decides whether anyone cares.",
+   "notes": "That's engine mastery. Now the other half: craft. Ours comes from theater."
+  },
+  {
+   "id": "ask",
+   "talks": "A+B",
+   "pace": "DWELL",
+   "sec": 30,
+   "title": "What Kind of Partnerships\nAre We Looking For?",
+   "short": "THE ASK",
+   "tagline": "Two kinds. Both start with a story you already own or produce.",
+   "notes": "Which brings me to the question our moderator asked: what kind of partnerships are we looking for? Two kinds, and both start with a story you already own or produce."
+  },
+  {
+   "id": "ask-ip",
+   "talks": "A+B",
+   "pace": "DWELL",
+   "sec": 40,
+   "layout": "big",
+   "title": "1 &middot; IP-extension partnerships",
+   "subtitle": "With producers and rights holders",
+   "bigText": "Bring the story.\nWe’ll build the way in.",
+   "bigCaption": "An immersive edition of a world audiences already love: live, location-based, or at home",
+   "notes": "First: IP-extension partnerships with producers and rights holders. You bring a story world audiences already love. We design and build the immersive edition: a live performance, a location-based experience, something people take home on a headset. The rights stay yours; the audience gets a new door. That's how Carol began: a theater extending its holiday classic with a partner."
+  },
+  {
+   "id": "ask-copro",
+   "talks": "A+B",
+   "pace": "DWELL",
+   "sec": 40,
+   "layout": "big",
+   "title": "2 &middot; Co-productions from day one",
+   "subtitle": "Immersive inside the financing and distribution plan",
+   "bigText": "In the plan,\nnot bolted on after.",
+   "bigCaption": "Budgeted with the production: new windows, new audiences, assets that carry across formats",
+   "notes": "Second: co-productions where immersive is part of the financing and distribution plan from day one, not bolted on after picture lock. When the immersive edition is in the first budget, the digital sets, characters and performances get built once and used everywhere, and the immersive release becomes another window and another audience, not a marketing afterthought. That's the lesson Carol taught us: the experience was strong; what it needed was a partner with the audience and the distribution plan from the start."
+  },
+  {
+   "id": "ask-first",
+   "talks": "A+B",
+   "pace": "DWELL",
+   "sec": 30,
+   "layout": "big",
+   "title": "How we start",
+   "bigText": "One story.\nOne audience.\nOne prototype.",
+   "bigCaption": "A short, paid prototype of a single audience moment, then a production plan you can finance",
+   "notes": "And we start small. One story, one audience, one prototype: a short, paid prototype of a single moment an audience would have in your world. Then a production plan you can actually finance. Come find us in the demo area today and we'll show you what that moment feels like.",
+   "bigScale": 0.8
+  },
+  {
+   "id": "a-takehome",
+   "talks": "A",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "big",
+   "bigText": "The curtain comes down.\nThe story doesn’t have to.",
+   "notes": "Pause. Say it slowly, then stop: the curtain comes down. The story doesn't have to. Thank you.",
+   "bigScale": 0.75
+  },
+  {
+   "id": "b-takehome",
+   "talks": "B",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "big",
+   "bigText": "Craft makes them care.\nEngineering makes sure they can.",
+   "notes": "Pause. Say it slowly, then stop: craft makes them care; engineering makes sure they can. Thank you.",
+   "bigScale": 0.68
+  }
+ ]
+}
+/* PITCH-JSON END */;
 
-const BONUS = { year:'BONUS', title:'The Best XR Project\nIs the One You Don\u2019t Need.',
-  tagline:'Sometimes a 3D PDF, a Matterport scan, or a well-placed monitor does the job. The most honest answer a studio can give you is \u201cyou don\u2019t need us for this.\u201d If they never say that \u2014 they\u2019re selling headsets, not solutions.' };
+const TALK_KEY = (new URLSearchParams(location.search).get('talk')||'a').toLowerCase()==='b'?'b':'a';
+const TALK = PITCH.talks[TALK_KEY];
+const POOL = Object.fromEntries(PITCH.pool.map(s=>[s.id,s]));
+function poolSlide(id){
+  const s=POOL[id];
+  if(!s)throw new Error(`PITCH: talk ${TALK_KEY} references unknown pool slide "${id}"`);
+  // Pacing + talk tags lead the presenter notes so they show in the N / ?notes views
+  return {...s,notes:`[${s.pace} · ${s.sec}s · ${s.talks}]\n${s.notes||''}`};
+}
+const SECTIONS = TALK.acts.map(a=>{
+  const L=poolSlide(a.lesson);
+  return {year:a.year,accent:a.accent,
+    lesson:{title:L.title,short:L.short||'',tagline:L.tagline||(L.bullets||[]).join('<br>'),tags:L.tags||'',notes:L.notes},
+    cases:a.cases.map(poolSlide)};
+});
+// Bonus + map slides are framework end-markers; this pitch ends on its own ask, so both are hidden.
+const BONUS = {year:'',title:'',tagline:''};
 </script>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.min.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"}}</script>
 
@@ -374,7 +872,7 @@ body.pr-dragging,body.pr-dragging *{user-select:none!important;-webkit-user-sele
 .placed-qr-card .qr-badge{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase}
 /* === LAYOUT: BIG (full-slide statement text) === */
 .case-slide.layout-big{flex-direction:column;text-align:center;padding:clamp(50px,calc(5*var(--vw)),110px);justify-content:center;align-items:center}
-.case-slide.layout-big .big-stack{display:flex;flex-direction:column;gap:clamp(18px,calc(2.5*var(--vw)),40px);align-items:center;max-width:1300px}
+.case-slide.layout-big .big-stack{display:flex;flex-direction:column;gap:clamp(18px,calc(2.5*var(--vw)),40px);align-items:center;max-width:1700px}
 .case-slide.layout-big .big-eyebrow{font-size:clamp(1.4rem,calc(2.6*var(--vw)),2.4rem);font-weight:500;color:rgba(240,244,255,.78);letter-spacing:-.01em;line-height:1.2}
 .case-slide.layout-big .big-sub{font-size:clamp(.95rem,calc(1.5*var(--vw)),1.4rem);color:var(--dim);font-style:italic;line-height:1.45}
 .case-slide.layout-big .big-text{font-size:clamp(3rem,calc(8*var(--vw)),8rem);font-weight:700;letter-spacing:-.04em;line-height:1.15;background:linear-gradient(135deg,#fff 30%,#ffd6e1 70%,#c5b6ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
@@ -807,7 +1305,7 @@ function playBing(){try{const c=sfxCtx(),t=c.currentTime,o=c.createOscillator(),
 
 // Cover
 const cov=document.createElement('div');cov.className='slide active';cov.dataset.type='cover';
-cov.innerHTML=`<div class="event-tag">Spatial Deck &middot; Open-Source Presentation Framework</div><h1 class="talk-title">Is XR Right<br>For Your Project?</h1><p class="talk-subtitle">A framework for spatial decisions &mdash; before you pick a headset or a studio</p><div class="speaker-card"><div><div class="speaker-name">A Spatial Deck Presentation</div><div class="speaker-co">github.com/spatial-deck</div></div></div>`;
+cov.innerHTML=`<div class="event-tag">${PITCH.event}</div><h1 class="talk-title">${TALK.title.replace(/\n/g,'<br>')}</h1><p class="talk-subtitle">${TALK.subtitle}</p><div class="speaker-card"><div><div class="speaker-name">${PITCH.speaker}</div><div class="speaker-co">${PITCH.company}</div></div></div>`;cov.querySelector('.talk-title').dataset.talk=TALK_KEY;document.title=`${TALK.title.replace(/\n/g,' ')} · ${PITCH.event.replace(/&middot;/g,'·')}`;
 deck.appendChild(cov);allSlides.push(cov);
 
 // Build sections
@@ -820,7 +1318,7 @@ SECTIONS.forEach((sec,si)=>{
     const s=document.createElement('div');s.className=`slide case-slide${ac}${c.layout?' layout-'+c.layout:''}${c.gridCover?' grid-cover':''}`;s.dataset.type='case';s.dataset.year=sec.year;s.dataset.section=si;
     // layout: 'big' — full-slide statement text (bigText, optional title/subtitle/bigCaption)
     if(c.layout==='big'){
-      s.innerHTML=`<div class="big-stack">${c.pill&&c.title?`<div class="big-pill accent-${sec.accent||'teal'}">${c.title}</div>`:c.title?`<h2 class="big-eyebrow">${c.title.replace(/\n/g,'<br>')}</h2>`:''} ${c.subtitle?`<div class="big-sub">${c.subtitle}</div>`:''}${c.bigText?`<h1 class="big-text">${c.bigText.replace(/\n/g,'<br>')}</h1>`:''}${c.bigCaption?`<p class="big-caption">${c.bigCaption.replace(/\n/g,'<br>')}</p>`:''}</div>`;
+      s.innerHTML=`<div class="big-stack">${c.pill&&c.title?`<div class="big-pill accent-${sec.accent||'teal'}">${c.title}</div>`:c.title?`<h2 class="big-eyebrow">${c.title.replace(/\n/g,'<br>')}</h2>`:''} ${c.subtitle?`<div class="big-sub">${c.subtitle}</div>`:''}${c.bigText?`<h1 class="big-text"${c.bigScale?` style="font-size:calc(${8*c.bigScale}*var(--vw))"`:''}>${c.bigText.replace(/\n/g,'<br>')}</h1>`:''}${c.bigCaption?`<p class="big-caption">${c.bigCaption.replace(/\n/g,'<br>')}</p>`:''}</div>`;
       deck.appendChild(s);allSlides.push(s);return;
     }
     // layout: 'full' — full-bleed image, video or iframe with an optional caption overlay
@@ -891,7 +1389,7 @@ SECTIONS.forEach((sec,si)=>{
         return `<div class="asset-belt-item"${ar}><img src="${it.src}" loading="lazy"></div>`;
       }).join('');
       if(c.beltLoop)items=items+items;
-      const overlay=(c.title||c.bigText||c.bigCaption)?`<div class="asset-belt-overlay">${c.title?`<h2 class="big-eyebrow">${c.title}</h2>`:''}${c.bigText?`<h1 class="big-text">${c.bigText.replace(/\n/g,'<br>')}</h1>`:''}${c.bigCaption?`<div class="big-caption">${c.bigCaption}</div>`:''}</div>`:'';
+      const overlay=(c.title||c.bigText||c.bigCaption)?`<div class="asset-belt-overlay">${c.title?`<h2 class="big-eyebrow">${c.title}</h2>`:''}${c.bigText?`<h1 class="big-text"${c.bigScale?` style="font-size:calc(${8*c.bigScale}*var(--vw))"`:''}>${c.bigText.replace(/\n/g,'<br>')}</h1>`:''}${c.bigCaption?`<div class="big-caption">${c.bigCaption}</div>`:''}</div>`:'';
       s.innerHTML=`<div class="asset-belt-stage">${overlay}<div class="asset-belt-track"${c.beltLoop?' style="left:0"':''}>${items}</div></div>`;
       deck.appendChild(s);allSlides.push(s);
       setTimeout(()=>{
@@ -939,7 +1437,7 @@ SECTIONS.forEach((sec,si)=>{
     } else {
       imgHTML=`<div class="media-cycler-mount" style="width:100%;height:100%"></div>`;
     }
-    s.innerHTML=`<div class="case-image">${imgHTML}</div><div class="case-content"><div class="case-ytag">${sec.year}${sec.lesson.short?' &middot; '+sec.lesson.short:''}</div><h2 class="case-title">${c.title}</h2><p class="case-sub">${c.subtitle}</p><ul class="case-bl">${c.bullets.map(b=>`<li>${b.replace(/\n/g,'<br>')}</li>`).join('')}</ul></div>`;
+    s.innerHTML=`<div class="case-image">${imgHTML}</div><div class="case-content"><div class="case-ytag">${sec.year}${sec.lesson.short?' &middot; '+sec.lesson.short:''}</div><h2 class="case-title">${c.title}</h2>${c.subtitle?`<p class="case-sub">${c.subtitle}</p>`:''}<ul class="case-bl">${c.bullets.map(b=>`<li>${b.replace(/\n/g,'<br>')}</li>`).join('')}</ul></div>`;
     deck.appendChild(s);allSlides.push(s);
   });
 });
@@ -947,7 +1445,7 @@ SECTIONS.forEach((sec,si)=>{
 // Bonus
 const bon=document.createElement('div');bon.className='slide slide-lesson slide-bonus';bon.dataset.type='bonus';bon.dataset.year=BONUS.year;
 bon.innerHTML=`<div class="year-ghost">${BONUS.year}</div><div class="lesson-ey"><span class="ey-yr">${BONUS.year}</span><span class="ey-sep">&middot;</span><span class="ey-badge" style="color:var(--amber)">${BONUS.year||'CODA'}</span></div><h2 class="lesson-title">${BONUS.title}</h2><p class="lesson-tagline">${BONUS.tagline.replace(/<br><br>/g,'<br><span class="para-gap"></span>')}</p><div class="lesson-rule" style="background:var(--amber)"></div>`;
-deck.appendChild(bon);allSlides.push(bon);
+bon.dataset.hidden='1';deck.appendChild(bon);allSlides.push(bon);
 
 // 3D Monocle on Bonus slide
 (function(){
@@ -1051,13 +1549,13 @@ deck.appendChild(bon);allSlides.push(bon);
 // Map
 const mapS=document.createElement('div');mapS.className='slide slide-map';mapS.dataset.type='map';
 mapS.innerHTML=`<div class="map-label">The Journey, Mapped</div><svg id="map-svg" viewBox="0 0 1000 600"></svg>`;
-deck.appendChild(mapS);allSlides.push(mapS);
+mapS.dataset.hidden='1';deck.appendChild(mapS);allSlides.push(mapS);
 
 // Close slide with inline Agile Lens SVG logo
 const cls=document.createElement('div');cls.className='slide';cls.dataset.type='close';
-cls.innerHTML=`<div class="close-ey">Thank You</div><h2 class="close-title">Let\u2019s Talk.</h2><p class="close-sub">Thinking spatially?</p>
-<div class="contact-row"><div class="contact-pill"><span class="lbl">Web</span>example.com</div><div class="contact-pill"><span class="lbl">Email</span>hi@example.com</div></div>
-<div class="close-qr-row"><div class="qr-card"><img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://github.com/ibrews/spatial-deck" alt="QR"><div class="qr-label">Spatial Deck</div><div class="qr-badge b-teal">Fork it! Ship your own deck!</div></div></div>
+cls.innerHTML=`<div class="close-ey">${PITCH.close.eyebrow}</div><h2 class="close-title">${PITCH.close.title}</h2><p class="close-sub">${PITCH.close.sub}</p>
+<div class="contact-row">${PITCH.close.contacts.map(c=>`<div class="contact-pill"><span class="lbl">${c[0]}</span>${c[1]}</div>`).join('')}</div>
+<div class="close-qr-row">${PITCH.close.qr.map(q=>`<div class="qr-card"><img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(q.url)}" alt="QR code: ${q.label}"><div class="qr-label">${q.label}</div><div class="qr-badge b-teal">${q.badge}</div></div>`).join('')}</div>
 <div style="position:absolute;bottom:clamp(30px,calc(4*var(--vh)),60px);left:50%;transform:translateX(-50%);opacity:.35;z-index:2"><svg width="200" height="40" viewBox="0 0 869 175" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M266.385 134.295L264.681 136H249.34L247.635 134.295L239.113 112.137L235.704 110.432H193.09L189.681 112.137L181.159 134.295L179.454 136H164.114L162.409 134.295V117.25L201.613 18.3878L203.318 16.6833H225.476L227.181 18.3878L266.385 117.25V134.295ZM230.59 88.2733L215.249 47.3647H213.545L198.204 88.2733L199.909 89.9778H228.886L230.59 88.2733ZM346.604 52.4783V127.477C346.604 158.159 327.854 171.795 303.991 171.795C283.537 171.795 269.901 161.568 268.196 146.227L269.901 144.523H290.355L292.059 146.227C293.764 149.636 297.173 151.341 303.991 151.341C315.923 151.341 322.741 144.523 322.741 129.182H321.036C321.036 129.182 314.218 137.705 298.878 137.705C278.423 137.705 261.378 120.659 261.378 93.3869C261.378 66.1145 278.423 49.0692 298.878 49.0692C314.218 49.0692 321.036 57.5919 321.036 57.5919H322.741L324.445 52.4783L326.15 50.7738H344.9L346.604 52.4783ZM285.241 93.3869C285.241 107.023 290.355 117.25 303.991 117.25C317.627 117.25 322.741 107.023 322.741 93.3869C322.741 79.7507 317.627 69.5235 303.991 69.5235C290.355 69.5235 285.241 79.7507 285.241 93.3869ZM378.964 35.433L377.259 37.1376H356.805L355.1 35.433V18.3878L356.805 16.6833H377.259L378.964 18.3878V35.433ZM378.964 134.295L377.259 136H356.805L355.1 134.295V52.4783L356.805 50.7738H377.259L378.964 52.4783V134.295ZM411.31 134.295L409.605 136H389.151L387.446 134.295V18.3878L389.151 16.6833H409.605L411.31 18.3878V134.295ZM496.496 93.3869V100.205L494.791 101.91H441.951L440.247 103.614C440.247 107.023 443.656 117.25 457.292 117.25C462.405 117.25 467.519 115.546 469.223 112.137L470.928 110.432H491.382L493.087 112.137C491.382 122.364 482.86 137.705 457.292 137.705C428.315 137.705 414.679 117.25 414.679 93.3869C414.679 69.5235 428.315 49.0692 455.587 49.0692C482.86 49.0692 496.496 69.5235 496.496 93.3869ZM469.223 84.8643L470.928 83.1597C470.928 81.4552 469.223 69.5235 455.587 69.5235C441.951 69.5235 440.247 81.4552 440.247 83.1597L441.951 84.8643H469.223ZM615.779 134.295L614.075 136H537.371L535.667 134.295V18.3878L537.371 16.6833H557.825L559.53 18.3878V113.841L561.234 115.546H614.075L615.779 117.25V134.295ZM687.249 93.3869V100.205L685.545 101.91H632.705L631 103.614C631 107.023 634.409 117.25 648.045 117.25C653.159 117.25 658.273 115.546 659.977 112.137L661.682 110.432H682.136L683.84 112.137C682.136 122.364 673.613 137.705 648.045 137.705C619.068 137.705 605.432 117.25 605.432 93.3869C605.432 69.5235 619.068 49.0692 646.341 49.0692C673.613 49.0692 687.249 69.5235 687.249 93.3869ZM659.977 84.8643L661.682 83.1597C661.682 81.4552 659.977 69.5235 646.341 69.5235C632.705 69.5235 631 81.4552 631 83.1597L632.705 84.8643H659.977ZM770.778 134.295L769.073 136H748.619L746.914 134.295V84.8643C746.914 76.3416 743.505 69.5235 733.278 69.5235C721.347 69.5235 714.528 76.3416 714.528 91.6824V134.295L712.824 136H692.37L690.665 134.295V52.4783L692.37 50.7738H711.119L712.824 52.4783L714.528 57.5919H716.233C719.642 54.1828 726.46 49.0692 738.392 49.0692C758.846 49.0692 770.778 62.7054 770.778 83.1597V134.295ZM847.495 110.432C847.495 124.068 837.268 137.705 809.995 137.705C786.132 137.705 772.496 125.773 772.496 108.728L774.2 107.023H794.654L796.359 108.728C796.359 115.546 801.473 117.25 809.995 117.25C818.518 117.25 823.631 115.546 823.631 110.432C823.631 103.614 816.813 103.614 806.586 101.91C796.359 100.205 774.2 95.0914 774.2 74.6371C774.2 61.0009 784.427 49.0692 809.995 49.0692C830.449 49.0692 845.79 57.5919 845.79 74.6371L844.086 76.3416H823.631L821.927 74.6371C821.927 71.2281 818.518 69.5235 809.995 69.5235C801.473 69.5235 798.064 71.2281 798.064 76.3416C798.064 83.1597 808.291 83.1597 818.518 84.8643C828.745 86.5688 847.495 89.9778 847.495 110.432Z" fill="white"/><circle cx="71" cy="73" r="60" stroke="white" stroke-width="8" fill="none"/><line x1="115" y1="117" x2="142" y2="155" stroke="white" stroke-width="8" stroke-linecap="round"/></svg></div>`;
 deck.appendChild(cls);allSlides.push(cls);
 
