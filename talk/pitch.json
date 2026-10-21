@@ -33,17 +33,19 @@
    "thesis": "Beloved stories need new audiences and new revenue beyond the stage and screen. Live immersive theater is a working model for the audience half, and the right partnership supplies the rest.",
    "takeaway": "The curtain comes down. The story doesn’t have to.",
    "cover_sec": 5,
+   "intro": [
+    "intro-alex",
+    "intro-lens"
+   ],
    "acts": [
     {
      "year": "ACT I",
      "accent": "amber",
      "lesson": "a-hook",
      "cases": [
-      "who",
       "carol-origin",
       "carol-what",
       "carol-inside",
-      "carol-how",
       "carol-quote",
       "carol-proved",
       "carol-afterlife"
@@ -52,13 +54,11 @@
     {
      "year": "ACT II",
      "accent": "purple",
-     "lesson": "act-a2",
+     "lesson": "act-a2-film",
      "cases": [
+      "xr-pipeline",
       "rsc",
-      "heavenue",
-      "lincoln",
-      "fs-flash",
-      "joby"
+      "xr-product"
      ]
     },
     {
@@ -68,7 +68,6 @@
      "cases": [
       "ask-ip",
       "ask-copro",
-      "ask-first",
       "a-takehome"
      ]
     }
@@ -80,13 +79,16 @@
    "thesis": "The companies winning in immersive pair engine mastery with craft: photoreal work that runs on the hardware audiences actually have, built by people who know how to give an audience a role.",
    "takeaway": "Craft makes them care. Engineering makes sure they can.",
    "cover_sec": 5,
+   "intro": [
+    "intro-alex",
+    "intro-lens"
+   ],
    "acts": [
     {
      "year": "ACT I",
      "accent": "teal",
      "lesson": "b-hook",
      "cases": [
-      "who",
       "teach",
       "optimization",
       "rc",
@@ -99,9 +101,7 @@
      "lesson": "act-b2",
      "cases": [
       "fs-dwell",
-      "fs-dbox",
-      "joby",
-      "logos"
+      "fs-dbox"
      ]
     },
     {
@@ -111,8 +111,7 @@
      "cases": [
       "carol-what",
       "carol-quote",
-      "rsc",
-      "heavenue"
+      "rsc"
      ]
     },
     {
@@ -130,6 +129,87 @@
   }
  },
  "pool": [
+  {
+   "id": "intro-alex",
+   "talks": "A+B",
+   "pace": "DWELL",
+   "sec": 30,
+   "layout": "intro-alex",
+   "title": "Alex Coulombe",
+   "subtitle": "Founder &amp; CEO, Agile Lens",
+   "intro": {
+    "eyebrow": "Your Speaker",
+    "name": "Alex<br>Coulombe",
+    "role": "Founder &amp; CEO, Agile Lens: Immersive Design",
+    "withBeard": true,
+    "bio": "Architect turned XR-chitect who has spent the last decade building spatial experiences for the world’s most ambitious clients.",
+    "ue5": "Authorized Unreal Engine instructor since 2020: 300+ classes taught, 40+ courses written.",
+    "stats": [
+     {
+      "n": "16",
+      "l": "Years in XR"
+     },
+     {
+      "n": "10",
+      "l": "Years of Agile Lens"
+     },
+     {
+      "n": "10",
+      "l": "Years in Unreal"
+     },
+     {
+      "n": "100+",
+      "l": "Experiences built"
+     }
+    ]
+   },
+   "bullets": [
+    "Architect turned XR-chitect: a decade of spatial experiences",
+    "Authorized Unreal Engine instructor since 2020: 300+ classes, 40+ courses",
+    "16 years in XR · 10 years of Agile Lens · 10 years in Unreal · 100+ experiences built"
+   ],
+   "notes": "Pause. Let him walk in, punch the block and put the headset on: this is me. I'm Alex Coulombe. I trained as an architect, with a minor in drama, and then a headset fell out of the sky. [click] I founded and run Agile Lens, an immersive studio in New York. [click] I've taught Unreal Engine as an authorized instructor since 2020. [click] Sixteen years in XR, ten years of Agile Lens, ten in Unreal, and more than a hundred experiences built. ALEX TO CONFIRM: this is the standard 8-bit intro from the PMRE 2026, FMX 2026 and HarvardXR decks (three clicks: bio, power-up, stat tallies). For this deck the Unreal badge block and Unreal-logo fireballs became a pixel clapperboard and stars, because the MIA deck carries no Epic logos; the stats are the ones you confirmed on 2026-10-21 for PMRE. 'Founder &amp; CEO' merges PMRE's 'Founder' with this deck's 'CEO'."
+  },
+  {
+   "id": "intro-lens",
+   "talks": "A+B",
+   "pace": "DWELL",
+   "sec": 30,
+   "layout": "intro-lens",
+   "title": "Agile Lens",
+   "subtitle": "Immersive design studio · NYC · est. 2016",
+   "lens": {
+    "name": "AGILE LENS",
+    "tagline": "IMMERSIVE DESIGN STUDIO",
+    "est": "EST. 2016",
+    "city": "NYC",
+    "footer": "BOOTSTRAPPED · XR SPECIALISTS · 10 YEARS",
+    "year": "2016",
+    "countFrom": 2026,
+    "clientsFixed": [
+     "Royal Shakespeare Company",
+     "Kennedy Center",
+     "Royal Caribbean",
+     "Lincoln Center"
+    ],
+    "clientsOthers": [
+     "Four Seasons",
+     "Actors Theatre of Louisville",
+     "Samsung",
+     "Arlekin Players",
+     "Waldorf Astoria",
+     "Dell",
+     "Fisher Dachs Associates",
+     "CBS"
+    ],
+    "nameSize": 22
+   },
+   "bullets": [
+    "Immersive design studio, New York City, est. 2016 · bootstrapped · XR specialists",
+    "Orbit: Royal Shakespeare Company, Kennedy Center, Royal Caribbean, Lincoln Center, Four Seasons, CBS, Waldorf Astoria, Dell, Samsung, Actors Theatre of Louisville, Arlekin Players, Fisher Dachs Associates"
+   ],
+   "notes": "Agile Lens is an immersive design studio in New York. These are some of the people we've built for: theaters, concert halls, cruise lines, hotels and brands. [click] Take the names away. [click] Go back ten years, [click] and it was one person with a headset, [click] [click] in 2016. We're still independent and bootstrapped, and XR is all we do. ALEX TO CONFIRM: the HarvardXR monocle slide, five clicks after the orbit (set lens.steps to 0 in talk/pitch.json for the orbit only). Kennedy Center, CBS, Waldorf Astoria and Dell come from the PMRE/HarvardXR orbit and were not re-checked for this deck; Actors Theatre of Louisville, Arlekin Players and Fisher Dachs Associates replace Disney, Joby Aviation and Google, which this deck does not name as clients."
+  },
   {
    "id": "a-hook",
    "talks": "A",
@@ -155,7 +235,8 @@
    "bigText": "100+ spatial experiences\nshipped since 2016.",
    "bigCaption": "New York &middot; Real-time studio &middot; Theater, culture and luxury brands",
    "notes": "I'm Alex Coulombe. Agile Lens is a New York immersive studio: more than a hundred spatial experiences shipped since 2016, all built in real time.",
-   "bigScale": 0.8
+   "bigScale": 0.8,
+   "parked": "Superseded on 2026-10-21 by the standard intro (intro-alex + intro-lens), which carries the same 100+ experiences / since-2016 facts"
   },
   {
    "id": "carol-origin",
@@ -212,7 +293,8 @@
     "AI Dickens, a digital host voiced with the lead actor’s permission, welcomes guests before curtain",
     "After the show, a live Q&amp;A with the actors"
    ],
-   "notes": "What did it feel like? Intimate. Scrooge can turn and look you in the eye, because the actor can actually see you. Before curtain, guests are welcomed by AI Dickens, a digital host built with our lead actor's voice, cloned with his permission and paid for, so the human performer can save his energy for the show. And afterwards the actors stay for a live Q&A. The audience isn't watching a recording of a play. They're part of a night that only happens once."
+   "notes": "What did it feel like? Intimate. Scrooge can turn and look you in the eye, because the actor can actually see you. Before curtain, guests are welcomed by AI Dickens, a digital host built with our lead actor's voice, cloned with his permission and paid for, so the human performer can save his energy for the show. And afterwards the actors stay for a live Q&A. The audience isn't watching a recording of a play. They're part of a night that only happens once.",
+   "parked": "Cut for time on 2026-10-21 (intro + motion slides added); eye contact and presence now land in xr-product"
   },
   {
    "id": "carol-quote",
@@ -290,7 +372,7 @@
    "id": "carol-proved",
    "talks": "A",
    "pace": "DWELL",
-   "sec": 55,
+   "sec": 45,
    "title": "What It Proved About Classic IP",
    "img": "media/carol/s62-00-c5d5db35.png",
    "bullets": [
@@ -307,18 +389,152 @@
    "pace": "DWELL",
    "sec": 40,
    "title": "The Run Ended.\nThe Performance Didn’t.",
-   "subtitle": "December 2025: our replay and film tools",
+   "subtitle": "Our replay and film tools, and a December return",
    "img": "media/video/carol-replay-marley.mp4",
    "bullets": [
     "Performances recorded with their motion capture, cues and spatial audio",
     "Replay from any position, on a scrub timeline: review it like dailies",
     "A cinematographer build shoots new camera coverage of a show that’s already over: see it in our demo area",
-    "The same tools now run our RSC rehearsal R&amp;D and our Stage Presence toolkit"
+    "Back this December: the full live show as a replay, not a video, that audiences join together from headsets. Dates to be announced."
    ],
-   "notes": "We closed it in December 2025, after five seasons. But for this room, here's the part that matters most. We recorded the performances with everything in them: the motion capture, the cues, the spatial audio. You can replay a show from any position in the house and scrub the timeline, like dailies. And we've built a cinematographer version, so a director can shoot new camera coverage of a performance that has already happened. It's in our demo area today. And the same tools now run our rehearsal R&D with the RSC.",
+   "notes": "We closed the live run in December 2025, after five seasons. But for this room, here's the part that matters most. We recorded the performances with everything in them: the motion capture, the cues, the spatial audio. You can replay a show from any seat in the house and scrub it like dailies, and a cinematographer build lets a director shoot new coverage of a show that's already over. It's in our demo area today. And this December, Carol comes back as a full replay of the live show, not a video: audiences join it together from headsets, with other audience members, just like before. Dates aren't announced yet. ALEX TO CONFIRM: no dates, venue or tickets for the December replay are announced, so give none on stage. The old fourth bullet (RSC rehearsal R&D and Stage Presence toolkit) moved to the xr-pipeline slide.",
    "poster": "media/video/carol-replay-marley.jpg",
    "alt": "A recorded performance played back in the replay system: Marley’s ghost confronts Scrooge, seen from a free camera with the replay controls on screen",
    "credit": "Replay recording of a performance &middot; Agile Lens (Yu-Jun Yeh)"
+  },
+  {
+   "id": "act-a2-film",
+   "talks": "A",
+   "pace": "FLASH",
+   "sec": 10,
+   "title": "Two Ways XR\nWorks for Film.",
+   "short": "TWO WAYS IN",
+   "tagline": "Inside the pipeline, where the result is still a normal film.<br>Or as the product: a new edition that takes the story further.",
+   "notes": "So what does this mean for film and TV? Two ways in: one the audience never sees, and one that is the show."
+  },
+  {
+   "id": "xr-pipeline",
+   "talks": "A+B",
+   "parked": "Not in Talk B's running order (time); to use it there, add it to ACT III",
+   "pace": "DWELL",
+   "sec": 55,
+   "layout": "pipeline",
+   "title": "XR Inside a Normal Film Pipeline",
+   "subtitle": "The crew uses the headset. The audience gets a normal film.",
+   "input": "XR for\nthe crew",
+   "output": "A normal film.\nAny screen.",
+   "phases": [
+    {
+     "name": "Pre-production",
+     "items": [
+      {
+       "t": "Scout a scanned\nlocation in VR",
+       "al": true
+      },
+      {
+       "t": "Try lenses, lights\nand blocking at 1:1",
+       "al": true
+      },
+      {
+       "t": "Pull stills into\nthe shot list",
+       "al": true
+      }
+     ]
+    },
+    {
+     "name": "Production",
+     "items": [
+      {
+       "t": "Rehearse actors\nin the virtual set",
+       "al": true
+      },
+      {
+       "t": "Capture performance\nonto digital humans",
+       "al": true
+      },
+      {
+       "t": "Real-time previs\nand virtual sets",
+       "al": false
+      }
+     ]
+    },
+    {
+     "name": "Post-production",
+     "items": [
+      {
+       "t": "Shoot new coverage\nfrom recordings",
+       "al": true
+      },
+      {
+       "t": "Reframe with a\nvirtual camera",
+       "al": true
+      },
+      {
+       "t": "Review in VR,\nlike dailies",
+       "al": true
+      }
+     ]
+    }
+   ],
+   "legend": [
+    "Agile Lens has built this",
+    "What XR can do"
+   ],
+   "notes": "Most of you will never sell a ticket to a headset, and you don't have to. Here's XR inside a normal pipeline, where the result is still a film. In pre-production: scout a scanned location from anywhere, put a virtual camera in it, try lenses, lights and blocking at full scale, and pull stills into the shot list. On set: rehearse actors in the virtual space, as we did with the Royal Shakespeare Company, capture performances onto digital humans, and see real-time previs. And in post, because we recorded our Christmas Carol performances as data, not video, a director can shoot new coverage after the show is over. The filled dots are things we've built; the hollow one, XR can do today. The audience never wears a headset. ALEX TO CONFIRM: 'Try lenses, lights and blocking' and 'Pull stills into the shot list' credit the UOXR film kit (grabbable camera with 24-85 mm lenses and masks, monitor, film lights, A/B/C marks, Take still), built on 2026-10-21 and not yet merged: call it a prototype, and make those two dots hollow (al: false) if it is not in the demo area. Scouting cites the RSC's 1:1 Swan scan; capture cites Carol's MetaHumans; post cites the Carol replay and cinematographer builds. 'Real-time previs and virtual sets' is a general XR capability, not an Agile Lens credit."
+  },
+  {
+   "id": "xr-product",
+   "talks": "A+B",
+   "parked": "Not in Talk B's running order (time); to use it there, add it to ACT III",
+   "pace": "DWELL",
+   "sec": 55,
+   "layout": "ip-web",
+   "title": "XR as the Product",
+   "subtitle": "One story, more doors, each built on what only XR does",
+   "center": "A Christmas\nCarol",
+   "centerSub": "One story",
+   "branches": [
+    {
+     "t": "Live in VR",
+     "d": "Actors perform live;\nthe audience stands inside",
+     "al": true,
+     "proof": "Carol, five seasons, 2021–2025"
+    },
+    {
+     "t": "Replay, together",
+     "d": "The full live show replayed;\nattendees join from headsets",
+     "al": true,
+     "proof": "Carol, this December · dates TBA"
+    },
+    {
+     "t": "Trailer and clips",
+     "d": "Flat video that sells it\non every screen",
+     "al": true,
+     "proof": "Carol 2025 trailer"
+    },
+    {
+     "t": "Phone & web teaser",
+     "d": "A taste on any device,\nno headset needed",
+     "al": false
+    },
+    {
+     "t": "Festival circuit",
+     "d": "Immersive sections at SXSW, Venice,\nCannes, Tribeca: a second audience",
+     "al": false,
+     "proof": "Carol: Raindance Immersive 2025 nominee"
+    }
+   ],
+   "only": [
+    "Presence",
+    "A shared audience",
+    "Your own viewpoint"
+   ],
+   "onlyLabel": "Only XR",
+   "legend": [
+    "Done with Carol",
+    "An open opportunity"
+   ],
+   "notes": "The other door: XR as the product. Take one story, A Christmas Carol. The live VR show is the adaptation: presence, an actor who looks you in the eye, an audience that shares the room. The replay is its second life: this December the show comes back as a full replay of the live performance, not a video, that people join together from headsets. Flat trailers and clips sell it on every screen, and a phone or web teaser gives anyone a taste. And an immersive edition opens a door a flat release can't: the festival circuit. SXSW, Venice, Cannes and Tribeca all program immersive work. That's a second audience and a prestige path for the same story. Carol was a Raindance Immersive nominee last year. ALEX TO CONFIRM: festivals are an opportunity, not a claim; nothing here says Agile Lens screened at or was selected by SXSW, Venice, Cannes or Tribeca, and the only approved festival fact is Raindance Immersive 2025 nominee, Best Immersive Theatre. Add a specific program or past inclusion only if you want to name one. The December replay has no announced dates or tickets: give none. The phone/web teaser is an XR option, not a Carol deliverable."
   },
   {
    "id": "act-a2",
@@ -328,7 +544,8 @@
    "title": "The Same Model,\nOther Stages.",
    "short": "OTHER STAGES",
    "tagline": "Theater, culture and brands that need audiences to step inside.",
-   "notes": "Carol is the clearest example. It isn't the only one."
+   "notes": "Carol is the clearest example. It isn't the only one.",
+   "parked": "Replaced on 2026-10-21 by act-a2-film (the two-ways-in act lesson)"
   },
   {
    "id": "rsc",
@@ -357,7 +574,8 @@
    "title": "Heavenue",
    "bigText": "Live performance,\nno building required.",
    "bigCaption": "The cloud platform we built for live performance in virtual space: it hosted <i>A Christmas Carol</i>’s first season, then the remote audience for <i>The Orchard</i> Off-Broadway, 2022",
-   "notes": "Because we kept needing it, we built Heavenue: a cloud platform for live performance in virtual space. Its first show was Carol's first season. Then The Orchard, Arlekin Players' Chekhov production, which opened Off-Broadway in June 2022 with Mikhail Baryshnikov and Jessica Hecht: we built the remote experience, so the same performance played to a house and to an audience online at once. It worked well, until we could not find the funding to keep it going. That's part of why I'm here: the work holds up; it needs partners with the audience and the money."
+   "notes": "Because we kept needing it, we built Heavenue: a cloud platform for live performance in virtual space. Its first show was Carol's first season. Then The Orchard, Arlekin Players' Chekhov production, which opened Off-Broadway in June 2022 with Mikhail Baryshnikov and Jessica Hecht: we built the remote experience, so the same performance played to a house and to an audience online at once. It worked well, until we could not find the funding to keep it going. That's part of why I'm here: the work holds up; it needs partners with the audience and the money.",
+   "parked": "Cut for time on 2026-10-21 (intro + motion slides added) from both talks"
   },
   {
    "id": "lincoln",
@@ -369,7 +587,8 @@
    "notes": "At Lincoln Center, with Fisher Dachs and Diamond Schmitt: VR models for Geffen Hall's seats, sightlines and railings, before it was built.",
    "bigText": "See the view\nbefore it’s built.",
    "bigCaption": "VR models for seating, sightline and railing decisions in David Geffen Hall’s redesign, with Fisher Dachs Associates and Diamond Schmitt Architects",
-   "bigScale": 0.8
+   "bigScale": 0.8,
+   "parked": "Cut for time on 2026-10-21 (intro + motion slides added)"
   },
   {
    "id": "fs-flash",
@@ -382,7 +601,8 @@
    "notes": "Same craft, different audience: for Four Seasons, with DBOX and Pureblink, buyers walk full-scale, photoreal residences years before they're built.",
    "credit": "In-headset capture &middot; with DBOX and Pureblink &middot; Agile Lens, LBE VR technologists",
    "poster": "media/video/fsla-in-vr.jpg",
-   "alt": "Inside the VR tour: a photoreal residence interior with floor-to-ceiling windows over Lake Austin"
+   "alt": "Inside the VR tour: a photoreal residence interior with floor-to-ceiling windows over Lake Austin",
+   "parked": "Cut for time on 2026-10-21 (intro + motion slides added)"
   },
   {
    "id": "joby",
@@ -393,7 +613,8 @@
    "title": "eVTOL air-taxi passenger simulation",
    "bigText": "Take the flight\nbefore it exists.",
    "bigCaption": "A passenger-flight simulation for an eVTOL air-taxi company: a ride over New York",
-   "notes": "For an eVTOL air-taxi company: a passenger-flight simulation, a ride over New York, before anyone can book one. ALEX TO CONFIRM: name Joby only with Adam Krebs's written OK, and flip the slide wording then."
+   "notes": "For an eVTOL air-taxi company: a passenger-flight simulation, a ride over New York, before anyone can book one. ALEX TO CONFIRM: name Joby only with Adam Krebs's written OK, and flip the slide wording then.",
+   "parked": "Cut for time on 2026-10-21 (intro + motion slides added) from both talks"
   },
   {
    "id": "logos",
@@ -405,7 +626,8 @@
    "bigText": "Royal Shakespeare Company &middot; Lincoln Center\nFour Seasons &middot; Royal Caribbean &middot; Samsung",
    "bigCaption": "Supported by Google’s Android XR Developer Catalyst Program",
    "notes": "A few names we've worked with, plus support from Google's Android XR program.",
-   "bigScale": 0.5
+   "bigScale": 0.5,
+   "parked": "Superseded on 2026-10-21 by the client orbit on intro-lens (same names)"
   },
   {
    "id": "b-hook",
@@ -564,7 +786,8 @@
    "bigText": "One story.\nOne audience.\nOne prototype.",
    "bigCaption": "A short, paid prototype of a single audience moment, then a production plan you can finance",
    "notes": "And we start small. One story, one audience, one prototype: a short, paid prototype of a single moment an audience would have in your world. Then a production plan you can actually finance. Come find us in the demo area today and we'll show you what that moment feels like.",
-   "bigScale": 0.8
+   "bigScale": 0.8,
+   "parked": "Cut for time on 2026-10-21 (intro + motion slides added) from Talk A (redundant with ask-copro); Talk B keeps it"
   },
   {
    "id": "a-takehome",
