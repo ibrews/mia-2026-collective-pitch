@@ -41,6 +41,8 @@ def fail(errors):
 
 
 def talk_ids(talk):
+    # Fork-local: talk-level "intro" slides play between the cover and Act I (speaker + studio intro)
+    yield from talk.get("intro", [])
     for act in talk["acts"]:
         yield act["lesson"]
         yield from act["cases"]
@@ -82,6 +84,14 @@ def validate(p):
             for k in ("alt", "credit"):
                 if not s.get(k):
                     errors.append(f"{sid}: video slides need '{k}'")
+        if s.get("layout") == "pipeline":
+            phases = s.get("phases") or []
+            if len(phases) != 3 or any(not ph.get("name") or not 1 <= len(ph.get("items") or []) <= 3 for ph in phases):
+                errors.append(f"{sid}: pipeline slides take exactly 3 phases, each with a name and 1-3 items")
+        if s.get("layout") == "ip-web":
+            br = s.get("branches") or []
+            if not 3 <= len(br) <= 5 or any(not b.get("t") for b in br) or not s.get("center"):
+                errors.append(f"{sid}: ip-web slides need a center and 3-5 branches, each with a 't' label")
         if s.get("layout") == "rain":
             qs = s.get("quotes") or []
             if not 1 <= len(qs) <= 12:
@@ -117,7 +127,8 @@ def validate(p):
                 errors.append(f"talk {letter}: act lesson {act['lesson']!r} must be a plain slide, not layout {pool[act['lesson']]['layout']!r}")
     for sid, s in pool.items():
         for letter in ("A", "B"):
-            if letter in s["talks"] and sid not in used[letter]:
+            # "parked" keeps a cut slide (and its tags) in the pool so it can be restored by adding its id back
+            if letter in s["talks"] and sid not in used[letter] and not s.get("parked"):
                 errors.append(f"{sid} is tagged [{s['talks']}] but talk {letter} never uses it (retag or drop it)")
     return pool, errors
 
@@ -151,6 +162,20 @@ def slide_lines(s):
         lines.append(f"**On screen:** {strip_html(s['bigText'])}")
     for b in s.get("bullets", []):
         lines.append(f"- {strip_html(b)}")
+    for ph in s.get("phases", []):
+        items = "; ".join(("\u25cf " if it.get("al") else "\u25cb ") + strip_html(it["t"]) for it in ph["items"])
+        lines.append(f"- **{ph['name']}:** {items}")
+    if s.get("output"):
+        lines.append(f"- **Output:** {strip_html(s['output'])}")
+    if s.get("center"):
+        lines.append(f"- **Center:** {strip_html(s['center'])}")
+    for b in s.get("branches", []):
+        lines.append(f"- {'\u25cf' if b.get('al') else '\u25cb'} **{strip_html(b['t'])}:** {strip_html(b.get('d', ''))}"
+                     + (f" ({strip_html(b['proof'])})" if b.get("proof") else ""))
+    if s.get("only"):
+        lines.append(f"- **Only XR:** {' · '.join(s['only'])}")
+    if s.get("legend"):
+        lines.append(f"- *Legend:* \u25cf {s['legend'][0]} · \u25cb {s['legend'][1]}")
     for q in s.get("quotes", []):
         lines.append(f"- \u201c{q['t']}\u201d ({q['who']}, {q['src']}, {q['year']})")
     if s.get("credit"):
@@ -181,14 +206,22 @@ def write_md(p, pool):
                 "| # | Act | Slide | Tags | Pace | Sec | Clock |", "|---|---|---|---|---|---|---|"]
         clock, n = talk.get("cover_sec", 0), 1
         out.append(f"| 0 | Cover | {strip_html(talk['title'])} | [{key.upper()}] | FLASH | {talk.get('cover_sec', 0)} | {fmt(clock)} |")
-        for act in talk["acts"]:
-            for sid in [act["lesson"], *act["cases"]]:
+        for act in [{"year": "INTRO", "lesson": None, "cases": talk.get("intro", [])}, *talk["acts"]]:
+            for sid in [x for x in [act["lesson"], *act["cases"]] if x]:
                 s = pool[sid]
                 clock += s["sec"]
                 title = strip_html(s.get("title") or s.get("bigText"))
                 out.append(f"| {n} | {act['year']} | {title} (`{sid}`) | [{s['talks']}] | {s['pace']} | {s['sec']} | {fmt(clock)} |")
                 n += 1
         out += ["", f"Take-home line: **{strip_html(talk['takeaway'])}**", ""]
+    parked = [s for s in p["pool"] if s.get("parked")]
+    if parked:
+        out += ["## Parked slides (in the pool, restorable)", "",
+                "Cut for time or superseded. To restore one, add its id back to a talk's act (or `intro`) list in `talk/pitch.json`.", ""]
+        for s in parked:
+            idle = [k.upper() for k, t in p["talks"].items() if k.upper() in s["talks"] and s["id"] not in set(talk_ids(t))]
+            out.append(f"- `{s['id']}` [{s['talks']}] {s['sec']}s, unused in Talk {' and '.join(idle) or '(none)'}: {s['parked']}")
+        out.append("")
     out += ["## Shared slide pool", ""]
     for s in p["pool"]:
         title = strip_html(s.get("title") or s.get("bigText"))
@@ -210,7 +243,8 @@ def main():
         rt = running_time(talk, pool)
         n = sum(1 for _ in talk_ids(talk))
         flags = "" if TARGET_MIN <= rt <= TARGET_MAX else f"  <-- outside {fmt(TARGET_MIN)}-{fmt(TARGET_MAX)} target"
-        print(f"Talk {key.upper()}: {n} slides + cover, {fmt(rt)} of {fmt(SLOT_SEC)}{flags}")
+        spoken = sum(spoken_sec(pool[sid]) for sid in talk_ids(talk))
+        print(f"Talk {key.upper()}: {n} slides + cover, {fmt(rt)} of {fmt(SLOT_SEC)}{flags}; notes read aloud ~{fmt(spoken)} at 150 wpm")
     for s in p["pool"]:
         if spoken_sec(s) > s["sec"] * 1.1:
             print(f"WARN: {s['id']} notes take ~{spoken_sec(s):.0f}s to say but the slide is budgeted {s['sec']}s")
