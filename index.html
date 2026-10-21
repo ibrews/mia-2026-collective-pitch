@@ -93,9 +93,12 @@ const PITCH = /* PITCH-JSON START */
       "carol-origin",
       "carol-what",
       "carol-inside",
+      "carol-how",
+      "carol-belle",
       "carol-quote",
       "carol-proved",
-      "carol-afterlife"
+      "carol-afterlife",
+      "replay-line"
      ]
     },
     {
@@ -104,21 +107,40 @@ const PITCH = /* PITCH-JSON START */
      "lesson": "act-a2-film",
      "cases": [
       "xr-pipeline",
+      "phase-tour",
+      "camera-toy",
       "rsc",
+      "rsc-compare",
+      "normal-film",
       "xr-product"
      ]
     },
     {
      "year": "ACT III",
+     "accent": "rose",
+     "lesson": "act-a2",
+     "cases": [
+      "heavenue",
+      "lincoln",
+      "fs-flash",
+      "joby"
+     ]
+    },
+    {
+     "year": "ACT IV",
      "accent": "teal",
      "lesson": "ask",
      "cases": [
       "ask-ip",
       "ask-copro",
+      "ask-first",
       "a-takehome"
      ]
     }
-   ]
+   ],
+   "cover_spoken": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.",
+   "target_min": 15,
+   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 15:25. 12 min (12:00): cut carol-how (45s), carol-belle (15s), replay-line (35s), camera-toy (40s), normal-film (15s), heavenue (35s), lincoln (10s), fs-flash (10s). 10 min (10:00): cut joby (10s), act-a2 (10s), intro-lens (30s), carol-inside (10s), carol-quote (15s), phase-tour (45s). 8 min (7:40): cut rsc-compare (30s), ask-first (30s), carol-origin (40s), rsc (40s)."
   },
   "b": {
    "title": "Engine Mastery\n× Craft",
@@ -148,7 +170,9 @@ const PITCH = /* PITCH-JSON START */
      "lesson": "act-b2",
      "cases": [
       "fs-dwell",
-      "fs-dbox"
+      "fs-build",
+      "fs-dbox",
+      "joby"
      ]
     },
     {
@@ -157,8 +181,12 @@ const PITCH = /* PITCH-JSON START */
      "lesson": "act-b3",
      "cases": [
       "carol-what",
+      "carol-belle",
       "carol-quote",
-      "rsc"
+      "rsc",
+      "rsc-compare",
+      "xr-pipeline",
+      "camera-toy"
      ]
     },
     {
@@ -172,7 +200,10 @@ const PITCH = /* PITCH-JSON START */
       "b-takehome"
      ]
     }
-   ]
+   ],
+   "cover_spoken": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.",
+   "target_min": 13,
+   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 12:20. 12 min (11:55): cut pico (10s), fs-build (15s). 10 min (9:35): cut fs-dbox (10s), joby (10s), carol-belle (15s), camera-toy (40s), intro-lens (30s), teach (35s). 8 min (7:40): cut carol-quote (15s), rsc-compare (30s), ask-first (30s), rsc (40s)."
   }
  },
  "pool": [
@@ -215,7 +246,8 @@ const PITCH = /* PITCH-JSON START */
     "Authorized Unreal Engine instructor since 2020: 300+ classes, 40+ courses",
     "16 years in XR · 10 years of Agile Lens · 10 years in Unreal · 100+ experiences built"
    ],
-   "notes": "Pause. Let him walk in, punch the block and put the headset on: this is me. I'm Alex Coulombe. I trained as an architect, with a minor in drama, and then a headset fell out of the sky. [click] I founded and run Agile Lens, an immersive studio in New York. [click] I've taught Unreal Engine as an authorized instructor since 2020. [click] Sixteen years in XR, ten years of Agile Lens, ten in Unreal, and more than a hundred experiences built. ALEX TO CONFIRM: this is the standard 8-bit intro from the PMRE 2026, FMX 2026 and HarvardXR decks (three clicks: bio, power-up, stat tallies). For this deck the Unreal badge block and Unreal-logo fireballs became a pixel clapperboard and stars, because the MIA deck carries no Epic logos; the stats are the ones you confirmed on 2026-10-21 for PMRE. 'Founder &amp; CEO' merges PMRE's 'Founder' with this deck's 'CEO'."
+   "notes": "Pause. Let him walk in and grab the headset. This is me. I'm Alex Coulombe. I trained as an architect, with a minor in drama, and then a headset fell out of the sky. [click] I founded Agile Lens, an immersive studio in New York. [click] I've taught Unreal Engine as an authorized instructor since 2020. [click] Sixteen years in XR. Ten years of Agile Lens. More than a hundred experiences built. ALEX TO CONFIRM: this is the standard 8-bit intro from the PMRE 2026, FMX 2026 and HarvardXR decks (three clicks: bio, power-up, stat tallies). For this deck the Unreal badge block and Unreal-logo fireballs became a pixel clapperboard and stars, because the MIA deck carries no Epic logos; the stats are the ones you confirmed on 2026-10-21 for PMRE. 'Founder &amp; CEO' merges PMRE's 'Founder' with this deck's 'CEO'.",
+   "trim": "CORE"
   },
   {
    "id": "intro-lens",
@@ -255,7 +287,8 @@ const PITCH = /* PITCH-JSON START */
     "Immersive design studio, New York City, est. 2016 · bootstrapped · XR specialists",
     "Orbit: Royal Shakespeare Company, Kennedy Center, Royal Caribbean, Lincoln Center, Four Seasons, CBS, Waldorf Astoria, Dell, Samsung, Actors Theatre of Louisville, Arlekin Players, Fisher Dachs Associates"
    ],
-   "notes": "Agile Lens is an immersive design studio in New York. These are some of the people we've built for: theaters, concert halls, cruise lines, hotels and brands. [click] Take the names away. [click] Go back ten years, [click] and it was one person with a headset, [click] [click] in 2016. We're still independent and bootstrapped, and XR is all we do. ALEX TO CONFIRM: the HarvardXR monocle slide, five clicks after the orbit (set lens.steps to 0 in talk/pitch.json for the orbit only). Kennedy Center, CBS, Waldorf Astoria and Dell come from the PMRE/HarvardXR orbit and were not re-checked for this deck; Actors Theatre of Louisville, Arlekin Players and Fisher Dachs Associates replace Disney, Joby Aviation and Google, which this deck does not name as clients."
+   "notes": "Agile Lens builds for theaters, concert halls, cruise lines, hotels and brands. A few of them are going around this circle. [click] Take the names away. [click] Go back ten years. [click] It was one person with a headset. [click] [click] 2016. We're still independent, we're bootstrapped, and XR is all we do. Here's what ten years taught us about old stories. Theater people, mostly, who learned the engines. ALEX TO CONFIRM: the HarvardXR monocle slide, five clicks after the orbit (set lens.steps to 0 in talk/pitch.json for the orbit only). Kennedy Center, CBS, Waldorf Astoria and Dell come from the PMRE/HarvardXR orbit and were not re-checked for this deck; Actors Theatre of Louisville, Arlekin Players and Fisher Dachs Associates replace Disney, Joby Aviation and Google, which this deck does not name as clients.",
+   "trim": "TRIM-2"
   },
   {
    "id": "a-hook",
@@ -270,7 +303,8 @@ const PITCH = /* PITCH-JSON START */
     "Classic IP needs new audiences and new revenue beyond the stage and the screen."
    ],
    "tags": "IP value &middot; Audience development &middot; New revenue",
-   "notes": "Everyone in this room knows this math. You have a story people love. But a run ends, a release window closes, a theater only has so many seats, and the audience that grew up with the story is getting older. The question isn't whether the story still works. It's where the next audience meets it, and who pays for that meeting. We spent five winters working on that question with one very old story."
+   "notes": "Let me start with a problem everyone here knows. You have a story people love. But the run ends. The release window closes. The theater has only so many seats. And the audience that grew up with that story is getting older. So the question isn't whether the story still works. It does. The question is where the next audience meets it, and who pays for that meeting. Hands up if you've had that conversation this year. [pause] We spent five winters on that question, with one very old story. It's a story you all know.",
+   "trim": "CORE"
   },
   {
    "id": "who",
@@ -283,7 +317,8 @@ const PITCH = /* PITCH-JSON START */
    "bigCaption": "New York &middot; Real-time studio &middot; Theater, culture and luxury brands",
    "notes": "I'm Alex Coulombe. Agile Lens is a New York immersive studio: more than a hundred spatial experiences shipped since 2016, all built in real time.",
    "bigScale": 0.8,
-   "parked": "Superseded on 2026-10-21 by the standard intro (intro-alex + intro-lens), which carries the same 100+ experiences / since-2016 facts"
+   "parked": "Superseded by the standard intro (intro-alex + intro-lens)",
+   "trim": "TRIM-1"
   },
   {
    "id": "carol-origin",
@@ -298,7 +333,8 @@ const PITCH = /* PITCH-JSON START */
     "We came back with a bigger idea: a full live production of <i>A Christmas Carol</i>, in VR.",
     "They said yes, then gave us their blessing to remount it every year."
    ],
-   "notes": "In 2021, Actors Theatre of Louisville, whose stage production was adapted and directed by Robert Barry Fleming, asked us for production assets. Digital characters, some video. Not a VR show. We did the research and came back with a bigger idea: if we're building the sets, the characters and the costumes anyway, why not stage the whole thing, live, in virtual reality? They said yes, and then gave us their blessing to remount it every year. That's the part I want producers to hear: the theater didn't hand off its story. It extended it, with a partner, into a new format."
+   "notes": "In 2021, Actors Theatre of Louisville called us. Their stage production of A Christmas Carol was adapted and directed by Robert Barry Fleming. They wanted production assets: some digital characters, some video. Not a VR show. We came back with a bigger idea. If we're building the sets, the characters and the costumes anyway, why not stage the whole thing, live, in virtual reality? They said yes. Then they gave us their blessing to remount it every year. The theater didn't hand off its story. It extended it, with a partner, into a new format.",
+   "trim": "TRIM-3"
   },
   {
    "id": "carol-what",
@@ -313,7 +349,8 @@ const PITCH = /* PITCH-JSON START */
     "Fully remote: actors, crew and audience each join from wherever they are",
     "Five holiday seasons, 2021–2025 &middot; The final run, December 2025: 15 performances"
    ],
-   "notes": "Here's what it was. A Christmas Carol, performed live inside virtual reality. Two live actors, Ari Tarr and Debbie Deer, switch between every role, performing in Unreal Engine 5 as MetaHumans, with Quest Pro face tracking, on the streets of a virtual Victorian London, directed for VR by David Gochfeld. It's fully remote: the actors, the crew and the audience are all in different places, and they share one stage. Sixty to seventy-five minutes, a curtain time, a house. We ran it for five holiday seasons, 2021 through 2025. The last run, in December 2025, had fifteen performances, plus a Christmas Eve replay streamathon."
+   "notes": "Here's what we made. A Christmas Carol, performed live, inside virtual reality. Two actors, Ari Tarr and Debbie Deer, play every role. They perform in Unreal Engine as MetaHumans, with face and full-body tracking, on the streets of a virtual Victorian London. David Gochfeld directed it for VR. The actors, the crew and the audience are all in different places, and they share one stage. About an hour, a curtain time, a house. We ran it five holiday seasons, 2021 through 2025. The number to remember: the final run, December 2025, played fifteen performances, plus a Christmas Eve replay streamathon. And every one of those nights was a real performance. If an actor improvised, the audience saw it.",
+   "trim": "CORE"
   },
   {
    "id": "carol-inside",
@@ -322,10 +359,11 @@ const PITCH = /* PITCH-JSON START */
    "sec": 10,
    "layout": "full",
    "img": "media/video/carol-trailer-dance.mp4",
-   "notes": "This is the audience's view: not row M of a theater, but inside the room, with the characters. Those little lights are the audience.",
+   "notes": "This is the audience's view. Not row M. Inside the room, with the characters. Those little lights are the audience.",
    "poster": "media/video/carol-trailer-dance.jpg",
    "alt": "Inside A Christmas Carol VR: live-performed characters dance at Fezziwig’s party while the audience, shown as small glowing lights, watches from among them",
-   "credit": "<i>A Christmas Carol VR</i> 2025 trailer &middot; Agile Lens"
+   "credit": "<i>A Christmas Carol VR</i> 2025 trailer &middot; Agile Lens",
+   "trim": "TRIM-2"
   },
   {
    "id": "carol-how",
@@ -340,8 +378,8 @@ const PITCH = /* PITCH-JSON START */
     "AI Dickens, a digital host voiced with the lead actor’s permission, welcomes guests before curtain",
     "After the show, a live Q&amp;A with the actors"
    ],
-   "notes": "What did it feel like? Intimate. Scrooge can turn and look you in the eye, because the actor can actually see you. Before curtain, guests are welcomed by AI Dickens, a digital host built with our lead actor's voice, cloned with his permission and paid for, so the human performer can save his energy for the show. And afterwards the actors stay for a live Q&A. The audience isn't watching a recording of a play. They're part of a night that only happens once.",
-   "parked": "Cut for time on 2026-10-21 (intro + motion slides added); eye contact and presence now land in xr-product"
+   "notes": "So what did it feel like? Close. Scrooge can turn and look you in the eye, because the actor can actually see you. That changes how people watch. Before curtain, a digital host, AI Dickens, welcomes everyone. We built his voice from our lead actor's voice, with his permission, and we paid him for it. That lets the human save his energy for the show. After the show, the actors stay for a live Q and A. Nobody is watching a recording of a play. They're part of a night that happens once.",
+   "trim": "TRIM-1"
   },
   {
    "id": "carol-quote",
@@ -413,7 +451,21 @@ const PITCH = /* PITCH-JSON START */
      "year": "2025"
     }
    ],
-   "notes": "Let it rain for a moment. Five winters of audience comments and press, as people wrote them. In its final year the show was a Raindance Immersive 2025 nominee for Best Immersive Theatre."
+   "notes": "Let it rain for a second. Five winters of audience comments and press, word for word. [pause] In the final year, the show was a Raindance Immersive 2025 nominee for Best Immersive Theatre.",
+   "trim": "TRIM-2"
+  },
+  {
+   "talks": "A+B",
+   "pace": "FLASH",
+   "sec": 15,
+   "layout": "full",
+   "img": "media/video/carol-belle.mp4",
+   "poster": "media/video/carol-belle.jpg",
+   "alt": "Close-up from A Christmas Carol VR: Scrooge reaches toward his younger self, both digital humans driven by live performance capture",
+   "credit": "<i>A Christmas Carol VR</i> &middot; Agile Lens &middot; performed live by Ari Tarr and Debbie Deer &middot; adapted by Robert Barry Fleming",
+   "id": "carol-belle",
+   "notes": "Look at the hands and the faces. That's live performance capture, not animation. Every gesture you see came from an actor, in real time, on the night. ALEX TO CONFIRM: clip cut from your local copy of 'A Christmas Carol VR -- Scrooge Remembers Belle' (~/Downloads), 0:40-0:50, muted; confirm it is cleared for a public screen. Ari Tarr and Debbie Deer switch roles, so the credit does not assign roles.",
+   "trim": "TRIM-1"
   },
   {
    "id": "carol-proved",
@@ -427,8 +479,9 @@ const PITCH = /* PITCH-JSON START */
     "A live show without a building: the house can be anywhere",
     "The value outlived the run: characters, sets, an AI host and live-performance tools we reuse"
    ],
-   "notes": "So what did five winters prove? One: familiarity is an asset. A story people already love lowers the barrier to trying something new. Two: the house can be anywhere. A live show doesn't need a building, so the audience isn't limited to who can get to one. Three: the value wasn't only the show. The characters, the sets, the AI host and the live-performance pipeline carried into our next projects. And I'll be candid about what it didn't prove on its own: we made work that taught us a lot and still needed a different funding and distribution model. A strong experience needs a partner who understands how its audience finds it.",
-   "subtitle": "Five winters, three lessons"
+   "notes": "What did five winters prove? One: familiarity is an asset. A story people already love makes a new format easier to try. Two: the house can be anywhere. A live show doesn't need a building, so the audience isn't limited to who can get to one. Three: the value outlived the show. The characters, the sets, the AI host and the live tools carried into our next projects. And I'll be honest about what it didn't prove. The work was strong, and it still needed a different funding and distribution model. It needed a partner who knows how its audience finds it. Those three lessons apply to any classic IP.",
+   "subtitle": "Five winters, three lessons",
+   "trim": "CORE"
   },
   {
    "id": "carol-afterlife",
@@ -444,10 +497,56 @@ const PITCH = /* PITCH-JSON START */
     "A cinematographer build shoots new camera coverage of a show that’s already over: see it in our demo area",
     "Back this December: the full live show as a replay, not a video, that audiences join together from headsets. Dates to be announced."
    ],
-   "notes": "We closed the live run in December 2025, after five seasons. But for this room, here's the part that matters most. We recorded the performances with everything in them: the motion capture, the cues, the spatial audio. You can replay a show from any seat in the house and scrub it like dailies, and a cinematographer build lets a director shoot new coverage of a show that's already over. It's in our demo area today. And this December, Carol comes back as a full replay of the live show, not a video: audiences join it together from headsets, with other audience members, just like before. Dates aren't announced yet. ALEX TO CONFIRM: no dates, venue or tickets for the December replay are announced, so give none on stage. The old fourth bullet (RSC rehearsal R&D and Stage Presence toolkit) moved to the xr-pipeline slide.",
+   "notes": "We closed the live run in December 2025. But for this room, this is the part that matters. We recorded the performances as data: the motion capture, the cues, the spatial audio. Not video. So you can replay a show from any seat and scrub it like dailies. A cinematographer build lets a director shoot new coverage of a show that's already over. It's in our demo area today. And this December, Carol comes back as a full replay of the live show. Audiences join it together from headsets, just like before. Dates aren't announced yet. ALEX TO CONFIRM: no dates, venue or tickets for the December replay are announced, so give none on stage. The old fourth bullet (RSC rehearsal R&D and Stage Presence toolkit) moved to the xr-pipeline slide.",
    "poster": "media/video/carol-replay-marley.jpg",
    "alt": "A recorded performance played back in the replay system: Marley’s ghost confronts Scrooge, seen from a free camera with the replay controls on screen",
-   "credit": "Replay recording of a performance &middot; Agile Lens (Yu-Jun Yeh)"
+   "credit": "Replay recording of a performance &middot; Agile Lens (Yu-Jun Yeh)",
+   "trim": "CORE"
+  },
+  {
+   "talks": "A",
+   "pace": "DWELL",
+   "sec": 35,
+   "layout": "replay-line",
+   "title": "One Performance, Four Lives",
+   "subtitle": "Click a stop, or drag the playhead",
+   "stations": [
+    {
+     "when": "December 2025",
+     "short": "Live",
+     "t": "Live in VR",
+     "d": "Actors and audience together: 15 performances",
+     "img": "media/carol/xmas-carol.jpg",
+     "alt": "A Christmas Carol VR, live"
+    },
+    {
+     "when": "Every show",
+     "short": "Recorded",
+     "t": "Recorded as data",
+     "d": "Motion capture, cues and spatial audio. Not video.",
+     "img": "media/carol/s62-00-c5d5db35.png",
+     "alt": "A Christmas Carol VR scene"
+    },
+    {
+     "when": "After the run",
+     "short": "Reshot",
+     "t": "Replayed and reshot",
+     "d": "Any seat in the house; new camera coverage",
+     "img": "media/video/carol-replay-marley.jpg",
+     "alt": "The replay system with a free camera on Marley and Scrooge"
+    },
+    {
+     "when": "December 2026",
+     "short": "Together again",
+     "t": "Joined together",
+     "d": "Attendees join the replay from headsets. Dates TBA.",
+     "img": "media/carol/dancing.jpg",
+     "alt": "Fezziwig’s party in A Christmas Carol VR"
+    }
+   ],
+   "id": "replay-line",
+   "notes": "So here's one performance and its four lives. [click] Live: actors and audience together, December 2025. [click] Recorded as data, not as video. [click] Replayed from any seat, and reshot with new camera coverage. [click] And this December, audiences come back and watch it together again. One night of work, four ways to use it. For a producer, that last step is the interesting one: the same performance can play again, to a new house, every year. ALEX TO CONFIRM: December 2026 has no announced dates or tickets; give none. Station 2's still is an existing Carol image standing in for 'recorded as data'.",
+   "trim": "TRIM-1"
   },
   {
    "id": "act-a2-film",
@@ -457,12 +556,12 @@ const PITCH = /* PITCH-JSON START */
    "title": "Two Ways XR\nWorks for Film.",
    "short": "TWO WAYS IN",
    "tagline": "Inside the pipeline, where the result is still a normal film.<br>Or as the product: a new edition that takes the story further.",
-   "notes": "So what does this mean for film and TV? Two ways in: one the audience never sees, and one that is the show."
+   "notes": "So what does this mean for film and TV? Two ways in. One the audience never sees. And one that is the show.",
+   "trim": "CORE"
   },
   {
    "id": "xr-pipeline",
    "talks": "A+B",
-   "parked": "Not in Talk B's running order (time); to use it there, add it to ACT III",
    "pace": "DWELL",
    "sec": 55,
    "layout": "pipeline",
@@ -527,14 +626,77 @@ const PITCH = /* PITCH-JSON START */
     "Agile Lens has built this",
     "What XR can do"
    ],
-   "notes": "Most of you will never sell a ticket to a headset, and you don't have to. Here's XR inside a normal pipeline, where the result is still a film. In pre-production: scout a scanned location from anywhere, put a virtual camera in it, try lenses, lights and blocking at full scale, and pull stills into the shot list. On set: rehearse actors in the virtual space, as we did with the Royal Shakespeare Company, capture performances onto digital humans, and see real-time previs. And in post, because we recorded our Christmas Carol performances as data, not video, a director can shoot new coverage after the show is over. The filled dots are things we've built; the hollow one, XR can do today. The audience never wears a headset. ALEX TO CONFIRM: 'Try lenses, lights and blocking' and 'Pull stills into the shot list' credit the UOXR film kit (grabbable camera with 24-85 mm lenses and masks, monitor, film lights, A/B/C marks, Take still), built on 2026-10-21 and not yet merged: call it a prototype, and make those two dots hollow (al: false) if it is not in the demo area. Scouting cites the RSC's 1:1 Swan scan; capture cites Carol's MetaHumans; post cites the Carol replay and cinematographer builds. 'Real-time previs and virtual sets' is a general XR capability, not an Agile Lens credit."
+   "notes": "Most of you will never sell a ticket to a headset, and you don't have to. Here's XR inside a normal pipeline, where the result is still a film. Pre-production: scout a scanned location from anywhere, put a virtual camera in it, try lenses, lights and blocking at full scale, and pull stills into the shot list. Production: rehearse actors in the virtual space, the way we did with the Royal Shakespeare Company, capture performances onto digital humans, and see real-time previs. Post: because we recorded our Christmas Carol performances as data, a director can shoot new coverage after the show is over. Filled dots are things we've built. The hollow one, XR can do today. The audience never wears a headset. Think of it as better preparation, not a new format. ALEX TO CONFIRM: 'Try lenses, lights and blocking' and 'Pull stills into the shot list' credit the UOXR film kit (grabbable camera with 24-85 mm lenses and masks, monitor, film lights, A/B/C marks, Take still), built on 2026-10-21 and not yet merged: call it a prototype, and make those two dots hollow (al: false) if it is not in the demo area. Scouting cites the RSC's 1:1 Swan scan; capture cites Carol's MetaHumans; post cites the Carol replay and cinematographer builds. 'Real-time previs and virtual sets' is a general XR capability, not an Agile Lens credit.",
+   "trim": "CORE"
+  },
+  {
+   "talks": "A",
+   "pace": "DWELL",
+   "sec": 45,
+   "layout": "phase-tour",
+   "title": "What the Crew Sees",
+   "subtitle": "Click a phase. None of this ends up on screen.",
+   "phases": [
+    {
+     "name": "Pre-production",
+     "media": "media/rsc/virtual-swan-script.jpg",
+     "alt": "The 1:1 virtual Swan Theatre, seen from the stage, with a script panel and cast list floating in the space",
+     "credit": "Virtual Swan Theatre &middot; RSC rehearsal R&amp;D &middot; Agile Lens",
+     "points": [
+      "Walk a scanned location from anywhere",
+      "Try camera, lens and light at full scale",
+      "Pull stills into the shot list"
+     ],
+     "proof": "Agile Lens: a 1:1 scan of the RSC’s Swan Theatre"
+    },
+    {
+     "name": "Production",
+     "media": "media/rsc/rehearsal-room.jpg",
+     "alt": "Three actors in headsets rehearse on a studio floor while the script is projected behind them",
+     "credit": "RSC rehearsal R&amp;D, with XR Network+ &middot; Agile Lens",
+     "points": [
+      "Rehearse actors inside the virtual set",
+      "Capture performance onto digital humans",
+      "See real-time previs on set"
+     ],
+     "proof": "Agile Lens: virtual rehearsal with the RSC, 2024–2025"
+    },
+    {
+     "name": "Post-production",
+     "media": "media/video/carol-replay-marley.mp4",
+     "poster": "media/video/carol-replay-marley.jpg",
+     "alt": "A recorded Christmas Carol performance replayed with a free camera",
+     "credit": "Replay recording &middot; Agile Lens (Yu-Jun Yeh)",
+     "points": [
+      "Shoot new coverage from a recording",
+      "Reframe with a virtual camera",
+      "Review it like dailies"
+     ],
+     "proof": "Agile Lens: A Christmas Carol VR replay and cinematographer builds"
+    }
+   ],
+   "id": "phase-tour",
+   "notes": "Let me show you what that looks like. Pre-production first. This is the Swan Theatre in Stratford, scanned at full scale. You can walk it from anywhere, put a camera in it, and plan the day before anyone travels. [click] Production. Actors in headsets, rehearsing inside that virtual Swan, with the script right there. The director follows from a laptop. [click] Post. A Christmas Carol performance, replayed after the fact. That's a free camera moving through a scene that's already over. None of this ends up on screen. It just makes the film easier to make. Every one of those is something a crew already does by hand. ALEX TO CONFIRM: the Pre and Production stills are from the HarvardXR keynote's RSC folder (virtual Swan with script panel, rehearsal room); confirm they are cleared like the RSC clip already in this deck.",
+   "trim": "TRIM-2"
+  },
+  {
+   "talks": "A+B",
+   "pace": "DWELL",
+   "sec": 40,
+   "layout": "camera-toy",
+   "title": "Find the Shot Before You Fly",
+   "subtitle": "Drag the camera. Pick a lens. Take the shot.",
+   "badge": "Concept demo, built for this talk",
+   "id": "camera-toy",
+   "notes": "This is a concept demo, built for this talk, so you can try the idea without a headset. A simple set: two actors, a lamp, a backdrop. I can drag the camera anywhere on the plan. [click] Switch to an 85 millimeter lens, and the framing tightens. [click] Put on a 2.39 mask, the way the film will be shown. [click] Now take three shots: a wide, a two-shot, a close-up. That's a shot list, made before anyone flies to the location. In the headset, you do the same thing standing inside the scan. ALEX TO CONFIRM: this browser demo is a stand-in for the UOXR film kit prototype (2026-10-21, unmerged); say 'concept demo' and 'prototype', never 'product'. It needs WebGL; if the venue laptop lacks it, the slide says so and you skip it.",
+   "trim": "TRIM-1"
   },
   {
    "id": "xr-product",
    "talks": "A+B",
-   "parked": "Not in Talk B's running order (time); to use it there, add it to ACT III",
+   "parked": "Not in Talk B’s running order (time); to use it there, add it to ACT III",
    "pace": "DWELL",
-   "sec": 55,
+   "sec": 65,
    "layout": "ip-web",
    "title": "XR as the Product",
    "subtitle": "One story, more doors, each built on what only XR does",
@@ -545,30 +707,46 @@ const PITCH = /* PITCH-JSON START */
      "t": "Live in VR",
      "d": "Actors perform live;\nthe audience stands inside",
      "al": true,
-     "proof": "Carol, five seasons, 2021–2025"
+     "proof": "Carol, five seasons, 2021–2025",
+     "img": "media/carol/xmas-carol.jpg",
+     "alt": "The live show: actors and audience share Victorian London",
+     "doorCap": "Five seasons, 2021–2025"
     },
     {
      "t": "Replay, together",
      "d": "The full live show replayed;\nattendees join from headsets",
      "al": true,
-     "proof": "Carol, this December · dates TBA"
+     "proof": "Carol, this December · dates TBA",
+     "img": "media/video/carol-replay-marley.mp4",
+     "alt": "The replay: a recorded performance, explored from any position",
+     "doorCap": "Back this December · dates TBA",
+     "poster": "media/video/carol-replay-marley.jpg"
     },
     {
      "t": "Trailer and clips",
      "d": "Flat video that sells it\non every screen",
      "al": true,
-     "proof": "Carol 2025 trailer"
+     "proof": "Carol 2025 trailer",
+     "img": "media/video/carol-trailer-dance.mp4",
+     "alt": "The 2025 trailer: a flat clip of the VR show",
+     "doorCap": "Flat video, every screen",
+     "poster": "media/video/carol-trailer-dance.jpg"
     },
     {
      "t": "Phone & web teaser",
      "d": "A taste on any device,\nno headset needed",
-     "al": false
+     "al": false,
+     "img": "media/carol/dancing.jpg",
+     "alt": "A still from the show, standing in for a phone-sized teaser",
+     "doorCap": "An option, not a Carol deliverable"
     },
     {
      "t": "Festival circuit",
      "d": "Immersive sections at SXSW, Venice,\nCannes, Tribeca: a second audience",
      "al": false,
-     "proof": "Carol: Raindance Immersive 2025 nominee"
+     "proof": "Carol: Raindance Immersive 2025 nominee",
+     "doorText": "SXSW · Venice · Cannes · Tribeca",
+     "doorCap": "Immersive sections: an opportunity, not a claim"
     }
    ],
    "only": [
@@ -581,7 +759,42 @@ const PITCH = /* PITCH-JSON START */
     "Done with Carol",
     "An open opportunity"
    ],
-   "notes": "The other door: XR as the product. Take one story, A Christmas Carol. The live VR show is the adaptation: presence, an actor who looks you in the eye, an audience that shares the room. The replay is its second life: this December the show comes back as a full replay of the live performance, not a video, that people join together from headsets. Flat trailers and clips sell it on every screen, and a phone or web teaser gives anyone a taste. And an immersive edition opens a door a flat release can't: the festival circuit. SXSW, Venice, Cannes and Tribeca all program immersive work. That's a second audience and a prestige path for the same story. Carol was a Raindance Immersive nominee last year. ALEX TO CONFIRM: festivals are an opportunity, not a claim; nothing here says Agile Lens screened at or was selected by SXSW, Venice, Cannes or Tribeca, and the only approved festival fact is Raindance Immersive 2025 nominee, Best Immersive Theatre. Add a specific program or past inclusion only if you want to name one. The December replay has no announced dates or tickets: give none. The phone/web teaser is an XR option, not a Carol deliverable."
+   "notes": "The other door: XR as the product. Take one story, A Christmas Carol. [click] The live VR show is the adaptation. Presence. An actor who looks you in the eye. An audience that shares the room. [click] The replay is its second life. This December the show comes back as a full replay of the live performance, not a video, and people join it together from headsets. [click] Flat trailers and clips sell it on every screen. [click] A phone or web teaser gives anyone a taste, no headset needed. [click] And an immersive edition opens a door a flat release can't: the festival circuit. SXSW, Venice, Cannes and Tribeca all program immersive work. That's a second audience and a prestige path for the same story. Carol was a Raindance Immersive nominee last year. [click] One story, five doors. Every one of those doors uses the same characters, sets and performances. ALEX TO CONFIRM: festivals are an opportunity, not a claim; nothing here says Agile Lens screened at or was selected by SXSW, Venice, Cannes or Tribeca, and the only approved festival fact is Raindance Immersive 2025 nominee, Best Immersive Theatre. Add a specific program or past inclusion only if you want to name one. The December replay has no announced dates or tickets: give none. The phone/web teaser is an XR option, not a Carol deliverable.",
+   "trim": "CORE"
+  },
+  {
+   "talks": "A",
+   "pace": "FLASH",
+   "sec": 15,
+   "layout": "reel",
+   "title": "What Stays Normal",
+   "subtitle": "The audience gets a flat film. Any screen, any cinema.",
+   "frames": [
+    {
+     "img": "media/carol/dancing.jpg",
+     "alt": "Fezziwig’s party"
+    },
+    {
+     "img": "media/carol/marley.png",
+     "alt": "Marley’s ghost"
+    },
+    {
+     "img": "media/carol/ScroogeDickens.jpg",
+     "alt": "Scrooge and Dickens in a London street"
+    },
+    {
+     "img": "media/video/carol-belle.jpg",
+     "alt": "Scrooge and his younger self"
+    },
+    {
+     "img": "media/carol/future.jpg",
+     "alt": "The Ghost of Christmas Yet to Come"
+    }
+   ],
+   "credit": "<i>A Christmas Carol VR</i> &middot; Agile Lens &middot; performed live by Ari Tarr and Debbie Deer &middot; adapted by Robert Barry Fleming",
+   "id": "normal-film",
+   "notes": "And whichever door you pick, this part stays normal. The audience gets a flat frame, on any screen, in any cinema. The headset is for the people making it. ALEX TO CONFIRM: frames are Carol VR stills, not film frames; the slide says 'what the audience gets', not that these came out of a film.",
+   "trim": "TRIM-1"
   },
   {
    "id": "act-a2",
@@ -590,9 +803,9 @@ const PITCH = /* PITCH-JSON START */
    "sec": 10,
    "title": "The Same Model,\nOther Stages.",
    "short": "OTHER STAGES",
-   "tagline": "Theater, culture and brands that need audiences to step inside.",
-   "notes": "Carol is the clearest example. It isn't the only one.",
-   "parked": "Replaced on 2026-10-21 by act-a2-film (the two-ways-in act lesson)"
+   "tagline": "Live performance, venues, homes and flights: audiences stepping inside.",
+   "notes": "Carol is our clearest example. It isn't the only one. Four quick ones. Each one is a different audience stepping inside.",
+   "trim": "TRIM-1"
   },
   {
    "id": "rsc",
@@ -607,22 +820,60 @@ const PITCH = /* PITCH-JSON START */
     "Built with theater people, for theater people: the script stays in your hand, like paper",
     "An R&amp;D grant with XR Network+, 2024–2025: tested with drama students, shown in Stratford"
    ],
-   "notes": "With the Royal Shakespeare Company, Royal Central School and NYU's WLab, through an R&D grant with XR Network+, we developed virtual rehearsal tools: a one-to-one scan of the Swan Theatre in Stratford that actors can rehearse inside, while directors follow from a laptop. We tried every clever way to float a script in space. Every actor wanted the same thing: a script they could hold, and put down on the floor. Respect the craft, and the technology disappears.",
+   "notes": "With the Royal Shakespeare Company, Royal Central School and NYU's WLab, through an R and D grant with XR Network+, we developed virtual rehearsal tools. A one-to-one scan of the Swan Theatre in Stratford that actors rehearse inside, while directors follow from a laptop. We tried every clever way to float a script in space. Every actor wanted the same thing: a script they could hold, and put down on the floor. Respect the craft, and the technology disappears. And the director never has to put on a headset to run the room.",
    "poster": "media/video/rsc-rehearsal-room.jpg",
    "alt": "Actors in headsets rehearse in a studio while a monitor shows them inside the virtual Swan Theatre; a director follows on a tablet",
-   "credit": "XR Network+ RSC Challenge 2025 film &middot; Agile Lens"
+   "credit": "XR Network+ RSC Challenge 2025 film &middot; Agile Lens",
+   "trim": "TRIM-3"
+  },
+  {
+   "talks": "A+B",
+   "pace": "DWELL",
+   "sec": 30,
+   "layout": "compare",
+   "title": "Same Rehearsal, Two Rooms",
+   "subtitle": "Drag the line",
+   "imgA": "media/rsc/compare-0.jpg",
+   "altA": "Actors as avatars on the stage of the virtual Swan Theatre",
+   "labelA": "Virtual Swan Theatre",
+   "imgB": "media/rsc/compare-1.jpg",
+   "altB": "The same actors in headsets on a taped floor in a plain rehearsal room",
+   "labelB": "The real rehearsal room",
+   "credit": "RSC rehearsal R&amp;D, with XR Network+ &middot; Agile Lens",
+   "id": "rsc-compare",
+   "notes": "Here's that rehearsal, twice. On one side, the virtual Swan Theatre. On the other, the real room. [click] Slide one way. [click] And the other. The actors are standing on tape in a plain studio, and in their headsets they're on the Swan's stage. That's how you rehearse in a theater you can't get into yet. Or a location you haven't flown to. Same actors, same blocking, two rooms. ALEX TO CONFIRM: the two halves are cut from RSC_compare.png, already in this deck's media; confirm they show the same rehearsal.",
+   "trim": "TRIM-2"
   },
   {
    "id": "heavenue",
    "talks": "A+B",
    "pace": "DWELL",
    "sec": 35,
-   "layout": "big",
+   "layout": "ip-web",
    "title": "Heavenue",
-   "bigText": "Live performance,\nno building required.",
-   "bigCaption": "The cloud platform we built for live performance in virtual space: it hosted <i>A Christmas Carol</i>’s first season, then the remote audience for <i>The Orchard</i> Off-Broadway, 2022",
-   "notes": "Because we kept needing it, we built Heavenue: a cloud platform for live performance in virtual space. Its first show was Carol's first season. Then The Orchard, Arlekin Players' Chekhov production, which opened Off-Broadway in June 2022 with Mikhail Baryshnikov and Jessica Hecht: we built the remote experience, so the same performance played to a house and to an audience online at once. It worked well, until we could not find the funding to keep it going. That's part of why I'm here: the work holds up; it needs partners with the audience and the money.",
-   "parked": "Cut for time on 2026-10-21 (intro + motion slides added) from both talks"
+   "notes": "Because we kept needing it, we built Heavenue, a cloud platform for live performance in virtual space. Its first show was Carol's first season. Then The Orchard, Arlekin Players' Chekhov production, with Mikhail Baryshnikov and Jessica Hecht. It opened Off-Broadway in June 2022. We built the remote experience, so one performance played to a house in the room and an audience online at the same time. It worked. Then we couldn't find the funding to keep it going. That's part of why I'm here. ALEX TO CONFIRM: Heavenue is a past venture, described in the past tense.",
+   "subtitle": "The cloud platform we built for live performance in virtual space",
+   "center": "One live\nperformance",
+   "centerSub": "Heavenue",
+   "branches": [
+    {
+     "t": "A Christmas Carol",
+     "d": "Heavenue’s first show:\nthe 2021 season",
+     "al": true
+    },
+    {
+     "t": "The house in the room",
+     "d": "The Orchard, Arlekin Players,\nOff-Broadway, June 2022",
+     "al": true
+    },
+    {
+     "t": "The house online",
+     "d": "A remote audience for the\nsame performance, same night",
+     "al": true
+    }
+   ],
+   "trim": "TRIM-1",
+   "parked": "Not in Talk B’s running order (time); to use it there, add it to ACT III"
   },
   {
    "id": "lincoln",
@@ -631,11 +882,11 @@ const PITCH = /* PITCH-JSON START */
    "sec": 10,
    "layout": "big",
    "title": "Lincoln Center &middot; David Geffen Hall",
-   "notes": "At Lincoln Center, with Fisher Dachs and Diamond Schmitt: VR models for Geffen Hall's seats, sightlines and railings, before it was built.",
+   "notes": "At Lincoln Center, with Fisher Dachs and Diamond Schmitt, we built VR models of Geffen Hall's seats, sightlines and railings, before it was built.",
    "bigText": "See the view\nbefore it’s built.",
    "bigCaption": "VR models for seating, sightline and railing decisions in David Geffen Hall’s redesign, with Fisher Dachs Associates and Diamond Schmitt Architects",
    "bigScale": 0.8,
-   "parked": "Cut for time on 2026-10-21 (intro + motion slides added)"
+   "trim": "TRIM-1"
   },
   {
    "id": "fs-flash",
@@ -645,11 +896,11 @@ const PITCH = /* PITCH-JSON START */
    "layout": "full",
    "img": "media/video/fsla-in-vr.mp4",
    "title": "Four Seasons Private Residences, Lake Austin",
-   "notes": "Same craft, different audience: for Four Seasons, with DBOX and Pureblink, buyers walk full-scale, photoreal residences years before they're built.",
+   "notes": "Same craft, different audience. For Four Seasons, with DBOX and Pureblink, buyers walk full-scale, photoreal homes years before they're built.",
    "credit": "In-headset capture &middot; with DBOX and Pureblink &middot; Agile Lens, LBE VR technologists",
    "poster": "media/video/fsla-in-vr.jpg",
    "alt": "Inside the VR tour: a photoreal residence interior with floor-to-ceiling windows over Lake Austin",
-   "parked": "Cut for time on 2026-10-21 (intro + motion slides added)"
+   "trim": "TRIM-1"
   },
   {
    "id": "joby",
@@ -660,8 +911,8 @@ const PITCH = /* PITCH-JSON START */
    "title": "eVTOL air-taxi passenger simulation",
    "bigText": "Take the flight\nbefore it exists.",
    "bigCaption": "A passenger-flight simulation for an eVTOL air-taxi company: a ride over New York",
-   "notes": "For an eVTOL air-taxi company: a passenger-flight simulation, a ride over New York, before anyone can book one. ALEX TO CONFIRM: name Joby only with Adam Krebs's written OK, and flip the slide wording then.",
-   "parked": "Cut for time on 2026-10-21 (intro + motion slides added) from both talks"
+   "notes": "And for an eVTOL air-taxi company: a passenger-flight simulation, a ride over New York, before anyone can book one. ALEX TO CONFIRM: name Joby only with Adam Krebs's written OK, and flip the slide wording then.",
+   "trim": "TRIM-1"
   },
   {
    "id": "logos",
@@ -674,7 +925,8 @@ const PITCH = /* PITCH-JSON START */
    "bigCaption": "Supported by Google’s Android XR Developer Catalyst Program",
    "notes": "A few names we've worked with, plus support from Google's Android XR program.",
    "bigScale": 0.5,
-   "parked": "Superseded on 2026-10-21 by the client orbit on intro-lens (same names)"
+   "parked": "Superseded by the client orbit on intro-lens (same names)",
+   "trim": "TRIM-1"
   },
   {
    "id": "b-hook",
@@ -689,7 +941,8 @@ const PITCH = /* PITCH-JSON START */
     "Craft: once they’re inside, they care"
    ],
    "tags": "Engine mastery &middot; Craft",
-   "notes": "Most of you have seen a gorgeous immersive trailer for something that never reached an audience, or reached one and stuttered. That gap is where immersive projects live or die. The companies winning in this space do two things at once. Engine mastery: the work runs, beautifully, on the hardware audiences actually own. And craft: once people are inside, they care. Either one alone isn't enough."
+   "notes": "Most of you have seen a gorgeous immersive trailer for something that never reached an audience. Or it reached one, and it stuttered. That gap is where immersive projects live or die. The companies winning in this space do two things at once. Engine mastery: the work runs, beautifully, on the hardware audiences actually own. And craft: once people are inside, they care. Either one alone isn't enough. I'm going to show you both halves, with work you can try in our demo area today.",
+   "trim": "CORE"
   },
   {
    "id": "teach",
@@ -700,7 +953,8 @@ const PITCH = /* PITCH-JSON START */
    "title": "We teach the engine we build in",
    "bigText": "300+ classes taught.\n40+ courses written.",
    "bigCaption": "Authorized Unreal Engine instructor since 2020",
-   "notes": "Engine mastery first. I've been an authorized Unreal Engine instructor since 2020: more than 300 classes taught, more than 40 courses written. The people who teach the engine are the people who build your project."
+   "notes": "Engine mastery first. I've been an authorized Unreal Engine instructor since 2020. More than 300 classes taught, more than 40 courses written. The people who teach the engine are the people who build your project. That matters for you because when something breaks the night before opening, the person fixing it is the person who teaches other people how it works.",
+   "trim": "TRIM-2"
   },
   {
    "id": "optimization",
@@ -715,10 +969,11 @@ const PITCH = /* PITCH-JSON START */
     "That moved <i>A Christmas Carol VR</i> from gaming PCs to headsets audiences already own",
     "Increasing access is worth the work, as long as the artistic vision survives"
    ],
-   "notes": "Here's what engine mastery buys you. We optimized photoreal digital humans to run on standalone headsets, no gaming PC required. In 2024 that moved Christmas Carol onto headsets people already own. Our rule: increasing access is always worth the work, as long as the artistic vision survives the trip.",
+   "notes": "Here's what engine mastery buys you. We optimized photoreal digital humans to run on standalone headsets. No gaming PC. In 2024 that moved A Christmas Carol onto headsets people already own. Our rule: increasing access is always worth the work, as long as the artistic vision survives the trip. Here's what that took in practice. Heavy scenes, real-time lighting, two actors with full face tracking, and a frame budget that a headset can actually hold. We cut what the audience would never notice and kept what they would. The result was a show that a family could watch from their living room without buying anything new.",
    "poster": "media/video/carol-trailer-ghosts.jpg",
    "alt": "Close-ups of the live-performed digital humans in A Christmas Carol VR: Scrooge, the Ghost of Christmas Present and Marley",
-   "credit": "<i>A Christmas Carol VR</i> 2025 trailer &middot; Agile Lens"
+   "credit": "<i>A Christmas Carol VR</i> 2025 trailer &middot; Agile Lens",
+   "trim": "CORE"
   },
   {
    "id": "rc",
@@ -729,7 +984,11 @@ const PITCH = /* PITCH-JSON START */
    "title": "Royal Caribbean &middot; Perfect Day Mexico",
    "bigText": "Nearly 1,000 guests.\nFour days at sea.",
    "bigCaption": "A hot-air-balloon ride over Perfect Day Mexico, aboard Utopia of the Seas, September 2025 &middot; Standalone headsets, offline, about 10 minutes a ride, run by the client’s volunteers from our operations manual",
-   "notes": "And it has to run where the audience is. For Royal Caribbean, with Endorphin Partners, we built a hot-air-balloon ride over Perfect Day Mexico on standalone headsets that run offline at sea. Aboard Utopia of the Seas in September 2025, nearly a thousand guests rode it in about four days, about ten minutes a ride, run by the client's own volunteers from the operations manual we wrote. Throughput, reset time and battery plans sound unglamorous. On a ship, they decide how many guests ride."
+   "notes": "And it has to run where the audience is. For Royal Caribbean, with Endorphin Partners, we built a hot-air-balloon ride over Perfect Day Mexico, on standalone headsets that run offline at sea. Aboard Utopia of the Seas in September 2025, nearly a thousand guests rode it in about four days. About ten minutes a ride, run by the client's own volunteers from the operations manual we wrote. Throughput, reset time and battery plans sound boring. On a ship, they decide how many guests ride. ALEX TO CONFIRM: background is the Perfect Day Mexico sign render from the HarvardXR keynote (no guests shown); confirm.",
+   "bgImg": "media/rc/perfect-day-sign.jpg",
+   "bgAlt": "Render of the Perfect Day Mexico sign on a beach",
+   "bgCredit": "Royal Caribbean Perfect Day Mexico &middot; Agile Lens",
+   "trim": "CORE"
   },
   {
    "id": "pico",
@@ -739,8 +998,9 @@ const PITCH = /* PITCH-JSON START */
    "layout": "big",
    "title": "PICO Space Pro",
    "bigText": "First company in the US\nwith access to PICO Space Pro.",
-   "notes": "And we're already building for what comes next: we were the first company in the US with access to PICO Space Pro. ALEX TO CONFIRM: public status per Road to VR and vr.org (Aug-Oct 2026): PICO cancelled its 2 September reveal and its official timeline is now Q4 2026, so don't say it's on sale or launched; 'announced' at most. No specs, no photos, no claim that any show runs on it. [FILL: Alex to confirm the exact Swan wording on stage]",
-   "bigScale": 0.62
+   "notes": "And we're already building for what comes next. We were the first company in the US with access to PICO Space Pro. ALEX TO CONFIRM: public status per Road to VR and vr.org (Aug-Oct 2026): PICO cancelled its 2 September reveal and its official timeline is now Q4 2026, so don't say it's on sale or launched; 'announced' at most. No specs, no photos, no claim that any show runs on it. [FILL: Alex to confirm the exact Swan wording on stage]",
+   "bigScale": 0.62,
+   "trim": "TRIM-1"
   },
   {
    "id": "act-b2",
@@ -750,7 +1010,8 @@ const PITCH = /* PITCH-JSON START */
    "title": "Fidelity\nThat Converts.",
    "short": "FIDELITY",
    "tagline": "Luxury brands don’t buy demos. They buy belief.",
-   "notes": "Now, why does fidelity matter to a business? Because people believe what looks real."
+   "notes": "Now, why does fidelity matter to a business? Because people believe what looks real. And belief is what sells a home before it's built.",
+   "trim": "CORE"
   },
   {
    "id": "fs-dwell",
@@ -759,14 +1020,30 @@ const PITCH = /* PITCH-JSON START */
    "sec": 55,
    "title": "Four Seasons Private Residences",
    "subtitle": "Lake Austin: luxury homes, toured from a headset",
-   "img": "media/fs/re-fourseasons-holodeck-session.jpg",
+   "img": "media/fs/holodeck-tour.jpg",
    "bullets": [
     "Buyers walk full-scale, photoreal residences years before they’re built",
     "A wireless, walkable holodeck of about 5,000 square feet: families tour together, no cables",
     "We engineered the location-based VR, set it up, and ran its first six months of operation"
    ],
-   "notes": "Four Seasons Private Residences in Lake Austin. Buyers put on a headset and walk the residence: the light, the view, the finishes, years before it exists. With DBOX as creative director and Pureblink producing the VR scenes, we were the location-based VR technologists: a wireless, walkable space of about five thousand square feet, so a family can tour together with no cables, and we ran its first six months. As I said on Voices of VR: it's binary. Without this VR experience, the project would not be happening.",
-   "credit": "Austin Capital Partners &middot; DBOX, creative director and agency of record &middot; Pureblink, VR scene producers &middot; Agile Lens, LBE VR technologists"
+   "notes": "Four Seasons Private Residences, Lake Austin. Buyers put on a headset and walk the home: the light, the view, the finishes, years before it exists. DBOX was creative director and Pureblink produced the VR scenes. We were the location-based VR technologists: a wireless, walkable space of about five thousand square feet, so a family tours together with no cables. And we ran its first six months. As I said on Voices of VR: it's binary. Without this VR experience, the project would not be happening. A few practical details make that work. The space is wireless, so nobody trips. Families tour together, so a sales conversation happens inside the home. And because we ran it for six months, it had to start up the same way every morning. ALEX TO CONFIRM: photo swapped to the holodeck-tour photo from the HarvardXR keynote (people in headsets in the LBE space, not a DBOX interior render); confirm.",
+   "credit": "Austin Capital Partners &middot; DBOX, creative director and agency of record &middot; Pureblink, VR scene producers &middot; Agile Lens, LBE VR technologists",
+   "alt": "Visitors in headsets walk the wireless holodeck together",
+   "trim": "CORE"
+  },
+  {
+   "talks": "B",
+   "pace": "FLASH",
+   "sec": 15,
+   "layout": "full",
+   "img": "media/video/fs-holodeck-build.mp4",
+   "poster": "media/video/fs-holodeck-build.jpg",
+   "title": "The Part Nobody Sees",
+   "alt": "Time-lapse of a hotel ballroom being turned into a wireless VR space: truss, flooring, tracking markers and headsets on a charging shelf",
+   "credit": "Holodeck build for Four Seasons Private Residences, Lake Austin &middot; Agile Lens, LBE VR technologists",
+   "id": "fs-build",
+   "notes": "This is the part nobody sees. A hotel ballroom, emptied out, becomes a wireless holodeck. Truss, flooring, tracking markers, headsets on the charging shelf. ALEX TO CONFIRM: time-lapse from the first 12 s of fsla_video.mp4 in the HarvardXR keynote; confirm the client is fine with build footage.",
+   "trim": "TRIM-1"
   },
   {
    "id": "fs-dbox",
@@ -776,8 +1053,12 @@ const PITCH = /* PITCH-JSON START */
    "layout": "big",
    "title": "Four Seasons tours at DBOX, New York",
    "bigText": "Headset on in New York.\nStanding in Austin.",
-   "notes": "And because it runs on real hardware, the same tours ran in New York, at DBOX: headset on in Manhattan, standing in Austin.",
-   "bigScale": 0.8
+   "notes": "And because it runs on real hardware, the same tours ran in New York, at DBOX. Headset on in Manhattan, standing in Austin. ALEX TO CONFIRM: background photo (visitors at DBOX NY, identifiable faces) from the HarvardXR keynote; confirm it is cleared.",
+   "bigScale": 0.8,
+   "bgImg": "media/fs/dbox-ny-headsets.jpg",
+   "bgAlt": "Visitors in headsets touring the residences at DBOX in New York",
+   "bgCredit": "Four Seasons tours at DBOX, New York &middot; Agile Lens",
+   "trim": "TRIM-1"
   },
   {
    "id": "act-b3",
@@ -787,7 +1068,8 @@ const PITCH = /* PITCH-JSON START */
    "title": "Craft Is\nthe Other Half.",
    "short": "CRAFT",
    "tagline": "Engine mastery gets the scene running. Craft decides whether anyone cares.",
-   "notes": "That's engine mastery. Now the other half: craft. Ours comes from theater."
+   "notes": "That's engine mastery. Now the other half: craft. Ours comes from theater. Theater teaches you to give an audience a role.",
+   "trim": "CORE"
   },
   {
    "id": "ask",
@@ -797,7 +1079,8 @@ const PITCH = /* PITCH-JSON START */
    "title": "What Kind of Partnerships\nAre We Looking For?",
    "short": "THE ASK",
    "tagline": "Two kinds. Both start with a story you already own or produce.",
-   "notes": "Which brings me to the question our moderator asked: what kind of partnerships are we looking for? Two kinds, and both start with a story you already own or produce."
+   "notes": "Which brings me to our moderator's question. What kind of partnerships are we looking for? Two kinds. Both start with a story you already own or produce. I'll keep this part short and concrete, because it's the reason I'm on this stage. [pause] If either of these sounds like you, find me after this session, or in the demo area this afternoon.",
+   "trim": "CORE"
   },
   {
    "id": "ask-ip",
@@ -809,7 +1092,11 @@ const PITCH = /* PITCH-JSON START */
    "subtitle": "With producers and rights holders",
    "bigText": "Bring the story.\nWe’ll build the way in.",
    "bigCaption": "An immersive edition of a world audiences already love: live, location-based, or at home",
-   "notes": "First: IP-extension partnerships with producers and rights holders. You bring a story world audiences already love. We design and build the immersive edition: a live performance, a location-based experience, something people take home on a headset. The rights stay yours; the audience gets a new door. That's how Carol began: a theater extending its holiday classic with a partner."
+   "notes": "First: IP-extension partnerships with producers and rights holders. You bring a story world audiences already love. We design and build the immersive edition: a live performance, a location-based experience, or something people take home on a headset. The rights stay yours. The audience gets a new door. That's exactly how Carol began: a theater extending its holiday classic, with a partner. Think about the stories on your slate that already have an audience. A classic, a series with a loyal following, a film with a world people want to stand inside. Those are the ones that travel best into a headset.",
+   "bgImg": "media/carol/key-art.jpg",
+   "bgAlt": "A Christmas Carol VR key art",
+   "bgCredit": "<i>A Christmas Carol VR</i> &middot; Agile Lens",
+   "trim": "CORE"
   },
   {
    "id": "ask-copro",
@@ -821,7 +1108,11 @@ const PITCH = /* PITCH-JSON START */
    "subtitle": "Immersive inside the financing and distribution plan",
    "bigText": "In the plan,\nnot bolted on after.",
    "bigCaption": "Budgeted with the production: new windows, new audiences, assets that carry across formats",
-   "notes": "Second: co-productions where immersive is part of the financing and distribution plan from day one, not bolted on after picture lock. When the immersive edition is in the first budget, the digital sets, characters and performances get built once and used everywhere, and the immersive release becomes another window and another audience, not a marketing afterthought. That's the lesson Carol taught us: the experience was strong; what it needed was a partner with the audience and the distribution plan from the start."
+   "notes": "Second: co-productions where immersive is in the financing and distribution plan from day one. Not bolted on after picture lock. When the immersive edition is in the first budget, the digital sets, characters and performances get built once and used everywhere: previs, marketing, the edition itself. The immersive release becomes another window and another audience. That's the lesson Carol taught us. The experience was strong. What it needed was a partner with the audience and the distribution plan from the start. It also changes the conversation with financiers, because you're showing them two releases built from one set of assets.",
+   "bgImg": "media/rsc/swan-scan-overhead.jpg",
+   "bgAlt": "A rehearsal room with the virtual Swan Theatre on a monitor",
+   "bgCredit": "RSC rehearsal R&amp;D &middot; Agile Lens",
+   "trim": "TRIM-3"
   },
   {
    "id": "ask-first",
@@ -832,9 +1123,12 @@ const PITCH = /* PITCH-JSON START */
    "title": "How we start",
    "bigText": "One story.\nOne audience.\nOne prototype.",
    "bigCaption": "A short, paid prototype of a single audience moment, then a production plan you can finance",
-   "notes": "And we start small. One story, one audience, one prototype: a short, paid prototype of a single moment an audience would have in your world. Then a production plan you can actually finance. Come find us in the demo area today and we'll show you what that moment feels like.",
+   "notes": "And we start small. One story, one audience, one prototype. A short, paid prototype of a single moment an audience would have in your world. Then a production plan you can actually finance. Come find us in the demo area today, and we'll show you what that moment feels like. No big bet up front. A prototype you can put a buyer, a festival programmer or a financier inside.",
    "bigScale": 0.8,
-   "parked": "Cut for time on 2026-10-21 (intro + motion slides added) from Talk A (redundant with ask-copro); Talk B keeps it"
+   "bgImg": "media/carol/future.jpg",
+   "bgAlt": "The Ghost of Christmas Yet to Come",
+   "bgCredit": "<i>A Christmas Carol VR</i> &middot; Agile Lens",
+   "trim": "TRIM-2"
   },
   {
    "id": "a-takehome",
@@ -844,7 +1138,10 @@ const PITCH = /* PITCH-JSON START */
    "layout": "big",
    "bigText": "The curtain comes down.\nThe story doesn’t have to.",
    "notes": "Pause. Say it slowly, then stop: the curtain comes down. The story doesn't have to. Thank you.",
-   "bigScale": 0.75
+   "bigScale": 0.75,
+   "bgImg": "media/carol/xmas-carol.jpg",
+   "bgAlt": "A Christmas Carol VR",
+   "trim": "CORE"
   },
   {
    "id": "b-takehome",
@@ -853,8 +1150,11 @@ const PITCH = /* PITCH-JSON START */
    "sec": 10,
    "layout": "big",
    "bigText": "Craft makes them care.\nEngineering makes sure they can.",
-   "notes": "Pause. Say it slowly, then stop: craft makes them care; engineering makes sure they can. Thank you.",
-   "bigScale": 0.68
+   "notes": "Pause. Say it slowly, then stop: craft makes them care. Engineering makes sure they can. Thank you.",
+   "bigScale": 0.68,
+   "bgImg": "media/fs/holodeck-tour.jpg",
+   "bgAlt": "Visitors in headsets in the wireless holodeck",
+   "trim": "CORE"
   }
  ]
 }
@@ -867,7 +1167,7 @@ function poolSlide(id){
   const s=POOL[id];
   if(!s)throw new Error(`PITCH: talk ${TALK_KEY} references unknown pool slide "${id}"`);
   // Pacing + talk tags lead the presenter notes so they show in the N / ?notes views
-  return {...s,notes:`[${s.pace} · ${s.sec}s · ${s.talks}]\n${s.notes||''}`};
+  return {...s,notes:`[${s.pace} · ${s.sec}s · ${s.talks}${s.trim?' · '+s.trim:''}]\n${s.notes||''}`};
 }
 const SECTIONS = TALK.acts.map(a=>{
   const L=poolSlide(a.lesson);
@@ -1479,6 +1779,86 @@ body.fx-fs-active #fx-fs-hint{opacity:1}
 /* === FORK-LOCAL (MIA 2026): motion layouts 'pipeline' and 'ip-web' (one 1600x900 SVG each, see mgBuildPipeline / mgBuildIpWeb) === */
 .case-slide.layout-pipeline,.case-slide.layout-ip-web{padding:0;display:block}
 .mg-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+/* === FORK-LOCAL (MIA 2026, round 2): 'phase-tour', 'camera-toy', 'replay-line', 'compare', 'reel', ip-web doors, big-slide backgrounds === */
+.case-slide.layout-phase-tour,.case-slide.layout-camera-toy,.case-slide.layout-replay-line,.case-slide.layout-compare,.case-slide.layout-reel{padding:0;display:block}
+.pt-wrap,.ct-wrap,.rl-wrap,.cmp-wrap,.reel-wrap{position:absolute;inset:calc(4.5*var(--vh)) calc(4*var(--vw)) calc(5*var(--vh));display:flex;flex-direction:column;gap:calc(2*var(--vh))}
+.pt-head h2,.ct-head h2,.rl-head h2,.cmp-head h2,.reel-head h2{font-size:calc(3*var(--vw));font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.pt-head p,.ct-head p,.rl-head p,.cmp-head p,.reel-head p{font-size:calc(1.45*var(--vw));color:rgba(240,244,255,.7);margin-top:.3em}
+.pt-tabs{display:flex;gap:calc(1*var(--vw))}
+.pt-tab,.ct-btns button{font:inherit;font-size:calc(1.35*var(--vw));font-weight:700;letter-spacing:.06em;padding:.45em 1.1em;border-radius:999px;background:rgba(255,255,255,.04);border:2px solid var(--acc,rgba(0,212,255,.6));color:var(--acc,#bfefff);cursor:pointer;opacity:.55;transition:opacity .3s,background .3s}
+.pt-tab.on,.ct-btns button.on{opacity:1;background:rgba(255,255,255,.12)}
+.pt-body{flex:1;position:relative;min-height:0}
+.pt-pane{position:absolute;inset:0;display:grid;grid-template-columns:1.35fr 1fr;gap:calc(2.4*var(--vw));align-items:center;opacity:0;transition:opacity .5s;pointer-events:none}
+.pt-pane.on{opacity:1;pointer-events:auto}
+.pt-media{position:relative;margin:0;border-radius:18px;overflow:hidden;border:2px solid var(--acc);background:#05060a;aspect-ratio:16/9}
+.pt-media img,.pt-media video{width:100%;height:100%;object-fit:cover;display:block}
+.pt-media figcaption,.rl-card figcaption em,.reel-credit{font-size:calc(.85*var(--vw));color:rgba(240,244,255,.7)}
+.pt-media figcaption{position:absolute;right:10px;bottom:8px;background:rgba(6,8,16,.6);padding:.2em .6em;border-radius:6px}
+.pt-text ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:calc(1.6*var(--vh))}
+.pt-text li{font-size:calc(1.9*var(--vw));font-weight:600;line-height:1.2;padding-left:1.1em;position:relative}
+.pt-text li::before{content:'';position:absolute;left:0;top:.38em;width:.5em;height:.5em;border-radius:50%;background:var(--acc)}
+.pt-proof{margin-top:calc(2.4*var(--vh));font-size:calc(1.2*var(--vw));color:var(--acc);font-weight:600;line-height:1.35}
+.ct-main{flex:1;display:grid;grid-template-columns:30% 1fr;gap:calc(2*var(--vw));min-height:0}
+.ct-left{display:flex;flex-direction:column;gap:calc(1.4*var(--vh))}
+.ct-plan{width:100%;aspect-ratio:1/1;touch-action:none}
+.ct-btns{display:flex;gap:.5em;flex-wrap:wrap}
+.ct-btns button{font-size:calc(1.05*var(--vw));padding:.35em .8em}
+.ct-right{display:flex;flex-direction:column;gap:calc(1.4*var(--vh));min-width:0}
+.ct-view{position:relative;height:calc(55*var(--vh));aspect-ratio:16/9;max-width:100%;border-radius:14px;overflow:hidden;border:2px solid rgba(0,212,255,.55);background:#05060a}
+.ct-view canvas{width:100%;height:100%;display:block}
+.ct-bar{position:absolute;left:0;right:0;height:0;background:#000;transition:height .5s}
+.ct-bar.t{top:0}.ct-bar.b{bottom:0}
+.ct-view.masked .ct-bar{height:12.8%}
+.ct-hud{position:absolute;left:14px;top:10px;font-size:calc(1.1*var(--vw));font-weight:700;color:#7fe8ff;text-shadow:0 1px 3px #000;z-index:2}
+.ct-view.ct-nogl::after{content:'Viewfinder needs WebGL';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.6);font-size:calc(1.4*var(--vw))}
+.ct-strip{display:flex;gap:calc(1*var(--vw))}
+.ct-frame{position:relative;height:calc(17*var(--vh));aspect-ratio:16/9;border-radius:8px;background:#11131b center/cover no-repeat;border:2px solid rgba(255,255,255,.16)}
+.ct-frame.masked{box-shadow:inset 0 calc(1.1*var(--vw)) 0 #000,inset 0 calc(-1.1*var(--vw)) 0 #000}
+.ct-frame span{position:absolute;left:8px;bottom:6px;font-size:calc(.95*var(--vw));font-weight:700;color:#fff;text-shadow:0 1px 3px #000}
+.ct-frame.flash{animation:ctFlash .5s ease-out}
+@keyframes ctFlash{0%{filter:brightness(3)}100%{filter:brightness(1)}}
+.ct-badge{position:absolute;right:0;top:0;font-size:calc(.95*var(--vw));font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#fde68a;border:1.5px solid rgba(253,230,138,.6);padding:.35em .8em;border-radius:999px}
+.rl-stage{flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:calc(1.2*var(--vw));align-items:center;align-content:center;min-height:0}
+.rl-card{margin:0;opacity:.18;transform:translateY(12px);transition:opacity .6s,transform .6s;border-radius:14px;overflow:hidden;border:2px solid var(--acc);background:rgba(10,12,20,.85)}
+.rl-card.on{opacity:.75;transform:none}.rl-card.now{opacity:1}
+.rl-card img,.rl-card video{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.rl-card figcaption{padding:.7em .9em .9em;display:flex;flex-direction:column;gap:.25em}
+.rl-card figcaption b{font-size:calc(1*var(--vw));letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+.rl-card figcaption span{font-size:calc(1.55*var(--vw));font-weight:700;line-height:1.15}
+.rl-card figcaption em{font-style:normal;font-size:calc(1.05*var(--vw));line-height:1.3}
+.rl-track{position:relative;height:calc(9*var(--vh));margin:0 calc(4*var(--vw));touch-action:none;cursor:pointer}
+.rl-track::before{content:'';position:absolute;left:0;right:0;top:calc(2.5*var(--vh));height:6px;border-radius:3px;background:rgba(255,255,255,.14)}
+.rl-fill{position:absolute;left:0;top:calc(2.5*var(--vh));height:6px;border-radius:3px;background:linear-gradient(90deg,#f59e0b,#00d4ff,#a78bfa,#fb7185);width:0}
+.rl-stop{position:absolute;top:0;transform:translateX(-50%);background:none;border:0;color:#fff;font:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:.4em}
+.rl-stop i{width:calc(1.4*var(--vw));height:calc(1.4*var(--vw));border-radius:50%;background:#0b0e18;border:3px solid var(--acc);margin-top:calc(1.6*var(--vh))}
+.rl-stop.on i{background:var(--acc)}
+.rl-stop span{font-size:calc(1.05*var(--vw));font-weight:700;color:rgba(240,244,255,.8);white-space:nowrap}
+.rl-head-dot{position:absolute;top:calc(1.6*var(--vh));width:calc(.9*var(--vw));height:calc(2.6*var(--vh));margin-left:calc(-.45*var(--vw));border-radius:4px;background:#fff;box-shadow:0 0 12px #00d4ff;left:0;pointer-events:none}
+.cmp-stage{flex:1;position:relative;border-radius:18px;overflow:hidden;background:#05060a;touch-action:none;cursor:ew-resize}
+.cmp-stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cmp-b{position:absolute;inset:0}
+.cmp-line{position:absolute;top:0;bottom:0;width:4px;margin-left:-2px;background:#fff;box-shadow:0 0 14px rgba(0,212,255,.9)}
+.cmp-line i{position:absolute;top:50%;left:50%;width:calc(3*var(--vw));height:calc(3*var(--vw));transform:translate(-50%,-50%);border-radius:50%;background:#00d4ff;border:4px solid #fff}
+.cmp-lab{position:absolute;top:16px;font-size:calc(1.5*var(--vw));font-weight:700;background:rgba(6,8,16,.7);padding:.25em .8em;border-radius:8px}
+.cmp-lab.l{left:16px}.cmp-lab.r{right:16px}
+.reel-frame{flex:1;position:relative;border-radius:10px;overflow:hidden;background:#000;border:2px solid rgba(255,255,255,.2)}
+.reel-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s}
+.reel-frame img.on{opacity:1}
+.reel-bar{position:absolute;left:0;right:0;height:12.8%;background:#000;z-index:2}.reel-bar.t{top:0}.reel-bar.b{bottom:0}
+.reel-tc{position:absolute;right:18px;bottom:2.5%;z-index:3;font-family:'JetBrains Mono',monospace;font-size:calc(1.1*var(--vw));color:rgba(255,255,255,.75)}
+.ipd-panel{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .45s;z-index:5}
+.ipd-panel.on{opacity:1;pointer-events:auto}
+.mg-svg{transition:opacity .45s}.mg-svg.dim{opacity:.18}
+.ipd-card{width:64%;border-radius:20px;overflow:hidden;border:3px solid var(--acc);background:#0a0c14;box-shadow:0 20px 80px rgba(0,0,0,.6)}
+.ipd-card img,.ipd-card video{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.ipd-text{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;text-align:center;font-size:calc(3.4*var(--vw));font-weight:700;line-height:1.25;color:var(--acc);padding:0 1em}
+.ipd-cap{padding:.7em 1em;display:flex;gap:1em;align-items:baseline;flex-wrap:wrap}
+.ipd-cap b{font-size:calc(2*var(--vw));color:var(--acc)}.ipd-cap span{font-size:calc(1.25*var(--vw));color:rgba(240,244,255,.8)}
+.case-slide.layout-big.has-bg{overflow:hidden}
+.big-bg{position:absolute;inset:0;background:center/cover no-repeat;opacity:.32;filter:saturate(.9)}
+.big-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(6,8,16,.35),rgba(6,8,16,.85))}
+.has-bg .big-stack{position:relative;z-index:1}
+.big-credit{position:absolute;right:16px;bottom:12px;z-index:2;font-size:calc(.8*var(--vw));color:rgba(240,244,255,.65)}
 </style>
 </head>
 <body>
@@ -2140,6 +2520,184 @@ function mgBuildIpWeb(s, c) {
   mgLife(s, render, TOTAL);
 }
 
+// ── FORK-LOCAL (MIA 2026, round 2): interactive layouts 'phase-tour', 'camera-toy', 'replay-line', 'compare', 'reel' ──
+/* All five use tiLifecycle (replay on every entry, → runs the click beats, reset on re-entry) and the TI flags (?print, ?shot,
+   ?reduced, prefers-reduced-motion jump straight to a readable still). Pointer input inside a widget never reaches the deck's
+   click-to-advance: mgGuard() stops it at the widget root. */
+function mgGuard(el) { ['click', 'pointerdown', 'mousedown', 'touchstart', 'wheel'].forEach(t => el.addEventListener(t, e => e.stopPropagation())); }
+function mgMedia(src, o = {}) {
+  if (/\.(mp4|webm)$/i.test(src)) return `<video src="${src}" muted loop playsinline preload="metadata"${o.poster ? ` poster="${o.poster}"` : ''}${o.alt ? ` aria-label="${o.alt}"` : ''}></video>`;
+  return `<img src="${src}" alt="${o.alt || ''}" loading="lazy">`;
+}
+function mgPlayOnly(root, el) { root.querySelectorAll('video').forEach(v => { if (v === el && !TI.exp) { try { v.currentTime = 0; v.play().catch(() => {}); } catch (e) {} } else { try { v.pause(); } catch (e) {} } }); }
+
+// 'phase-tour': three tabs (pre / production / post); each shows a big still or clip, its touchpoints and the Agile Lens proof.
+function mgBuildPhaseTour(s, c) {
+  const P = (c.phases || []).slice(0, 3), ACC = ['#f59e0b', '#00d4ff', '#a78bfa'];
+  s.innerHTML = `<div class="pt-wrap"><div class="pt-head"><h2 class="mg-title">${c.title || ''}</h2>${c.subtitle ? `<p>${c.subtitle}</p>` : ''}</div>
+    <div class="pt-tabs">${P.map((p, i) => `<button class="pt-tab" data-i="${i}" style="--acc:${ACC[i]}">${p.name}</button>`).join('')}</div>
+    <div class="pt-body">${P.map((p, i) => `<div class="pt-pane" data-i="${i}" style="--acc:${ACC[i]}"><figure class="pt-media">${mgMedia(p.media, p)}${p.credit ? `<figcaption>${p.credit}</figcaption>` : ''}</figure>
+      <div class="pt-text"><ul>${(p.points || []).map(x => `<li>${x}</li>`).join('')}</ul>${p.proof ? `<p class="pt-proof">${p.proof}</p>` : ''}</div></div>`).join('')}</div></div>`;
+  const tabs = [...s.querySelectorAll('.pt-tab')], panes = [...s.querySelectorAll('.pt-pane')];
+  mgGuard(s.querySelector('.pt-tabs'));
+  const show = i => { tabs.forEach((t, j) => t.classList.toggle('on', j === i)); panes.forEach((p, j) => p.classList.toggle('on', j === i)); mgPlayOnly(s, panes[i]?.querySelector('video')); };
+  tabs.forEach((t, i) => t.addEventListener('click', () => { show(i); const sd = slideSteps.get(s); if (sd) sd.current = Math.min(i, sd.steps.length); }));
+  tiLifecycle(s, () => show(0), () => mgPlayOnly(s, null), P.slice(1).map((_, i) => () => show(i + 1)));
+}
+
+// 'camera-toy': a concept demo of the in-headset camera (no headset needed). Drag the camera on the plan; pick 24/35/50/85 mm;
+// toggle the 2.39 mask; "Take shot" fills a 3-frame strip. → beats: 85 mm, mask on, then three shots from preset set-ups.
+function mgBuildCameraToy(s, c) {
+  const LENSES = [24, 35, 50, 85];
+  s.innerHTML = `<div class="ct-wrap"><div class="ct-head"><h2 class="mg-title">${c.title || ''}</h2>${c.subtitle ? `<p>${c.subtitle}</p>` : ''}</div>
+    <div class="ct-main"><div class="ct-left"><svg class="ct-plan" viewBox="0 0 400 400" aria-label="Top-down plan of the set: drag the camera"></svg>
+      <div class="ct-btns">${LENSES.map(f => `<button data-f="${f}">${f} mm</button>`).join('')}</div>
+      <div class="ct-btns"><button class="ct-mask">2.39 mask</button><button class="ct-take">Take shot</button></div></div>
+      <div class="ct-right"><div class="ct-view"><canvas></canvas><div class="ct-bar t"></div><div class="ct-bar b"></div><div class="ct-hud"></div></div>
+      <div class="ct-strip">${[0, 1, 2].map(i => `<div class="ct-frame"><span>${'ABC'[i]}</span></div>`).join('')}</div></div></div>
+    ${c.badge ? `<div class="ct-badge">${c.badge}</div>` : ''}</div>`;
+  const q = k => s.querySelector(k), plan = q('.ct-plan'), view = q('.ct-view'), canvas = q('canvas'), hud = q('.ct-hud'), frames = [...s.querySelectorAll('.ct-frame')];
+  mgGuard(q('.ct-main'));
+  // plan: stage 0..400; figures at fixed spots; camera position + yaw (always aims at the midpoint of the two figures)
+  const FIG = [{ x: 175, y: 170, col: '#f59e0b' }, { x: 235, y: 185, col: '#fb7185' }], AIM = { x: 205, y: 172 };
+  const st = { x: 205, y: 340, f: 35, mask: false, shots: 0 };
+  const pcid = 'ctclip' + Math.random().toString(36).slice(2, 7);
+  plan.innerHTML = `<clipPath id="${pcid}"><rect x="10" y="10" width="380" height="380" rx="14"/></clipPath><rect x="10" y="10" width="380" height="380" rx="14" fill="#0d1020" stroke="rgba(255,255,255,.18)" stroke-width="2"/><rect x="40" y="40" width="320" height="16" fill="#2a2440"/>
+    <text x="200" y="34" text-anchor="middle" fill="rgba(255,255,255,.5)" font-size="16" font-family="Space Grotesk,sans-serif">BACKDROP</text>
+    <circle cx="110" cy="120" r="8" fill="#fbbf24"/><path class="ct-fr" clip-path="url(#${pcid})" fill="rgba(0,212,255,.14)" stroke="rgba(0,212,255,.7)" stroke-width="2"/>
+    ${FIG.map(f => `<circle cx="${f.x}" cy="${f.y}" r="13" fill="${f.col}"/>`).join('')}<g class="ct-cam" style="cursor:grab"><circle r="18" fill="#00d4ff"/><rect x="-10" y="-7" width="20" height="14" rx="3" fill="#0b0e18"/></g>
+    <text x="200" y="384" text-anchor="middle" fill="rgba(255,255,255,.45)" font-size="15" font-family="Space Grotesk,sans-serif">drag the camera</text>`;
+  const camG = plan.querySelector('.ct-cam'), fr = plan.querySelector('.ct-fr');
+  let three = null, failed = false;
+  const hfov = f => 2 * Math.atan(18 / f); // 36 mm-wide full-frame gate
+  function drawPlan() {
+    const yaw = Math.atan2(AIM.y - st.y, AIM.x - st.x), h = hfov(st.f) / 2, L = 420;
+    camG.setAttribute('transform', `translate(${st.x},${st.y}) rotate(${yaw * 180 / Math.PI})`);
+    fr.setAttribute('d', `M${st.x} ${st.y} L${st.x + Math.cos(yaw - h) * L} ${st.y + Math.sin(yaw - h) * L} L${st.x + Math.cos(yaw + h) * L} ${st.y + Math.sin(yaw + h) * L} Z`);
+    s.querySelectorAll('[data-f]').forEach(b => b.classList.toggle('on', +b.dataset.f === st.f)); q('.ct-mask').classList.toggle('on', st.mask);
+    view.classList.toggle('masked', st.mask); hud.textContent = `${st.f} mm${st.mask ? ' · 2.39' : ' · 16:9'}`;
+  }
+  async function init() {
+    if (three || failed) return three;
+    try {
+      const THREE = await import('three');
+      const r = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true }); r.setPixelRatio(1); r.setSize(1280, 720, false);
+      const scene = new THREE.Scene(); scene.background = new THREE.Color('#0a0c16'); scene.fog = new THREE.Fog('#0a0c16', 14, 30);
+      const cam = new THREE.PerspectiveCamera(40, 16 / 9, .1, 100);
+      scene.add(new THREE.HemisphereLight('#9fb4ff', '#1a1020', .55));
+      const key = new THREE.SpotLight('#ffe2b0', 60, 30, .6, .5); key.position.set(-3, 6, 4); scene.add(key); key.target.position.set(0, 0, -1); scene.add(key.target);
+      const lamp = new THREE.PointLight('#fbbf24', 8, 8); lamp.position.set(-3.6, 2.6, -2.4); scene.add(lamp);
+      const floor = new THREE.Mesh(new THREE.PlaneGeometry(24, 24), new THREE.MeshStandardMaterial({ color: '#3a2e2a', roughness: .9 })); floor.rotation.x = -Math.PI / 2; scene.add(floor);
+      const wall = new THREE.Mesh(new THREE.BoxGeometry(16, 6, .3), new THREE.MeshStandardMaterial({ color: '#2a2440', roughness: 1 })); wall.position.set(0, 3, -6.5); scene.add(wall);
+      for (let i = -2; i <= 2; i++) { const w = new THREE.Mesh(new THREE.PlaneGeometry(1.1, 1.8), new THREE.MeshBasicMaterial({ color: '#ffd98a' })); w.position.set(i * 2.6, 3.4, -6.3); scene.add(w); }
+      const post = new THREE.Mesh(new THREE.CylinderGeometry(.06, .08, 2.8), new THREE.MeshStandardMaterial({ color: '#111' })); post.position.set(-3.6, 1.4, -2.4); scene.add(post);
+      const bulb = new THREE.Mesh(new THREE.SphereGeometry(.18), new THREE.MeshBasicMaterial({ color: '#ffd27a' })); bulb.position.copy(lamp.position); scene.add(bulb);
+      const person = (col, h) => { const g = new THREE.Group(), m = new THREE.MeshStandardMaterial({ color: col, roughness: .6 }); const b = new THREE.Mesh(new THREE.CapsuleGeometry(.28, h - .9, 6, 12), m); b.position.y = h / 2 - .1; g.add(b); const hd = new THREE.Mesh(new THREE.SphereGeometry(.2, 16, 12), new THREE.MeshStandardMaterial({ color: '#f2c79b' })); hd.position.y = h - .05; g.add(hd); scene.add(g); return g; };
+      const toW = p => new THREE.Vector3((p.x - 200) / 40, 0, (p.y - 200) / 40);
+      const A = person('#f59e0b', 1.85), Bp = person('#fb7185', 1.65); A.position.copy(toW(FIG[0])); Bp.position.copy(toW(FIG[1]));
+      ['#f59e0b', '#00d4ff', '#a78bfa'].forEach((col, i) => { const m = new THREE.Mesh(new THREE.RingGeometry(.18, .26, 24), new THREE.MeshBasicMaterial({ color: col })); m.rotation.x = -Math.PI / 2; m.position.set(-1.5 + i * 1.6, .01, 1.2); scene.add(m); });
+      three = { r, scene, cam, THREE, toW };
+    } catch (e) { failed = true; }
+    if (!three || !three.r.getContext()) { three = null; failed = true; }
+    return three;
+  }
+  // No WebGL (some venue laptops, headless capture): a 2D pinhole projection of the same set keeps the demo working.
+  function render2d() {
+    const g = canvas.getContext('2d'), W = canvas.width = 1280, H = canvas.height = 720;
+    const yaw = Math.atan2(AIM.y - st.y, AIM.x - st.x), fx = (W / 2) / Math.tan(hfov(st.f) / 2), camH = 1.55;
+    const proj = (px, py, h) => { const dx = (px - st.x) / 40, dz = (py - st.y) / 40, z = dx * Math.cos(yaw) + dz * Math.sin(yaw), x = -dx * Math.sin(yaw) + dz * Math.cos(yaw); return z <= .2 ? null : { x: W / 2 + x / z * fx, y: H / 2 - (h - camH + .2) / z * fx, z }; };
+    const hz = H / 2 + .2 / 1 * 0; const sky = g.createLinearGradient(0, 0, 0, H); sky.addColorStop(0, '#141228'); sky.addColorStop(.55, '#2a2440'); sky.addColorStop(.56, '#3a2e2a'); sky.addColorStop(1, '#241c18'); g.fillStyle = sky; g.fillRect(0, 0, W, H);
+    for (let i = -2; i <= 2; i++) { const a = proj(200 + i * 104, 40, 4.3), b = proj(200 + i * 104 + 44, 40, 2.5); if (a && b) { g.fillStyle = '#ffd98a'; g.fillRect(Math.min(a.x, b.x), a.y, Math.abs(b.x - a.x), b.y - a.y); } }
+    const items = [{ x: 110, y: 120, h: 2.8, col: '#111', w: .08, lamp: true }, ...FIG.map((f, i) => ({ x: f.x, y: f.y, h: i ? 1.65 : 1.85, col: f.col, w: .2 }))]
+      .map(o => ({ o, top: proj(o.x, o.y, o.h), bot: proj(o.x, o.y, 0) })).filter(r => r.top && r.bot).sort((a, b) => b.bot.z - a.bot.z);
+    items.forEach(({ o, top, bot }) => { const w = Math.max(2, o.w / bot.z * fx); g.fillStyle = o.col; const hr = .11 / bot.z * fx; g.fillRect(bot.x - w, top.y + (o.lamp ? 0 : hr * 2.3), w * 2, bot.y - top.y - (o.lamp ? 0 : hr * 2.3));
+      if (o.lamp) { g.fillStyle = '#ffd27a'; g.beginPath(); g.arc(top.x, top.y, Math.max(4, .2 / top.z * fx), 0, 7); g.fill(); } else { g.fillStyle = '#f2c79b'; g.beginPath(); g.arc(top.x, top.y + hr, hr, 0, 7); g.fill(); } });
+  }
+  function render() {
+    drawPlan(); if (!three) { render2d(); return; }
+    const { r, scene, cam, toW } = three, p = toW(st), a = toW(AIM);
+    cam.position.set(p.x, 1.55, p.z); cam.fov = 2 * Math.atan(Math.tan(hfov(st.f) / 2) / (16 / 9)) * 180 / Math.PI; cam.updateProjectionMatrix(); cam.lookAt(a.x, 1.35, a.z);
+    r.render(scene, cam);
+  }
+  function take() {
+    render(); const i = st.shots % 3; st.shots++;
+    const fEl = frames[i]; fEl.style.backgroundImage = `url(${canvas.toDataURL('image/jpeg', .8)})`; fEl.classList.toggle('masked', st.mask); fEl.querySelector('span').textContent = `${'ABC'[i]} · ${st.f} mm`;
+    if (!TI.instant) { fEl.classList.remove('flash'); void fEl.offsetWidth; fEl.classList.add('flash'); }
+  }
+  // drag
+  let drag = false; const toPlan = e => { const b = plan.getBoundingClientRect(); return { x: Math.max(30, Math.min(370, (e.clientX - b.left) / b.width * 400)), y: Math.max(215, Math.min(370, (e.clientY - b.top) / b.height * 400)) }; };
+  plan.addEventListener('pointerdown', e => { drag = true; plan.setPointerCapture(e.pointerId); Object.assign(st, toPlan(e)); render(); });
+  plan.addEventListener('pointermove', e => { if (drag) { Object.assign(st, toPlan(e)); render(); } });
+  plan.addEventListener('pointerup', () => { drag = false; });
+  s.querySelectorAll('[data-f]').forEach(b => b.addEventListener('click', () => { st.f = +b.dataset.f; render(); }));
+  q('.ct-mask').addEventListener('click', () => { st.mask = !st.mask; render(); });
+  q('.ct-take').addEventListener('click', take);
+  const SETUPS = [{ x: 90, y: 330, f: 24 }, { x: 205, y: 300, f: 50 }, { x: 245, y: 330, f: 85 }];
+  const C = tiClock();
+  async function play() { C.stop(); Object.assign(st, { x: 205, y: 340, f: 35, mask: false, shots: 0 }); frames.forEach((f, i) => { f.style.backgroundImage = ''; f.classList.remove('masked'); f.querySelector('span').textContent = 'ABC'[i]; }); await init(); render();
+    if (TI.exp) { st.mask = true; SETUPS.forEach(u => { Object.assign(st, u); take(); }); Object.assign(st, { x: 205, y: 340, f: 35 }); render(); } }
+  const lensStep = () => { st.f = 85; Object.assign(st, { x: 215, y: 365 }); render(); };
+  const maskStep = () => { st.mask = true; render(); };
+  const shotsStep = () => { SETUPS.forEach((u, i) => C.after(TI.instant ? 0 : i * 900, () => { Object.assign(st, u); take(); })); };
+  tiLifecycle(s, play, () => C.stop(), [lensStep, maskStep, shotsStep]);
+}
+
+// 'replay-line': one performance, four lives. A playhead runs along a timeline; each station shows its own still.
+function mgBuildReplayLine(s, c) {
+  const ST = (c.stations || []).slice(0, 4), ACC = ['#f59e0b', '#00d4ff', '#a78bfa', '#fb7185'];
+  s.innerHTML = `<div class="rl-wrap"><div class="rl-head"><h2 class="mg-title">${c.title || ''}</h2>${c.subtitle ? `<p>${c.subtitle}</p>` : ''}</div>
+    <div class="rl-stage">${ST.map((x, i) => `<figure class="rl-card" data-i="${i}" style="--acc:${ACC[i]}">${mgMedia(x.img, x)}<figcaption><b>${x.when || ''}</b><span>${x.t}</span><em>${x.d || ''}</em></figcaption></figure>`).join('')}</div>
+    <div class="rl-track"><div class="rl-fill"></div>${ST.map((x, i) => `<button class="rl-stop" data-i="${i}" style="left:${(i / (ST.length - 1)) * 100}%;--acc:${ACC[i]}"><i></i><span>${x.short || x.t}</span></button>`).join('')}<div class="rl-head-dot"></div></div></div>`;
+  const cards = [...s.querySelectorAll('.rl-card')], stops = [...s.querySelectorAll('.rl-stop')], fill = s.querySelector('.rl-fill'), dot = s.querySelector('.rl-head-dot'), track = s.querySelector('.rl-track');
+  mgGuard(track);
+  let cur = 0, raf = 0, pos = 0;
+  const set = (p, i) => { pos = p; fill.style.width = p * 100 + '%'; dot.style.left = p * 100 + '%'; const k = i ?? Math.round(p * (ST.length - 1)); cards.forEach((el, j) => el.classList.toggle('on', j <= k)); cards.forEach((el, j) => el.classList.toggle('now', j === k)); stops.forEach((el, j) => el.classList.toggle('on', j <= k)); cur = k; };
+  const go = i => { cancelAnimationFrame(raf); const to = i / (ST.length - 1), from = pos, t0 = performance.now(); if (TI.instant) { set(to, i); return; }
+    const f = now => { const k = Math.min(1, (now - t0) / 900), e = 1 - Math.pow(1 - k, 3); set(from + (to - from) * e, k < 1 ? Math.floor((from + (to - from) * e) * (ST.length - 1) + .001) : i); if (k < 1) raf = requestAnimationFrame(f); }; raf = requestAnimationFrame(f); };
+  stops.forEach((b, i) => b.addEventListener('click', () => { go(i); const sd = slideSteps.get(s); if (sd) sd.current = Math.min(i, sd.steps.length); }));
+  let dragging = false; const at = e => { const b = track.getBoundingClientRect(); return Math.max(0, Math.min(1, (e.clientX - b.left) / b.width)); };
+  track.addEventListener('pointerdown', e => { if (e.target.closest('.rl-stop')) return; dragging = true; track.setPointerCapture(e.pointerId); set(at(e)); });
+  track.addEventListener('pointermove', e => { if (dragging) set(at(e)); }); track.addEventListener('pointerup', () => { dragging = false; });
+  tiLifecycle(s, () => { cancelAnimationFrame(raf); set(0, 0); if (TI.exp) set(1, ST.length - 1); }, () => cancelAnimationFrame(raf), ST.slice(1).map((_, i) => () => go(i + 1)));
+}
+
+// 'compare': before/after slider over two aligned images; sweeps once on entry, → moves the divider, drag to scrub.
+function mgBuildCompare(s, c) {
+  s.innerHTML = `<div class="cmp-wrap"><div class="cmp-head"><h2 class="mg-title">${c.title || ''}</h2>${c.subtitle ? `<p>${c.subtitle}</p>` : ''}</div>
+    <div class="cmp-stage"><img class="cmp-a" src="${c.imgA}" alt="${c.altA || ''}"><div class="cmp-b"><img src="${c.imgB}" alt="${c.altB || ''}"></div><div class="cmp-line"><i></i></div>
+    <span class="cmp-lab l">${c.labelA || ''}</span><span class="cmp-lab r">${c.labelB || ''}</span>${c.credit ? `<div class="full-credit">${c.credit}</div>` : ''}</div></div>`;
+  const stage = s.querySelector('.cmp-stage'), b = s.querySelector('.cmp-b'), line = s.querySelector('.cmp-line'); mgGuard(stage);
+  let raf = 0; const set = p => { b.style.clipPath = `inset(0 0 0 ${p * 100}%)`; line.style.left = p * 100 + '%'; };
+  const tween = (from, to, ms) => { cancelAnimationFrame(raf); if (TI.instant) { set(to); return; } const t0 = performance.now(); const f = n => { const k = Math.min(1, (n - t0) / ms), e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; set(from + (to - from) * e); if (k < 1) raf = requestAnimationFrame(f); }; raf = requestAnimationFrame(f); };
+  let drag = false; const at = e => { const r = stage.getBoundingClientRect(); return Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)); };
+  stage.addEventListener('pointerdown', e => { drag = true; cancelAnimationFrame(raf); stage.setPointerCapture(e.pointerId); set(at(e)); });
+  stage.addEventListener('pointermove', e => { if (drag) set(at(e)); }); stage.addEventListener('pointerup', () => { drag = false; });
+  tiLifecycle(s, () => { if (TI.instant) { set(.5); return; } set(.92); setTimeout(() => tween(.92, .5, 1800), 400); }, () => cancelAnimationFrame(raf), [() => tween(.5, .06, 1100), () => tween(.06, .94, 1400)]);
+}
+
+// 'reel': what stays normal: stills cross-fade inside a letterboxed flat frame with a running timecode.
+function mgBuildReel(s, c) {
+  const IM = c.frames || [];
+  s.innerHTML = `<div class="reel-wrap"><div class="reel-head"><h2 class="mg-title">${c.title || ''}</h2>${c.subtitle ? `<p>${c.subtitle}</p>` : ''}</div>
+    <div class="reel-frame">${IM.map((f, i) => `<img class="${i ? '' : 'on'}" src="${f.img}" alt="${f.alt || ''}">`).join('')}<div class="reel-bar t"></div><div class="reel-bar b"></div><div class="reel-tc">00:00:00:00</div></div>
+    ${c.credit ? `<div class="reel-credit">${c.credit}</div>` : ''}</div>`;
+  const imgs = [...s.querySelectorAll('.reel-frame img')], tc = s.querySelector('.reel-tc'); let raf = 0, t0 = 0;
+  const loop = n => { const t = (n - t0) / 1000, k = Math.floor(t / 2.6) % imgs.length; imgs.forEach((im, i) => im.classList.toggle('on', i === k)); const fr = Math.floor(t * 24); tc.textContent = `00:00:${String(Math.floor(fr / 24) % 60).padStart(2, '0')}:${String(fr % 24).padStart(2, '0')}`; raf = requestAnimationFrame(loop); };
+  tiLifecycle(s, () => { cancelAnimationFrame(raf); if (TI.instant) return; t0 = performance.now(); raf = requestAnimationFrame(loop); }, () => cancelAnimationFrame(raf), []);
+}
+
+// ip-web doors (round 2): optional click-through. Each → opens one branch's door: a large still with its label; the last → closes it.
+function mgIpDoors(s, c) {
+  const br = (c.branches || []).filter(b => b.img || b.doorText); if (!br.length || TI.exp) return;
+  const svg = s.querySelector('svg'), panel = document.createElement('div'); panel.className = 'ipd-panel'; s.appendChild(panel); mgGuard(panel);
+  const open = b => { panel.innerHTML = `<div class="ipd-card" style="--acc:${b._col || '#f59e0b'}">${b.img ? mgMedia(b.img, b) : `<div class="ipd-text">${b.doorText}</div>`}<div class="ipd-cap"><b>${b.t}</b>${b.doorCap ? `<span>${b.doorCap}</span>` : ''}</div></div>`; panel.classList.add('on'); svg.classList.add('dim'); mgPlayOnly(panel, panel.querySelector('video')); };
+  const close = () => { panel.classList.remove('on'); svg.classList.remove('dim'); };
+  const COL = ['#f59e0b', '#fb7185', '#00d4ff', '#a78bfa', '#fde68a']; (c.branches || []).forEach((b, i) => b._col = COL[i]);
+  panel.addEventListener('click', close);
+  const steps = br.map(b => () => open(b)); steps.push(close);
+  slideSteps.set(s, { current: 0, steps, reset: close });
+}
+
 // Cover
 const cov=document.createElement('div');cov.className='slide active';cov.dataset.type='cover';
 cov.innerHTML=`<div class="event-tag">${PITCH.event}</div><h1 class="talk-title">${TALK.title.replace(/\n/g,'<br>')}</h1><p class="talk-subtitle">${TALK.subtitle}</p><div class="speaker-card"><div><div class="speaker-name">${PITCH.speaker}</div><div class="speaker-co">${PITCH.company}</div></div></div>`;cov.querySelector('.talk-title').dataset.talk=TALK_KEY;document.title=`${TALK.title.replace(/\n/g,' ')} · ${PITCH.event.replace(/&middot;/g,'·')}`;
@@ -2157,10 +2715,13 @@ SECTIONS.forEach((sec,si)=>{
   sec.cases.forEach(c=>{
     const s=document.createElement('div');s.className=`slide case-slide${ac}${c.layout?' layout-'+c.layout:''}${c.gridCover?' grid-cover':''}`;s.dataset.type='case';s.dataset.year=sec.year;s.dataset.section=si;
     // layout: 'pipeline' / 'ip-web' (fork-local, MIA 2026) — animated SVG diagrams, see mgBuildPipeline / mgBuildIpWeb
-    if(c.layout==='pipeline'||c.layout==='ip-web'){(c.layout==='pipeline'?mgBuildPipeline:mgBuildIpWeb)(s,c);deck.appendChild(s);allSlides.push(s);return;}
+    if(c.layout==='pipeline'||c.layout==='ip-web'){(c.layout==='pipeline'?mgBuildPipeline:mgBuildIpWeb)(s,c);if(c.layout==='ip-web')mgIpDoors(s,c);deck.appendChild(s);allSlides.push(s);return;}
+    const MG2={'phase-tour':mgBuildPhaseTour,'camera-toy':mgBuildCameraToy,'replay-line':mgBuildReplayLine,'compare':mgBuildCompare,'reel':mgBuildReel};
+    if(MG2[c.layout]){MG2[c.layout](s,c);deck.appendChild(s);allSlides.push(s);return;}
     // layout: 'big' — full-slide statement text (bigText, optional title/subtitle/bigCaption)
     if(c.layout==='big'){
-      s.innerHTML=`<div class="big-stack">${c.pill&&c.title?`<div class="big-pill accent-${sec.accent||'teal'}">${c.title}</div>`:c.title?`<h2 class="big-eyebrow">${c.title.replace(/\n/g,'<br>')}</h2>`:''} ${c.subtitle?`<div class="big-sub">${c.subtitle}</div>`:''}${c.bigText?`<h1 class="big-text"${c.bigScale?` style="font-size:calc(${8*c.bigScale}*var(--vw))"`:''}>${c.bigText.replace(/\n/g,'<br>')}</h1>`:''}${c.bigCaption?`<p class="big-caption">${c.bigCaption.replace(/\n/g,'<br>')}</p>`:''}</div>`;
+      if(c.bgImg)s.classList.add('has-bg');
+      s.innerHTML=(c.bgImg?`<div class="big-bg" role="img" aria-label="${c.bgAlt||''}" style="background-image:url('${c.bgImg}')"></div>${c.bgCredit?`<div class="big-credit">${c.bgCredit}</div>`:''}`:'')+`<div class="big-stack">${c.pill&&c.title?`<div class="big-pill accent-${sec.accent||'teal'}">${c.title}</div>`:c.title?`<h2 class="big-eyebrow">${c.title.replace(/\n/g,'<br>')}</h2>`:''} ${c.subtitle?`<div class="big-sub">${c.subtitle}</div>`:''}${c.bigText?`<h1 class="big-text"${c.bigScale?` style="font-size:calc(${8*c.bigScale}*var(--vw))"`:''}>${c.bigText.replace(/\n/g,'<br>')}</h1>`:''}${c.bigCaption?`<p class="big-caption">${c.bigCaption.replace(/\n/g,'<br>')}</p>`:''}</div>`;
       deck.appendChild(s);allSlides.push(s);return;
     }
     // layout: 'rain' (fork-local) — quotes rain down and settle into a static 5x2 collage.
@@ -2844,7 +3405,7 @@ function getSlideNotes(idx){
   }
   if(ty==='intro')return INTRO[+sl.dataset.intro]?.notes||'';
   if(ty==='bonus')return'Bonus lesson: rally the audience. This is the call to action. Build energy and end strong.';
-  if(ty==='cover')return'Welcome the audience. Wait for stragglers. Introduce yourself and the talk theme.';
+  if(ty==='cover')return TALK.cover_notes||'Welcome the audience. Wait for stragglers. Introduce yourself and the talk theme.';
   if(ty==='close')return'Wrap up. Point to the QR codes. Thank the audience. Open for questions.';
   if(ty==='map')return'The constellation map is a visual summary of the journey. Let it breathe for a moment before moving on.';
   if(ty==='settings')return'Settings slide. Not shown to the audience during presentation mode.';
