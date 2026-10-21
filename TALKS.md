@@ -22,7 +22,7 @@ Thesis: Beloved stories need new audiences and new revenue beyond the stage and 
 | 4 | ACT I | A Christmas Carol VR (`carol-what`) | [A+B] | DWELL | 50 | 2:25 |
 | 5 | ACT I |  (`carol-inside`) | [A] | FLASH | 10 | 2:35 |
 | 6 | ACT I | How Audiences Experienced It (`carol-how`) | [A] | DWELL | 45 | 3:20 |
-| 7 | ACT I | Stephanie Riggs, on the 2021 premiere (`carol-quote`) | [A+B] | FLASH | 10 | 3:30 |
+| 7 | ACT I | Raindance Immersive 2025 (`carol-quote`) | [A+B] | FLASH | 10 | 3:30 |
 | 8 | ACT I | What It Proved About Classic IP (`carol-proved`) | [A] | DWELL | 55 | 4:25 |
 | 9 | ACT I | The Show Closed. The Assets Didn’t. (`carol-afterlife`) | [A] | DWELL | 30 | 4:55 |
 | 10 | ACT II | The Same Model, Other Stages. (`act-a2`) | [A] | FLASH | 10 | 5:05 |
@@ -59,7 +59,7 @@ Thesis: The companies winning in immersive pair engine mastery with craft: photo
 | 11 | ACT II | Worked with (`logos`) | [B] | FLASH | 10 | 4:40 |
 | 12 | ACT III | Craft Is the Other Half. (`act-b3`) | [B] | FLASH | 10 | 4:50 |
 | 13 | ACT III | A Christmas Carol VR (`carol-what`) | [A+B] | DWELL | 50 | 5:40 |
-| 14 | ACT III | Stephanie Riggs, on the 2021 premiere (`carol-quote`) | [A+B] | FLASH | 10 | 5:50 |
+| 14 | ACT III | Raindance Immersive 2025 (`carol-quote`) | [A+B] | FLASH | 10 | 5:50 |
 | 15 | ACT III | Royal Shakespeare Company (`rsc`) | [A+B] | DWELL | 40 | 6:30 |
 | 16 | ACT III | Heavenue (`heavenue`) | [A+B] | DWELL | 35 | 7:05 |
 | 17 | ACT IV | What Kind of Partnerships Are We Looking For? (`ask`) | [A+B] | DWELL | 30 | 7:35 |
@@ -106,11 +106,11 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 **[A+B] [DWELL] 50s**
 
 *Live actors. Live audiences. One shared virtual stage.*
-- Live actors with facial and motion capture perform on the streets of a virtual Victorian London
+- Live actors with face and full-body capture perform on the streets of a virtual Victorian London
 - Fully remote: actors, crew and audience each join from wherever they are
-- Five holiday seasons, 2021–2025 &middot; [FILL: total performances and total audience]
+- Five holiday seasons, 2021–2025 &middot; In 2025: 15 performances, up to 20 audience members each
 
-> **Notes:** Here's what it was. A Christmas Carol, performed live inside virtual reality. Live actors, with facial and motion capture, performing on the streets of a virtual Victorian London: Ari Tarr as Dickens, Scrooge and others, Debbie Deer as the Ghosts, directed for VR by David Gochfeld. It's fully remote. The actors, the crew and the audience are all in different places, and they share one stage. Forty-five minutes, a curtain time, a house. We ran it for five holiday seasons, 2021 through 2025. [FILL: total performances and audience. The FMX deck lists '150+ shows'; confirm it is a five-season total before saying it.]
+> **Notes:** Here's what it was. A Christmas Carol, performed live inside virtual reality. Two live actors, Ari Tarr and Debbie Deer, switch between every role, performing in Unreal Engine 5 as MetaHumans, with Quest Pro face tracking, on the streets of a virtual Victorian London, directed for VR by David Gochfeld. It's fully remote: the actors, the crew and the audience are all in different places, and they share one stage. Sixty to seventy-five minutes, a curtain time, a house. We ran it for five holiday seasons, 2021 through 2025. The last run had fifteen performances, up to twenty people each, plus a Christmas Eve streamathon.
 
 ### `carol-inside`: 
 
@@ -130,13 +130,13 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 > **Notes:** What did it feel like? Intimate. Scrooge can turn and look you in the eye, because the actor can actually see you. Before curtain, guests are welcomed by AI Dickens, a digital host built with our lead actor's voice, cloned with his permission and paid for, so the human performer can save his energy for the show. And afterwards the actors stay for a live Q&A. The audience isn't watching a recording of a play. They're part of a night that only happens once.
 
-### `carol-quote`: Stephanie Riggs, on the 2021 premiere
+### `carol-quote`: Raindance Immersive 2025
 
 **[A+B] [FLASH] 10s**
 
-**On screen:** “Gorgeous. Captivating. Haunting.”
+**On screen:** Nominee, Best Immersive Theatre.
 
-> **Notes:** Stephanie Riggs saw the very first season: gorgeous, captivating, haunting. And in its final year it was at Raindance Immersive. [FILL: say 'official selection' or 'nominated' once confirmed.]
+> **Notes:** In its final year, A Christmas Carol VR was a Raindance Immersive 2025 nominee for Best Immersive Theatre.
 
 ### `carol-proved`: What It Proved About Classic IP
 
@@ -147,18 +147,18 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 - A live show without a building: the house can be anywhere
 - The value outlived the run: characters, sets, an AI host and live-performance tools we reuse
 
-> **Notes:** So what did five winters prove? One: familiarity is an asset. A story people already love lowers the barrier to trying something new. Two: the house can be anywhere. A live show doesn't need a building, so the audience isn't limited to who can get to one. [FILL: one sentence on reach, if you have a number you trust.] Three: the value wasn't only the show. The characters, the sets, the AI host and the live-performance pipeline carried into our next projects. And I'll be candid about what it didn't prove on its own: we made work that taught us a lot and still needed a different funding and distribution model. A strong experience needs a partner who understands how its audience finds it.
+> **Notes:** So what did five winters prove? One: familiarity is an asset. A story people already love lowers the barrier to trying something new. Two: the house can be anywhere. A live show doesn't need a building, so the audience isn't limited to who can get to one. Three: the value wasn't only the show. The characters, the sets, the AI host and the live-performance pipeline carried into our next projects. And I'll be candid about what it didn't prove on its own: we made work that taught us a lot and still needed a different funding and distribution model. A strong experience needs a partner who understands how its audience finds it.
 
 ### `carol-afterlife`: The Show Closed. The Assets Didn’t.
 
 **[A] [DWELL] 30s**
 
 *December 2025*
-- The final shows were fully booked a week before closing
+- The final performance, 21 December 2025: 76 audience members in VR, 19 on the livestream
 - The final performance was captured in 3D and can be replayed from any seat
 - Its rehearsal and live-performance tools now power our other theater work
 
-> **Notes:** We closed it in December 2025, after five seasons, and the final shows were fully booked a week out. But the work didn't disappear. We captured the final performance in 3D, so it can be replayed from any seat in the house: a live show with a second life. [FILL: only mention a Vision Pro release if it is announced; the port is unreleased.] And its tools now run our other theater work.
+> **Notes:** We closed it in December 2025, after five seasons. The final performance had 76 people in VR and 19 more on the livestream. But the work didn't disappear. We captured the final performance in 3D, so it can be replayed from any seat in the house: a live show with a second life. And its tools now run our other theater work.
 
 ### `act-a2`: The Same Model, Other Stages.
 
@@ -185,15 +185,15 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 **On screen:** Live performance, no building required.
 
-> **Notes:** Because we kept needing it, we built Heavenue: a cloud platform for live performance in virtual space. Its first show was Carol's first season. Then The Orchard, Off-Broadway, a Chekhov production with Mikhail Baryshnikov and Jessica Hecht, where we built the virtual side: the same performance on a physical stage and in VR at once. [FILL: Heavenue's current status. The KB lists it as a previous venture, so check the tense before saying 'we run'.]
+> **Notes:** Because we kept needing it, we built Heavenue: a cloud platform for live performance in virtual space. Its first show was Carol's first season. Then The Orchard, Off-Broadway, a Chekhov production with Mikhail Baryshnikov and Jessica Hecht, where we built the virtual side: the same performance on a physical stage and in VR at once. It worked well, until we could not find the funding to keep it going. That's part of why I'm here: the work holds up; it needs partners with the audience and the money.
 
 ### `lincoln`: Lincoln Center &middot; David Geffen Hall
 
 **[A] [FLASH] 10s**
 
-*Sightline and railing studies, with Fisher Dachs Associates*
+**On screen:** See the view before it’s built.
 
-> **Notes:** At Lincoln Center: sightline and railing studies for David Geffen Hall with Fisher Dachs Associates, and previz for Song of the Ambassadors at Alice Tully Hall. [FILL: confirm photo rights; FDA project imagery needs clearance.]
+> **Notes:** At Lincoln Center, with Fisher Dachs Associates: sightline and railing studies for David Geffen Hall, so stakeholders saw the view before it was built.
 
 ### `fs-flash`: Four Seasons Private Residences, Lake Austin
 
@@ -208,7 +208,7 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 **On screen:** Take the flight before it exists.
 
-> **Notes:** For Joby Aviation: a passenger-seat air-taxi flight over New York, before anyone can book one. [FILL: credit wording for the NYC flight; the KB names an original project author.]
+> **Notes:** For Joby Aviation: a passenger-flight visualization, an air-taxi ride over New York, before anyone can book one.
 
 ### `logos`: Worked with
 
@@ -234,7 +234,7 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 **On screen:** 300+ classes taught. 40+ courses written.
 
-> **Notes:** Engine mastery first. I've been an authorized Unreal Engine instructor since the program's first cohort in 2020: more than 300 classes taught, more than 40 courses written. The people who teach the engine are the people who build your project. [FILL: only say 'Authorized Training Center' if the certification is current; the bio lists it as expiring Feb 2026.]
+> **Notes:** Engine mastery first. I've been an authorized Unreal Engine instructor since 2020: more than 300 classes taught, more than 40 courses written. The people who teach the engine are the people who build your project.
 
 ### `optimization`: Photoreal That Actually Runs
 
@@ -245,7 +245,7 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 - That moved A Christmas Carol VR from gaming PCs to headsets audiences already own
 - Increasing access is worth the work, as long as the artistic vision survives
 
-> **Notes:** Here's what engine mastery buys you. We optimized photoreal digital humans to run on standalone headsets, no gaming PC required. In 2024 that moved Christmas Carol onto headsets people already own, and that season had our biggest show yet. Our rule: increasing access is always worth the work, as long as the artistic vision survives the trip.
+> **Notes:** Here's what engine mastery buys you. We optimized photoreal digital humans to run on standalone headsets, no gaming PC required. In 2024 that moved Christmas Carol onto headsets people already own. Our rule: increasing access is always worth the work, as long as the artistic vision survives the trip.
 
 ### `rc`: Royal Caribbean &middot; Perfect Day Mexico
 
@@ -259,9 +259,9 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 **[B] [FLASH] 10s**
 
-**On screen:** [FILL: PICO line]
+**On screen:** Building for PICO’s new Swan headset.
 
-> **Notes:** [FILL: the PICO launch-demo line, only once PICO has cleared it for public use. If it isn't cleared by Thursday, drop this slide from Talk B.]
+> **Notes:** And we keep building for what comes next: we're among the first US studios building for PICO's new Swan headset. [FILL: Alex to confirm the exact Swan wording on stage]
 
 ### `act-b2`: Fidelity That Converts.
 
@@ -350,16 +350,4 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 ## Open [FILL] items
 
-- [FILL: Heavenue's current status. The KB lists it as a previous venture, so check the tense before saying 'we run'.]
-- [FILL: Official Selection or nominee — KB records both]
-- [FILL: PICO line]
-- [FILL: confirm Authorized Training Center status is current]
-- [FILL: confirm photo rights; FDA project imagery needs clearance.]
-- [FILL: credit wording for the NYC flight; the KB names an original project author.]
-- [FILL: one sentence on reach, if you have a number you trust.]
-- [FILL: only mention a Vision Pro release if it is announced; the port is unreleased.]
-- [FILL: only say 'Authorized Training Center' if the certification is current; the bio lists it as expiring Feb 2026.]
-- [FILL: say 'official selection' or 'nominated' once confirmed.]
-- [FILL: the PICO launch-demo line, only once PICO has cleared it for public use. If it isn't cleared by Thursday, drop this slide from Talk B.]
-- [FILL: total performances and audience. The FMX deck lists '150+ shows'; confirm it is a five-season total before saying it.]
-- [FILL: total performances and total audience]
+- [FILL: Alex to confirm the exact Swan wording on stage]
