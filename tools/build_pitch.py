@@ -30,6 +30,9 @@ TARGET_MIN = 510
 FLASH_MAX_SEC = 15
 DWELL_MIN_SEC = 30
 FILL = re.compile(r"\[FILL:[^\]]*\]")
+TRIMS = ("TRIM-1", "TRIM-2", "TRIM-3", "CORE")   # cut order: TRIM-1 goes first, CORE never
+TRIM_TARGETS = (12, 10, 8)                         # minutes for the 'if you only have N minutes' guide
+MEDIA_RE = re.compile(r"\.(jpe?g|png|webp|gif|svg|mp4|webm)$", re.I)
 WORDS_PER_SEC = 2.5     # 150 wpm conversational delivery
 START, END = "/* PITCH-JSON START */", "/* PITCH-JSON END */"
 
@@ -84,6 +87,22 @@ def validate(p):
             for k in ("alt", "credit"):
                 if not s.get(k):
                     errors.append(f"{sid}: video slides need '{k}'")
+        # every nested media path (phase-tour panes, replay stations, reel frames, compare pairs, door stills, bg images) must be local
+        def walk(v, path):
+            if isinstance(v, dict):
+                for k, x in v.items():
+                    walk(x, f"{path}.{k}")
+            elif isinstance(v, list):
+                for i, x in enumerate(v):
+                    walk(x, f"{path}[{i}]")
+            elif isinstance(v, str) and MEDIA_RE.search(v) and " " not in v and path != f"{sid}.img":
+                if v.startswith("http"):
+                    errors.append(f"{path}: media must be local so the deck runs offline ({v})")
+                elif not (ROOT / v).exists():
+                    errors.append(f"{path}: missing media file {v}")
+        walk(s, sid)
+        if s.get("trim") is not None and s["trim"] not in TRIMS:
+            errors.append(f"{sid}: trim must be one of {', '.join(TRIMS)}")
         if s.get("layout") == "pipeline":
             phases = s.get("phases") or []
             if len(phases) != 3 or any(not ph.get("name") or not 1 <= len(ph.get("items") or []) <= 3 for ph in phases):
@@ -122,6 +141,8 @@ def validate(p):
             if letter not in pool[sid]["talks"]:
                 errors.append(f"talk {letter} uses {sid!r} but it is tagged [{pool[sid]['talks']}]")
             used[letter].add(sid)
+            if not pool[sid].get("trim"):
+                errors.append(f"talk {letter} uses {sid!r} without a trim priority ({', '.join(TRIMS)})")
         for act in talk["acts"]:
             if pool.get(act["lesson"], {}).get("layout"):
                 errors.append(f"talk {letter}: act lesson {act['lesson']!r} must be a plain slide, not layout {pool[act['lesson']]['layout']!r}")
@@ -163,6 +184,9 @@ def slide_lines(s):
     for b in s.get("bullets", []):
         lines.append(f"- {strip_html(b)}")
     for ph in s.get("phases", []):
+        if "points" in ph:
+            lines.append(f"- **{ph['name']}:** {'; '.join(strip_html(x) for x in ph['points'])} ({strip_html(ph.get('proof', ''))}) [{ph.get('media', '')}]")
+            continue
         items = "; ".join(("\u25cf " if it.get("al") else "\u25cb ") + strip_html(it["t"]) for it in ph["items"])
         lines.append(f"- **{ph['name']}:** {items}")
     if s.get("output"):
@@ -172,6 +196,14 @@ def slide_lines(s):
     for b in s.get("branches", []):
         lines.append(f"- {'\u25cf' if b.get('al') else '\u25cb'} **{strip_html(b['t'])}:** {strip_html(b.get('d', ''))}"
                      + (f" ({strip_html(b['proof'])})" if b.get("proof") else ""))
+    for st in s.get("stations", []):
+        lines.append(f"- **{strip_html(st.get('when', ''))} {strip_html(st['t'])}:** {strip_html(st.get('d', ''))} [{st.get('img', '')}]")
+    for f in s.get("frames", []):
+        lines.append(f"- Frame: {f['img']} ({f.get('alt', '')})")
+    if s.get("imgA"):
+        lines.append(f"- Compare: {s.get('labelA')} [{s['imgA']}] / {s.get('labelB')} [{s['imgB']}]")
+    if s.get("bgImg"):
+        lines.append(f"- Background: {s['bgImg']}")
     if s.get("only"):
         lines.append(f"- **Only XR:** {' · '.join(s['only'])}")
     if s.get("legend"):
@@ -182,6 +214,38 @@ def slide_lines(s):
         lines.append(f"*Credit:* {strip_html(s['credit'])}")
     if s.get("tagline") and not s.get("bullets"):
         lines.append(f"- {strip_html(s['tagline'])}")
+    return lines
+
+
+def trim_guide(talk, pool):
+    """Cut lists for TRIM_TARGETS minutes: drop TRIM-1 slides first (in running order), then TRIM-2, then TRIM-3, until the
+    talk fits. Act lessons are never cut on their own: a lesson goes only when every slide in its act has gone."""
+    rt = running_time(talk, pool)
+    lessons = {a["lesson"] for a in talk["acts"]}
+    ids = [sid for sid in talk_ids(talk) if sid not in lessons]
+    order = [sid for level in TRIMS[:-1] for sid in ids if pool[sid].get("trim") == level]
+    out, cut, total = [], [], rt
+    for mins in TRIM_TARGETS:
+        new = []
+        for sid in order:
+            if total <= mins * 60:
+                break
+            if sid in cut:
+                continue
+            cut.append(sid); new.append(sid); total -= pool[sid]["sec"]
+            for a in talk["acts"]:
+                if a["lesson"] not in cut and a["cases"] and all(c in cut for c in a["cases"]):
+                    cut.append(a["lesson"]); new.append(a["lesson"]); total -= pool[a["lesson"]]["sec"]
+        out.append((mins, new, total))
+    return rt, out
+
+
+def guide_text(talk, pool, md=False):
+    rt, rows = trim_guide(talk, pool)
+    name = lambda sid: (f"`{sid}`" if md else sid) + f" ({pool[sid]['sec']}s)"
+    lines = [f"Full talk: {fmt(rt)}."]
+    for mins, new, total in rows:
+        lines.append(f"{mins} min ({fmt(total)}): " + ("cut " + ", ".join(name(s) for s in new) if new else "no further cuts") + ".")
     return lines
 
 
@@ -211,9 +275,14 @@ def write_md(p, pool):
                 s = pool[sid]
                 clock += s["sec"]
                 title = strip_html(s.get("title") or s.get("bigText"))
-                out.append(f"| {n} | {act['year']} | {title} (`{sid}`) | [{s['talks']}] | {s['pace']} | {s['sec']} | {fmt(clock)} |")
+                out.append(f"| {n} | {act['year']} | {title} (`{sid}`) | [{s['talks']}] | {s['pace']} · {s.get('trim', '')} | {s['sec']} | {fmt(clock)} |")
                 n += 1
         out += ["", f"Take-home line: **{strip_html(talk['takeaway'])}**", ""]
+    out += ["## If you only have N minutes", "",
+            "Generated from each slide's trim priority: `TRIM-1` slides go first, then `TRIM-2`, then `TRIM-3`; `CORE` slides stay. "
+            "Each line adds cuts to the line above. The same guide is in each talk's cover-slide notes.", ""]
+    for key, talk in p["talks"].items():
+        out += [f"**Talk {key.upper()}:**", ""] + [f"- {l}" for l in guide_text(talk, pool, md=True)] + [""]
     parked = [s for s in p["pool"] if s.get("parked")]
     if parked:
         out += ["## Parked slides (in the pool, restorable)", "",
@@ -242,9 +311,11 @@ def main():
     for key, talk in p["talks"].items():
         rt = running_time(talk, pool)
         n = sum(1 for _ in talk_ids(talk))
-        flags = "" if TARGET_MIN <= rt <= TARGET_MAX else f"  <-- outside {fmt(TARGET_MIN)}-{fmt(TARGET_MAX)} target"
+        # per-talk target (minutes) when set: Alex speaks fast, so a talk may be budgeted long and trimmed with the guide
+        lo, hi = (talk["target_min"] * 60 * .9, talk["target_min"] * 60 * 1.05) if talk.get("target_min") else (TARGET_MIN, TARGET_MAX)
+        flags = "" if lo <= rt <= hi else f"  <-- outside {fmt(lo)}-{fmt(hi)} target"
         spoken = sum(spoken_sec(pool[sid]) for sid in talk_ids(talk))
-        print(f"Talk {key.upper()}: {n} slides + cover, {fmt(rt)} of {fmt(SLOT_SEC)}{flags}; notes read aloud ~{fmt(spoken)} at 150 wpm")
+        print(f"Talk {key.upper()}: {n} slides + cover, {fmt(rt)} budgeted (slot {fmt(SLOT_SEC)}){flags}; notes read aloud ~{fmt(spoken)} at 150 wpm")
     for s in p["pool"]:
         if spoken_sec(s) > s["sec"] * 1.1:
             print(f"WARN: {s['id']} notes take ~{spoken_sec(s):.0f}s to say but the slide is budgeted {s['sec']}s")
@@ -252,6 +323,8 @@ def main():
         return
     html = HTML.read_text(encoding="utf-8")
     i, j = html.index(START) + len(START), html.index(END)
+    for key, talk in p["talks"].items():  # the trim guide rides along in the cover slide's presenter notes
+        talk["cover_notes"] = (talk.get("cover_spoken", "") + "\n\nIF YOU ONLY HAVE N MINUTES: " + " ".join(guide_text(talk, pool))).strip()
     blob = json.dumps({k: v for k, v in p.items()}, ensure_ascii=False, indent=1)
     HTML.write_text(html[:i] + "\n" + blob + "\n" + html[j:], encoding="utf-8", newline="\n")
     fills = write_md(p, pool)
