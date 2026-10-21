@@ -125,6 +125,8 @@ def validate(p):
 def spoken_sec(s):
     """Seconds the speaker notes take to say aloud, ignoring [FILL] markers and stage directions."""
     text = FILL.sub("", s.get("notes", ""))
+    # "ALEX TO CONFIRM: ..." is a note to the speaker, not a line to say; it always ends the notes
+    text = text.split("ALEX TO CONFIRM:")[0]
     text = re.sub(r"^Pause\.[^:]*:", "", text)
     return len(text.split()) / WORDS_PER_SEC
 

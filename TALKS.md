@@ -30,7 +30,7 @@ Thesis: Beloved stories need new audiences and new revenue beyond the stage and 
 | 12 | ACT II | Heavenue (`heavenue`) | [A+B] | DWELL | 35 | 6:35 |
 | 13 | ACT II | Lincoln Center &middot; David Geffen Hall (`lincoln`) | [A] | FLASH | 10 | 6:45 |
 | 14 | ACT II | Four Seasons Private Residences, Lake Austin (`fs-flash`) | [A] | FLASH | 10 | 6:55 |
-| 15 | ACT II | Joby Aviation (`joby`) | [A+B] | FLASH | 10 | 7:05 |
+| 15 | ACT II | eVTOL air-taxi passenger simulation (`joby`) | [A+B] | FLASH | 10 | 7:05 |
 | 16 | ACT III | What Kind of Partnerships Are We Looking For? (`ask`) | [A+B] | DWELL | 30 | 7:35 |
 | 17 | ACT III | 1 &middot; IP-extension partnerships (`ask-ip`) | [A+B] | DWELL | 40 | 8:15 |
 | 18 | ACT III | 2 &middot; Co-productions from day one (`ask-copro`) | [A+B] | DWELL | 40 | 8:55 |
@@ -51,11 +51,11 @@ Thesis: The companies winning in immersive pair engine mastery with craft: photo
 | 3 | ACT I | We teach the engine we build in (`teach`) | [B] | DWELL | 35 | 1:30 |
 | 4 | ACT I | Photoreal That Actually Runs (`optimization`) | [B] | DWELL | 45 | 2:15 |
 | 5 | ACT I | Royal Caribbean &middot; Perfect Day Mexico (`rc`) | [B] | DWELL | 40 | 2:55 |
-| 6 | ACT I | PICO (`pico`) | [B] | FLASH | 10 | 3:05 |
+| 6 | ACT I | What comes next (`pico`) | [B] | FLASH | 10 | 3:05 |
 | 7 | ACT II | Fidelity That Converts. (`act-b2`) | [B] | FLASH | 10 | 3:15 |
 | 8 | ACT II | Four Seasons Private Residences (`fs-dwell`) | [B] | DWELL | 55 | 4:10 |
 | 9 | ACT II | Four Seasons tours at DBOX, New York (`fs-dbox`) | [B] | FLASH | 10 | 4:20 |
-| 10 | ACT II | Joby Aviation (`joby`) | [A+B] | FLASH | 10 | 4:30 |
+| 10 | ACT II | eVTOL air-taxi passenger simulation (`joby`) | [A+B] | FLASH | 10 | 4:30 |
 | 11 | ACT II | Worked with (`logos`) | [B] | FLASH | 10 | 4:40 |
 | 12 | ACT III | Craft Is the Other Half. (`act-b3`) | [B] | FLASH | 10 | 4:50 |
 | 13 | ACT III | A Christmas Carol VR (`carol-what`) | [A+B] | DWELL | 50 | 5:40 |
@@ -187,7 +187,7 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 - Built with theater people, for theater people: the script stays in your hand, like paper
 - An R&amp;D grant with XR Network+, 2024–2025: tested with drama students, shown in Stratford
 
-> **Notes:** With the Royal Shakespeare Company, through an R&D grant with XR Network+, we developed virtual rehearsal tools: a one-to-one laser scan of the Swan Theatre in Stratford that actors can rehearse inside, while directors follow from a laptop. On the left, the real Swan; on the right, ours. We tried every clever way to float a script in space. Every actor wanted the same thing: a script they could hold, and put down on the floor. Same as paper. Respect the craft, and the technology disappears.
+> **Notes:** With the Royal Shakespeare Company, Royal Central School and NYU's WLab, through an R&D grant with XR Network+, we developed virtual rehearsal tools: a one-to-one scan of the Swan Theatre in Stratford that actors can rehearse inside, while directors follow from a laptop. We tried every clever way to float a script in space. Every actor wanted the same thing: a script they could hold, and put down on the floor. Respect the craft, and the technology disappears.
 
 ### `heavenue`: Heavenue
 
@@ -195,7 +195,7 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 **On screen:** Live performance, no building required.
 
-> **Notes:** Because we kept needing it, we built Heavenue: a cloud platform for live performance in virtual space. Its first show was Carol's first season. Then The Orchard, Off-Broadway, a Chekhov production with Mikhail Baryshnikov and Jessica Hecht, where we built the virtual side: the same performance on a physical stage and in VR at once. It worked well, until we could not find the funding to keep it going. That's part of why I'm here: the work holds up; it needs partners with the audience and the money.
+> **Notes:** Because we kept needing it, we built Heavenue: a cloud platform for live performance in virtual space. Its first show was Carol's first season. Then The Orchard, Arlekin Players' Chekhov production, which opened Off-Broadway in June 2022 with Mikhail Baryshnikov and Jessica Hecht: we built the remote experience, so the same performance played to a house and to an audience online at once. It worked well, until we could not find the funding to keep it going. That's part of why I'm here: the work holds up; it needs partners with the audience and the money.
 
 ### `lincoln`: Lincoln Center &middot; David Geffen Hall
 
@@ -203,28 +203,29 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 **On screen:** See the view before it’s built.
 
-> **Notes:** At Lincoln Center, with Fisher Dachs Associates: sightline and railing studies for David Geffen Hall, so stakeholders saw the view before it was built.
+> **Notes:** At Lincoln Center, with Fisher Dachs and Diamond Schmitt: VR models for Geffen Hall's seats, sightlines and railings, before it was built.
 
 ### `fs-flash`: Four Seasons Private Residences, Lake Austin
 
 **[A] [FLASH] 10s**
 
+*Credit:* With DBOX and Pureblink &middot; Agile Lens, LBE VR technologists
 
-> **Notes:** Same craft, different audience: for Four Seasons, buyers walk full-scale, photoreal residences years before they're built.
+> **Notes:** Same craft, different audience: for Four Seasons, with DBOX and Pureblink, buyers walk full-scale, photoreal residences years before they're built.
 
-### `joby`: Joby Aviation
+### `joby`: eVTOL air-taxi passenger simulation
 
 **[A+B] [FLASH] 10s**
 
 **On screen:** Take the flight before it exists.
 
-> **Notes:** For Joby Aviation: a passenger-flight visualization, an air-taxi ride over New York, before anyone can book one.
+> **Notes:** For an eVTOL air-taxi company: a passenger-flight simulation, a ride over New York, before anyone can book one. ALEX TO CONFIRM: name Joby only with Adam Krebs's written OK, and flip the slide wording then.
 
 ### `logos`: Worked with
 
 **[B] [FLASH] 10s**
 
-**On screen:** Royal Shakespeare Company &middot; Lincoln Center Four Seasons &middot; Joby Aviation Royal Caribbean &middot; Samsung
+**On screen:** Royal Shakespeare Company &middot; Lincoln Center Four Seasons &middot; Royal Caribbean &middot; Samsung
 
 > **Notes:** A few names we've worked with, plus support from Google's Android XR program.
 
@@ -261,17 +262,17 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 **[B] [DWELL] 40s**
 
-**On screen:** Six guests. One sky. No internet required.
+**On screen:** Nearly 1,000 guests. Four days at sea.
 
-> **Notes:** And it has to run where the audience is. For Royal Caribbean we built a hot-air-balloon ride for six guests at once, on standalone headsets, fully offline, run by staff from a tablet. More than a thousand riders, and one motion-sickness incident. Reset time, staff training and battery plans sound unglamorous. On a ship, they decide how many guests ride.
+> **Notes:** And it has to run where the audience is. For Royal Caribbean, with Endorphin Partners, we built a hot-air-balloon ride over Perfect Day Mexico on standalone headsets that run offline at sea. Aboard Utopia of the Seas in September 2025, nearly a thousand guests rode it in about four days, about ten minutes a ride, run by the client's own volunteers from the operations manual we wrote. Throughput, reset time and battery plans sound unglamorous. On a ship, they decide how many guests ride.
 
-### `pico`: PICO
+### `pico`: What comes next
 
 **[B] [FLASH] 10s**
 
-**On screen:** Building for PICO’s new Swan headset.
+**On screen:** Building for a new PICO standalone headset.
 
-> **Notes:** And we keep building for what comes next: we're among the first US studios building for PICO's new Swan headset. [FILL: Alex to confirm the exact Swan wording on stage]
+> **Notes:** And we're already building for what comes next: a new PICO standalone headset, under NDA. ALEX TO CONFIRM: how much to say aloud; no specs, no photos, and no claim that any show runs on it. [FILL: Alex to confirm the exact Swan wording on stage]
 
 ### `act-b2`: Fidelity That Converts.
 
@@ -287,10 +288,11 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 *Lake Austin: luxury homes, toured from a headset*
 - Buyers walk full-scale, photoreal residences years before they’re built
-- A wireless holodeck, 82 by 65 feet: families tour together, no cables
-- We built it, set it up, and ran its first six months of operation
+- A wireless, walkable holodeck of about 5,000 square feet: families tour together, no cables
+- We engineered the location-based VR, set it up, and ran its first six months of operation
+*Credit:* Austin Capital Partners &middot; DBOX, creative director and agency of record &middot; Pureblink, VR scene producers &middot; Agile Lens, LBE VR technologists
 
-> **Notes:** Four Seasons Private Residences in Lake Austin. Buyers put on a headset and walk the residence: the light, the view, the finishes, years before it exists. We built a wireless holodeck, 82 by 65 feet, so a family can tour together with no cables, and we staffed and ran its first six months. As I said on Voices of VR: it's binary. Without this VR experience, the project would not be happening. And that's the pattern we see again and again: photoreal, client-branded demos turn foot traffic into qualified conversations.
+> **Notes:** Four Seasons Private Residences in Lake Austin. Buyers put on a headset and walk the residence: the light, the view, the finishes, years before it exists. With DBOX as creative director and Pureblink producing the VR scenes, we were the location-based VR technologists: a wireless, walkable space of about five thousand square feet, so a family can tour together with no cables, and we ran its first six months. As I said on Voices of VR: it's binary. Without this VR experience, the project would not be happening.
 
 ### `fs-dbox`: Four Seasons tours at DBOX, New York
 
@@ -298,7 +300,7 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 **On screen:** Headset on in New York. Standing in Austin.
 
-> **Notes:** And because it runs on real hardware, the same tours ran in New York: headset on in Manhattan, standing in Austin.
+> **Notes:** And because it runs on real hardware, the same tours ran in New York, at DBOX: headset on in Manhattan, standing in Austin.
 
 ### `act-b3`: Craft Is the Other Half.
 
