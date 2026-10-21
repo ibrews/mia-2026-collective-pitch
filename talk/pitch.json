@@ -468,11 +468,10 @@
    "pace": "FLASH",
    "sec": 10,
    "layout": "big",
-   "title": "What comes next",
-   "bigText": "Building for a new\nPICO standalone headset.",
-   "bigCaption": "Under NDA &middot; no specs to share yet",
-   "notes": "And we're already building for what comes next: a new PICO standalone headset, under NDA. ALEX TO CONFIRM: how much to say aloud; no specs, no photos, and no claim that any show runs on it. [FILL: Alex to confirm the exact Swan wording on stage]",
-   "bigScale": 0.75
+   "title": "PICO Space Pro",
+   "bigText": "First company in the US\nwith access to PICO Space Pro.",
+   "notes": "And we're already building for what comes next: we were the first company in the US with access to PICO Space Pro. ALEX TO CONFIRM: public status per Road to VR and vr.org (Aug-Oct 2026): PICO cancelled its 2 September reveal and its official timeline is now Q4 2026, so don't say it's on sale or launched; 'announced' at most. No specs, no photos, no claim that any show runs on it. [FILL: Alex to confirm the exact Swan wording on stage]",
+   "bigScale": 0.62
   },
   {
    "id": "act-b2",

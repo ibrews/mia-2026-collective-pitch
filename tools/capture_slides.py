@@ -50,8 +50,16 @@ def find_chrome():
     sys.exit("error: no Chrome/Chromium found. Install Google Chrome or set CHROME_BIN=/path/to/chrome")
 
 
+# Extra query string appended to every capture URL, e.g. "talk=b" for a fork that serves
+# several talks from one index.html (fork-local, MIA 2026). Set by --query.
+EXTRA_QUERY = ""
+# Wall-time budget per screenshot; raise it when large posters or clips need longer to decode.
+SHOT_WAIT_MS = 3500
+
+
 def _file_url(html_path, query):
-    return Path(html_path).resolve().as_uri() + "?" + query
+    q = query + ("&" + EXTRA_QUERY if EXTRA_QUERY else "")
+    return Path(html_path).resolve().as_uri() + "?" + q
 
 
 def _run_chrome(chrome, args, artifact, timeout=60, settle=0.7):
@@ -154,9 +162,10 @@ def _run_chrome_dump(chrome, args, out_path, timeout=60):
             shutil.rmtree(profile, ignore_errors=True)
 
 
-def shoot(html_path, idx, out_png, width=1920, height=1080, chrome=None, wait_ms=3500):
+def shoot(html_path, idx, out_png, width=1920, height=1080, chrome=None, wait_ms=None):
     """Capture slide `idx` (absolute index) to out_png."""
     chrome = chrome or find_chrome()
+    wait_ms = wait_ms or SHOT_WAIT_MS
     ok = _run_chrome(chrome, [f"--timeout={wait_ms}",
                               f"--window-size={width},{height}",
                               f"--screenshot={out_png}",

@@ -51,7 +51,7 @@ Thesis: The companies winning in immersive pair engine mastery with craft: photo
 | 3 | ACT I | We teach the engine we build in (`teach`) | [B] | DWELL | 35 | 1:30 |
 | 4 | ACT I | Photoreal That Actually Runs (`optimization`) | [B] | DWELL | 45 | 2:15 |
 | 5 | ACT I | Royal Caribbean &middot; Perfect Day Mexico (`rc`) | [B] | DWELL | 40 | 2:55 |
-| 6 | ACT I | What comes next (`pico`) | [B] | FLASH | 10 | 3:05 |
+| 6 | ACT I | PICO Space Pro (`pico`) | [B] | FLASH | 10 | 3:05 |
 | 7 | ACT II | Fidelity That Converts. (`act-b2`) | [B] | FLASH | 10 | 3:15 |
 | 8 | ACT II | Four Seasons Private Residences (`fs-dwell`) | [B] | DWELL | 55 | 4:10 |
 | 9 | ACT II | Four Seasons tours at DBOX, New York (`fs-dbox`) | [B] | FLASH | 10 | 4:20 |
@@ -270,13 +270,13 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 > **Notes:** And it has to run where the audience is. For Royal Caribbean, with Endorphin Partners, we built a hot-air-balloon ride over Perfect Day Mexico on standalone headsets that run offline at sea. Aboard Utopia of the Seas in September 2025, nearly a thousand guests rode it in about four days, about ten minutes a ride, run by the client's own volunteers from the operations manual we wrote. Throughput, reset time and battery plans sound unglamorous. On a ship, they decide how many guests ride.
 
-### `pico`: What comes next
+### `pico`: PICO Space Pro
 
 **[B] [FLASH] 10s**
 
-**On screen:** Building for a new PICO standalone headset.
+**On screen:** First company in the US with access to PICO Space Pro.
 
-> **Notes:** And we're already building for what comes next: a new PICO standalone headset, under NDA. ALEX TO CONFIRM: how much to say aloud; no specs, no photos, and no claim that any show runs on it. [FILL: Alex to confirm the exact Swan wording on stage]
+> **Notes:** And we're already building for what comes next: we were the first company in the US with access to PICO Space Pro. ALEX TO CONFIRM: public status per Road to VR and vr.org (Aug-Oct 2026): PICO cancelled its 2 September reveal and its official timeline is now Q4 2026, so don't say it's on sale or launched; 'announced' at most. No specs, no photos, no claim that any show runs on it. [FILL: Alex to confirm the exact Swan wording on stage]
 
 ### `act-b2`: Fidelity That Converts.
 
