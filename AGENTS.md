@@ -6,6 +6,12 @@ Talk content lives in `talk/pitch.json` (shared slide pool + two talks), NOT in 
 Edit the JSON, then run `python tools/build_pitch.py` (validates, splices into index.html between the
 PITCH-JSON sentinels, regenerates TALKS.md). Never hand-edit the JSON blob inside index.html or TALKS.md.
 `?talk=b` selects Talk B. Unverified facts stay as `[FILL: ...]` markers; never replace one with a guess.
+Speaker-only directions in notes start with `ALEX TO CONFIRM:` and always end the notes (excluded from the spoken-time estimate).
+Fork-local layouts and fields: `layout: 'rain'` (a `quotes` array of `{t, who, src, year}`, verbatim and attributed, max 12 quotes
+of 25 words or fewer); clips (`img` ending .mp4/.webm, in `full` or case slides) need `alt` and `credit`, and should carry a `poster`
+JPG (used by `?shot`/`?print` and the PDFs). The deck must run offline: fonts (`assets/fonts`), three.js (`assets/vendor/three`)
+and the closing QR (`assets/qr`, from `tools/make_qr.py`) are local, and `build_pitch.py` refuses remote media.
+PDF backups: `python tools/export_pdf.py --out pdf/MIA-2026-Collective-Pitch-Talk-A.pdf --wait-ms 8000` (add `--query talk=b` for Talk B).
 
 ## What This Is
 
