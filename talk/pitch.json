@@ -21,7 +21,8 @@
    {
     "url": "https://agilelens.com",
     "label": "Agile Lens",
-    "badge": "Say hello"
+    "badge": "Say hello",
+    "img": "assets/qr/agilelens-com.svg"
    }
   ]
  },

@@ -76,6 +76,11 @@ def validate(p):
         if s.get("img") and not s["img"].startswith(("http", "IFRAME:")) and not (ROOT / s["img"]).exists():
             errors.append(f"{sid}: missing media file {s['img']}")
 
+    # The deck must run offline: closing QR codes are pre-rendered SVGs (tools/make_qr.py)
+    for q in p.get("close", {}).get("qr", []):
+        if not q.get("img") or not (ROOT / q["img"]).exists():
+            errors.append(f"close.qr {q.get('url')!r}: missing local QR image (run python tools/make_qr.py)")
+
     used = {"A": set(), "B": set()}
     for key, talk in p["talks"].items():
         letter = key.upper()
