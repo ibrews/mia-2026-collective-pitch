@@ -116,8 +116,9 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 **[A] [FLASH] 10s**
 
+*Credit:* A Christmas Carol VR 2025 trailer &middot; Agile Lens
 
-> **Notes:** This is the audience's view. Not row M of a theater: inside the room, with the characters.
+> **Notes:** This is the audience's view: not row M of a theater, but inside the room, with the characters. Those little lights are the audience.
 
 ### `carol-how`: How Audiences Experienced It
 
@@ -167,6 +168,7 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 - Replay from any position, on a scrub timeline: review it like dailies
 - A cinematographer build shoots new camera coverage of a show that’s already over: see it in our demo area
 - The same tools now run our RSC rehearsal R&amp;D and our Stage Presence toolkit
+*Credit:* Replay recording of a performance &middot; Agile Lens (Yu-Jun Yeh)
 
 > **Notes:** We closed it in December 2025, after five seasons. But for this room, here's the part that matters most. We recorded the performances with everything in them: the motion capture, the cues, the spatial audio. You can replay a show from any position in the house and scrub the timeline, like dailies. And we've built a cinematographer version, so a director can shoot new camera coverage of a performance that has already happened. It's in our demo area today. And the same tools now run our rehearsal R&D with the RSC.
 
@@ -186,6 +188,7 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 - Actors rehearse in a 1:1 scan of the Swan Theatre; directors follow along from a laptop
 - Built with theater people, for theater people: the script stays in your hand, like paper
 - An R&amp;D grant with XR Network+, 2024–2025: tested with drama students, shown in Stratford
+*Credit:* XR Network+ RSC Challenge 2025 film &middot; Agile Lens
 
 > **Notes:** With the Royal Shakespeare Company, Royal Central School and NYU's WLab, through an R&D grant with XR Network+, we developed virtual rehearsal tools: a one-to-one scan of the Swan Theatre in Stratford that actors can rehearse inside, while directors follow from a laptop. We tried every clever way to float a script in space. Every actor wanted the same thing: a script they could hold, and put down on the floor. Respect the craft, and the technology disappears.
 
@@ -209,7 +212,7 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 
 **[A] [FLASH] 10s**
 
-*Credit:* With DBOX and Pureblink &middot; Agile Lens, LBE VR technologists
+*Credit:* In-headset capture &middot; with DBOX and Pureblink &middot; Agile Lens, LBE VR technologists
 
 > **Notes:** Same craft, different audience: for Four Seasons, with DBOX and Pureblink, buyers walk full-scale, photoreal residences years before they're built.
 
@@ -255,6 +258,7 @@ Take-home line: **Craft makes them care. Engineering makes sure they can.**
 - We optimized photoreal digital humans to run on standalone headsets
 - That moved A Christmas Carol VR from gaming PCs to headsets audiences already own
 - Increasing access is worth the work, as long as the artistic vision survives
+*Credit:* A Christmas Carol VR 2025 trailer &middot; Agile Lens
 
 > **Notes:** Here's what engine mastery buys you. We optimized photoreal digital humans to run on standalone headsets, no gaming PC required. In 2024 that moved Christmas Carol onto headsets people already own. Our rule: increasing access is always worth the work, as long as the artistic vision survives the trip.
 

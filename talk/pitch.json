@@ -193,8 +193,11 @@
    "pace": "FLASH",
    "sec": 10,
    "layout": "full",
-   "img": "media/carol/Dancing.png",
-   "notes": "This is the audience's view. Not row M of a theater: inside the room, with the characters."
+   "img": "media/video/carol-trailer-dance.mp4",
+   "notes": "This is the audience's view: not row M of a theater, but inside the room, with the characters. Those little lights are the audience.",
+   "poster": "media/video/carol-trailer-dance.jpg",
+   "alt": "Inside A Christmas Carol VR: live-performed characters dance at Fezziwig’s party while the audience, shown as small glowing lights, watches from among them",
+   "credit": "<i>A Christmas Carol VR</i> 2025 trailer &middot; Agile Lens"
   },
   {
    "id": "carol-how",
@@ -305,14 +308,17 @@
    "sec": 40,
    "title": "The Run Ended.\nThe Performance Didn’t.",
    "subtitle": "December 2025: our replay and film tools",
-   "img": "media/carol/marley.png",
+   "img": "media/video/carol-replay-marley.mp4",
    "bullets": [
     "Performances recorded with their motion capture, cues and spatial audio",
     "Replay from any position, on a scrub timeline: review it like dailies",
     "A cinematographer build shoots new camera coverage of a show that’s already over: see it in our demo area",
     "The same tools now run our RSC rehearsal R&amp;D and our Stage Presence toolkit"
    ],
-   "notes": "We closed it in December 2025, after five seasons. But for this room, here's the part that matters most. We recorded the performances with everything in them: the motion capture, the cues, the spatial audio. You can replay a show from any position in the house and scrub the timeline, like dailies. And we've built a cinematographer version, so a director can shoot new camera coverage of a performance that has already happened. It's in our demo area today. And the same tools now run our rehearsal R&D with the RSC."
+   "notes": "We closed it in December 2025, after five seasons. But for this room, here's the part that matters most. We recorded the performances with everything in them: the motion capture, the cues, the spatial audio. You can replay a show from any position in the house and scrub the timeline, like dailies. And we've built a cinematographer version, so a director can shoot new camera coverage of a performance that has already happened. It's in our demo area today. And the same tools now run our rehearsal R&D with the RSC.",
+   "poster": "media/video/carol-replay-marley.jpg",
+   "alt": "A recorded performance played back in the replay system: Marley’s ghost confronts Scrooge, seen from a free camera with the replay controls on screen",
+   "credit": "Replay recording of a performance &middot; Agile Lens (Yu-Jun Yeh)"
   },
   {
    "id": "act-a2",
@@ -331,13 +337,16 @@
    "sec": 40,
    "title": "Royal Shakespeare Company",
    "subtitle": "Virtual rehearsal tools, developed with the RSC",
-   "img": "media/rsc/RSC_compare.png",
+   "img": "media/video/rsc-rehearsal-room.mp4",
    "bullets": [
     "Actors rehearse in a 1:1 scan of the Swan Theatre; directors follow along from a laptop",
     "Built with theater people, for theater people: the script stays in your hand, like paper",
     "An R&amp;D grant with XR Network+, 2024–2025: tested with drama students, shown in Stratford"
    ],
-   "notes": "With the Royal Shakespeare Company, Royal Central School and NYU's WLab, through an R&D grant with XR Network+, we developed virtual rehearsal tools: a one-to-one scan of the Swan Theatre in Stratford that actors can rehearse inside, while directors follow from a laptop. We tried every clever way to float a script in space. Every actor wanted the same thing: a script they could hold, and put down on the floor. Respect the craft, and the technology disappears."
+   "notes": "With the Royal Shakespeare Company, Royal Central School and NYU's WLab, through an R&D grant with XR Network+, we developed virtual rehearsal tools: a one-to-one scan of the Swan Theatre in Stratford that actors can rehearse inside, while directors follow from a laptop. We tried every clever way to float a script in space. Every actor wanted the same thing: a script they could hold, and put down on the floor. Respect the craft, and the technology disappears.",
+   "poster": "media/video/rsc-rehearsal-room.jpg",
+   "alt": "Actors in headsets rehearse in a studio while a monitor shows them inside the virtual Swan Theatre; a director follows on a tablet",
+   "credit": "XR Network+ RSC Challenge 2025 film &middot; Agile Lens"
   },
   {
    "id": "heavenue",
@@ -368,10 +377,12 @@
    "pace": "FLASH",
    "sec": 10,
    "layout": "full",
-   "img": "media/fs/re-fourseasons-holodeck-session.jpg",
+   "img": "media/video/fsla-in-vr.mp4",
    "title": "Four Seasons Private Residences, Lake Austin",
    "notes": "Same craft, different audience: for Four Seasons, with DBOX and Pureblink, buyers walk full-scale, photoreal residences years before they're built.",
-   "credit": "With DBOX and Pureblink &middot; Agile Lens, LBE VR technologists"
+   "credit": "In-headset capture &middot; with DBOX and Pureblink &middot; Agile Lens, LBE VR technologists",
+   "poster": "media/video/fsla-in-vr.jpg",
+   "alt": "Inside the VR tour: a photoreal residence interior with floor-to-ceiling windows over Lake Austin"
   },
   {
    "id": "joby",
@@ -419,7 +430,7 @@
    "layout": "big",
    "title": "We teach the engine we build in",
    "bigText": "300+ classes taught.\n40+ courses written.",
-   "bigCaption": "Authorized Unreal Engine instructor since 2020 &middot; 300+ classes &middot; 40+ courses",
+   "bigCaption": "Authorized Unreal Engine instructor since 2020",
    "notes": "Engine mastery first. I've been an authorized Unreal Engine instructor since 2020: more than 300 classes taught, more than 40 courses written. The people who teach the engine are the people who build your project."
   },
   {
@@ -429,13 +440,16 @@
    "sec": 45,
    "title": "Photoreal That Actually Runs",
    "subtitle": "Heavy scenes, real hardware",
-   "img": "media/carol/ScroogeDickens.jpg",
+   "img": "media/video/carol-trailer-ghosts.mp4",
    "bullets": [
     "We optimized photoreal digital humans to run on standalone headsets",
     "That moved <i>A Christmas Carol VR</i> from gaming PCs to headsets audiences already own",
     "Increasing access is worth the work, as long as the artistic vision survives"
    ],
-   "notes": "Here's what engine mastery buys you. We optimized photoreal digital humans to run on standalone headsets, no gaming PC required. In 2024 that moved Christmas Carol onto headsets people already own. Our rule: increasing access is always worth the work, as long as the artistic vision survives the trip."
+   "notes": "Here's what engine mastery buys you. We optimized photoreal digital humans to run on standalone headsets, no gaming PC required. In 2024 that moved Christmas Carol onto headsets people already own. Our rule: increasing access is always worth the work, as long as the artistic vision survives the trip.",
+   "poster": "media/video/carol-trailer-ghosts.jpg",
+   "alt": "Close-ups of the live-performed digital humans in A Christmas Carol VR: Scrooge, the Ghost of Christmas Present and Marley",
+   "credit": "<i>A Christmas Carol VR</i> 2025 trailer &middot; Agile Lens"
   },
   {
    "id": "rc",
