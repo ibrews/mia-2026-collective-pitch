@@ -79,7 +79,7 @@ Clips, all from Agile Lens productions, trimmed and re-encoded without audio:
 | `carol-replay-marley.mp4` | Talk A, The Run Ended | "Replay Recording" by Yu-Jun Yeh, 0:18-0:30 ([YouTube](https://www.youtube.com/watch?v=0UYW7AleAsk)) |
 | `rsc-rehearsal-room.mp4` | Both talks, Royal Shakespeare Company | XR Network+ RSC Challenge 2025 film, 2:00-2:14 ([YouTube](https://www.youtube.com/watch?v=6or3BUzP3RU)) |
 | `fsla-in-vr.mp4` | Talk A, Four Seasons | in-headset part of the Lake Austin tour capture used in the HarvardXR keynote, 0:52-1:00 |
-| `carol-belle.mp4`, `carol-belle-street.jpg` | Both talks, live capture close-up | Alex's local copy of *A Christmas Carol VR -- Scrooge Remembers Belle*, 0:40-0:50 |
+| `carol-belle.mp4` | Both talks, live capture close-up | Alex's local copy of *A Christmas Carol VR -- Scrooge Remembers Belle*, 0:40-0:50 |
 | `fs-holodeck-build.mp4` | Talk B, The Part Nobody Sees | holodeck build time-lapse, first 12 s of `fsla_video.mp4` in the HarvardXR keynote |
 
 Quotes on the rain slide come from the show's site (xmascarolvr.com), the Voices of VR podcast, UploadVR (editorial) and Instinctively Real Media, which is labeled as the show's media sponsor.
