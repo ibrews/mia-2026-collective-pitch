@@ -75,6 +75,23 @@ def validate(p):
             errors.append(f"{sid}: needs a title (or bigText for layout 'big', or img for layout 'full')")
         if s.get("img") and not s["img"].startswith(("http", "IFRAME:")) and not (ROOT / s["img"]).exists():
             errors.append(f"{sid}: missing media file {s['img']}")
+        if s.get("img", "").startswith("http"):
+            errors.append(f"{sid}: media must be local so the deck runs offline ({s['img']})")
+        # Clips need alt text and a credit line (fork-local video support)
+        if re.search(r"\.(mp4|webm)$", s.get("img", ""), re.I):
+            for k in ("alt", "credit"):
+                if not s.get(k):
+                    errors.append(f"{sid}: video slides need '{k}'")
+        if s.get("layout") == "rain":
+            qs = s.get("quotes") or []
+            if not 1 <= len(qs) <= 12:
+                errors.append(f"{sid}: rain slides take 1-12 quotes (got {len(qs)})")
+            for i, q in enumerate(qs):
+                missing = [k for k in ("t", "who", "src", "year") if not q.get(k)]
+                if missing:
+                    errors.append(f"{sid}: quote {i + 1} is missing {', '.join(missing)} (every quote needs its attribution)")
+                elif len(q["t"].split()) > 25:
+                    errors.append(f"{sid}: quote {i + 1} runs {len(q['t'].split())} words; keep rain quotes to 25 or fewer")
 
     # The deck must run offline: closing QR codes are pre-rendered SVGs (tools/make_qr.py)
     for q in p.get("close", {}).get("qr", []):
@@ -132,6 +149,10 @@ def slide_lines(s):
         lines.append(f"**On screen:** {strip_html(s['bigText'])}")
     for b in s.get("bullets", []):
         lines.append(f"- {strip_html(b)}")
+    for q in s.get("quotes", []):
+        lines.append(f"- \u201c{q['t']}\u201d ({q['who']}, {q['src']}, {q['year']})")
+    if s.get("credit"):
+        lines.append(f"*Credit:* {strip_html(s['credit'])}")
     if s.get("tagline") and not s.get("bullets"):
         lines.append(f"- {strip_html(s['tagline'])}")
     return lines

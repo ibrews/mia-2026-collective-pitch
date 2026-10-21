@@ -163,14 +163,14 @@
    "pace": "DWELL",
    "sec": 40,
    "title": "It Started as a Small Ask",
-   "subtitle": "With Actors Theatre of Louisville &middot; 2021",
+   "subtitle": "Originally produced in association with Actors Theatre of Louisville &middot; 2021",
    "img": "media/carol/key-art.jpg",
    "bullets": [
     "Actors Theatre of Louisville asked us for production assets: digital characters and some video.",
     "We came back with a bigger idea: a full live production of <i>A Christmas Carol</i>, in VR.",
     "They said yes, then gave us their blessing to remount it every year."
    ],
-   "notes": "In 2021, Actors Theatre of Louisville asked us for production assets. Digital characters, some video. Not a VR show. We did the research and came back with a bigger idea: if we're building the sets, the characters and the costumes anyway, why not stage the whole thing, live, in virtual reality? They said yes, and then gave us their blessing to remount it every year. That's the part I want producers to hear: the theater didn't hand off its story. It extended it, with a partner, into a new format."
+   "notes": "In 2021, Actors Theatre of Louisville, whose stage production was adapted and directed by Robert Barry Fleming, asked us for production assets. Digital characters, some video. Not a VR show. We did the research and came back with a bigger idea: if we're building the sets, the characters and the costumes anyway, why not stage the whole thing, live, in virtual reality? They said yes, and then gave us their blessing to remount it every year. That's the part I want producers to hear: the theater didn't hand off its story. It extended it, with a partner, into a new format."
   },
   {
    "id": "carol-what",
@@ -183,9 +183,9 @@
    "bullets": [
     "Live actors with face and full-body capture perform on the streets of a virtual Victorian London",
     "Fully remote: actors, crew and audience each join from wherever they are",
-    "Five holiday seasons, 2021–2025 &middot; In 2025: 15 performances, up to 20 audience members each"
+    "Five holiday seasons, 2021–2025 &middot; The final run, December 2025: 15 performances"
    ],
-   "notes": "Here's what it was. A Christmas Carol, performed live inside virtual reality. Two live actors, Ari Tarr and Debbie Deer, switch between every role, performing in Unreal Engine 5 as MetaHumans, with Quest Pro face tracking, on the streets of a virtual Victorian London, directed for VR by David Gochfeld. It's fully remote: the actors, the crew and the audience are all in different places, and they share one stage. Sixty to seventy-five minutes, a curtain time, a house. We ran it for five holiday seasons, 2021 through 2025. The last run had fifteen performances, up to twenty people each, plus a Christmas Eve streamathon."
+   "notes": "Here's what it was. A Christmas Carol, performed live inside virtual reality. Two live actors, Ari Tarr and Debbie Deer, switch between every role, performing in Unreal Engine 5 as MetaHumans, with Quest Pro face tracking, on the streets of a virtual Victorian London, directed for VR by David Gochfeld. It's fully remote: the actors, the crew and the audience are all in different places, and they share one stage. Sixty to seventy-five minutes, a curtain time, a house. We ran it for five holiday seasons, 2021 through 2025. The last run, in December 2025, had fifteen performances, plus a Christmas Eve replay streamathon."
   },
   {
    "id": "carol-inside",
@@ -215,12 +215,73 @@
    "id": "carol-quote",
    "talks": "A+B",
    "pace": "FLASH",
-   "sec": 10,
-   "layout": "big",
-   "title": "Raindance Immersive 2025",
-   "bigText": "Nominee,\nBest Immersive Theatre.",
-   "bigCaption": "One of four nominees in the category",
-   "notes": "In its final year, A Christmas Carol VR was a Raindance Immersive 2025 nominee for Best Immersive Theatre."
+   "sec": 15,
+   "layout": "rain",
+   "title": "In Their Words",
+   "bigCaption": "Raindance Immersive 2025 nominee, Best Immersive Theatre &middot; Audience comments as published on xmascarolvr.com, 2021–2025",
+   "quotes": [
+    {
+     "t": "WOW doesn’t even come close to describing what I just experienced! I haven’t enjoyed ‘A Christmas Carol’ this much in years.",
+     "who": "Robert Copelan, audience",
+     "src": "xmascarolvr.com",
+     "year": "2024"
+    },
+    {
+     "t": "Each year, Agile Lens is like pushing the edge for what’s next.",
+     "who": "Kent Bye",
+     "src": "Voices of VR podcast",
+     "year": "2025"
+    },
+    {
+     "t": "A Christmas Carol VR is a masterclass in acting",
+     "who": "Raindance Immersive 2025 judges",
+     "src": "as quoted on xmascarolvr.com",
+     "year": "2025"
+    },
+    {
+     "t": "We’re extremely curious to see what Agile Lens and their creators do next with theatre in VR",
+     "who": "Ian Hamilton",
+     "src": "UploadVR, editorial",
+     "year": "2025"
+    },
+    {
+     "t": "I sat on that bench and looked up at Scrooge... and [he] emotionally spoke, of me... It felt remarkable!",
+     "who": "Chuck Webster, MD, audience",
+     "src": "xmascarolvr.com",
+     "year": "2024"
+    },
+    {
+     "t": "This was a working glimpse into the future of VR as a medium for Real Time Live Production.",
+     "who": "Jimmy6DOF, audience",
+     "src": "xmascarolvr.com",
+     "year": "2021"
+    },
+    {
+     "t": "It was fascinating to see the affordances of VR used in this way. I’d love to see more VR plays done like this.",
+     "who": "Claren Naïlo, audience",
+     "src": "xmascarolvr.com",
+     "year": "2024"
+    },
+    {
+     "t": "Agile Lens represents a model of artistry that transcends mediums and time zones alike.",
+     "who": "Siobhan Greene, Instinctively Real Media",
+     "src": "the show’s media sponsor",
+     "year": "2025"
+    },
+    {
+     "t": "The evolution of this show over the years is remarkable and the performances are top shelf!",
+     "who": "Stephen Butchko, audience",
+     "src": "xmascarolvr.com",
+     "year": "2025"
+    },
+    {
+     "t": "Quite enjoyed catching the opening night of this. The world needs more live VR performances!",
+     "who": "Nick Suda, audience",
+     "src": "xmascarolvr.com",
+     "year": "2025"
+    }
+   ],
+   "notes": "Let it rain for a moment. Five winters of audience comments and press, as people wrote them. In its final year the show was a Raindance Immersive 2025 nominee for Best Immersive Theatre."
   },
   {
    "id": "carol-proved",
@@ -241,16 +302,17 @@
    "id": "carol-afterlife",
    "talks": "A",
    "pace": "DWELL",
-   "sec": 30,
-   "title": "The Show Closed.\nThe Assets Didn’t.",
-   "subtitle": "December 2025",
+   "sec": 40,
+   "title": "The Run Ended.\nThe Performance Didn’t.",
+   "subtitle": "December 2025: our replay and film tools",
    "img": "media/carol/marley.png",
    "bullets": [
-    "The final performance, 21 December 2025: 76 audience members in VR, 19 on the livestream",
-    "The final performance was captured in 3D and can be replayed from any seat",
-    "Its rehearsal and live-performance tools now power our other theater work"
+    "Performances recorded with their motion capture, cues and spatial audio",
+    "Replay from any position, on a scrub timeline: review it like dailies",
+    "A cinematographer build shoots new camera coverage of a show that’s already over: see it in our demo area",
+    "The same tools now run our RSC rehearsal R&amp;D and our Stage Presence toolkit"
    ],
-   "notes": "We closed it in December 2025, after five seasons. The final performance had 76 people in VR and 19 more on the livestream. But the work didn't disappear. We captured the final performance in 3D, so it can be replayed from any seat in the house: a live show with a second life. And its tools now run our other theater work."
+   "notes": "We closed it in December 2025, after five seasons. But for this room, here's the part that matters most. We recorded the performances with everything in them: the motion capture, the cues, the spatial audio. You can replay a show from any position in the house and scrub the timeline, like dailies. And we've built a cinematographer version, so a director can shoot new camera coverage of a performance that has already happened. It's in our demo area today. And the same tools now run our rehearsal R&D with the RSC."
   },
   {
    "id": "act-a2",
