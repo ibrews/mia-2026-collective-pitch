@@ -656,7 +656,8 @@ const SECTIONS = TALK.acts.map(a=>{
 // Bonus + map slides are framework end-markers; this pitch ends on its own ask, so both are hidden.
 const BONUS = {year:'',title:'',tagline:''};
 </script>
-<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.min.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"}}</script>
+<!-- Fork-local: three.js 0.164.1 (MIT, assets/vendor/three/LICENSE) is vendored so the deck makes no network requests -->
+<script type="importmap">{"imports":{"three":"./assets/vendor/three/three.module.min.js"}}</script>
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
