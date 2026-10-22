@@ -266,14 +266,14 @@ Cut for time or superseded. To restore one, add its id back to a talk's act (or 
 **[A] [DWELL] 30s**
 
 
-> **Notes:** Knowing people enjoy the live show, and that they experienced it together spatially, even though they were all over the world — that’s special. Let the praise breathe. (Imported from FMX 2026 slide #28.)
+> **Notes:** Knowing people enjoy the live show, and that they experienced it together spatially, even though they were all over the world — that’s special. Let the praise breathe. (Imported from FMX 2026 slide #28.) ALEX TO CONFIRM: one collage tile (a chat screenshot showing a phone number) was removed for privacy; the other posts name real people, so confirm they're fine on a public screen.
 
 ### `fmx-29`: 
 
 **[A] [DWELL] 30s**
 
 
-> **Notes:** So the setup for Christmas Carol is this: Agile Lens had been working on virtual theater experiments and shows alongside cool folks like David since 2018. In 2021, I get a call from Actors Theatre of Louisville who were familiar with our work. They were planning to reopen after a year and a half of pandemic closure, but they still needed to limit the numbers of people in their theatre. (Imported from FMX 2026 slide #29.)
+> **Notes:** So the setup for Christmas Carol is this: Agile Lens had been working on virtual theater experiments and shows alongside cool folks like David since 2018. In 2021, I get a call from Actors Theatre of Louisville who were familiar with our work. They were planning to reopen after a year and a half of pandemic closure, but they still needed to limit the numbers of people in their theatre. (Imported from FMX 2026 slide #29.) ALEX TO CONFIRM: the clip in this collage carries a baked-in 'makegif.com' watermark.
 
 ### `fmx-39`: 
 
