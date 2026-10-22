@@ -13,8 +13,20 @@
     "agilelens.com"
    ],
    [
+    "Email",
+    "<a href=\"mailto:info@agilelens.com\">info@agilelens.com</a>"
+   ],
+   [
+    "Email",
+    "<a href=\"mailto:alex@agilelens.com\">alex@agilelens.com</a>"
+   ],
+   [
+    "Email",
+    "<a href=\"mailto:josette@agilelens.com\">josette@agilelens.com</a>"
+   ],
+   [
     "Find us",
-    "Demo area, Sala Trianon"
+    "<span><span class=\"demo-pop\" role=\"button\" tabindex=\"0\" aria-label=\"Demo area\">Demo area</span>, Sala Trianon</span>"
    ]
   ],
   "qr": [
@@ -536,7 +548,7 @@
    "sec": 10,
    "title": "Two Ways XR\nWorks for Film.",
    "short": "TWO WAYS IN",
-   "tagline": "Inside the pipeline, where the result is still a normal film.<br>Or as the product: a new edition that takes the story further.",
+   "tagline": "Inside the pipeline: result is still a standard film.<br>New product: adaptation that enhances audience.",
    "notes": "So what does this mean for film and TV? Two ways in. One the audience never sees. And one that is the show.",
    "trim": "CORE"
   },
@@ -581,7 +593,7 @@
       },
       {
        "t": "Real-time previs\nand virtual sets",
-       "al": false
+       "al": true
       }
      ]
     },
@@ -604,10 +616,9 @@
     }
    ],
    "legend": [
-    "Agile Lens has built this",
-    "What XR can do"
+    "Agile Lens has built this"
    ],
-   "notes": "Most of you will never sell a ticket to a headset, and you don't have to. Here's XR inside a normal pipeline, where the result is still a film. Pre-production: scout a scanned location from anywhere, put a virtual camera in it, try lenses, lights and blocking at full scale, and pull stills into the shot list. Production: rehearse actors in the virtual space, the way we did with the Royal Shakespeare Company, capture performances onto digital humans, and see real-time previs. Post: because we recorded our Christmas Carol performances as data, a director can shoot new coverage after the show is over. Filled dots are things we've built. The hollow one, XR can do today. The audience never wears a headset. Think of it as better preparation, not a new format. ALEX TO CONFIRM: 'Try lenses, lights and blocking' and 'Pull stills into the shot list' credit the UOXR film kit (grabbable camera with 24-85 mm lenses and masks, monitor, film lights, A/B/C marks, Take still), built on 2026-10-21 and not yet merged: call it a prototype, and make those two dots hollow (al: false) if it is not in the demo area. Scouting cites the RSC's 1:1 Swan scan; capture cites Carol's MetaHumans; post cites the Carol replay and cinematographer builds. 'Real-time previs and virtual sets' is a general XR capability, not an Agile Lens credit.",
+   "notes": "Most of you will never sell a ticket to a headset, and you don't have to. Here's XR inside a normal pipeline, where the result is still a film. Pre-production: scout a scanned location from anywhere, put a virtual camera in it, try lenses, lights and blocking at full scale, and pull stills into the shot list. Production: rehearse actors in the virtual space, the way we did with the Royal Shakespeare Company, capture performances onto digital humans, and see real-time previs. Post: because we recorded our Christmas Carol performances as data, a director can shoot new coverage after the show is over. Filled dots are things we've built. The audience never wears a headset. Think of it as better preparation, not a new format. ALEX TO CONFIRM: 'Try lenses, lights and blocking' and 'Pull stills into the shot list' credit the UOXR film kit (grabbable camera with 24-85 mm lenses and masks, monitor, film lights, A/B/C marks, Take still), built on 2026-10-21 and not yet merged: call it a prototype, and make those two dots hollow (al: false, and restore a second legend entry) if it is not in the demo area. Scouting cites the RSC's 1:1 Swan scan; capture cites Carol's MetaHumans; post cites the Carol replay and cinematographer builds. 'Real-time previs and virtual sets' is a general XR capability that Alex asked to show filled: confirm you can claim it.",
    "trim": "CORE"
   },
   {
@@ -848,46 +859,30 @@
      "t": "Live in VR",
      "d": "Actors perform live;\nthe audience stands inside",
      "al": true,
-     "proof": "Carol, five seasons, 2021–2025",
-     "img": "media/carol/xmas-carol.jpg",
-     "alt": "The live show: actors and audience share Victorian London",
-     "doorCap": "Five seasons, 2021–2025"
+     "proof": "Carol, five seasons, 2021–2025"
     },
     {
      "t": "Replay, together",
      "d": "The full live show replayed;\nattendees join from headsets",
      "al": true,
-     "proof": "Carol, this December · dates TBA",
-     "img": "media/video/carol-replay-marley.mp4",
-     "alt": "The replay: a recorded performance, explored from any position",
-     "doorCap": "Back this December · dates TBA",
-     "poster": "media/video/carol-replay-marley.jpg"
+     "proof": "Carol, this December · dates TBA"
     },
     {
-     "t": "Trailer and clips",
-     "d": "Flat video that sells it\non every screen",
+     "t": "Flat livestream",
+     "d": "A flat stream of the show,\non every screen",
+     "al": true
+    },
+    {
+     "t": "Real show live on stage",
+     "d": "Actors and a live audience\nin a physical theater",
      "al": true,
-     "proof": "Carol 2025 trailer",
-     "img": "media/video/carol-trailer-dance.mp4",
-     "alt": "The 2025 trailer: a flat clip of the VR show",
-     "doorCap": "Flat video, every screen",
-     "poster": "media/video/carol-trailer-dance.jpg"
-    },
-    {
-     "t": "Phone & web teaser",
-     "d": "A taste on any device,\nno headset needed",
-     "al": false,
-     "img": "media/carol/dancing.jpg",
-     "alt": "A still from the show, standing in for a phone-sized teaser",
-     "doorCap": "An option, not a Carol deliverable"
+     "proof": "Actors Theater of Louisville, 2021"
     },
     {
      "t": "Festival circuit",
      "d": "Immersive sections at SXSW, Venice,\nCannes, Tribeca: a second audience",
-     "al": false,
-     "proof": "Carol: Raindance Immersive 2025 nominee",
-     "doorText": "SXSW · Venice · Cannes · Tribeca",
-     "doorCap": "Immersive sections: an opportunity, not a claim"
+     "al": true,
+     "proof": "Carol: Raindance Immersive 2025 nominee"
     }
    ],
    "only": [
@@ -897,11 +892,11 @@
    ],
    "onlyLabel": "Only XR",
    "legend": [
-    "Done with Carol",
-    "An open opportunity"
+    "Done with Carol"
    ],
-   "notes": "The other door: XR as the product. Take one story, A Christmas Carol. [click] The live VR show is the adaptation. Presence. An actor who looks you in the eye. An audience that shares the room. [click] The replay is its second life. This December the show comes back as a full replay of the live performance, not a video, and people join it together from headsets. [click] Flat trailers and clips sell it on every screen. [click] A phone or web teaser gives anyone a taste, no headset needed. [click] And an immersive edition opens a door a flat release can't: the festival circuit. SXSW, Venice, Cannes and Tribeca all program immersive work. That's a second audience and a prestige path for the same story. Carol was a Raindance Immersive nominee last year. [click] One story, five doors. Every one of those doors uses the same characters, sets and performances. ALEX TO CONFIRM: festivals are an opportunity, not a claim; nothing here says Agile Lens screened at or was selected by SXSW, Venice, Cannes or Tribeca, and the only approved festival fact is Raindance Immersive 2025 nominee, Best Immersive Theatre. Add a specific program or past inclusion only if you want to name one. The December replay has no announced dates or tickets: give none. The phone/web teaser is an XR option, not a Carol deliverable.",
-   "trim": "CORE"
+   "notes": "The other door: XR as the product. Take one story, A Christmas Carol, which started as a book: Dickens, 1843. The live VR show is the adaptation. Presence. An actor who looks you in the eye. An audience that shares the room. The replay is its second life. This December the show comes back as a full replay of the live performance, not a video, and people join it together from headsets. A flat livestream puts the show on every screen. The real show also ran live on stage at Actors Theater of Louisville in 2021. And an immersive edition opens a door a flat release can't: the festival circuit. SXSW, Venice, Cannes and Tribeca all program immersive work. That's a second audience and a prestige path for the same story. Carol was a Raindance Immersive nominee last year. One story, five doors, one diagram. Every one of them uses the same characters, sets and performances. ALEX TO CONFIRM: festivals are an opportunity, not a claim; nothing here says Agile Lens screened at or was selected by SXSW, Venice, Cannes or Tribeca, and the only approved festival fact is Raindance Immersive 2025 nominee, Best Immersive Theatre. The December replay has no announced dates or tickets: give none. Confirm the livestream (what was streamed, when) and the Actors Theater of Louisville 2021 stage show before naming details.",
+   "trim": "CORE",
+   "centerNote": "Started as a book:\nDickens, 1843"
   },
   {
    "talks": "A",

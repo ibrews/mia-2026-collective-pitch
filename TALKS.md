@@ -275,7 +275,7 @@ Cut for time or superseded. To restore one, add its id back to a talk's act (or 
 
 **[A] [FLASH] 10s**
 
-- Inside the pipeline, where the result is still a normal film. Or as the product: a new edition that takes the story further.
+- Inside the pipeline: result is still a standard film. New product: adaptation that enhances audience.
 
 > **Notes:** So what does this mean for film and TV? Two ways in. One the audience never sees. And one that is the show.
 
@@ -285,12 +285,12 @@ Cut for time or superseded. To restore one, add its id back to a talk's act (or 
 
 *The crew uses the headset. The audience gets a normal film.*
 - **Pre-production:** ● Scout a scanned location in VR; ● Try lenses, lights and blocking at 1:1; ● Pull stills into the shot list
-- **Production:** ● Rehearse actors in the virtual set; ● Capture performance onto digital humans; ○ Real-time previs and virtual sets
+- **Production:** ● Rehearse actors in the virtual set; ● Capture performance onto digital humans; ● Real-time previs and virtual sets
 - **Post-production:** ● Shoot new coverage from recordings; ● Reframe with a virtual camera; ● Review in VR, like dailies
 - **Output:** A normal film. Any screen.
-- *Legend:* ● Agile Lens has built this · ○ What XR can do
+- *Legend:* ● Agile Lens has built this
 
-> **Notes:** Most of you will never sell a ticket to a headset, and you don't have to. Here's XR inside a normal pipeline, where the result is still a film. Pre-production: scout a scanned location from anywhere, put a virtual camera in it, try lenses, lights and blocking at full scale, and pull stills into the shot list. Production: rehearse actors in the virtual space, the way we did with the Royal Shakespeare Company, capture performances onto digital humans, and see real-time previs. Post: because we recorded our Christmas Carol performances as data, a director can shoot new coverage after the show is over. Filled dots are things we've built. The hollow one, XR can do today. The audience never wears a headset. Think of it as better preparation, not a new format. ALEX TO CONFIRM: 'Try lenses, lights and blocking' and 'Pull stills into the shot list' credit the UOXR film kit (grabbable camera with 24-85 mm lenses and masks, monitor, film lights, A/B/C marks, Take still), built on 2026-10-21 and not yet merged: call it a prototype, and make those two dots hollow (al: false) if it is not in the demo area. Scouting cites the RSC's 1:1 Swan scan; capture cites Carol's MetaHumans; post cites the Carol replay and cinematographer builds. 'Real-time previs and virtual sets' is a general XR capability, not an Agile Lens credit.
+> **Notes:** Most of you will never sell a ticket to a headset, and you don't have to. Here's XR inside a normal pipeline, where the result is still a film. Pre-production: scout a scanned location from anywhere, put a virtual camera in it, try lenses, lights and blocking at full scale, and pull stills into the shot list. Production: rehearse actors in the virtual space, the way we did with the Royal Shakespeare Company, capture performances onto digital humans, and see real-time previs. Post: because we recorded our Christmas Carol performances as data, a director can shoot new coverage after the show is over. Filled dots are things we've built. The audience never wears a headset. Think of it as better preparation, not a new format. ALEX TO CONFIRM: 'Try lenses, lights and blocking' and 'Pull stills into the shot list' credit the UOXR film kit (grabbable camera with 24-85 mm lenses and masks, monitor, film lights, A/B/C marks, Take still), built on 2026-10-21 and not yet merged: call it a prototype, and make those two dots hollow (al: false, and restore a second legend entry) if it is not in the demo area. Scouting cites the RSC's 1:1 Swan scan; capture cites Carol's MetaHumans; post cites the Carol replay and cinematographer builds. 'Real-time previs and virtual sets' is a general XR capability that Alex asked to show filled: confirm you can claim it.
 
 ### `phase-tour`: What the Crew Sees
 
@@ -356,13 +356,13 @@ Cut for time or superseded. To restore one, add its id back to a talk's act (or 
 - **Center:** A Christmas Carol
 - ● **Live in VR:** Actors perform live; the audience stands inside (Carol, five seasons, 2021–2025)
 - ● **Replay, together:** The full live show replayed; attendees join from headsets (Carol, this December · dates TBA)
-- ● **Trailer and clips:** Flat video that sells it on every screen (Carol 2025 trailer)
-- ○ **Phone & web teaser:** A taste on any device, no headset needed
-- ○ **Festival circuit:** Immersive sections at SXSW, Venice, Cannes, Tribeca: a second audience (Carol: Raindance Immersive 2025 nominee)
+- ● **Flat livestream:** A flat stream of the show, on every screen
+- ● **Real show live on stage:** Actors and a live audience in a physical theater (Actors Theater of Louisville, 2021)
+- ● **Festival circuit:** Immersive sections at SXSW, Venice, Cannes, Tribeca: a second audience (Carol: Raindance Immersive 2025 nominee)
 - **Only XR:** Presence · A shared audience · Your own viewpoint
-- *Legend:* ● Done with Carol · ○ An open opportunity
+- *Legend:* ● Done with Carol
 
-> **Notes:** The other door: XR as the product. Take one story, A Christmas Carol. [click] The live VR show is the adaptation. Presence. An actor who looks you in the eye. An audience that shares the room. [click] The replay is its second life. This December the show comes back as a full replay of the live performance, not a video, and people join it together from headsets. [click] Flat trailers and clips sell it on every screen. [click] A phone or web teaser gives anyone a taste, no headset needed. [click] And an immersive edition opens a door a flat release can't: the festival circuit. SXSW, Venice, Cannes and Tribeca all program immersive work. That's a second audience and a prestige path for the same story. Carol was a Raindance Immersive nominee last year. [click] One story, five doors. Every one of those doors uses the same characters, sets and performances. ALEX TO CONFIRM: festivals are an opportunity, not a claim; nothing here says Agile Lens screened at or was selected by SXSW, Venice, Cannes or Tribeca, and the only approved festival fact is Raindance Immersive 2025 nominee, Best Immersive Theatre. Add a specific program or past inclusion only if you want to name one. The December replay has no announced dates or tickets: give none. The phone/web teaser is an XR option, not a Carol deliverable.
+> **Notes:** The other door: XR as the product. Take one story, A Christmas Carol, which started as a book: Dickens, 1843. The live VR show is the adaptation. Presence. An actor who looks you in the eye. An audience that shares the room. The replay is its second life. This December the show comes back as a full replay of the live performance, not a video, and people join it together from headsets. A flat livestream puts the show on every screen. The real show also ran live on stage at Actors Theater of Louisville in 2021. And an immersive edition opens a door a flat release can't: the festival circuit. SXSW, Venice, Cannes and Tribeca all program immersive work. That's a second audience and a prestige path for the same story. Carol was a Raindance Immersive nominee last year. One story, five doors, one diagram. Every one of them uses the same characters, sets and performances. ALEX TO CONFIRM: festivals are an opportunity, not a claim; nothing here says Agile Lens screened at or was selected by SXSW, Venice, Cannes or Tribeca, and the only approved festival fact is Raindance Immersive 2025 nominee, Best Immersive Theatre. The December replay has no announced dates or tickets: give none. Confirm the livestream (what was streamed, when) and the Actors Theater of Louisville 2021 stage show before naming details.
 
 ### `normal-film`: What Stays Normal
 
