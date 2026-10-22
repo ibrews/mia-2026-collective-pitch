@@ -750,14 +750,15 @@
   },
   {
    "title": "Stage Presence",
-   "subtitle": "",
+   "subtitle": "Agile Lens’s XR rehearsal platform: actors rehearse in a full-scale virtual venue while directors follow and guide in real time",
    "layout": "grid",
    "images": [
     "media/fmx/sp_01.jpg",
     "media/fmx/sp_02.jpg",
     "media/fmx/sp_03.jpg",
     "media/fmx/sp_04.jpg",
-    "media/fmx/sp_05.jpg"
+    "media/fmx/sp_05.jpg",
+    "media/rsc/rehearsal-room.jpg"
    ],
    "id": "fmx-108",
    "talks": "A",
@@ -1728,7 +1729,7 @@
    "subtitle": "With producers and rights holders",
    "bigText": "Bring the story.\nWe’ll build the way in.",
    "bigCaption": "An immersive edition of a world audiences already love: live, location-based, or at home",
-   "notes": "First: IP-extension partnerships with producers and rights holders. You bring a story world audiences already love. We design and build the immersive edition: a live performance, a location-based experience, or something people take home on a headset. The rights stay yours. The audience gets a new door. That's exactly how Carol began: a theater extending its holiday classic, with a partner. Think about the stories on your slate that already have an audience. A classic, a series with a loyal following, a film with a world people want to stand inside. Those are the ones that travel best into a headset.",
+   "notes": "First: IP-extension partnerships with producers and rights holders. You bring a story world audiences already love. We design and build the immersive edition: a live performance, a location-based experience, or something people take home on a headset. The rights stay yours. The audience gets a new door. That's exactly how Carol began: a theater extending its holiday classic, with a partner. Think about the stories on your slate that already have an audience. A classic, a series with a loyal following, a film with a world people want to stand inside. Those are the ones that travel best into a headset. [click] And if you want to do ANOTHER adaptation of A Christmas Carol, please let us know.",
    "bgImg": "media/carol/key-art.jpg",
    "bgAlt": "A Christmas Carol VR key art",
    "bgCredit": "<i>A Christmas Carol VR</i> &middot; Agile Lens",

@@ -799,14 +799,15 @@ const PITCH = /* PITCH-JSON START */
   },
   {
    "title": "Stage Presence",
-   "subtitle": "",
+   "subtitle": "Agile Lens’s XR rehearsal platform: actors rehearse in a full-scale virtual venue while directors follow and guide in real time",
    "layout": "grid",
    "images": [
     "media/fmx/sp_01.jpg",
     "media/fmx/sp_02.jpg",
     "media/fmx/sp_03.jpg",
     "media/fmx/sp_04.jpg",
-    "media/fmx/sp_05.jpg"
+    "media/fmx/sp_05.jpg",
+    "media/rsc/rehearsal-room.jpg"
    ],
    "id": "fmx-108",
    "talks": "A",
@@ -1777,7 +1778,7 @@ const PITCH = /* PITCH-JSON START */
    "subtitle": "With producers and rights holders",
    "bigText": "Bring the story.\nWe’ll build the way in.",
    "bigCaption": "An immersive edition of a world audiences already love: live, location-based, or at home",
-   "notes": "First: IP-extension partnerships with producers and rights holders. You bring a story world audiences already love. We design and build the immersive edition: a live performance, a location-based experience, or something people take home on a headset. The rights stay yours. The audience gets a new door. That's exactly how Carol began: a theater extending its holiday classic, with a partner. Think about the stories on your slate that already have an audience. A classic, a series with a loyal following, a film with a world people want to stand inside. Those are the ones that travel best into a headset.",
+   "notes": "First: IP-extension partnerships with producers and rights holders. You bring a story world audiences already love. We design and build the immersive edition: a live performance, a location-based experience, or something people take home on a headset. The rights stay yours. The audience gets a new door. That's exactly how Carol began: a theater extending its holiday classic, with a partner. Think about the stories on your slate that already have an audience. A classic, a series with a loyal following, a film with a world people want to stand inside. Those are the ones that travel best into a headset. [click] And if you want to do ANOTHER adaptation of A Christmas Carol, please let us know.",
    "bgImg": "media/carol/key-art.jpg",
    "bgAlt": "A Christmas Carol VR key art",
    "bgCredit": "<i>A Christmas Carol VR</i> &middot; Agile Lens",
@@ -2039,7 +2040,7 @@ body.presentation-mode #counter,body.presentation-mode #brand,body.presentation-
 body.presentation-mode #slide-grid,body.presentation-mode #slide-grid-zone,body.presentation-mode #anno-toggle,body.presentation-mode #move-toggle,body.presentation-mode #anno-panel,body.presentation-mode #move-hud,body.presentation-mode #anno-prompt,body.presentation-mode #search-overlay,body.presentation-mode #anim-scrub-bar{display:none!important}
 #anno-toggle,#move-toggle{position:fixed;top:24px;z-index:1000;border:1px solid rgba(0,212,255,.4);color:var(--teal);font-family:var(--font);font-size:.66rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;padding:8px 14px;border-radius:6px;cursor:pointer;backdrop-filter:blur(8px);transition:all .2s;background:rgba(0,212,255,.1)}
 #anno-toggle{left:24px}
-#move-toggle{left:148px;border-color:rgba(245,158,11,.4);color:var(--amber);background:rgba(245,158,11,.1)}
+#move-toggle{left:148px;border-color:rgba(245,158,11,.4);color:var(--amber);background:rgba(245,158,11,.1);opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}.big-callout.on{opacity:1;transform:none}
 #anno-toggle.active{background:var(--amber);color:#060810;border-color:var(--amber)}
 #move-toggle.active{background:var(--rose);color:#060810;border-color:var(--rose)}
 #move-hud{position:fixed;top:24px;left:280px;z-index:1000;display:none;align-items:center;gap:8px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.3);border-radius:8px;padding:6px 12px;backdrop-filter:blur(8px)}
@@ -2578,7 +2579,7 @@ body.fx-fs-active #fx-fs-hint{opacity:1}
 @media (prefers-reduced-motion:reduce){.demo-pop.on{animation:none;transform:scale(1.4)}}
 body:not(.stage-on) .qr-card{width:calc(26*var(--vh))}body:not(.stage-on) .qr-card img{width:calc(21*var(--vh));height:calc(21*var(--vh))}.qr-card .qr-label{white-space:nowrap}
 body:not(.stage-on) .slide[data-type="close"]>div[style*="bottom:clamp"]{display:none}
-.big-callout{margin-top:calc(2.4*var(--vh));font-size:calc(2*var(--vw));font-weight:700;color:#fde68a;border:2px solid rgba(253,230,138,.6);border-radius:14px;padding:.4em .9em;display:inline-block;background:rgba(245,158,11,.1)}
+.big-callout{margin-top:calc(2.4*var(--vh));font-size:calc(2*var(--vw));font-weight:700;color:#fde68a;border:2px solid rgba(253,230,138,.6);border-radius:14px;padding:.4em .9em;display:inline-block;background:rgba(245,158,11,.1)}.big-callout{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}.big-callout.on{opacity:1;transform:none}
 .big-credit{position:absolute;right:16px;bottom:12px;z-index:2;font-size:calc(.8*var(--vw));color:rgba(240,244,255,.65)}
 </style>
 </head>
@@ -3520,6 +3521,7 @@ SECTIONS.forEach((sec,si)=>{
     if(c.layout==='big'){
       if(c.bgImg)s.classList.add('has-bg');
       s.innerHTML=(c.bgImg?`<div class="big-bg" role="img" aria-label="${c.bgAlt||''}" style="background-image:url('${c.bgImg}')"></div>${c.bgCredit?`<div class="big-credit">${c.bgCredit}</div>`:''}`:'')+`<div class="big-stack">${c.pill&&c.title?`<div class="big-pill accent-${sec.accent||'teal'}">${c.title}</div>`:c.title?`<h2 class="big-eyebrow">${c.title.replace(/\n/g,'<br>')}</h2>`:''} ${c.subtitle?`<div class="big-sub">${c.subtitle}</div>`:''}${c.bigText?`<h1 class="big-text"${c.bigScale?` style="font-size:calc(${8*c.bigScale}*var(--vw))"`:''}>${c.bigText.replace(/\n/g,'<br>')}</h1>`:''}${c.bigCaption?`<p class="big-caption">${c.bigCaption.replace(/\n/g,'<br>')}</p>`:''}${c.callout?`<p class="big-callout">${c.callout}</p>`:''}</div>`;
+      if(c.callout){const co=s.querySelector('.big-callout');const hide=()=>co.classList.remove('on');slideSteps.set(s,{current:0,steps:[()=>co.classList.add('on')],reset:hide});if(new URLSearchParams(location.search).has('print'))co.classList.add('on');}
       deck.appendChild(s);allSlides.push(s);return;
     }
     // layout: 'rain' (fork-local) — quotes rain down and settle into a static 5x2 collage.

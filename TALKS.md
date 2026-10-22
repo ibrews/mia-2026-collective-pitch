@@ -321,6 +321,7 @@ Cut for time or superseded. To restore one, add its id back to a talk's act (or 
 
 **[A] [DWELL] 30s**
 
+*Agile Lens’s XR rehearsal platform: actors rehearse in a full-scale virtual venue while directors follow and guide in real time*
 
 > **Notes:** Stage Presence (Imported from FMX 2026 slide #108.)
 
@@ -733,7 +734,7 @@ Cut for time or superseded. To restore one, add its id back to a talk's act (or 
 **On screen:** Bring the story. We’ll build the way in.
 - Background: media/carol/key-art.jpg
 
-> **Notes:** First: IP-extension partnerships with producers and rights holders. You bring a story world audiences already love. We design and build the immersive edition: a live performance, a location-based experience, or something people take home on a headset. The rights stay yours. The audience gets a new door. That's exactly how Carol began: a theater extending its holiday classic, with a partner. Think about the stories on your slate that already have an audience. A classic, a series with a loyal following, a film with a world people want to stand inside. Those are the ones that travel best into a headset.
+> **Notes:** First: IP-extension partnerships with producers and rights holders. You bring a story world audiences already love. We design and build the immersive edition: a live performance, a location-based experience, or something people take home on a headset. The rights stay yours. The audience gets a new door. That's exactly how Carol began: a theater extending its holiday classic, with a partner. Think about the stories on your slate that already have an audience. A classic, a series with a loyal following, a film with a world people want to stand inside. Those are the ones that travel best into a headset. [click] And if you want to do ANOTHER adaptation of A Christmas Carol, please let us know.
 
 ### `ask-copro`: 2 &middot; Co-productions from day one
 
