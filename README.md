@@ -37,6 +37,10 @@ Every slide carries a trim priority (`CORE`, `TRIM-1` cut first, `TRIM-2`, `TRIM
 - 10 min (9:40): cut `portalcam-reel` (60s), `ask-first` (30s), `rsc` (40s).
 - 8 min (8:15): cut `working-cut` (45s), `ask-copro` (40s).
 
+## Branding
+
+Every presentation gets its own custom social card and favicon; never ship the Spatial Deck defaults. This talk's card is `social.html` rendered to `social.png` (1200x630, Carol key art and the deck palette), and its icon is an open doorway (`favicon.svg`, `favicon-32.png`, `favicon.ico`, `apple-touch-icon.png`). `python tools/check_branding.py` checks them (and the head's title, og and twitter tags) against the template, and `build_pitch.py` runs it on every build.
+
 ## Offline pack
 
 The deck needs no internet once it is on the laptop: fonts (`assets/fonts`), three.js (`assets/vendor/three`), the closing QR code (`assets/qr`) and every image and clip (`media/`) are local, and stepping through either talk makes zero external requests (checked in the browser's network log, 2026-10-21).

@@ -308,6 +308,10 @@ def write_md(p, pool):
 def main():
     p = json.loads(SRC.read_text(encoding="utf-8"))
     pool, errors = validate(p)
+    # Custom branding is required for every talk (tools/check_branding.py)
+    sys.path.insert(0, str(ROOT / "tools"))
+    from check_branding import check as check_branding
+    errors += [f"branding: {e}" for e in check_branding()]
     if errors:
         fail(errors)
     for key, talk in p["talks"].items():

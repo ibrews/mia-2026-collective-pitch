@@ -13,6 +13,8 @@ JPG (used by `?shot`/`?print` and the PDFs). The deck must run offline: fonts (`
 and the closing QR (`assets/qr`, from `tools/make_qr.py`) are local, and `build_pitch.py` refuses remote media.
 PDF backups: `python tools/export_pdf.py --out pdf/MIA-2026-Collective-Pitch-Talk-A.pdf --wait-ms 8000` (add `--query talk=b` for Talk B).
 
+**Branding rule (Alex, 2026-10-22): every presentation gets its own custom social card and favicon; never ship the Spatial Deck defaults.** This fork's are `social.html` → `social.png` (1200x630), `favicon.svg` + `favicon-32.png` + `favicon.ico` + `apple-touch-icon.png`, and the head's title / og / twitter tags. `tools/check_branding.py` fails (and `build_pitch.py` refuses to build) if any file matches the template or any head tag still says Spatial Deck.
+
 ## What This Is
 
 Spatial Deck is a single-file HTML presentation framework. Everything lives in `index.html` — CSS, JS, config, content. No build process, no npm, no bundler.
