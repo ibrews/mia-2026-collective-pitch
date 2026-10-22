@@ -118,7 +118,6 @@ const PITCH = /* PITCH-JSON START */
       "fmx-29",
       "fmx-39",
       "replay-line",
-      "carol-video-village",
       "fmx-89",
       "fmx-90"
      ]
@@ -133,7 +132,6 @@ const PITCH = /* PITCH-JSON START */
       "working-cut",
       "camera-toy",
       "splats-why",
-      "portalcam-reel",
       "rsc-compare",
       "fmx-103",
       "fmx-99",
@@ -155,7 +153,7 @@ const PITCH = /* PITCH-JSON START */
    ],
    "cover_spoken": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.",
    "target_min": 15,
-   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 23:23. 12 min (12:00): cut carol-how (45s), replay-line (35s), camera-toy (40s), intro-lens (15s), showreel (88s), fmx-12 (30s), fmx-13 (30s), fmx-14 (30s), fmx-15 (30s), fmx-19 (30s), fmx-20 (30s), fmx-21 (30s), fmx-22 (30s), fmx-24 (30s), fmx-26 (30s), fmx-27 (30s), fmx-28 (30s), fmx-29 (30s), fmx-39 (30s), carol-video-village (10s), fmx-89 (30s). 10 min (9:35): cut fmx-90 (30s), fmx-25 (10s), phase-tour (45s), portalcam-reel (60s). 8 min (7:35): cut rsc-compare (30s), fmx-103 (30s), fmx-99 (30s), fmx-100 (30s)."
+   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 22:13. 12 min (12:00): cut carol-how (45s), replay-line (35s), camera-toy (40s), intro-lens (15s), showreel (88s), fmx-12 (30s), fmx-13 (30s), fmx-14 (30s), fmx-15 (30s), fmx-19 (30s), fmx-20 (30s), fmx-21 (30s), fmx-22 (30s), fmx-24 (30s), fmx-26 (30s), fmx-27 (30s), fmx-28 (30s), fmx-29 (30s). 10 min (9:35): cut fmx-39 (30s), fmx-89 (30s), fmx-90 (30s), fmx-25 (10s), phase-tour (45s). 8 min (7:35): cut rsc-compare (30s), fmx-103 (30s), fmx-99 (30s), fmx-100 (30s)."
   },
   "b": {
    "title": "Engine Mastery\n× Craft",
@@ -480,7 +478,8 @@ const PITCH = /* PITCH-JSON START */
    "sec": 30,
    "alt": "Clip from the FMX 2026 deck",
    "credit": "Agile Lens",
-   "notes": "Flash forward to 2021. (Imported from FMX 2026 slide #24.)"
+   "notes": "Flash forward to 2021. (Imported from FMX 2026 slide #24.)",
+   "audio": true
   },
   {
    "id": "fmx-25",
@@ -801,17 +800,6 @@ const PITCH = /* PITCH-JSON START */
    "pace": "DWELL",
    "sec": 30,
    "notes": "Stage Presence (Imported from FMX 2026 slide #108.)"
-  },
-  {
-   "id": "carol-video-village",
-   "talks": "A",
-   "trim": "TRIM-2",
-   "pace": "FLASH",
-   "sec": 10,
-   "layout": "big",
-   "title": "Video village",
-   "bigText": "[FILL: Carol video village slide]",
-   "notes": "ALEX TO CONFIRM: no Christmas Carol video-village slide was found in the FMX, HarvardXR or PMRE decks or this pool; this is a placeholder. Point me at the slide or its media and I will drop it in."
   },
   {
    "id": "a-hook",
@@ -1317,7 +1305,9 @@ const PITCH = /* PITCH-JSON START */
    "poster": "media/video/portalcam-reel.jpg",
    "alt": "Walkthrough of handheld-scanner splat scans: an exhibition with medals and Olympic rings, then city landmarks including a cathedral facade and a triumphal arch",
    "credit": "PortalCam scan walkthrough &middot; captured by Josette Seitz (on-frame credit)",
-   "notes": "Say: \"Here's what a handheld scanner captures in a day.\" Then press → and stop talking; it has sound and runs about a minute. [clip plays, 59 s] When it ends, pause, then press →. ALEX TO CONFIRM: clearance before showing it publicly. The frames carry an XGRIDS watermark, a 'Captured by Josette Seitz' watermark, Olympic rings and Milano Cortina 2026 branding, and identifiable landmarks; the slide names no venue, event, people or rights holder beyond the file name 'FINAL Olympics-PortalCam_v2'. Confirm who made it and how to credit them. Mute button bottom-right if the room audio fails; it never auto-advances."
+   "notes": "Say: \"Here's what a handheld scanner captures in a day.\" Then press → and stop talking; it has sound and runs about a minute. [clip plays, 59 s] When it ends, pause, then press →. ALEX TO CONFIRM: clearance before showing it publicly. The frames carry an XGRIDS watermark, a 'Captured by Josette Seitz' watermark, Olympic rings and Milano Cortina 2026 branding, and identifiable landmarks; the slide names no venue, event, people or rights holder beyond the file name 'FINAL Olympics-PortalCam_v2'. Confirm who made it and how to credit them. Mute button bottom-right if the room audio fails; it never auto-advances.",
+   "muted": true,
+   "parked": "Hidden from Talk A 2026-10-22 15:26: it dropped the browser out of fullscreen during rehearsal and there was no time to verify a fix; Talk B still uses it"
   },
   {
    "talks": "A+B",
@@ -2566,7 +2556,7 @@ body.fx-fs-active #fx-fs-hint{opacity:1}
 @media (prefers-reduced-motion:reduce){.sp-in .sp-row,.sp-in .sp-card{animation:none}}
 .case-slide.layout-showreel{padding:0;display:block;background:#000}
 .sr-stage{position:absolute;inset:0;background:#000}.sr-v{width:100%;height:100%;object-fit:contain;display:block;background:#000}
-.sr-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:inherit;font-size:calc(1.6*var(--vw));font-weight:700;padding:.6em 1.3em;border-radius:999px;border:2px solid #fff;background:rgba(0,0,0,.55);color:#fff;cursor:pointer}
+.sr-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:inherit;font-size:calc(2.4*var(--vw));font-weight:700;padding:.6em 1.3em;border-radius:999px;border:2px solid #fff;background:rgba(0,0,0,.55);color:#fff;cursor:pointer}
 .sr-mute{position:absolute;right:14px;bottom:12px;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.4);color:#fff;font-size:16px;cursor:pointer;opacity:.35}.sr-mute:hover{opacity:1}
 .demo-pop{cursor:pointer;display:inline-block;border-radius:6px;padding:0 .15em;transition:color .2s}
 .demo-pop.on{color:#fde68a;font-weight:800;animation:demoPop .9s cubic-bezier(.2,1.6,.4,1) both;text-shadow:0 0 18px rgba(253,230,138,.9),0 0 40px rgba(245,158,11,.7)}
@@ -3287,7 +3277,7 @@ function mgBuildIpWeb(s, c) {
 function mgGuard(el) { ['click', 'pointerdown', 'mousedown', 'touchstart', 'wheel'].forEach(t => el.addEventListener(t, e => e.stopPropagation())); }
 function mgMedia(src, o = {}) {
   if (/\.(mp4|webm)$/i.test(src)) return `<video src="${src}" muted loop playsinline preload="metadata"${o.poster ? ` poster="${o.poster}"` : ''}${o.alt ? ` aria-label="${o.alt}"` : ''}></video>`;
-  return `<img src="${src}" alt="${o.alt || ''}" loading="lazy">`;
+  return `<img src="${src}" alt="${o.alt || ''}" loading="eager">`;
 }
 function mgPlayOnly(root, el) { root.querySelectorAll('video').forEach(v => { if (v === el && !TI.exp) { try { v.currentTime = 0; v.play().catch(() => {}); } catch (e) {} } else { try { v.pause(); } catch (e) {} } }); }
 
@@ -3469,9 +3459,11 @@ function mgBuildShowreel(s, c) {
   s.innerHTML = `<div class="sr-stage"><video class="sr-v" src="${c.img}" playsinline preload="auto"${c.poster ? ` poster="${c.poster}"` : ''} aria-label="${c.alt || ''}"></video>
     <button class="sr-play" hidden>▶ Tap to play</button><button class="sr-mute" title="Mute / unmute" aria-label="Mute or unmute">🔊</button></div>`;
   const v = s.querySelector('video'), play = s.querySelector('.sr-play'), mute = s.querySelector('.sr-mute'); mgGuard(play); mgGuard(mute);
-  const go = () => { if (TI.exp) return; v.muted = false; mute.textContent = '🔊'; try { v.currentTime = 0; } catch (e) {} v.play().then(() => { play.hidden = true; }).catch(() => { play.hidden = false; }); };
+  let userMuted = false; v.defaultMuted = false; v.removeAttribute('muted'); v.volume = 1;
+  v.addEventListener('playing', () => { if (!userMuted && v.muted) v.muted = false; });
+  const go = () => { if (TI.exp) return; v.muted = userMuted; v.volume = 1; mute.textContent = userMuted ? '🔇' : '🔊'; try { v.currentTime = 0; } catch (e) {} v.play().then(() => { play.hidden = true; }).catch(() => { play.hidden = false; }); };
   play.addEventListener('click', () => v.play().then(() => { play.hidden = true; }).catch(() => {}));
-  mute.addEventListener('click', () => { v.muted = !v.muted; mute.textContent = v.muted ? '🔇' : '🔊'; });
+  mute.addEventListener('click', () => { userMuted = !userMuted; v.muted = userMuted; mute.textContent = userMuted ? '🔇' : '🔊'; });
   v.addEventListener('ended', () => { play.hidden = true; });
   tiLifecycle(s, go, () => { try { v.pause(); v.currentTime = 0; } catch (e) {} play.hidden = true; }, []);
 }
@@ -3525,8 +3517,8 @@ SECTIONS.forEach((sec,si)=>{
     if(c.layout==='full'&&c.img){
       const src=c.img;let media;
       if(src.indexOf('IFRAME:')===0){const u=src.slice(7);const isRemote=/^https?:/i.test(u);media=`<iframe class="full-media${isRemote?'':' anim-frame'}" src="${u}" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen scrolling="no"></iframe>`;}
-      else if(/\.(mp4|webm)$/i.test(src)){media=`<video class="full-media" src="${src}" autoplay loop muted playsinline${c.alt?` aria-label="${c.alt}"`:''}${c.poster?` poster="${c.poster}"`:''}></video>`;}
-      else {media=`<img class="full-media" src="${src}" loading="lazy"${c.alt?` alt="${c.alt}"`:''}>`;}
+      else if(/\.(mp4|webm)$/i.test(src)){media=`<video class="full-media" src="${src}" autoplay loop${c.audio?'':' muted'} playsinline${c.alt?` aria-label="${c.alt}"`:''}${c.poster?` poster="${c.poster}"`:''}></video>`;}
+      else {media=`<img class="full-media" src="${src}" loading="eager"${c.alt?` alt="${c.alt}"`:''}>`;}
       const ov=(c.title||c.subtitle)?`<div class="full-overlay">${c.title?`<h2>${c.title}</h2>`:''}${c.subtitle?`<div class="full-sub">${c.subtitle}</div>`:''}</div>`:'';
       s.innerHTML=`<div class="full-stage">${media}${ov}${c.credit?`<div class="full-credit">${c.credit}</div>`:''}</div>`;
       deck.appendChild(s);allSlides.push(s);return;
@@ -3535,8 +3527,9 @@ SECTIONS.forEach((sec,si)=>{
     // images: ['a.png', {src:'b.mp4', label:'B', href:'https://...'}, ...]
     if(c.layout==='grid'&&c.images&&c.images.length){
       const cells=c.images.map(it=>{
-        const src=typeof it==='string'?it:it.src;const lbl=(typeof it==='object'&&it.label)?`<div class="grid-label">${it.label}</div>`:'';
-        const inner=/\.(mp4|webm)$/i.test(src)?`<video src="${src}" autoplay loop muted playsinline></video>`:`<img src="${src}" loading="lazy">`;
+        // fork-local: FMX-style [src, object-position] tuples are accepted too
+        const src=typeof it==='string'?it:Array.isArray(it)?it[0]:it.src;const op=Array.isArray(it)&&it[1]?` style="object-position:${it[1]}"`:'';const lbl=(typeof it==='object'&&!Array.isArray(it)&&it.label)?`<div class="grid-label">${it.label}</div>`:'';
+        const inner=/\.(mp4|webm)$/i.test(src)?`<video src="${src}" autoplay loop muted playsinline${op}></video>`:`<img src="${src}" loading="eager"${op}>`;
         if(typeof it==='object'&&it.href)return `<a class="grid-cell deck-link" href="${it.href}" target="_blank" rel="noopener">${inner}${lbl}</a>`;
         return `<div class="grid-cell">${inner}${lbl}</div>`;
       }).join('');
@@ -3550,7 +3543,7 @@ SECTIONS.forEach((sec,si)=>{
     if(c.layout==='placed'&&(c.placedImages||c.placedItems)){
       let items='';
       if(c.placedImages){
-        const _mt=src=>{if(src.endsWith('.mp4')||src.endsWith('.webm'))return `<video src="${src}" autoplay loop muted playsinline>`;return `<img src="${src}" loading="lazy">`;};
+        const _mt=src=>{if(src.endsWith('.mp4')||src.endsWith('.webm'))return `<video src="${src}" autoplay loop muted playsinline>`;return `<img src="${src}" loading="eager">`;};
         items=c.placedImages.map(([src,l,t,w,h,op])=>{const tag=_mt(src);const st=op?tag.replace('>',` style="object-position:${op}">`):tag;return `<div class="placed-item" style="left:${l}%;top:${t}%;width:${w}%;height:${h}%">${st}</div>`;}).join('');
       } else {
         items=c.placedItems.map(it=>{
@@ -3567,7 +3560,7 @@ SECTIONS.forEach((sec,si)=>{
             return `<div class="placed-item" ${st}><video src="${it.src}" autoplay loop muted playsinline></video>${lbl}</div>`;
           }
           const lbl=it.label?`<div class="placed-item-label">${it.label}</div>`:'';
-          return `<div class="placed-item" ${st}><img src="${it.src}" loading="lazy">${lbl}</div>`;
+          return `<div class="placed-item" ${st}><img src="${it.src}" loading="eager">${lbl}</div>`;
         }).join('');
       }
       const ovS=c.overlayStyle?` style="${c.overlayStyle}"`:'';
@@ -3586,7 +3579,7 @@ SECTIONS.forEach((sec,si)=>{
         if(it.type==='mp4'||(it.src&&(it.src.endsWith('.mp4')||it.src.endsWith('.webm')))){
           return `<div class="asset-belt-item"${ar}><video src="${it.src}" autoplay loop muted playsinline></video></div>`;
         }
-        return `<div class="asset-belt-item"${ar}><img src="${it.src}" loading="lazy"></div>`;
+        return `<div class="asset-belt-item"${ar}><img src="${it.src}" loading="eager"></div>`;
       }).join('');
       if(c.beltLoop)items=items+items;
       const overlay=(c.title||c.bigText||c.bigCaption)?`<div class="asset-belt-overlay">${c.title?`<h2 class="big-eyebrow">${c.title}</h2>`:''}${c.bigText?`<h1 class="big-text"${c.bigScale?` style="font-size:calc(${8*c.bigScale}*var(--vw))"`:''}>${c.bigText.replace(/\n/g,'<br>')}</h1>`:''}${c.bigCaption?`<div class="big-caption">${c.bigCaption}</div>`:''}</div>`:'';
@@ -3636,7 +3629,7 @@ SECTIONS.forEach((sec,si)=>{
       // fork-local: a muted looping clip in place of the case image
       imgHTML=`<video src="${c.img}" autoplay loop muted playsinline${c.alt?` aria-label="${c.alt}"`:''}${c.poster?` poster="${c.poster}"`:''}></video>${c.credit?`<div class="full-credit">${c.credit}</div>`:''}`;
     } else if(c.img&&c.img!=='MEDIA_CYCLER'){
-      imgHTML=`<img src="${c.img}" loading="lazy" style="border-radius:18px"${c.alt?` alt="${c.alt}"`:''}>${c.credit?`<div class="full-credit">${c.credit}</div>`:''}`;
+      imgHTML=`<img src="${c.img}" loading="eager" style="border-radius:18px"${c.alt?` alt="${c.alt}"`:''}>${c.credit?`<div class="full-credit">${c.credit}</div>`:''}`;
     } else {
       imgHTML=`<div class="media-cycler-mount" style="width:100%;height:100%"></div>`;
     }

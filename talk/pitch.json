@@ -71,7 +71,6 @@
       "fmx-29",
       "fmx-39",
       "replay-line",
-      "carol-video-village",
       "fmx-89",
       "fmx-90"
      ]
@@ -86,7 +85,6 @@
       "working-cut",
       "camera-toy",
       "splats-why",
-      "portalcam-reel",
       "rsc-compare",
       "fmx-103",
       "fmx-99",
@@ -431,7 +429,8 @@
    "sec": 30,
    "alt": "Clip from the FMX 2026 deck",
    "credit": "Agile Lens",
-   "notes": "Flash forward to 2021. (Imported from FMX 2026 slide #24.)"
+   "notes": "Flash forward to 2021. (Imported from FMX 2026 slide #24.)",
+   "audio": true
   },
   {
    "id": "fmx-25",
@@ -752,17 +751,6 @@
    "pace": "DWELL",
    "sec": 30,
    "notes": "Stage Presence (Imported from FMX 2026 slide #108.)"
-  },
-  {
-   "id": "carol-video-village",
-   "talks": "A",
-   "trim": "TRIM-2",
-   "pace": "FLASH",
-   "sec": 10,
-   "layout": "big",
-   "title": "Video village",
-   "bigText": "[FILL: Carol video village slide]",
-   "notes": "ALEX TO CONFIRM: no Christmas Carol video-village slide was found in the FMX, HarvardXR or PMRE decks or this pool; this is a placeholder. Point me at the slide or its media and I will drop it in."
   },
   {
    "id": "a-hook",
@@ -1268,7 +1256,9 @@
    "poster": "media/video/portalcam-reel.jpg",
    "alt": "Walkthrough of handheld-scanner splat scans: an exhibition with medals and Olympic rings, then city landmarks including a cathedral facade and a triumphal arch",
    "credit": "PortalCam scan walkthrough &middot; captured by Josette Seitz (on-frame credit)",
-   "notes": "Say: \"Here's what a handheld scanner captures in a day.\" Then press → and stop talking; it has sound and runs about a minute. [clip plays, 59 s] When it ends, pause, then press →. ALEX TO CONFIRM: clearance before showing it publicly. The frames carry an XGRIDS watermark, a 'Captured by Josette Seitz' watermark, Olympic rings and Milano Cortina 2026 branding, and identifiable landmarks; the slide names no venue, event, people or rights holder beyond the file name 'FINAL Olympics-PortalCam_v2'. Confirm who made it and how to credit them. Mute button bottom-right if the room audio fails; it never auto-advances."
+   "notes": "Say: \"Here's what a handheld scanner captures in a day.\" Then press → and stop talking; it has sound and runs about a minute. [clip plays, 59 s] When it ends, pause, then press →. ALEX TO CONFIRM: clearance before showing it publicly. The frames carry an XGRIDS watermark, a 'Captured by Josette Seitz' watermark, Olympic rings and Milano Cortina 2026 branding, and identifiable landmarks; the slide names no venue, event, people or rights holder beyond the file name 'FINAL Olympics-PortalCam_v2'. Confirm who made it and how to credit them. Mute button bottom-right if the room audio fails; it never auto-advances.",
+   "muted": true,
+   "parked": "Hidden from Talk A 2026-10-22 15:26: it dropped the browser out of fullscreen during rehearsal and there was no time to verify a fix; Talk B still uses it"
   },
   {
    "talks": "A+B",
