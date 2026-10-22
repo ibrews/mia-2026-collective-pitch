@@ -35,7 +35,8 @@
    "cover_sec": 5,
    "intro": [
     "intro-alex",
-    "intro-lens"
+    "intro-lens",
+    "showreel"
    ],
    "acts": [
     {
@@ -105,7 +106,8 @@
    "cover_sec": 5,
    "intro": [
     "intro-alex",
-    "intro-lens"
+    "intro-lens",
+    "showreel"
    ],
    "acts": [
     {
@@ -246,6 +248,20 @@
    ],
    "notes": "Agile Lens builds for theaters, concert halls, cruise lines, hotels and brands. A few of them are going around this circle. [click] Take the names away. [click] Go back ten years. [click] It was one person with a headset. [click] [click] 2016. We're still independent, we're bootstrapped, and XR is all we do. Here's what ten years taught us about old stories. Theater people, mostly, who learned the engines. ALEX TO CONFIRM: the HarvardXR monocle slide, five clicks after the orbit (set lens.steps to 0 in talk/pitch.json for the orbit only). Kennedy Center, CBS, Waldorf Astoria and Dell come from the PMRE/HarvardXR orbit and were not re-checked for this deck; Actors Theatre of Louisville, Arlekin Players and Fisher Dachs Associates replace Disney, Joby Aviation and Google, which this deck does not name as clients.",
    "trim": "TRIM-2"
+  },
+  {
+   "id": "showreel",
+   "talks": "A+B",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 88,
+   "layout": "showreel",
+   "title": "Agile Lens showreel",
+   "img": "media/video/showreel.mp4",
+   "poster": "media/video/showreel.jpg",
+   "alt": "Agile Lens showreel: 88 seconds of the studio's immersive work, with sound",
+   "credit": "Agile Lens showreel &middot; Alex Coulombe",
+   "notes": "Pause. Don't talk over it. Say: \"Here's a minute and a half of what we do.\" Then press → and stop talking; the reel has sound. [reel plays, 88 s] When it ends, let it sit for a beat, then press → and pick up with the next slide. ALEX TO CONFIRM: if the room's audio fails, use the small mute button bottom-right and narrate over it, or skip it with →. It does not auto-advance."
   },
   {
    "id": "a-hook",

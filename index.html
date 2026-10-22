@@ -82,7 +82,8 @@ const PITCH = /* PITCH-JSON START */
    "cover_sec": 5,
    "intro": [
     "intro-alex",
-    "intro-lens"
+    "intro-lens",
+    "showreel"
    ],
    "acts": [
     {
@@ -143,7 +144,7 @@ const PITCH = /* PITCH-JSON START */
    ],
    "cover_spoken": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.",
    "target_min": 15,
-   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 17:40. 12 min (11:40): cut carol-how (45s), carol-belle (15s), replay-line (35s), camera-toy (40s), normal-film (15s), heavenue (35s), lincoln (10s), fs-flash (10s), joby (10s), act-a2 (10s), intro-lens (30s), carol-inside (10s), carol-quote (15s), phase-tour (45s), splats-limits (35s). 10 min (10:00): cut rsc-compare (30s), ask-first (30s), carol-origin (40s). 8 min (7:55): cut working-cut (45s), rsc (40s), ask-copro (40s)."
+   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 19:08. 12 min (11:40): cut carol-how (45s), carol-belle (15s), replay-line (35s), camera-toy (40s), normal-film (15s), heavenue (35s), lincoln (10s), fs-flash (10s), joby (10s), act-a2 (10s), intro-lens (30s), showreel (88s), carol-inside (10s), carol-quote (15s), phase-tour (45s), splats-limits (35s). 10 min (10:00): cut rsc-compare (30s), ask-first (30s), carol-origin (40s). 8 min (7:55): cut working-cut (45s), rsc (40s), ask-copro (40s)."
   },
   "b": {
    "title": "Engine Mastery\n× Craft",
@@ -153,7 +154,8 @@ const PITCH = /* PITCH-JSON START */
    "cover_sec": 5,
    "intro": [
     "intro-alex",
-    "intro-lens"
+    "intro-lens",
+    "showreel"
    ],
    "acts": [
     {
@@ -209,7 +211,7 @@ const PITCH = /* PITCH-JSON START */
    ],
    "cover_spoken": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.",
    "target_min": 13,
-   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 14:35. 12 min (11:50): cut pico (10s), fs-build (15s), fs-dbox (10s), joby (10s), carol-belle (15s), camera-toy (40s), intro-lens (30s), teach (35s). 10 min (10:00): cut carol-quote (15s), rsc-compare (30s), splats-limits (35s), ask-first (30s). 8 min (7:55): cut rsc (40s), working-cut (45s), ask-copro (40s)."
+   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 16:03. 12 min (11:50): cut pico (10s), fs-build (15s), fs-dbox (10s), joby (10s), carol-belle (15s), camera-toy (40s), intro-lens (30s), showreel (88s), teach (35s). 10 min (10:00): cut carol-quote (15s), rsc-compare (30s), splats-limits (35s), ask-first (30s). 8 min (7:55): cut rsc (40s), working-cut (45s), ask-copro (40s)."
   }
  },
  "pool": [
@@ -295,6 +297,20 @@ const PITCH = /* PITCH-JSON START */
    ],
    "notes": "Agile Lens builds for theaters, concert halls, cruise lines, hotels and brands. A few of them are going around this circle. [click] Take the names away. [click] Go back ten years. [click] It was one person with a headset. [click] [click] 2016. We're still independent, we're bootstrapped, and XR is all we do. Here's what ten years taught us about old stories. Theater people, mostly, who learned the engines. ALEX TO CONFIRM: the HarvardXR monocle slide, five clicks after the orbit (set lens.steps to 0 in talk/pitch.json for the orbit only). Kennedy Center, CBS, Waldorf Astoria and Dell come from the PMRE/HarvardXR orbit and were not re-checked for this deck; Actors Theatre of Louisville, Arlekin Players and Fisher Dachs Associates replace Disney, Joby Aviation and Google, which this deck does not name as clients.",
    "trim": "TRIM-2"
+  },
+  {
+   "id": "showreel",
+   "talks": "A+B",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 88,
+   "layout": "showreel",
+   "title": "Agile Lens showreel",
+   "img": "media/video/showreel.mp4",
+   "poster": "media/video/showreel.jpg",
+   "alt": "Agile Lens showreel: 88 seconds of the studio's immersive work, with sound",
+   "credit": "Agile Lens showreel &middot; Alex Coulombe",
+   "notes": "Pause. Don't talk over it. Say: \"Here's a minute and a half of what we do.\" Then press → and stop talking; the reel has sound. [reel plays, 88 s] When it ends, let it sit for a beat, then press → and pick up with the next slide. ALEX TO CONFIRM: if the room's audio fails, use the small mute button bottom-right and narrate over it, or skip it with →. It does not auto-advance."
   },
   {
    "id": "a-hook",
@@ -2027,6 +2043,10 @@ body.fx-fs-active #fx-fs-hint{opacity:1}
 .sp-in .sp-row,.sp-in .sp-card{animation:spIn .6s ease-out both;animation-delay:var(--d)}
 @keyframes spIn{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.sp-in .sp-row,.sp-in .sp-card{animation:none}}
+.case-slide.layout-showreel{padding:0;display:block;background:#000}
+.sr-stage{position:absolute;inset:0;background:#000}.sr-v{width:100%;height:100%;object-fit:contain;display:block;background:#000}
+.sr-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:inherit;font-size:calc(1.6*var(--vw));font-weight:700;padding:.6em 1.3em;border-radius:999px;border:2px solid #fff;background:rgba(0,0,0,.55);color:#fff;cursor:pointer}
+.sr-mute{position:absolute;right:14px;bottom:12px;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.4);color:#fff;font-size:16px;cursor:pointer;opacity:.35}.sr-mute:hover{opacity:1}
 .big-credit{position:absolute;right:16px;bottom:12px;z-index:2;font-size:calc(.8*var(--vw));color:rgba(240,244,255,.65)}
 </style>
 </head>
@@ -2870,6 +2890,20 @@ function mgBuildSplat(s, c) {
   tiLifecycle(s, () => { s.classList.remove('sp-in'); void s.offsetWidth; s.classList.add('sp-in'); mgPlayOnly(s, s.querySelector('video')); s.querySelectorAll('video').forEach(v => { if (!TI.exp) v.play().catch(() => {}); }); },
     () => mgPlayOnly(s, null), []);
 }
+
+// 'showreel' (round 5): edge-to-edge reel WITH SOUND. Plays from the start on entry (the → press is the user gesture), pauses and
+// rewinds on exit, never loops or auto-advances. If the browser blocks audio autoplay, a small "Tap to play" button appears;
+// a tiny mute toggle sits bottom-right. ?print / ?shot show the poster (the deck's export pass freezes every video).
+function mgBuildShowreel(s, c) {
+  s.innerHTML = `<div class="sr-stage"><video class="sr-v" src="${c.img}" playsinline preload="auto"${c.poster ? ` poster="${c.poster}"` : ''} aria-label="${c.alt || ''}"></video>
+    <button class="sr-play" hidden>▶ Tap to play</button><button class="sr-mute" title="Mute / unmute" aria-label="Mute or unmute">🔊</button></div>`;
+  const v = s.querySelector('video'), play = s.querySelector('.sr-play'), mute = s.querySelector('.sr-mute'); mgGuard(play); mgGuard(mute);
+  const go = () => { if (TI.exp) return; v.muted = false; mute.textContent = '🔊'; try { v.currentTime = 0; } catch (e) {} v.play().then(() => { play.hidden = true; }).catch(() => { play.hidden = false; }); };
+  play.addEventListener('click', () => v.play().then(() => { play.hidden = true; }).catch(() => {}));
+  mute.addEventListener('click', () => { v.muted = !v.muted; mute.textContent = v.muted ? '🔇' : '🔊'; });
+  v.addEventListener('ended', () => { play.hidden = true; });
+  tiLifecycle(s, go, () => { try { v.pause(); v.currentTime = 0; } catch (e) {} play.hidden = true; }, []);
+}
 // ip-web doors (round 2): optional click-through. Each → opens one branch's door: a large still with its label; the last → closes it.
 function mgIpDoors(s, c) {
   const br = (c.branches || []).filter(b => b.img || b.doorText); if (!br.length || TI.exp) return;
@@ -2888,7 +2922,7 @@ cov.innerHTML=`<div class="event-tag">${PITCH.event}</div><h1 class="talk-title"
 deck.appendChild(cov);allSlides.push(cov);
 // Fork-local (MIA 2026): talk-level intro slides (speaker + studio) between the cover and Act I; notes come from INTRO
 const INTRO=(TALK.intro||[]).map(poolSlide);
-INTRO.forEach((c,i)=>{const s=document.createElement('div');s.className=`slide case-slide layout-${c.layout}`;s.dataset.type='intro';s.dataset.intro=i;s.dataset.year='INTRO';buildTalkIntro(s,c);deck.appendChild(s);allSlides.push(s);});
+INTRO.forEach((c,i)=>{const s=document.createElement('div');s.className=`slide case-slide layout-${c.layout}`;s.dataset.type='intro';s.dataset.intro=i;s.dataset.year='INTRO';if(c.layout==='showreel')mgBuildShowreel(s,c);else buildTalkIntro(s,c);deck.appendChild(s);allSlides.push(s);});
 
 // Build sections
 SECTIONS.forEach((sec,si)=>{
@@ -2900,7 +2934,7 @@ SECTIONS.forEach((sec,si)=>{
     const s=document.createElement('div');s.className=`slide case-slide${ac}${c.layout?' layout-'+c.layout:''}${c.gridCover?' grid-cover':''}`;s.dataset.type='case';s.dataset.year=sec.year;s.dataset.section=si;
     // layout: 'pipeline' / 'ip-web' (fork-local, MIA 2026) — animated SVG diagrams, see mgBuildPipeline / mgBuildIpWeb
     if(c.layout==='pipeline'||c.layout==='ip-web'){(c.layout==='pipeline'?mgBuildPipeline:mgBuildIpWeb)(s,c);if(c.layout==='ip-web')mgIpDoors(s,c);deck.appendChild(s);allSlides.push(s);return;}
-    const MG2={'splat':mgBuildSplat,'phase-tour':mgBuildPhaseTour,'camera-toy':mgBuildCameraToy,'replay-line':mgBuildReplayLine,'compare':mgBuildCompare,'reel':mgBuildReel};
+    const MG2={'showreel':mgBuildShowreel,'splat':mgBuildSplat,'phase-tour':mgBuildPhaseTour,'camera-toy':mgBuildCameraToy,'replay-line':mgBuildReplayLine,'compare':mgBuildCompare,'reel':mgBuildReel};
     if(MG2[c.layout]){MG2[c.layout](s,c);deck.appendChild(s);allSlides.push(s);return;}
     // layout: 'big' — full-slide statement text (bigText, optional title/subtitle/bigCaption)
     if(c.layout==='big'){
