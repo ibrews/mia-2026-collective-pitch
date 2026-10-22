@@ -61,6 +61,8 @@
      "cases": [
       "xr-pipeline",
       "phase-tour",
+      "splats-why",
+      "splats-limits",
       "camera-toy",
       "working-cut",
       "rsc",
@@ -139,6 +141,8 @@
       "rsc",
       "rsc-compare",
       "xr-pipeline",
+      "splats-why",
+      "splats-limits",
       "camera-toy",
       "working-cut"
      ]
@@ -631,6 +635,96 @@
    "id": "phase-tour",
    "notes": "Let me show you what that looks like. Pre-production first. This is the Swan Theatre in Stratford, scanned at full scale. You can walk it from anywhere, put a camera in it, and plan the day before anyone travels. [click] Production. Actors in headsets, rehearsing inside that virtual Swan, with the script right there. The director follows from a laptop. [click] Post. A Christmas Carol performance, replayed after the fact. That's a free camera moving through a scene that's already over. None of this ends up on screen. It just makes the film easier to make. Every one of those is something a crew already does by hand. ALEX TO CONFIRM: the Pre and Production stills are from the HarvardXR keynote's RSC folder (virtual Swan with script panel, rehearsal room); confirm they are cleared like the RSC clip already in this deck.",
    "trim": "TRIM-2"
+  },
+  {
+   "id": "splats-why",
+   "talks": "A+B",
+   "trim": "CORE",
+   "pace": "DWELL",
+   "sec": 55,
+   "layout": "splat",
+   "title": "Scan the Real Place.\nWalk It Before You Fly.",
+   "subtitle": "Gaussian splats: a photoreal capture of a real location you can stand in",
+   "clips": [
+    {
+     "img": "media/video/splat-walkthrough.mp4",
+     "poster": "media/video/splat-walkthrough.jpg",
+     "alt": "A Gaussian-splat scan of a fountain in a city square at night: scattered points resolve into a photoreal scene as the camera circles the fountain",
+     "credit": "Gaussian-splat scan, walkthrough &middot; Alex Coulombe"
+    }
+   ],
+   "rows": [
+    {
+     "t": "Capture a real place in minutes, with a phone or a scanner",
+     "al": true
+    },
+    {
+     "t": "Photoreal, view-dependent detail at human scale",
+     "al": true
+    },
+    {
+     "t": "Walk it in VR at 1:1: scout, block, try lenses, plan shots",
+     "al": true
+    },
+    {
+     "t": "Share the space with a remote director, DP or producer",
+     "al": false
+    },
+    {
+     "t": "Reuse it as a virtual-production backdrop or set extension",
+     "al": false
+    },
+    {
+     "t": "Lighter than a photoreal mesh; cheap to re-scan when the place changes",
+     "al": false
+    }
+   ],
+   "legend": [
+    "Agile Lens has done this",
+    "What a splat can do"
+   ],
+   "notes": "Let's talk about splats. Gaussian splats. [pause] This clip is a scan of a real square at night. Watch the dots turn into a place. [pause] For a production, that matters in a few ways. Capture takes minutes, with a phone or a handheld scanner, not weeks of modeling. The detail is photoreal, and it changes as you move, the way a real place does. And in a headset, you can stand in it at full scale: scout it, block it, try lenses, plan the shots, before anyone travels. We've done exactly that: our team scanned a hotel interior with a handheld scanner, and we have scans running on standalone headsets in our demo area. The hollow dots are what splats can also do: share the space with a remote director, become a backdrop for virtual production, and get re-scanned cheaply when the location changes. ALEX TO CONFIRM: the clip is your own and cleared; its place and capture method aren't evident from the frames, so the slide doesn't name them; name it on stage only if you want to and have permission. Filled dots rest on the KB: Josette's handheld-scanner hotel scan (PCVR demo, 2026-10-21) and the UOXR showcase splat level on Quest 3 and PICO; hotel and monument are left unnamed. 'Minutes' for capture is the vendor-adjacent PortalCam figure and phone-app claims, not our measurement."
+  },
+  {
+   "id": "splats-limits",
+   "talks": "A+B",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 35,
+   "layout": "splat",
+   "title": "What a Splat Can’t Do (Yet)",
+   "subtitle": "Worth knowing before you plan a shoot around one",
+   "clips": [
+    {
+     "img": "[FILL: Josette's splat clip]",
+     "fallback": "media/video/splat-walkthrough-2.jpg",
+     "alt": "A still from the Gaussian-splat walkthrough of the fountain at night",
+     "credit": "Gaussian-splat scan, walkthrough &middot; Alex Coulombe"
+    }
+   ],
+   "cards": [
+    {
+     "t": "It’s a frozen moment",
+     "d": "No moving people, no running water: it records one instant"
+    },
+    {
+     "t": "The light is baked in",
+     "d": "Relighting is limited; you get the light you scanned"
+    },
+    {
+     "t": "Rights come first",
+     "d": "Scanning places and people needs permission"
+    },
+    {
+     "t": "Big files",
+     "d": "Standalone headsets need trimmed scans"
+    },
+    {
+     "t": "Young editing tools",
+     "d": "Cleanup and editing are still catching up"
+    }
+   ],
+   "notes": "And to be honest about the limits, because someone in this room will ask. [pause] A splat is a frozen moment: no moving people, no running water. The light is baked in, so you live with the light you scanned. You need permission to scan a place, and the people in it. The files are big, so standalone headsets need trimmed scans. And the editing tools are still young. None of that stops you from scouting with one. ALEX TO CONFIRM: HOW TO ADD JOSETTE'S CLIP: copy it into media/video/ (compress it like the others: ffmpeg -i in.mp4 -an -vf scale=540:-2 -c:v libx264 -crf 27 -pix_fmt yuv420p -movflags +faststart media/video/splat-josette.mp4, then grab a poster jpg), and in talk/pitch.json replace this slide's clips[0].img '[FILL: Josette's splat clip]' with 'media/video/splat-josette.mp4', add a poster, alt and credit, then run python tools/build_pitch.py. Until then the slide shows a still from Alex's clip."
   },
   {
    "talks": "A+B",
