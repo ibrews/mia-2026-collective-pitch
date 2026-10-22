@@ -207,7 +207,7 @@ def slide_lines(s):
     if s.get("only"):
         lines.append(f"- **Only XR:** {' · '.join(s['only'])}")
     if s.get("legend"):
-        lines.append(f"- *Legend:* \u25cf {s['legend'][0]} · \u25cb {s['legend'][1]}")
+        lines.append("- *Legend:* " + " · ".join(f"{'\u25cf' if i == 0 else '\u25cb'} {t}" for i, t in enumerate(s["legend"])))
     for q in s.get("quotes", []):
         lines.append(f"- \u201c{q['t']}\u201d ({q['who']}, {q['src']}, {q['year']})")
     if s.get("credit"):
