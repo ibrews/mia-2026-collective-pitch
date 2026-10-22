@@ -4176,6 +4176,141 @@ document.addEventListener('keydown',e=>{if(!window._moveMode)return;if(['INPUT',
 function getGridZone(sl,clientX,clientY){const r=sl.getBoundingClientRect();const col=Math.min(3,Math.floor((clientX-r.left)/r.width*4));const row=Math.min(2,Math.floor((clientY-r.top)/r.height*3));return String.fromCharCode(65+row)+(col+1);}
 
 
+// ── FORK-LOCAL (MIA 2026): fmx-27 quote rain, ported verbatim from fmx-2026-spatial-storytelling index.html (Alex, 2026-10-22) ──
+// ── Slide 26: Quote rain — appreciative audience (HXR slide 43 port) ────────
+(function(){
+  const praiseSlide=[...document.querySelectorAll('.slide')].find(s=>s.querySelector?.('.big-eyebrow')?.textContent.includes('appreciative'));
+  if(!praiseSlide)return;
+  const QUOTES=[
+    {t:'A Christmas Carol VR is a masterclass in acting.',a:'Raindance Immersive 2025 Judges'},
+    {t:'The team at Agile Lens creates an experience that skillfully breaks the fourth wall and invites audience members to be at the center of a 150 year old story told for a brand new generation.',a:'Raindance Immersive 2025 Judges'},
+    {t:'Fantastic mix of technology and talented actors to bring Dickens and his classic tale to life!',a:'eminus, Dec 22, 2024'},
+    {t:'An absolute joy seeing those amazing actors creating magic in the victorian metaverse.',a:'Deirdre Lyons, June 18, 2025'},
+    {t:'Really wonderful acting and narration, and the swapping characters was really awesome.',a:'nehmia, June 18, 2025'},
+    {t:'The single actor bouncing between two characters was very successful.',a:'Josh Rubin, Dec 20, 2025'},
+    {t:'Ari Tarr as Charles Dickens was particularly sublime during the narration of the tale.',a:'Elizabeth Tasker, Dec 22, 2024'},
+    {t:'Particularly liked the way they use the actors in combination with the amount of roles. Go see it!',a:'Jedidjah Julia Noomen, Dec 5, 2025'},
+    {t:'The narrator was excellent at making the audience feel included. Scene changes dissolved and reappeared around you.',a:'Elizabeth Tasker, Dec 22, 2024'},
+    {t:'It was ingenious. The audience were small sprites. We were immersed in the flow of the story and we were addressed by the narrator.',a:'Dave the Turner, June 18, 2025'},
+    {t:'It was fascinating to see the affordances of VR used in this way.',a:'Claren Naïlo, Dec 22, 2024'},
+    {t:'Phenomenal experience that wonderfully showcases VR\'s unique ability to immerse an audience into a fantastical world!',a:'Nithia09, Dec 14, 2025'},
+    {t:'The experience was amazing, and succeeded in recreating true theatrical audience interaction with the Spectator Ball.',a:'César Chiffre, Dec 20, 2025'},
+    {t:'WOW doesn\'t even come close to describing what I just experienced! I haven\'t enjoyed A Christmas Carol this much in years.',a:'Robert Copelan, Dec 22, 2024'},
+    {t:'Omgoodness! It was FANTASTIC! Thank you and all involved so much!',a:'katerobbie, June 18, 2025'},
+    {t:'CONGRATULATIONS!! to everyone involved. It\'s such a wonderful production!',a:'katerobbie, Dec 22, 2025'},
+    {t:'Quite enjoyed catching the opening night of this. The world needs more live VR performances!',a:'Nick Suda, Dec 1, 2025'},
+    {t:'Blown away at how good this was. Thanks to everyone involved.',a:'b34k3r, Dec 23, 2024'},
+    {t:'I sat on that bench and looked up at Scrooge... and he emotionally spoke, of me... It felt remarkable!',a:'Chuck Webster MD, Dec 22, 2024'},
+    {t:'Amazing job on this production!!!',a:'Lisa Lokshina, Dec 21, 2024'},
+    {t:'Thanks for a really wonderful show!',a:'Andrew Eglinton, June 25, 2025'},
+    {t:'This was just great. Thank you.',a:'Donna K., Dec 20, 2025'},
+    {t:'Just tried the Christmas Carol VR experience and that was fun. Thanks for putting it together!',a:'Ian XR Nerd, Dec 21, 2024'},
+    {t:'I\'m glad I dropped in to see this!',a:'Scott Stein, Dec 22, 2024'},
+    {t:'This was a working glimpse into the future of VR as a medium for Real Time Live Production.',a:'Jimmy6DOF, Dec 17, 2021'},
+    {t:'Once again Agile Lens pushes the technical art form of what is possible in XR with Live Actors realtime performance. So good and evolved so much since 2021.',a:'Jimmy6DOF, Dec 24, 2025'},
+    {t:'The evolution of this show over the years is remarkable and the performances are top shelf!',a:'Stephen Butchko, Dec 6, 2025'},
+    {t:'What a huge upgrade! I really enjoyed the show, like I was experiencing for the first time.',a:'Sngmoo Lee, Dec 21, 2025'},
+    {t:'I did this last year and it was very fun. Recommended!',a:'Clare Naïlo, Dec 12, 2025'},
+    {t:'The production took some interesting poetic liberties with the Christmas ghosts... Made A Christmas Carol fresh and surprisingly surprising.',a:'Chuck Webster MD, Dec 22, 2024'},
+    {t:'I registered to see it again.',a:'Dave the Turner, June 18, 2025'},
+  ];
+  const GOLDS=['#f59e0b','#fbbf24','#d97706','#fcd34d','#ca8a04','#eab308','#f5c518','#e8a010'];
+  const overlay=document.createElement('div');
+  overlay.style.cssText='position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:8';
+  praiseSlide.appendChild(overlay);
+  const COLS=14,pileH=new Float32Array(COLS);
+  let running=false,tid=null,qi=0,order=[];
+  function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+  // Popcorn burst — small gold flecks that pop outward when a quote lands
+  function popcornPop(){try{const c=new(window.AudioContext||window.webkitAudioContext)();const t=c.currentTime;const bufLen=Math.floor(c.sampleRate*0.04);const buf=c.createBuffer(1,bufLen,c.sampleRate);const d=buf.getChannelData(0);for(let i=0;i<bufLen;i++){d[i]=(Math.random()*2-1)*Math.pow(1-i/bufLen,2);}const s=c.createBufferSource();s.buffer=buf;const bp=c.createBiquadFilter();bp.type='bandpass';bp.frequency.value=1800+Math.random()*1200;bp.Q.value=4;const g=c.createGain();g.gain.setValueAtTime(0.18,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.06);s.connect(bp);bp.connect(g);g.connect(c.destination);s.start(t);s.stop(t+0.08);setTimeout(()=>{try{c.close();}catch(e){}},150);}catch(e){}}
+  function popcornBurst(x,y,intensity){
+    popcornPop();
+    const N=intensity||(7+Math.floor(Math.random()*4));
+    for(let i=0;i<N;i++){
+      const p=document.createElement('div');
+      const sz=2.5+Math.random()*3.5;
+      const c=GOLDS[Math.floor(Math.random()*GOLDS.length)];
+      p.style.cssText=`position:absolute;left:${x}px;top:${y}px;width:${sz}px;height:${sz}px;border-radius:50%;background:${c};box-shadow:0 0 5px ${c},0 0 1px ${c};pointer-events:none;opacity:1;transform:translate(-50%,-50%);transition:transform .75s cubic-bezier(.22,.55,.5,1),opacity .75s ease-out;will-change:transform,opacity;`;
+      overlay.appendChild(p);
+      // Mostly upward + outward; gravity adds downward drift
+      const ang=-Math.PI/2+(Math.random()-.5)*Math.PI*0.95;
+      const dist=14+Math.random()*36;
+      const dx=Math.cos(ang)*dist;
+      const dy=Math.sin(ang)*dist+18+Math.random()*12;
+      const rot=(Math.random()-.5)*180;
+      requestAnimationFrame(()=>{
+        p.style.transform=`translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) rotate(${rot}deg) scale(${0.25+Math.random()*0.35})`;
+        p.style.opacity='0';
+      });
+      setTimeout(()=>p.remove(),820);
+    }
+  }
+  function spawnQuote(){
+    if(!running)return;
+    if(qi>=order.length){order=shuffle([...Array(QUOTES.length).keys()]);qi=0;}
+    const q=QUOTES[order[qi++]];
+    const rot=(Math.random()-.5)*8,color=GOLDS[Math.floor(Math.random()*GOLDS.length)];
+    const fallDur=(1.5+Math.random()*1.4).toFixed(2),len=q.t.length;
+    const fs=len<60?'0.72rem':len<140?'0.62rem':'0.54rem',maxW=len<80?'280px':'340px';
+    const el=document.createElement('div');
+    el.style.cssText=`position:absolute;visibility:hidden;max-width:${maxW};padding:6px 12px;border-radius:5px;background:rgba(0,0,0,.52);font-family:'Space Grotesk',sans-serif;font-size:${fs};line-height:1.35;font-weight:500;color:${color};transform:rotate(${rot}deg);transform-origin:center top;pointer-events:none;`;
+    el.innerHTML=`“${q.t}”<br><span style="font-size:.85em;opacity:.6">— ${q.a}</span>`;
+    overlay.appendChild(el);
+    requestAnimationFrame(()=>{
+      const sW=overlay.offsetWidth||1920,sH=overlay.offsetHeight||1080;
+      const qW=el.offsetWidth,qH=el.offsetHeight,colW=sW/COLS;
+      const spanCols=Math.max(1,Math.ceil((qW+12)/colW)),maxStart=Math.max(0,COLS-spanCols);
+      const startCol=Math.floor(Math.random()*(maxStart+1));
+      let maxPH=0;for(let c=startCol;c<Math.min(startCol+spanCols,COLS);c++)maxPH=Math.max(maxPH,pileH[c]);
+      const landFromBottom=maxPH+qH+12+Math.random()*10,landTop=sH-landFromBottom;
+      if(landTop>sH*.08){for(let c=startCol;c<Math.min(startCol+spanCols,COLS);c++)pileH[c]=landFromBottom;}
+      el.style.left=`${startCol*colW}px`;el.style.top=`${-(qH+20)}px`;el.style.visibility='visible';
+      requestAnimationFrame(()=>{el.style.transition=`top ${fallDur}s cubic-bezier(.25,.05,.8,1)`;el.style.top=`${Math.max(sH*.08,landTop)}px`;});
+      // Pop a little gold burst at the landing point when the quote settles
+      el.addEventListener('transitionend',ev=>{if(ev.propertyName!=='top')return;popcornBurst(el.offsetLeft+el.offsetWidth/2,el.offsetTop+4);},{once:true});
+    });
+  }
+  function spawnFrenzy(){
+    if(qi>=order.length){order=shuffle([...Array(QUOTES.length).keys()]);qi=0;}
+    const q=QUOTES[order[qi++]];
+    const rot=(Math.random()-.5)*30,scale=.7+Math.random()*1,color=GOLDS[Math.floor(Math.random()*GOLDS.length)];
+    const dur=(.28+Math.random()*.4).toFixed(2),len=q.t.length;
+    const fs=len<60?'0.66rem':len<140?'0.58rem':'0.50rem',maxW=len<80?'210px':'268px';
+    const el=document.createElement('div');
+    el.style.cssText=`position:absolute;visibility:hidden;max-width:${maxW};padding:4px 9px;border-radius:5px;background:rgba(0,0,0,.52);font-family:'Space Grotesk',sans-serif;font-size:${fs};line-height:1.35;font-weight:500;color:${color};transform:rotate(${rot}deg) scale(${scale});transform-origin:center center;pointer-events:none;`;
+    el.innerHTML=`“${q.t}”<br><span style="font-size:.85em;opacity:.6">— ${q.a}</span>`;
+    overlay.appendChild(el);
+    requestAnimationFrame(()=>{
+      const sW=overlay.offsetWidth||1920,sH=overlay.offsetHeight||1080;
+      const qW=el.offsetWidth,qH=el.offsetHeight;
+      const lX=Math.random()*Math.max(1,sW-qW),lY=Math.random()*Math.max(1,sH-qH);
+      const edge=Math.floor(Math.random()*3);
+      el.style.left=`${edge===1?-(qW+20):edge===2?sW+20:lX}px`;el.style.top=`${edge===0?-(qH+20):lY+(Math.random()-.5)*80}px`;el.style.visibility='visible';
+      requestAnimationFrame(()=>{el.style.transition=`left ${dur}s ease-out,top ${dur}s cubic-bezier(.2,0,.6,1.15)`;el.style.left=`${lX}px`;el.style.top=`${lY}px`;});
+    });
+  }
+  setTimeout(()=>{slideSteps.set(praiseSlide,{current:0,steps:[
+    ()=>window._quoteRain.start(),
+    ()=>window._quoteRain.frenzy(),
+  ]});},0);
+  window._quoteRain={
+    start(){if(running)return;running=true;overlay.innerHTML='';pileH.fill(0);qi=0;order=shuffle([...Array(QUOTES.length).keys()]);spawnQuote();tid=setInterval(spawnQuote,520);},
+    frenzy(){
+      if(!document.getElementById('qs-kf')){const st=document.createElement('style');st.id='qs-kf';st.textContent='@keyframes quoteShake{0%,100%{translate:0 0}15%{translate:-10px 5px}30%{translate:9px -6px}45%{translate:-7px 8px}60%{translate:10px -5px}75%{translate:-8px 6px}90%{translate:6px -8px}}';document.head.appendChild(st);}
+      const piled=[...overlay.querySelectorAll('div')];
+      piled.forEach(el=>{el.style.animation='quoteShake .1s ease-in-out 9';});
+      setTimeout(()=>{
+        const sW=overlay.offsetWidth,sH=overlay.offsetHeight;
+        piled.forEach(el=>{el.style.animation='';const sc=.8+Math.random()*.8,ro=(Math.random()-.5)*26;const nx=Math.random()*Math.max(1,sW-el.offsetWidth),ny=Math.random()*Math.max(1,sH-el.offsetHeight);el.style.transition='left .45s cubic-bezier(.34,1.5,.64,1),top .45s cubic-bezier(.34,1.5,.64,1),transform .45s';el.style.left=`${nx}px`;el.style.top=`${ny}px`;el.style.transform=`rotate(${ro}deg) scale(${sc})`;});
+      },900);
+      clearInterval(tid);running=true;let fc=0;
+      const fTid=setInterval(()=>{if(!running){clearInterval(fTid);return;}spawnFrenzy();if(++fc>=55)clearInterval(fTid);},50);
+    },
+    stop(){running=false;clearInterval(tid);}
+  };
+})();
+// MIA addition: stop the ported rain when the slide is left, so it restarts cleanly on the next visit
+(function(){const s=[...document.querySelectorAll('.slide')].find(x=>x.querySelector?.('.big-eyebrow')?.textContent.includes('appreciative'));if(!s||!window._quoteRain)return;let on=s.classList.contains('active');new MutationObserver(()=>{const a=s.classList.contains('active');if(on&&!a)window._quoteRain.stop();on=a;}).observe(s,{attributes:true,attributeFilter:['class']});})();
 // ── FORK-LOCAL (MIA 2026): 'Demo area' on the closing slide pops on click and becomes DEMO AREA !! ──
 (function(){const cs=allSlides.find(s=>s.dataset.type==='close');if(!cs)return;const w=document.createTreeWalker(cs,NodeFilter.SHOW_TEXT);let n;while((n=w.nextNode())){const i=n.nodeValue.indexOf('Demo area');if(i<0)continue;const r=document.createRange();r.setStart(n,i);r.setEnd(n,i+9);const sp=document.createElement('span');sp.className='demo-pop';sp.setAttribute('role','button');sp.tabIndex=0;r.surroundContents(sp);
  const pop=e=>{e.stopPropagation();sp.textContent='DEMO AREA !!';sp.classList.remove('on');void sp.offsetWidth;sp.classList.add('on');try{tiSfx.ching();}catch(_){}};['pointerdown','mousedown','touchstart'].forEach(t=>sp.addEventListener(t,e=>e.stopPropagation()));sp.addEventListener('click',pop);sp.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')pop(e);});break;}})();
