@@ -27,6 +27,12 @@
     "label": "Agile Lens",
     "badge": "Say hello",
     "img": "assets/qr/agilelens-com.svg"
+   },
+   {
+    "url": "https://www.xmascarolvr.com/",
+    "label": "A Christmas Carol VR",
+    "badge": "xmascarolvr.com",
+    "img": "assets/qr/xmascarolvr-com.svg"
    }
   ]
  },
@@ -85,6 +91,7 @@
       "working-cut",
       "camera-toy",
       "splats-why",
+      "portalcam-reel",
       "rsc-compare",
       "fmx-103",
       "fmx-99",
@@ -511,6 +518,13 @@
      45.26
     ],
     [
+     "media/fmx/s27-05-8f70ea28.png",
+     77.16,
+     46.27,
+     27.72,
+     27.72
+    ],
+    [
      "media/fmx/s27-06-733d7ef0.png",
      51.73,
      79.75,
@@ -572,7 +586,7 @@
    "trim": "TRIM-2",
    "pace": "DWELL",
    "sec": 30,
-   "notes": "Knowing people enjoy the live show, and that they experienced it together spatially, even though they were all over the world — that’s special. Let the praise breathe. (Imported from FMX 2026 slide #28.) ALEX TO CONFIRM: one collage tile (a chat screenshot showing a phone number) was removed for privacy; the other posts name real people, so confirm they're fine on a public screen."
+   "notes": "Knowing people enjoy the live show, and that they experienced it together spatially, even though they were all over the world — that’s special. Let the praise breathe. (Imported from FMX 2026 slide #28.) (The chat tile with a phone number was restored at Alex's OK, 2026-10-22.)"
   },
   {
    "subtitle": "",
@@ -1257,8 +1271,7 @@
    "alt": "Walkthrough of handheld-scanner splat scans: an exhibition with medals and Olympic rings, then city landmarks including a cathedral facade and a triumphal arch",
    "credit": "PortalCam scan walkthrough &middot; captured by Josette Seitz (on-frame credit)",
    "notes": "Say: \"Here's what a handheld scanner captures in a day.\" Then press → and stop talking; it has sound and runs about a minute. [clip plays, 59 s] When it ends, pause, then press →. ALEX TO CONFIRM: clearance before showing it publicly. The frames carry an XGRIDS watermark, a 'Captured by Josette Seitz' watermark, Olympic rings and Milano Cortina 2026 branding, and identifiable landmarks; the slide names no venue, event, people or rights holder beyond the file name 'FINAL Olympics-PortalCam_v2'. Confirm who made it and how to credit them. Mute button bottom-right if the room audio fails; it never auto-advances.",
-   "muted": true,
-   "parked": "Hidden from Talk A 2026-10-22 15:26: it dropped the browser out of fullscreen during rehearsal and there was no time to verify a fix; Talk B still uses it"
+   "muted": true
   },
   {
    "talks": "A+B",
@@ -1719,7 +1732,8 @@
    "bgImg": "media/carol/key-art.jpg",
    "bgAlt": "A Christmas Carol VR key art",
    "bgCredit": "<i>A Christmas Carol VR</i> &middot; Agile Lens",
-   "trim": "CORE"
+   "trim": "CORE",
+   "callout": "Want to do ANOTHER adaptation of <i>A Christmas Carol</i>? Please let us know!"
   },
   {
    "id": "ask-copro",

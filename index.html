@@ -74,6 +74,12 @@ const PITCH = /* PITCH-JSON START */
     "label": "Agile Lens",
     "badge": "Say hello",
     "img": "assets/qr/agilelens-com.svg"
+   },
+   {
+    "url": "https://www.xmascarolvr.com/",
+    "label": "A Christmas Carol VR",
+    "badge": "xmascarolvr.com",
+    "img": "assets/qr/xmascarolvr-com.svg"
    }
   ]
  },
@@ -132,6 +138,7 @@ const PITCH = /* PITCH-JSON START */
       "working-cut",
       "camera-toy",
       "splats-why",
+      "portalcam-reel",
       "rsc-compare",
       "fmx-103",
       "fmx-99",
@@ -153,7 +160,7 @@ const PITCH = /* PITCH-JSON START */
    ],
    "cover_spoken": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.",
    "target_min": 15,
-   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 22:13. 12 min (12:00): cut carol-how (45s), replay-line (35s), camera-toy (40s), intro-lens (15s), showreel (88s), fmx-12 (30s), fmx-13 (30s), fmx-14 (30s), fmx-15 (30s), fmx-19 (30s), fmx-20 (30s), fmx-21 (30s), fmx-22 (30s), fmx-24 (30s), fmx-26 (30s), fmx-27 (30s), fmx-28 (30s), fmx-29 (30s). 10 min (9:35): cut fmx-39 (30s), fmx-89 (30s), fmx-90 (30s), fmx-25 (10s), phase-tour (45s). 8 min (7:35): cut rsc-compare (30s), fmx-103 (30s), fmx-99 (30s), fmx-100 (30s)."
+   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 23:13. 12 min (12:00): cut carol-how (45s), replay-line (35s), camera-toy (40s), intro-lens (15s), showreel (88s), fmx-12 (30s), fmx-13 (30s), fmx-14 (30s), fmx-15 (30s), fmx-19 (30s), fmx-20 (30s), fmx-21 (30s), fmx-22 (30s), fmx-24 (30s), fmx-26 (30s), fmx-27 (30s), fmx-28 (30s), fmx-29 (30s), fmx-39 (30s), fmx-89 (30s). 10 min (9:35): cut fmx-90 (30s), fmx-25 (10s), phase-tour (45s), portalcam-reel (60s). 8 min (7:35): cut rsc-compare (30s), fmx-103 (30s), fmx-99 (30s), fmx-100 (30s)."
   },
   "b": {
    "title": "Engine Mastery\n× Craft",
@@ -560,6 +567,13 @@ const PITCH = /* PITCH-JSON START */
      45.26
     ],
     [
+     "media/fmx/s27-05-8f70ea28.png",
+     77.16,
+     46.27,
+     27.72,
+     27.72
+    ],
+    [
      "media/fmx/s27-06-733d7ef0.png",
      51.73,
      79.75,
@@ -621,7 +635,7 @@ const PITCH = /* PITCH-JSON START */
    "trim": "TRIM-2",
    "pace": "DWELL",
    "sec": 30,
-   "notes": "Knowing people enjoy the live show, and that they experienced it together spatially, even though they were all over the world — that’s special. Let the praise breathe. (Imported from FMX 2026 slide #28.) ALEX TO CONFIRM: one collage tile (a chat screenshot showing a phone number) was removed for privacy; the other posts name real people, so confirm they're fine on a public screen."
+   "notes": "Knowing people enjoy the live show, and that they experienced it together spatially, even though they were all over the world — that’s special. Let the praise breathe. (Imported from FMX 2026 slide #28.) (The chat tile with a phone number was restored at Alex's OK, 2026-10-22.)"
   },
   {
    "subtitle": "",
@@ -1306,8 +1320,7 @@ const PITCH = /* PITCH-JSON START */
    "alt": "Walkthrough of handheld-scanner splat scans: an exhibition with medals and Olympic rings, then city landmarks including a cathedral facade and a triumphal arch",
    "credit": "PortalCam scan walkthrough &middot; captured by Josette Seitz (on-frame credit)",
    "notes": "Say: \"Here's what a handheld scanner captures in a day.\" Then press → and stop talking; it has sound and runs about a minute. [clip plays, 59 s] When it ends, pause, then press →. ALEX TO CONFIRM: clearance before showing it publicly. The frames carry an XGRIDS watermark, a 'Captured by Josette Seitz' watermark, Olympic rings and Milano Cortina 2026 branding, and identifiable landmarks; the slide names no venue, event, people or rights holder beyond the file name 'FINAL Olympics-PortalCam_v2'. Confirm who made it and how to credit them. Mute button bottom-right if the room audio fails; it never auto-advances.",
-   "muted": true,
-   "parked": "Hidden from Talk A 2026-10-22 15:26: it dropped the browser out of fullscreen during rehearsal and there was no time to verify a fix; Talk B still uses it"
+   "muted": true
   },
   {
    "talks": "A+B",
@@ -1768,7 +1781,8 @@ const PITCH = /* PITCH-JSON START */
    "bgImg": "media/carol/key-art.jpg",
    "bgAlt": "A Christmas Carol VR key art",
    "bgCredit": "<i>A Christmas Carol VR</i> &middot; Agile Lens",
-   "trim": "CORE"
+   "trim": "CORE",
+   "callout": "Want to do ANOTHER adaptation of <i>A Christmas Carol</i>? Please let us know!"
   },
   {
    "id": "ask-copro",
@@ -1999,8 +2013,8 @@ body[data-bg-style]:not([data-bg-style="none"]) .cfg-panel{background:rgba(8,10,
 .contact-pill{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:48px;padding:14px 28px;font-size:clamp(.95rem,calc(1.3*var(--vw)),1.2rem)}
 .contact-pill .lbl{opacity:.4;font-size:clamp(.65rem,calc(0.9*var(--vw)),.85rem);text-transform:uppercase;letter-spacing:.1em}
 .close-qr-row{display:flex;gap:24px;justify-content:center;align-items:flex-start;margin-top:36px;flex-wrap:wrap}
-.qr-card{display:flex;flex-direction:column;align-items:center;gap:8px;width:176px}
-.qr-card img{border-radius:10px;background:#fff;padding:8px;display:block;width:160px;height:160px}
+.qr-card{display:flex;flex-direction:column;align-items:center;gap:8px;width:calc(29*var(--vh))}
+.qr-card img{border-radius:12px;background:#fff;padding:calc(1.2*var(--vh));display:block;width:calc(27*var(--vh));height:calc(27*var(--vh))}.qr-card .qr-label{font-size:1.15rem;font-weight:600}
 .qr-label{font-size:clamp(.72rem,calc(1*var(--vw)),.9rem);color:rgba(255,255,255,.6);letter-spacing:.1em;font-weight:500;text-align:center}
 .qr-badge{font-size:clamp(.58rem,calc(0.78*var(--vw)),.76rem);font-weight:600;letter-spacing:.08em;text-align:center;line-height:1.35}
 .qr-badge.b-amber{color:var(--amber);animation:qrP1 2.1s ease-in-out infinite}
@@ -2558,10 +2572,13 @@ body.fx-fs-active #fx-fs-hint{opacity:1}
 .sr-stage{position:absolute;inset:0;background:#000}.sr-v{width:100%;height:100%;object-fit:contain;display:block;background:#000}
 .sr-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:inherit;font-size:calc(2.4*var(--vw));font-weight:700;padding:.6em 1.3em;border-radius:999px;border:2px solid #fff;background:rgba(0,0,0,.55);color:#fff;cursor:pointer}
 .sr-mute{position:absolute;right:14px;bottom:12px;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.4);color:#fff;font-size:16px;cursor:pointer;opacity:.35}.sr-mute:hover{opacity:1}
-.demo-pop{cursor:pointer;display:inline-block;border-radius:6px;padding:0 .15em;transition:color .2s}
+.demo-pop{cursor:pointer;display:inline-block;border-radius:6px;transition:color .2s}
 .demo-pop.on{color:#fde68a;font-weight:800;animation:demoPop .9s cubic-bezier(.2,1.6,.4,1) both;text-shadow:0 0 18px rgba(253,230,138,.9),0 0 40px rgba(245,158,11,.7)}
 @keyframes demoPop{0%{transform:scale(1)}35%{transform:scale(1.9) rotate(-3deg)}60%{transform:scale(1.35) rotate(2deg)}100%{transform:scale(1.5)}}
 @media (prefers-reduced-motion:reduce){.demo-pop.on{animation:none;transform:scale(1.4)}}
+body:not(.stage-on) .qr-card{width:calc(26*var(--vh))}body:not(.stage-on) .qr-card img{width:calc(21*var(--vh));height:calc(21*var(--vh))}.qr-card .qr-label{white-space:nowrap}
+body:not(.stage-on) .slide[data-type="close"]>div[style*="bottom:clamp"]{display:none}
+.big-callout{margin-top:calc(2.4*var(--vh));font-size:calc(2*var(--vw));font-weight:700;color:#fde68a;border:2px solid rgba(253,230,138,.6);border-radius:14px;padding:.4em .9em;display:inline-block;background:rgba(245,158,11,.1)}
 .big-credit{position:absolute;right:16px;bottom:12px;z-index:2;font-size:calc(.8*var(--vw));color:rgba(240,244,255,.65)}
 </style>
 </head>
@@ -3456,10 +3473,10 @@ function mgBuildSplat(s, c) {
 // rewinds on exit, never loops or auto-advances. If the browser blocks audio autoplay, a small "Tap to play" button appears;
 // a tiny mute toggle sits bottom-right. ?print / ?shot show the poster (the deck's export pass freezes every video).
 function mgBuildShowreel(s, c) {
-  s.innerHTML = `<div class="sr-stage"><video class="sr-v" src="${c.img}" playsinline preload="auto"${c.poster ? ` poster="${c.poster}"` : ''} aria-label="${c.alt || ''}"></video>
+  s.innerHTML = `<div class="sr-stage"><video class="sr-v" src="${c.img}" playsinline preload="auto" controlslist="nofullscreen nodownload noremoteplayback" disablepictureinpicture disableremoteplayback${c.poster ? ` poster="${c.poster}"` : ''} aria-label="${c.alt || ''}"></video>
     <button class="sr-play" hidden>▶ Tap to play</button><button class="sr-mute" title="Mute / unmute" aria-label="Mute or unmute">🔊</button></div>`;
   const v = s.querySelector('video'), play = s.querySelector('.sr-play'), mute = s.querySelector('.sr-mute'); mgGuard(play); mgGuard(mute);
-  let userMuted = false; v.defaultMuted = false; v.removeAttribute('muted'); v.volume = 1;
+  let userMuted = !!c.muted; v.defaultMuted = false; v.removeAttribute('muted'); v.volume = 1;
   v.addEventListener('playing', () => { if (!userMuted && v.muted) v.muted = false; });
   const go = () => { if (TI.exp) return; v.muted = userMuted; v.volume = 1; mute.textContent = userMuted ? '🔇' : '🔊'; try { v.currentTime = 0; } catch (e) {} v.play().then(() => { play.hidden = true; }).catch(() => { play.hidden = false; }); };
   play.addEventListener('click', () => v.play().then(() => { play.hidden = true; }).catch(() => {}));
@@ -3502,7 +3519,7 @@ SECTIONS.forEach((sec,si)=>{
     // layout: 'big' — full-slide statement text (bigText, optional title/subtitle/bigCaption)
     if(c.layout==='big'){
       if(c.bgImg)s.classList.add('has-bg');
-      s.innerHTML=(c.bgImg?`<div class="big-bg" role="img" aria-label="${c.bgAlt||''}" style="background-image:url('${c.bgImg}')"></div>${c.bgCredit?`<div class="big-credit">${c.bgCredit}</div>`:''}`:'')+`<div class="big-stack">${c.pill&&c.title?`<div class="big-pill accent-${sec.accent||'teal'}">${c.title}</div>`:c.title?`<h2 class="big-eyebrow">${c.title.replace(/\n/g,'<br>')}</h2>`:''} ${c.subtitle?`<div class="big-sub">${c.subtitle}</div>`:''}${c.bigText?`<h1 class="big-text"${c.bigScale?` style="font-size:calc(${8*c.bigScale}*var(--vw))"`:''}>${c.bigText.replace(/\n/g,'<br>')}</h1>`:''}${c.bigCaption?`<p class="big-caption">${c.bigCaption.replace(/\n/g,'<br>')}</p>`:''}</div>`;
+      s.innerHTML=(c.bgImg?`<div class="big-bg" role="img" aria-label="${c.bgAlt||''}" style="background-image:url('${c.bgImg}')"></div>${c.bgCredit?`<div class="big-credit">${c.bgCredit}</div>`:''}`:'')+`<div class="big-stack">${c.pill&&c.title?`<div class="big-pill accent-${sec.accent||'teal'}">${c.title}</div>`:c.title?`<h2 class="big-eyebrow">${c.title.replace(/\n/g,'<br>')}</h2>`:''} ${c.subtitle?`<div class="big-sub">${c.subtitle}</div>`:''}${c.bigText?`<h1 class="big-text"${c.bigScale?` style="font-size:calc(${8*c.bigScale}*var(--vw))"`:''}>${c.bigText.replace(/\n/g,'<br>')}</h1>`:''}${c.bigCaption?`<p class="big-caption">${c.bigCaption.replace(/\n/g,'<br>')}</p>`:''}${c.callout?`<p class="big-callout">${c.callout}</p>`:''}</div>`;
       deck.appendChild(s);allSlides.push(s);return;
     }
     // layout: 'rain' (fork-local) — quotes rain down and settle into a static 5x2 collage.
