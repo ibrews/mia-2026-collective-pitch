@@ -1,6 +1,6 @@
 # MIA XR Collective Pitch: Two Talks, One Slide Pool
 
-Alex Coulombe's pitch (a 10-minute slot; Talk A is budgeted at about 19:45 and Talk B at about 16:40, including the 88-second showreel, to be trimmed with the guide below) for the **MIA XR Collective Pitch** (MIA | Mercato Internazionale Audiovisivo, Rome, 22 October 2026), for an audience of film and TV producers, distributors and IP holders. Two complete versions of the talk are drawn from one shared slide pool, and both close on the same partnership ask.
+Alex Coulombe's pitch (a 10-minute slot; Talk A is budgeted at about 19:40 and Talk B at about 16:35, including the 88-second showreel, to be trimmed with the guide below) for the **MIA XR Collective Pitch** (MIA | Mercato Internazionale Audiovisivo, Rome, 22 October 2026), for an audience of film and TV producers, distributors and IP holders. Two complete versions of the talk are drawn from one shared slide pool, and both close on the same partnership ask.
 
 | | Talk | Thesis | Open it |
 |---|---|---|---|
@@ -25,17 +25,17 @@ Every slide carries a trim priority (`CORE`, `TRIM-1` cut first, `TRIM-2`, `TRIM
 
 **Talk A:**
 
-- Full talk: 19:43.
-- 12 min (11:50): cut `carol-how` (45s), `carol-belle` (15s), `replay-line` (35s), `camera-toy` (40s), `normal-film` (15s), `heavenue` (35s), `lincoln` (10s), `fs-flash` (10s), `joby` (10s), `act-a2` (10s), `intro-lens` (30s), `showreel` (88s), `carol-inside` (10s), `carol-quote` (15s), `phase-tour` (45s), `portalcam-reel` (60s).
-- 10 min (9:25): cut `rsc-compare` (30s), `ask-first` (30s), `carol-origin` (40s), `working-cut` (45s).
-- 8 min (8:05): cut `rsc` (40s), `ask-copro` (40s).
+- Full talk: 19:38.
+- 12 min (12:00): cut `carol-how` (45s), `carol-belle` (15s), `replay-line` (35s), `camera-toy` (40s), `normal-film` (15s), `heavenue` (35s), `lincoln` (10s), `fs-flash` (10s), `joby` (10s), `act-a2` (10s), `intro-lens` (15s), `showreel` (88s), `carol-inside` (10s), `carol-quote` (15s), `phase-tour` (45s), `portalcam-reel` (60s).
+- 10 min (9:35): cut `rsc-compare` (30s), `ask-first` (30s), `carol-origin` (40s), `working-cut` (45s).
+- 8 min (8:15): cut `rsc` (40s), `ask-copro` (40s).
 
 **Talk B:**
 
-- Full talk: 16:38.
-- 12 min (11:40): cut `pico` (10s), `fs-build` (15s), `fs-dbox` (10s), `joby` (10s), `carol-belle` (15s), `camera-toy` (40s), `intro-lens` (30s), `showreel` (88s), `teach` (35s), `carol-quote` (15s), `rsc-compare` (30s).
-- 10 min (9:30): cut `portalcam-reel` (60s), `ask-first` (30s), `rsc` (40s).
-- 8 min (8:05): cut `working-cut` (45s), `ask-copro` (40s).
+- Full talk: 16:33.
+- 12 min (11:50): cut `pico` (10s), `fs-build` (15s), `fs-dbox` (10s), `joby` (10s), `carol-belle` (15s), `camera-toy` (40s), `intro-lens` (15s), `showreel` (88s), `teach` (35s), `carol-quote` (15s), `rsc-compare` (30s).
+- 10 min (9:40): cut `portalcam-reel` (60s), `ask-first` (30s), `rsc` (40s).
+- 8 min (8:15): cut `working-cut` (45s), `ask-copro` (40s).
 
 ## Offline pack
 
@@ -52,7 +52,7 @@ The deck needs no internet once it is on the laptop: fonts (`assets/fonts`), thr
 - Pacing and talk tags lead every slide's presenter notes, for example `[DWELL · 50s · A+B]`, so they show in the **N** popup and the `?notes` phone view.
 - Fork-local additions to Spatial Deck: `?talk=b`, `bigScale` on `layout: 'big'` slides, a guard for case slides without a subtitle, and a wider statement column. The framework's Bonus and Map end-markers are hidden because each talk ends on its own ask.
 - **Quote rain** (`layout: 'rain'`, ported from Alex's HarvardXR and FMX decks): ten verbatim, attributed comments about *A Christmas Carol VR* fall in and settle into a readable collage. With `prefers-reduced-motion`, and in `?shot`/`?print` exports, the same quotes show as a static grid. The build refuses a quote without its name, source and year.
-- **Standard intro** (`layout: 'intro-alex'` and `'intro-lens'`, ported from spatial-deck-pmre2026 `talk/intro.js`, itself the FMX 2026 / HarvardXR intro): the 8-bit Alex walks in and puts on a headset, then three clicks show the bio, a clapperboard power-up and the stat tallies; the Agile Lens monocle has clients orbiting it, then five clicks run the 2026 → 2016 countdown. The Unreal badge and logo fireballs of earlier decks are replaced by a pixel clapperboard and stars, because this deck shows no Epic logos. Both talks open with these two slides.
+- **Standard intro** (`layout: 'intro-alex'` and `'intro-lens'`, ported from spatial-deck-pmre2026 `talk/intro.js`, itself the FMX 2026 / HarvardXR intro): the 8-bit Alex walks in and puts on a headset; click 1 shows the bio; click 2 chains five power-ups in Alex's order (architecture, theater, film, computer, VR: the first, second and fourth are the HarvardXR Venn slide's pixel icons, film is the deck's pixel clapperboard, VR is the slide's pixel headset enlarged), then the Unreal Engine badge block and Unreal-logo fireballs; click 3 tallies the stats. `intro.icons` in `talk/pitch.json` sets the order. The Agile Lens monocle slide is a single beat (clients orbiting); `lens.steps: 5` restores the 2026 → 2016 countdown and the shrink-and-dash beats.
 - **Motion diagrams** (`layout: 'pipeline'` and `'ip-web'`): one SVG each, drawn by a pure `render(t)` function, so the build (about 7 seconds, replayed on every entry), the ambient loop and the static frame used by `?print`, `?shot` and reduced motion are the same code. `pipeline` takes three `phases` of up to three items (`al: true` fills the dot: Agile Lens has built it); `ip-web` takes a `center`, up to five `branches` (`t`, `d`, `proof`, `al`) and an `only` list.
 - **Round-2 interactive layouts** (all click-to-advance with →, replay on entry, still frames for `?print` and reduced motion): `phase-tour` (tabs for pre-production, production and post, each with a still or clip), `camera-toy` (a concept demo: drag a camera on a plan, pick 24/35/50/85 mm, add a 2.39 mask, take three shots; three.js with a 2D fallback when WebGL is missing), `replay-line` (one performance, four lives, with a draggable playhead), `compare` (a before/after slider) and `reel` (stills in a letterboxed flat frame). `ip-web` branches can carry an `img` or `doorText`, which makes → open each door in turn; `layout: 'big'` takes `bgImg`. Every nested media path is checked by the build.
 - **Showreel** (`layout: 'showreel'`, after the intro in both talks): the 88 s Agile Lens reel, full-bleed with sound, re-encoded to 1920x1080 H.264/AAC (29 MB) from Alex's 244 MB master. It plays on entry, pauses and rewinds on exit, never auto-advances; a "Tap to play" button appears if the browser blocks audio, and a small mute button sits bottom-right.

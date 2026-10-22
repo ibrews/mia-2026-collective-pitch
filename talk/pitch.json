@@ -170,7 +170,7 @@
    "id": "intro-alex",
    "talks": "A+B",
    "pace": "DWELL",
-   "sec": 30,
+   "sec": 40,
    "layout": "intro-alex",
    "title": "Alex Coulombe",
    "subtitle": "Founder &amp; CEO, Agile Lens",
@@ -198,6 +198,13 @@
       "n": "100+",
       "l": "Experiences built"
      }
+    ],
+    "icons": [
+     "architecture",
+     "theatre",
+     "film",
+     "computer",
+     "vr"
     ]
    },
    "bullets": [
@@ -205,14 +212,14 @@
     "Authorized Unreal Engine instructor since 2020: 300+ classes, 40+ courses",
     "16 years in XR · 10 years of Agile Lens · 10 years in Unreal · 100+ experiences built"
    ],
-   "notes": "Pause. Let him walk in and grab the headset. This is me. I'm Alex Coulombe. I trained as an architect, with a minor in drama, and then a headset fell out of the sky. [click] I founded Agile Lens, an immersive studio in New York. [click] I've taught Unreal Engine as an authorized instructor since 2020. [click] Sixteen years in XR. Ten years of Agile Lens. More than a hundred experiences built. ALEX TO CONFIRM: this is the standard 8-bit intro from the PMRE 2026, FMX 2026 and HarvardXR decks (three clicks: bio, power-up, stat tallies). At your request (2026-10-22) the Unreal Engine authorized-instructor badge block and the Unreal-logo fireballs are back, as in the original; check you're comfortable showing Epic's logos on a public stage (the KB's Epic forward rules treat UE-adjacent slides as counsel-review content); the stats are the ones you confirmed on 2026-10-21 for PMRE. 'Founder &amp; CEO' merges PMRE's 'Founder' with this deck's 'CEO'.",
+   "notes": "Pause. Let him walk in and grab the headset. This is me. I'm Alex Coulombe. I trained as an architect, with a minor in drama, and then a headset fell out of the sky. [click] I founded Agile Lens, an immersive studio in New York. [click] Architecture. Theater. Film. Computers. VR. [beat] Then Unreal Engine: I've taught it as an authorized instructor since 2020. [click] Sixteen years in XR. Ten years of Agile Lens. More than a hundred experiences built. ALEX TO CONFIRM: this is the standard 8-bit intro from the PMRE 2026, FMX 2026 and HarvardXR decks (three clicks: bio, power-up, stat tallies). At your request (2026-10-22) the Unreal Engine authorized-instructor badge block and the Unreal-logo fireballs are back, as in the original; check you're comfortable showing Epic's logos on a public stage (the KB's Epic forward rules treat UE-adjacent slides as counsel-review content); the stats are the ones you confirmed on 2026-10-21 for PMRE. 'Founder &amp; CEO' merges PMRE's 'Founder' with this deck's 'CEO'. Click 2 now chains five power-ups in your order (architecture, theater, film, computer, VR), then the Unreal block and the logo fireballs. Architecture, theater and computer are the HarvardXR Venn slide's pixel icons; film is the deck's existing pixel clapperboard, and VR is the slide's own pixel headset, enlarged (newly drawn).",
    "trim": "CORE"
   },
   {
    "id": "intro-lens",
    "talks": "A+B",
-   "pace": "DWELL",
-   "sec": 30,
+   "pace": "FLASH",
+   "sec": 15,
    "layout": "intro-lens",
    "title": "Agile Lens",
    "subtitle": "Immersive design studio · NYC · est. 2016",
@@ -240,13 +247,14 @@
      "Fisher Dachs Associates",
      "CBS"
     ],
-    "nameSize": 22
+    "nameSize": 22,
+    "steps": 0
    },
    "bullets": [
     "Immersive design studio, New York City, est. 2016 · bootstrapped · XR specialists",
     "Orbit: Royal Shakespeare Company, Kennedy Center, Royal Caribbean, Lincoln Center, Four Seasons, CBS, Waldorf Astoria, Dell, Samsung, Actors Theatre of Louisville, Arlekin Players, Fisher Dachs Associates"
    ],
-   "notes": "Agile Lens builds for theaters, concert halls, cruise lines, hotels and brands. A few of them are going around this circle. [click] Take the names away. [click] Go back ten years. [click] It was one person with a headset. [click] [click] 2016. We're still independent, we're bootstrapped, and XR is all we do. Here's what ten years taught us about old stories. Theater people, mostly, who learned the engines. ALEX TO CONFIRM: the HarvardXR monocle slide, five clicks after the orbit (set lens.steps to 0 in talk/pitch.json for the orbit only). Kennedy Center, CBS, Waldorf Astoria and Dell come from the PMRE/HarvardXR orbit and were not re-checked for this deck; Actors Theatre of Louisville, Arlekin Players and Fisher Dachs Associates replace Disney, Joby Aviation and Google, which this deck does not name as clients.",
+   "notes": "Agile Lens builds for theaters, concert halls, cruise lines, hotels and brands. A few of them are going around this circle. Ten years in, we're still independent, bootstrapped, and XR is all we do. ALEX TO CONFIRM: orbit only, no clicks (lens.steps is 0; the countdown and the shrink-into-the-eyepiece walk were removed at your request on 2026-10-22; set lens.steps back to 5 to restore them). Kennedy Center, CBS, Waldorf Astoria and Dell come from the PMRE/HarvardXR orbit and were not re-checked for this deck; Actors Theatre of Louisville, Arlekin Players and Fisher Dachs Associates replace Disney, Joby Aviation and Google, which this deck does not name as clients.",
    "trim": "TRIM-2"
   },
   {
