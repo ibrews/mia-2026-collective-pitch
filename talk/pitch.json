@@ -13,6 +13,10 @@
     "agilelens.com"
    ],
    [
+    "Email",
+    "info@agilelens.com · alex@agilelens.com · josette@agilelens.com"
+   ],
+   [
     "Find us",
     "Demo area, Sala Trianon"
    ]
@@ -42,56 +46,63 @@
     {
      "year": "ACT I",
      "accent": "amber",
-     "lesson": "a-hook",
+     "lesson": null,
      "cases": [
-      "carol-origin",
-      "carol-what",
-      "carol-inside",
-      "carol-how",
-      "carol-belle",
-      "carol-quote",
-      "carol-proved",
-      "carol-afterlife",
-      "replay-line"
+      "fmx-12",
+      "fmx-13",
+      "fmx-14",
+      "fmx-15",
+      "fmx-19",
+      "fmx-20",
+      "fmx-21",
+      "fmx-22",
+      "fmx-24"
      ]
     },
     {
      "year": "ACT II",
      "accent": "purple",
-     "lesson": "act-a2-film",
+     "lesson": "fmx-25",
      "cases": [
-      "xr-pipeline",
-      "phase-tour",
-      "splats-why",
-      "portalcam-reel",
-      "camera-toy",
-      "working-cut",
-      "rsc",
-      "rsc-compare",
-      "normal-film",
-      "xr-product"
+      "fmx-26",
+      "carol-how",
+      "fmx-27",
+      "fmx-28",
+      "fmx-29",
+      "fmx-39",
+      "replay-line",
+      "carol-video-village",
+      "fmx-89",
+      "fmx-90"
      ]
     },
     {
      "year": "ACT III",
-     "accent": "rose",
-     "lesson": "act-a2",
+     "accent": "teal",
+     "lesson": "act-a2-film",
      "cases": [
-      "heavenue",
-      "lincoln",
-      "fs-flash",
-      "joby"
+      "xr-pipeline",
+      "phase-tour",
+      "working-cut",
+      "camera-toy",
+      "splats-why",
+      "portalcam-reel",
+      "rsc-compare",
+      "fmx-103",
+      "fmx-99",
+      "fmx-100",
+      "fmx-108",
+      "xr-product"
      ]
     },
     {
      "year": "ACT IV",
-     "accent": "teal",
+     "accent": "rose",
      "lesson": "ask",
      "cases": [
       "ask-ip",
       "ask-copro",
-      "ask-first",
-      "a-takehome"
+      "ask-first"
      ]
     }
    ],
@@ -272,6 +283,495 @@
    "notes": "Pause. Don't talk over it. Say: \"Here's a minute and a half of what we do.\" Then press → and stop talking; the reel has sound. [reel plays, 88 s] When it ends, let it sit for a beat, then press → and pick up with the next slide. ALEX TO CONFIRM: if the room's audio fails, use the small mute button bottom-right and narrate over it, or skip it with →. It does not auto-advance."
   },
   {
+   "subtitle": "",
+   "layout": "grid",
+   "gridCover": true,
+   "images": [
+    "media/fmx/s12-00-e408f437.jpg",
+    [
+     "media/fmx/s12-01-27d78baf.jpg",
+     "55.5% 13.9%"
+    ],
+    [
+     "media/fmx/s12-05-f87a3b70.jpg",
+     "50.0% 52.1%"
+    ],
+    [
+     "media/fmx/s12-03-14438ab8.jpg",
+     "53.3% 12.1%"
+    ],
+    "media/fmx/s12-04-5293076f.jpg",
+    [
+     "media/fmx/s12-02-6f729576.jpg",
+     "50.5% 0.0%"
+    ],
+    [
+     "media/fmx/s13-02-b52f17b6.jpg",
+     "50.9% 80.6%"
+    ],
+    [
+     "media/fmx/BPI_04.jpg",
+     "65.1% 0.0%"
+    ],
+    [
+     "media/fmx/brockman.mp4",
+     "50.7% 44.1%"
+    ]
+   ],
+   "id": "fmx-12",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "The company formed with a mission to fully investigate the power of this emerging medium, particularly for architecture and live shows — some additional context on the studio. Agile Lens makes its money from client work — enterprise training, B2B,, luxury real estate, architecture, pre-construction VR. And then we funnel the discoveries we make in researching and building solutions for those clients downstream into what we're really passionate about: spatial storytelling and experimenting with liveness. (Imported from FMX 2026 slide #12.)"
+  },
+  {
+   "title": "Tech Prototypes · Social Impact\nArchitecture · Real Estate\nTraining · Theatre",
+   "subtitle": "",
+   "gridCover": true,
+   "layout": "grid",
+   "images": [
+    "media/fmx/s13-01-f2540260.jpg",
+    "media/fmx/lateshow02_unity.jpg",
+    "media/fmx/s13-03-6000a047.jpg",
+    "media/fmx/s13-04-50d15236.jpg",
+    "media/fmx/s13-05-5f5c69ee.jpg",
+    "media/fmx/s13-06-aa87c99e.jpg"
+   ],
+   "id": "fmx-13",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "A: The client side pays for the R&D. The R&D feeds the client side. It’s one unified boutique studio where most of the team touches every project. (Imported from FMX 2026 slide #13.)"
+  },
+  {
+   "title": "",
+   "subtitle": "",
+   "layout": "big",
+   "bigText": "Client work\nfunds the play.",
+   "id": "fmx-14",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "That’s worth a slide. The client side pays for the R&D — enterprise training, B2B, real estate, architecture. The R&D side is what we love: artistic spatial storytelling, live performance, the experimental work. One funds the other. Both feed back. (Imported from FMX 2026 slide #14.)"
+  },
+  {
+   "title": "But it all comes back to theatre…",
+   "subtitle": "",
+   "layout": "full",
+   "img": "media/fmx/s15-01-theatre.mp4",
+   "id": "fmx-15",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "alt": "But it all comes back to theatre…",
+   "credit": "Agile Lens",
+   "notes": "And yet everything we do stays rooted in theatre and the storytelling opportunities afforded by it. (Imported from FMX 2026 slide #15.)"
+  },
+  {
+   "title": "",
+   "subtitle": "Theatre of the Oppressed workshop led by Julian Boal — © 2018 Richard Finkelstein",
+   "layout": "full",
+   "img": "media/fmx/s19-01-63560733.jpg",
+   "id": "fmx-19",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "I’d never experienced anything like that before, and I realized most people in the world never would. (Imported from FMX 2026 slide #19.)"
+  },
+  {
+   "title": "",
+   "subtitle": "",
+   "layout": "full",
+   "img": "media/fmx/s20-01-35126b09.jpg",
+   "id": "fmx-20",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "(pause) (Imported from FMX 2026 slide #20.)"
+  },
+  {
+   "title": "",
+   "subtitle": "",
+   "layout": "full",
+   "img": "media/fmx/s21-01-f2c93902.jpg",
+   "id": "fmx-21",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "So I came away from that semester wondering if there was any technology that could democratize this incredibly rarefied experience of a shared experience where a bunch of folks feel that very particular energy of a powerful performance (Imported from FMX 2026 slide #21.)"
+  },
+  {
+   "title": "",
+   "subtitle": "",
+   "layout": "full",
+   "img": "media/fmx/s22-02-d52ac632.jpg",
+   "id": "fmx-22",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "happening right in front of them. And that question drove everything that came after. (Imported from FMX 2026 slide #22.)"
+  },
+  {
+   "title": "",
+   "subtitle": "",
+   "layout": "full",
+   "img": "media/fmx/s24-withIRL.mp4",
+   "id": "fmx-24",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "alt": "Clip from the FMX 2026 deck",
+   "credit": "Agile Lens",
+   "notes": "Flash forward to 2021. (Imported from FMX 2026 slide #24.)"
+  },
+  {
+   "id": "fmx-25",
+   "talks": "A",
+   "trim": "CORE",
+   "pace": "FLASH",
+   "sec": 10,
+   "title": "A Christmas\nCarol VR",
+   "short": "CHRISTMAS CAROL",
+   "tagline": "",
+   "tags": "YEARS 1–5 · TECH · AUDIENCE · ACTORS",
+   "notes": "Theatre is magic because it is real people and space transforming into characters and story world right before your eyes — and because we’re all there sharing the experience as it happens. In a very literal sense, the theatre is extending reality. and look, liveness is a hotly debated topic in performance studies, and problematic when we’re dealing with media where there’s many layers of technology between the performers and the audience. But to us it comes back to that experience of being in the presence of another human being — feeling that I’m there, and you’re there, and you know that I’m  (Imported from FMX 2026 slide #25.)"
+  },
+  {
+   "id": "fmx-26",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "layout": "full",
+   "img": "media/fmx/s26-carol-diagram.jpg",
+   "alt": "A Christmas Carol VR, five seasons of iteration: tech stack, performance and audience by year, 2021-2025",
+   "credit": "From the FMX 2026 deck &middot; Agile Lens",
+   "notes": "Theatre is magic because it is real people and space transforming into characters and story world right before your eyes — and because we’re all there sharing the experience as it happens. In a very literal sense, the theatre is extending reality. and look, liveness is a hotly debated topic in performance studies, and problematic when we’re dealing with media where there’s many layers of technology between the performers and the audience. But to us it comes back to that experience of being in the presence of another human being — feeling that I’m there, and you’re there, and you know that I’m  (Imported from FMX 2026 slide #26.)"
+  },
+  {
+   "title": "And the reaction of\nan appreciative audience.",
+   "subtitle": "",
+   "layout": "big",
+   "bigText": "",
+   "bigCaption": "",
+   "id": "fmx-27",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "Hugh Jackman in The Prestige: “did you see the look on their faces?” (Imported from FMX 2026 slide #27.)"
+  },
+  {
+   "subtitle": "",
+   "layout": "placed",
+   "gridCover": true,
+   "placedImages": [
+    [
+     "media/fmx/s27-00-85983da1.png",
+     -8.5,
+     14.02,
+     47.97,
+     47.97
+    ],
+    [
+     "media/fmx/s27-01-9c037298.png",
+     0.44,
+     -6.07,
+     27.72,
+     27.72
+    ],
+    [
+     "media/fmx/s27-02-6e904fab.png",
+     15.38,
+     2.65,
+     56.75,
+     31.5,
+     "top"
+    ],
+    [
+     "media/fmx/s27-03-a593202b.png",
+     30.55,
+     3.89,
+     44.92,
+     44.92
+    ],
+    [
+     "media/fmx/s27-04-87b1a67b.png",
+     66.55,
+     0,
+     45.26,
+     45.26
+    ],
+    [
+     "media/fmx/s27-05-8f70ea28.png",
+     77.16,
+     46.27,
+     27.72,
+     27.72
+    ],
+    [
+     "media/fmx/s27-06-733d7ef0.png",
+     51.73,
+     79.75,
+     28.35,
+     28.35
+    ],
+    [
+     "media/fmx/s27-07-f93463aa.png",
+     73.1,
+     65.27,
+     28.35,
+     28.35
+    ],
+    [
+     "media/fmx/s27-08-862246d7.png",
+     49.3,
+     38.16,
+     35.83,
+     35.83
+    ],
+    [
+     "media/fmx/s27-09-45f77da7.png",
+     25.9,
+     69,
+     39.25,
+     18.22
+    ],
+    [
+     "media/fmx/s27-10-920af826.png",
+     54.36,
+     -7.25,
+     30.06,
+     30.06
+    ],
+    [
+     "media/fmx/s27-11-2aa6a1f1.jpg",
+     28.16,
+     35.51,
+     32.24,
+     32.24
+    ],
+    [
+     "media/fmx/s27-12-61c4b730.png",
+     -7.36,
+     57.56,
+     44.92,
+     44.92
+    ],
+    [
+     "media/fmx/s27-13-c8ebad18.png",
+     18.35,
+     86.58,
+     34.37,
+     14.68
+    ]
+   ],
+   "id": "fmx-28",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "Knowing people enjoy the live show, and that they experienced it together spatially, even though they were all over the world — that’s special. Let the praise breathe. (Imported from FMX 2026 slide #28.)"
+  },
+  {
+   "subtitle": "",
+   "layout": "placed",
+   "placedImages": [
+    [
+     "media/fmx/s28-05-dc606b6d.png",
+     5.21,
+     5.57,
+     32.64,
+     32.57
+    ],
+    [
+     "media/fmx/s28-01-5227f274.jpg",
+     45.34,
+     0.93,
+     27,
+     39.95
+    ],
+    [
+     "media/fmx/s28-02-df83f3e8.jpg",
+     74.63,
+     0,
+     27,
+     46.74
+    ],
+    [
+     "media/fmx/s28-00-1944a687.jpg",
+     2.43,
+     38.13,
+     47.57,
+     56.44
+    ],
+    [
+     "media/fmx/s28-04-59558cbb.jpg",
+     41.75,
+     51.86,
+     25.45,
+     33.94
+    ],
+    [
+     "media/fmx/s28-03-d93b9b9e.mp4",
+     68.11,
+     51.86,
+     31.19,
+     36.23
+    ]
+   ],
+   "id": "fmx-29",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "So the setup for Christmas Carol is this: Agile Lens had been working on virtual theater experiments and shows alongside cool folks like David since 2018. In 2021, I get a call from Actors Theatre of Louisville who were familiar with our work. They were planning to reopen after a year and a half of pandemic closure, but they still needed to limit the numbers of people in their theatre. (Imported from FMX 2026 slide #29.)"
+  },
+  {
+   "subtitle": "",
+   "layout": "grid",
+   "images": [
+    "media/fmx/s13-00-c00330fe.jpg",
+    "media/fmx/s13-01-10fba399.jpg"
+   ],
+   "id": "fmx-39",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "Now the MetaHumans on the scrim looked really good, but full 6-dof VR has a teensy little challenge: you can’t pre-render it and it needs to run at 90fps in two eyes. (Imported from FMX 2026 slide #39.)"
+  },
+  {
+   "title": "",
+   "subtitle": "",
+   "layout": "full",
+   "img": "media/fmx/s36-00-c3d1b97b.jpg",
+   "id": "fmx-89",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "We procedurally generated camera angles — placing virtual cameras around the stage, cutting between them live. (Imported from FMX 2026 slide #89.)"
+  },
+  {
+   "subtitle": "",
+   "layout": "placed",
+   "placedImages": [
+    [
+     "media/fmx/s37-00-84e007f3.jpg",
+     0,
+     15.8,
+     100,
+     66.3
+    ],
+    [
+     "media/fmx/s37-01-aa79ee67.jpg",
+     38,
+     6.1,
+     32.8,
+     31.1
+    ]
+   ],
+   "id": "fmx-90",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "And we also had Jackie as a live camera operator, controlling an Unreal Engine VCam to give Carlos a unique vantage point. (Imported from FMX 2026 slide #90.)"
+  },
+  {
+   "title": "Your Mind, Girls",
+   "subtitle": "Barnard College · April 2025 — a live mixed-reality performance",
+   "layout": "full",
+   "img": "media/fmx/s55-00-33b607a6.jpg",
+   "id": "fmx-99",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "A: In April last year, we developed the show Your Mind, Girls at Barnard College with their artist-in-residence Hope Hutman. One actor on stage, headset for rehearsals, but no headset during the final show. The audience is in headsets: mixed reality not virtual reality, meaning they are there in the venue watching our actor, Dawn, perform while virtual elements surround them. (Imported from FMX 2026 slide #99.)"
+  },
+  {
+   "subtitle": "",
+   "layout": "placed",
+   "placedImages": [
+    [
+     "media/fmx/s54-00-f5a6f2be.mp4",
+     1.7,
+     3,
+     39.1,
+     94.1
+    ],
+    [
+     "media/fmx/s54-01-6a63ad77.mp4",
+     42.4,
+     3,
+     32.9,
+     94.1
+    ]
+   ],
+   "id": "fmx-100",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "A: Inside the headsets — the live mixed-reality view of Your Mind, Girls. (Imported from FMX 2026 slide #100.)"
+  },
+  {
+   "subtitle": "",
+   "layout": "grid",
+   "images": [
+    "media/fmx/rsc_01.jpg",
+    "media/fmx/rsc_02.jpg",
+    "media/fmx/rsc_03.jpg",
+    "media/fmx/rsc_compare.jpg"
+   ],
+   "id": "fmx-103",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "RSC ! (Imported from FMX 2026 slide #103.)"
+  },
+  {
+   "title": "Stage Presence",
+   "subtitle": "",
+   "layout": "grid",
+   "images": [
+    "media/fmx/sp_01.jpg",
+    "media/fmx/sp_02.jpg",
+    "media/fmx/sp_03.jpg",
+    "media/fmx/sp_04.jpg",
+    "media/fmx/sp_05.jpg"
+   ],
+   "id": "fmx-108",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 30,
+   "notes": "Stage Presence (Imported from FMX 2026 slide #108.)"
+  },
+  {
+   "id": "carol-video-village",
+   "talks": "A",
+   "trim": "TRIM-2",
+   "pace": "FLASH",
+   "sec": 10,
+   "layout": "big",
+   "title": "Video village",
+   "bigText": "[FILL: Carol video village slide]",
+   "notes": "ALEX TO CONFIRM: no Christmas Carol video-village slide was found in the FMX, HarvardXR or PMRE decks or this pool; this is a placeholder. Point me at the slide or its media and I will drop it in."
+  },
+  {
    "id": "a-hook",
    "talks": "A",
    "pace": "DWELL",
@@ -285,7 +785,8 @@
    ],
    "tags": "IP value &middot; Audience development &middot; New revenue",
    "notes": "Let me start with a problem everyone here knows. You have a story people love. But the run ends. The release window closes. The theater has only so many seats. And the audience that grew up with that story is getting older. So the question isn't whether the story still works. It does. The question is where the next audience meets it, and who pays for that meeting. Hands up if you've had that conversation this year. [pause] We spent five winters on that question, with one very old story. It's a story you all know.",
-   "trim": "CORE"
+   "trim": "CORE",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "who",
@@ -315,7 +816,8 @@
     "They said yes, then gave us their blessing to remount it every year."
    ],
    "notes": "In 2021, Actors Theatre of Louisville called us. Their stage production of A Christmas Carol was adapted and directed by Robert Barry Fleming. They wanted production assets: some digital characters, some video. Not a VR show. We came back with a bigger idea. If we're building the sets, the characters and the costumes anyway, why not stage the whole thing, live, in virtual reality? They said yes. Then they gave us their blessing to remount it every year. The theater didn't hand off its story. It extended it, with a partner, into a new format.",
-   "trim": "TRIM-3"
+   "trim": "TRIM-3",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "carol-what",
@@ -331,7 +833,8 @@
     "Five holiday seasons, 2021–2025 &middot; The final run, December 2025: 15 performances"
    ],
    "notes": "Here's what we made. A Christmas Carol, performed live, inside virtual reality. Two actors, Ari Tarr and Debbie Deer, play every role. They perform in Unreal Engine as MetaHumans, with face and full-body tracking, on the streets of a virtual Victorian London. David Gochfeld directed it for VR. The actors, the crew and the audience are all in different places, and they share one stage. About an hour, a curtain time, a house. We ran it five holiday seasons, 2021 through 2025. The number to remember: the final run, December 2025, played fifteen performances, plus a Christmas Eve replay streamathon. And every one of those nights was a real performance. If an actor improvised, the audience saw it.",
-   "trim": "CORE"
+   "trim": "CORE",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "carol-inside",
@@ -344,7 +847,8 @@
    "poster": "media/video/carol-trailer-dance.jpg",
    "alt": "Inside A Christmas Carol VR: live-performed characters dance at Fezziwig’s party while the audience, shown as small glowing lights, watches from among them",
    "credit": "<i>A Christmas Carol VR</i> 2025 trailer &middot; Agile Lens",
-   "trim": "TRIM-2"
+   "trim": "TRIM-2",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "carol-how",
@@ -433,7 +937,8 @@
     }
    ],
    "notes": "Let it rain for a second. Five winters of audience comments and press, word for word. [pause] In the final year, the show was a Raindance Immersive 2025 nominee for Best Immersive Theatre.",
-   "trim": "TRIM-2"
+   "trim": "TRIM-2",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "talks": "A+B",
@@ -446,7 +951,8 @@
    "credit": "<i>A Christmas Carol VR</i> &middot; Agile Lens &middot; performed live by Ari Tarr and Debbie Deer &middot; adapted by Robert Barry Fleming",
    "id": "carol-belle",
    "notes": "Look at the hands and the faces. That's live performance capture, not animation. Every gesture you see came from an actor, in real time, on the night. ALEX TO CONFIRM: clip cut from your local copy of 'A Christmas Carol VR -- Scrooge Remembers Belle' (~/Downloads), 0:40-0:50, muted; confirm it is cleared for a public screen. Ari Tarr and Debbie Deer switch roles, so the credit does not assign roles.",
-   "trim": "TRIM-1"
+   "trim": "TRIM-1",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "carol-proved",
@@ -462,7 +968,8 @@
    ],
    "notes": "What did five winters prove? One: familiarity is an asset. A story people already love makes a new format easier to try. Two: the house can be anywhere. A live show doesn't need a building, so the audience isn't limited to who can get to one. Three: the value outlived the show. The characters, the sets, the AI host and the live tools carried into our next projects. And I'll be honest about what it didn't prove. The work was strong, and it still needed a different funding and distribution model. It needed a partner who knows how its audience finds it. Those three lessons apply to any classic IP.",
    "subtitle": "Five winters, three lessons",
-   "trim": "CORE"
+   "trim": "CORE",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "carol-afterlife",
@@ -482,7 +989,8 @@
    "poster": "media/video/carol-replay-marley.jpg",
    "alt": "A recorded performance played back in the replay system: Marley’s ghost confronts Scrooge, seen from a free camera with the replay controls on screen",
    "credit": "Replay recording of a performance &middot; Agile Lens (Yu-Jun Yeh)",
-   "trim": "CORE"
+   "trim": "CORE",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "talks": "A",
@@ -536,7 +1044,7 @@
    "sec": 10,
    "title": "Two Ways XR\nWorks for Film.",
    "short": "TWO WAYS IN",
-   "tagline": "Inside the pipeline, where the result is still a normal film.<br>Or as the product: a new edition that takes the story further.",
+   "tagline": "Inside the pipeline: result is still a standard film.<br>New product: adaptation that enhances audience.",
    "notes": "So what does this mean for film and TV? Two ways in. One the audience never sees. And one that is the show.",
    "trim": "CORE"
   },
@@ -581,7 +1089,7 @@
       },
       {
        "t": "Real-time previs\nand virtual sets",
-       "al": false
+       "al": true
       }
      ]
     },
@@ -604,8 +1112,7 @@
     }
    ],
    "legend": [
-    "Agile Lens has built this",
-    "What XR can do"
+    "Agile Lens has built this"
    ],
    "notes": "Most of you will never sell a ticket to a headset, and you don't have to. Here's XR inside a normal pipeline, where the result is still a film. Pre-production: scout a scanned location from anywhere, put a virtual camera in it, try lenses, lights and blocking at full scale, and pull stills into the shot list. Production: rehearse actors in the virtual space, the way we did with the Royal Shakespeare Company, capture performances onto digital humans, and see real-time previs. Post: because we recorded our Christmas Carol performances as data, a director can shoot new coverage after the show is over. Filled dots are things we've built. The hollow one, XR can do today. The audience never wears a headset. Think of it as better preparation, not a new format. ALEX TO CONFIRM: 'Try lenses, lights and blocking' and 'Pull stills into the shot list' credit the UOXR film kit (grabbable camera with 24-85 mm lenses and masks, monitor, film lights, A/B/C marks, Take still), built on 2026-10-21 and not yet merged: call it a prototype, and make those two dots hollow (al: false) if it is not in the demo area. Scouting cites the RSC's 1:1 Swan scan; capture cites Carol's MetaHumans; post cites the Carol replay and cinematographer builds. 'Real-time previs and virtual sets' is a general XR capability, not an Agile Lens credit.",
    "trim": "CORE"
@@ -848,46 +1355,30 @@
      "t": "Live in VR",
      "d": "Actors perform live;\nthe audience stands inside",
      "al": true,
-     "proof": "Carol, five seasons, 2021–2025",
-     "img": "media/carol/xmas-carol.jpg",
-     "alt": "The live show: actors and audience share Victorian London",
-     "doorCap": "Five seasons, 2021–2025"
+     "proof": "Carol, five seasons, 2021–2025"
     },
     {
      "t": "Replay, together",
      "d": "The full live show replayed;\nattendees join from headsets",
      "al": true,
-     "proof": "Carol, this December · dates TBA",
-     "img": "media/video/carol-replay-marley.mp4",
-     "alt": "The replay: a recorded performance, explored from any position",
-     "doorCap": "Back this December · dates TBA",
-     "poster": "media/video/carol-replay-marley.jpg"
+     "proof": "Carol, this December · dates TBA"
     },
     {
-     "t": "Trailer and clips",
-     "d": "Flat video that sells it\non every screen",
+     "t": "Flat livestream",
+     "d": "The live show, streamed\nto viewers on flat screens",
+     "al": true
+    },
+    {
+     "t": "Real show live on stage",
+     "d": "The stage production\nin Louisville",
      "al": true,
-     "proof": "Carol 2025 trailer",
-     "img": "media/video/carol-trailer-dance.mp4",
-     "alt": "The 2025 trailer: a flat clip of the VR show",
-     "doorCap": "Flat video, every screen",
-     "poster": "media/video/carol-trailer-dance.jpg"
-    },
-    {
-     "t": "Phone & web teaser",
-     "d": "A taste on any device,\nno headset needed",
-     "al": false,
-     "img": "media/carol/dancing.jpg",
-     "alt": "A still from the show, standing in for a phone-sized teaser",
-     "doorCap": "An option, not a Carol deliverable"
+     "proof": "Actors Theatre of Louisville, 2021"
     },
     {
      "t": "Festival circuit",
      "d": "Immersive sections at SXSW, Venice,\nCannes, Tribeca: a second audience",
-     "al": false,
-     "proof": "Carol: Raindance Immersive 2025 nominee",
-     "doorText": "SXSW · Venice · Cannes · Tribeca",
-     "doorCap": "Immersive sections: an opportunity, not a claim"
+     "al": true,
+     "proof": "Carol: Raindance Immersive 2025 nominee"
     }
    ],
    "only": [
@@ -897,11 +1388,12 @@
    ],
    "onlyLabel": "Only XR",
    "legend": [
-    "Done with Carol",
-    "An open opportunity"
+    "Done with Carol"
    ],
    "notes": "The other door: XR as the product. Take one story, A Christmas Carol. [click] The live VR show is the adaptation. Presence. An actor who looks you in the eye. An audience that shares the room. [click] The replay is its second life. This December the show comes back as a full replay of the live performance, not a video, and people join it together from headsets. [click] Flat trailers and clips sell it on every screen. [click] A phone or web teaser gives anyone a taste, no headset needed. [click] And an immersive edition opens a door a flat release can't: the festival circuit. SXSW, Venice, Cannes and Tribeca all program immersive work. That's a second audience and a prestige path for the same story. Carol was a Raindance Immersive nominee last year. [click] One story, five doors. Every one of those doors uses the same characters, sets and performances. ALEX TO CONFIRM: festivals are an opportunity, not a claim; nothing here says Agile Lens screened at or was selected by SXSW, Venice, Cannes or Tribeca, and the only approved festival fact is Raindance Immersive 2025 nominee, Best Immersive Theatre. Add a specific program or past inclusion only if you want to name one. The December replay has no announced dates or tickets: give none. The phone/web teaser is an XR option, not a Carol deliverable.",
-   "trim": "CORE"
+   "trim": "CORE",
+   "centerNote": "Started as a book: Dickens, 1843",
+   "noDoors": true
   },
   {
    "talks": "A",
@@ -935,7 +1427,8 @@
    "credit": "<i>A Christmas Carol VR</i> &middot; Agile Lens &middot; performed live by Ari Tarr and Debbie Deer &middot; adapted by Robert Barry Fleming",
    "id": "normal-film",
    "notes": "And whichever door you pick, this part stays normal. The audience gets a flat frame, on any screen, in any cinema. The headset is for the people making it. ALEX TO CONFIRM: frames are Carol VR stills, not film frames; the slide says 'what the audience gets', not that these came out of a film.",
-   "trim": "TRIM-1"
+   "trim": "TRIM-1",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "act-a2",
@@ -946,7 +1439,8 @@
    "short": "OTHER STAGES",
    "tagline": "Live performance, venues, homes and flights: audiences stepping inside.",
    "notes": "Carol is our clearest example. It isn't the only one. Four quick ones. Each one is a different audience stepping inside.",
-   "trim": "TRIM-1"
+   "trim": "TRIM-1",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "rsc",
@@ -965,7 +1459,8 @@
    "poster": "media/video/rsc-rehearsal-room.jpg",
    "alt": "Actors in headsets rehearse in a studio while a monitor shows them inside the virtual Swan Theatre; a director follows on a tablet",
    "credit": "XR Network+ RSC Challenge 2025 film &middot; Agile Lens",
-   "trim": "TRIM-3"
+   "trim": "TRIM-3",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "talks": "A+B",
@@ -983,7 +1478,8 @@
    "credit": "RSC rehearsal R&amp;D, with XR Network+ &middot; Agile Lens",
    "id": "rsc-compare",
    "notes": "Here's that rehearsal, twice. On one side, the virtual Swan Theatre. On the other, the real room. [click] Slide one way. [click] And the other. The actors are standing on tape in a plain studio, and in their headsets they're on the Swan's stage. That's how you rehearse in a theater you can't get into yet. Or a location you haven't flown to. Same actors, same blocking, two rooms. ALEX TO CONFIRM: the two halves are cut from RSC_compare.png, already in this deck's media; confirm they show the same rehearsal.",
-   "trim": "TRIM-2"
+   "trim": "TRIM-2",
+   "stageWidth": "62%"
   },
   {
    "id": "heavenue",
@@ -1027,7 +1523,8 @@
    "bigText": "See the view\nbefore it’s built.",
    "bigCaption": "VR models for seating, sightline and railing decisions in David Geffen Hall’s redesign, with Fisher Dachs Associates and Diamond Schmitt Architects",
    "bigScale": 0.8,
-   "trim": "TRIM-1"
+   "trim": "TRIM-1",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "fs-flash",
@@ -1041,7 +1538,8 @@
    "credit": "In-headset capture &middot; with DBOX and Pureblink &middot; Agile Lens, LBE VR technologists",
    "poster": "media/video/fsla-in-vr.jpg",
    "alt": "Inside the VR tour: a photoreal residence interior with floor-to-ceiling windows over Lake Austin",
-   "trim": "TRIM-1"
+   "trim": "TRIM-1",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "joby",
@@ -1053,7 +1551,8 @@
    "bigText": "Take the flight\nbefore it exists.",
    "bigCaption": "A passenger-flight simulation for an eVTOL air-taxi company: a ride over New York",
    "notes": "And for an eVTOL air-taxi company: a passenger-flight simulation, a ride over New York, before anyone can book one. ALEX TO CONFIRM: name Joby only with Adam Krebs's written OK, and flip the slide wording then.",
-   "trim": "TRIM-1"
+   "trim": "TRIM-1",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "logos",
@@ -1282,7 +1781,8 @@
    "bigScale": 0.75,
    "bgImg": "media/carol/xmas-carol.jpg",
    "bgAlt": "A Christmas Carol VR",
-   "trim": "CORE"
+   "trim": "CORE",
+   "parked": "Not in Talk A's running order of 2026-10-22 (Alex's note 6: every MIA slide he didn't name is hidden)"
   },
   {
    "id": "b-takehome",

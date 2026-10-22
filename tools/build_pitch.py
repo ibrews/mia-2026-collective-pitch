@@ -47,7 +47,8 @@ def talk_ids(talk):
     # Fork-local: talk-level "intro" slides play between the cover and Act I (speaker + studio intro)
     yield from talk.get("intro", [])
     for act in talk["acts"]:
-        yield act["lesson"]
+        if act.get("lesson"):  # an act may have no lesson slide (Talk A, 2026-10-22)
+            yield act["lesson"]
         yield from act["cases"]
 
 
@@ -76,7 +77,8 @@ def validate(p):
         if not s.get("notes"):
             errors.append(f"{sid}: speaker notes are required")
         # Image-only full-bleed beats are deliberate (spatial-deck conventions): no overlay text needed
-        if not (s.get("title") or s.get("bigText") or (s.get("layout") == "full" and s.get("img"))):
+        if not (s.get("title") or s.get("bigText") or (s.get("layout") == "full" and s.get("img"))
+                or s.get("images") or s.get("placedImages") or s.get("placedItems")):
             errors.append(f"{sid}: needs a title (or bigText for layout 'big', or img for layout 'full')")
         if s.get("img") and not s["img"].startswith(("http", "IFRAME:")) and not (ROOT / s["img"]).exists():
             errors.append(f"{sid}: missing media file {s['img']}")
@@ -144,7 +146,7 @@ def validate(p):
             if not pool[sid].get("trim"):
                 errors.append(f"talk {letter} uses {sid!r} without a trim priority ({', '.join(TRIMS)})")
         for act in talk["acts"]:
-            if pool.get(act["lesson"], {}).get("layout"):
+            if act.get("lesson") and pool.get(act["lesson"], {}).get("layout"):
                 errors.append(f"talk {letter}: act lesson {act['lesson']!r} must be a plain slide, not layout {pool[act['lesson']]['layout']!r}")
     for sid, s in pool.items():
         for letter in ("A", "B"):
@@ -207,7 +209,7 @@ def slide_lines(s):
     if s.get("only"):
         lines.append(f"- **Only XR:** {' · '.join(s['only'])}")
     if s.get("legend"):
-        lines.append(f"- *Legend:* \u25cf {s['legend'][0]} · \u25cb {s['legend'][1]}")
+        lines.append(f"- *Legend:* \u25cf {s['legend'][0]}" + (f" · \u25cb {s['legend'][1]}" if len(s['legend']) > 1 else ""))
     for q in s.get("quotes", []):
         lines.append(f"- \u201c{q['t']}\u201d ({q['who']}, {q['src']}, {q['year']})")
     if s.get("credit"):
@@ -221,7 +223,7 @@ def trim_guide(talk, pool):
     """Cut lists for TRIM_TARGETS minutes: drop TRIM-1 slides first (in running order), then TRIM-2, then TRIM-3, until the
     talk fits. Act lessons are never cut on their own: a lesson goes only when every slide in its act has gone."""
     rt = running_time(talk, pool)
-    lessons = {a["lesson"] for a in talk["acts"]}
+    lessons = {a["lesson"] for a in talk["acts"] if a.get("lesson")}
     ids = [sid for sid in talk_ids(talk) if sid not in lessons]
     order = [sid for level in TRIMS[:-1] for sid in ids if pool[sid].get("trim") == level]
     out, cut, total = [], [], rt
@@ -234,7 +236,7 @@ def trim_guide(talk, pool):
                 continue
             cut.append(sid); new.append(sid); total -= pool[sid]["sec"]
             for a in talk["acts"]:
-                if a["lesson"] not in cut and a["cases"] and all(c in cut for c in a["cases"]):
+                if a.get("lesson") and a["lesson"] not in cut and a["cases"] and all(c in cut for c in a["cases"]):
                     cut.append(a["lesson"]); new.append(a["lesson"]); total -= pool[a["lesson"]]["sec"]
         out.append((mins, new, total))
     return rt, out
