@@ -63,7 +63,7 @@
       "xr-pipeline",
       "phase-tour",
       "splats-why",
-      "splats-limits",
+      "portalcam-reel",
       "camera-toy",
       "working-cut",
       "rsc",
@@ -144,7 +144,7 @@
       "rsc-compare",
       "xr-pipeline",
       "splats-why",
-      "splats-limits",
+      "portalcam-reel",
       "camera-toy",
       "working-cut"
      ]
@@ -205,7 +205,7 @@
     "Authorized Unreal Engine instructor since 2020: 300+ classes, 40+ courses",
     "16 years in XR · 10 years of Agile Lens · 10 years in Unreal · 100+ experiences built"
    ],
-   "notes": "Pause. Let him walk in and grab the headset. This is me. I'm Alex Coulombe. I trained as an architect, with a minor in drama, and then a headset fell out of the sky. [click] I founded Agile Lens, an immersive studio in New York. [click] I've taught Unreal Engine as an authorized instructor since 2020. [click] Sixteen years in XR. Ten years of Agile Lens. More than a hundred experiences built. ALEX TO CONFIRM: this is the standard 8-bit intro from the PMRE 2026, FMX 2026 and HarvardXR decks (three clicks: bio, power-up, stat tallies). For this deck the Unreal badge block and Unreal-logo fireballs became a pixel clapperboard and stars, because the MIA deck carries no Epic logos; the stats are the ones you confirmed on 2026-10-21 for PMRE. 'Founder &amp; CEO' merges PMRE's 'Founder' with this deck's 'CEO'.",
+   "notes": "Pause. Let him walk in and grab the headset. This is me. I'm Alex Coulombe. I trained as an architect, with a minor in drama, and then a headset fell out of the sky. [click] I founded Agile Lens, an immersive studio in New York. [click] I've taught Unreal Engine as an authorized instructor since 2020. [click] Sixteen years in XR. Ten years of Agile Lens. More than a hundred experiences built. ALEX TO CONFIRM: this is the standard 8-bit intro from the PMRE 2026, FMX 2026 and HarvardXR decks (three clicks: bio, power-up, stat tallies). At your request (2026-10-22) the Unreal Engine authorized-instructor badge block and the Unreal-logo fireballs are back, as in the original; check you're comfortable showing Epic's logos on a public stage (the KB's Epic forward rules treat UE-adjacent slides as counsel-review content); the stats are the ones you confirmed on 2026-10-21 for PMRE. 'Founder &amp; CEO' merges PMRE's 'Founder' with this deck's 'CEO'.",
    "trim": "CORE"
   },
   {
@@ -657,7 +657,7 @@
    "talks": "A+B",
    "trim": "CORE",
    "pace": "DWELL",
-   "sec": 55,
+   "sec": 65,
    "layout": "splat",
    "title": "Scan the Real Place.\nWalk It Before You Fly.",
    "subtitle": "Gaussian splats: a photoreal capture of a real location you can stand in",
@@ -667,6 +667,11 @@
      "poster": "media/video/splat-walkthrough.jpg",
      "alt": "A Gaussian-splat scan of a fountain in a city square at night: scattered points resolve into a photoreal scene as the camera circles the fountain",
      "credit": "Gaussian-splat scan, walkthrough &middot; Alex Coulombe"
+    },
+    {
+     "img": "[FILL: Josette's splat clip]",
+     "alt": "[FILL: alt text]",
+     "credit": "[FILL: credit]"
     }
    ],
    "rows": [
@@ -699,7 +704,7 @@
     "Agile Lens has done this",
     "What a splat can do"
    ],
-   "notes": "Let's talk about splats. Gaussian splats. [pause] This clip is a scan of a real square at night. Watch the dots turn into a place. [pause] For a production, that matters in a few ways. Capture takes minutes, with a phone or a handheld scanner, not weeks of modeling. The detail is photoreal, and it changes as you move, the way a real place does. And in a headset, you can stand in it at full scale: scout it, block it, try lenses, plan the shots, before anyone travels. We've done exactly that: our team scanned a hotel interior with a handheld scanner, and we have scans running on standalone headsets in our demo area. The hollow dots are what splats can also do: share the space with a remote director, become a backdrop for virtual production, and get re-scanned cheaply when the location changes. ALEX TO CONFIRM: the clip is your own and cleared; its place and capture method aren't evident from the frames, so the slide doesn't name them; name it on stage only if you want to and have permission. Filled dots rest on the KB: Josette's handheld-scanner hotel scan (PCVR demo, 2026-10-21) and the UOXR showcase splat level on Quest 3 and PICO; hotel and monument are left unnamed. 'Minutes' for capture is the vendor-adjacent PortalCam figure and phone-app claims, not our measurement."
+   "notes": "Let's talk about splats. Gaussian splats. [pause] This clip is a scan of a real square at night. Watch the dots turn into a place. [pause] For a production, that matters in a few ways. Capture takes minutes, with a phone or a handheld scanner, not weeks of modeling. The detail is photoreal, and it changes as you move, the way a real place does. And in a headset, you can stand in it at full scale: scout it, block it, try lenses, plan the shots, before anyone travels. We've done exactly that: our team scanned a hotel interior with a handheld scanner, and we have scans running on standalone headsets in our demo area. The hollow dots are what splats can also do: share the space with a remote director, become a backdrop for virtual production, and get re-scanned cheaply when the location changes. Two honest limits, if anyone asks: you need permission to scan a place and the people in it. And the files are big, so standalone headsets need trimmed scans. ALEX TO CONFIRM: the clip is your own and cleared; its place and capture method aren't evident from the frames, so the slide doesn't name them; name it on stage only if you want to and have permission. Filled dots rest on the KB: Josette's handheld-scanner hotel scan (PCVR demo, 2026-10-21) and the UOXR showcase splat level on Quest 3 and PICO; hotel and monument are left unnamed. 'Minutes' for capture is the vendor-adjacent PortalCam figure and phone-app claims, not our measurement. HOW TO ADD JOSETTE'S CLIP: compress it into media/video/ (ffmpeg -i in.mp4 -an -vf scale=540:-2 -c:v libx264 -crf 27 -pix_fmt yuv420p -movflags +faststart media/video/splat-josette.mp4, plus a poster jpg), then in talk/pitch.json replace this slide's clips[1].img '[FILL: Josette's splat clip]' with that path, fill in poster, alt and credit, and run python tools/build_pitch.py. Until then the second phone frame is simply not drawn."
   },
   {
    "id": "splats-limits",
@@ -740,7 +745,22 @@
      "d": "Cleanup and editing are still catching up"
     }
    ],
-   "notes": "And to be honest about the limits, because someone in this room will ask. [pause] A splat is a frozen moment: no moving people, no running water. The light is baked in, so you live with the light you scanned. You need permission to scan a place, and the people in it. The files are big, so standalone headsets need trimmed scans. And the editing tools are still young. None of that stops you from scouting with one. ALEX TO CONFIRM: HOW TO ADD JOSETTE'S CLIP: copy it into media/video/ (compress it like the others: ffmpeg -i in.mp4 -an -vf scale=540:-2 -c:v libx264 -crf 27 -pix_fmt yuv420p -movflags +faststart media/video/splat-josette.mp4, then grab a poster jpg), and in talk/pitch.json replace this slide's clips[0].img '[FILL: Josette's splat clip]' with 'media/video/splat-josette.mp4', add a poster, alt and credit, then run python tools/build_pitch.py. Until then the slide shows a still from Alex's clip."
+   "notes": "And to be honest about the limits, because someone in this room will ask. [pause] A splat is a frozen moment: no moving people, no running water. The light is baked in, so you live with the light you scanned. You need permission to scan a place, and the people in it. The files are big, so standalone headsets need trimmed scans. And the editing tools are still young. None of that stops you from scouting with one. ALEX TO CONFIRM: HOW TO ADD JOSETTE'S CLIP: copy it into media/video/ (compress it like the others: ffmpeg -i in.mp4 -an -vf scale=540:-2 -c:v libx264 -crf 27 -pix_fmt yuv420p -movflags +faststart media/video/splat-josette.mp4, then grab a poster jpg), and in talk/pitch.json replace this slide's clips[0].img '[FILL: Josette's splat clip]' with 'media/video/splat-josette.mp4', add a poster, alt and credit, then run python tools/build_pitch.py. Until then the slide shows a still from Alex's clip.",
+   "parked": "Removed 2026-10-22 at Alex's request ('we don't need a slide about what splats can't do'); replaced by portalcam-reel. Two limits survive in splats-why's notes"
+  },
+  {
+   "id": "portalcam-reel",
+   "talks": "A+B",
+   "trim": "TRIM-2",
+   "pace": "DWELL",
+   "sec": 60,
+   "layout": "showreel",
+   "title": "PortalCam scans",
+   "img": "media/video/portalcam-reel.mp4",
+   "poster": "media/video/portalcam-reel.jpg",
+   "alt": "Walkthrough of handheld-scanner splat scans: an exhibition with medals and Olympic rings, then city landmarks including a cathedral facade and a triumphal arch",
+   "credit": "PortalCam scan walkthrough &middot; captured by Josette Seitz (on-frame credit)",
+   "notes": "Say: \"Here's what a handheld scanner captures in a day.\" Then press → and stop talking; it has sound and runs about a minute. [clip plays, 59 s] When it ends, pause, then press →. ALEX TO CONFIRM: clearance before showing it publicly. The frames carry an XGRIDS watermark, a 'Captured by Josette Seitz' watermark, Olympic rings and Milano Cortina 2026 branding, and identifiable landmarks; the slide names no venue, event, people or rights holder beyond the file name 'FINAL Olympics-PortalCam_v2'. Confirm who made it and how to credit them. Mute button bottom-right if the room audio fails; it never auto-advances."
   },
   {
    "talks": "A+B",
