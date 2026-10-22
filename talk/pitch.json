@@ -62,6 +62,7 @@
       "xr-pipeline",
       "phase-tour",
       "camera-toy",
+      "working-cut",
       "rsc",
       "rsc-compare",
       "normal-film",
@@ -138,7 +139,8 @@
       "rsc",
       "rsc-compare",
       "xr-pipeline",
-      "camera-toy"
+      "camera-toy",
+      "working-cut"
      ]
     },
     {
@@ -641,6 +643,56 @@
    "id": "camera-toy",
    "notes": "This is a concept demo, built for this talk, so you can try the idea without a headset. A simple set: two actors, a lamp, a backdrop. I can drag the camera anywhere on the plan. [click] Switch to an 85 millimeter lens, and the framing tightens. [click] Put on a 2.39 mask, the way the film will be shown. [click] Now take three shots: a wide, a two-shot, a close-up. That's a shot list, made before anyone flies to the location. In the headset, you do the same thing standing inside the scan. ALEX TO CONFIRM: this browser demo is a stand-in for the UOXR film kit prototype (2026-10-21, unmerged); say 'concept demo' and 'prototype', never 'product'. It needs WebGL; if the venue laptop lacks it, the slide says so and you skip it.",
    "trim": "TRIM-1"
+  },
+  {
+   "id": "working-cut",
+   "talks": "A+B",
+   "trim": "TRIM-3",
+   "pace": "DWELL",
+   "sec": 45,
+   "layout": "replay-line",
+   "title": "Cut Your Own Version of the Show",
+   "subtitle": "At our table today: a prototype built overnight for MIA",
+   "stations": [
+    {
+     "when": "The recording",
+     "short": "Recorded show",
+     "t": "The full show, recorded",
+     "d": "Laptop and gamepad, offline. Default scene: Dickens and Scrooge",
+     "img": "media/carol/ScroogeDickens.jpg",
+     "alt": "Scrooge and Dickens in a London street, A Christmas Carol VR"
+    },
+    {
+     "when": "You",
+     "short": "Your camera",
+     "t": "You are the camera operator",
+     "d": "Fly a virtual camera through the performance; 24, 35, 50 or 85 mm",
+     "img": "media/video/carol-replay-marley.jpg",
+     "alt": "A free camera view of a recorded Christmas Carol performance",
+     "overlay": "50 mm"
+    },
+    {
+     "when": "Your shot",
+     "short": "Credited",
+     "t": "Your shot, credited",
+     "d": "Add or replace a shot anywhere in the show",
+     "img": "media/carol/marley.png",
+     "alt": "Marley’s ghost",
+     "overlay": "Shot by &lt;your name&gt;",
+     "letterbox": true
+    },
+    {
+     "when": "A new cut",
+     "short": "Working cut",
+     "t": "A new cut of the whole show",
+     "d": "Plays back in 2.39 with a WORKING CUT title card; survives a crash; exports",
+     "img": "media/carol/dancing.jpg",
+     "alt": "Fezziwig’s party, A Christmas Carol VR",
+     "overlay": "WORKING CUT",
+     "letterbox": true
+    }
+   ],
+   "notes": "And this is what's on our table today. It's a prototype we built overnight for MIA, so be kind to it. We took the recorded full show of A Christmas Carol and handed you the camera. [click] Here's the recording. The default scene is Ari switching between Dickens and Scrooge. [click] You fly a virtual camera through it, and you pick a lens: 24, 35, 50 or 85. [click] You save your shot, anywhere in the show, and it's credited to you: shot by your name. [click] And everyone's shots add up to a new cut of the whole show, played back like a film, in 2.39. Come make a shot this afternoon. ALEX TO CONFIRM: make the on-stage claim match what you actually demo at the table (KB receipt: r849 working-cut build; a physical pad and the audio through a cut were not yet checked by a person). Say prototype, not product. The four stills are existing Carol images from this deck, not frames from the build."
   },
   {
    "id": "xr-product",

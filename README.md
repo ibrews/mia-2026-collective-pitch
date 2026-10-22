@@ -1,6 +1,6 @@
 # MIA XR Collective Pitch: Two Talks, One Slide Pool
 
-Alex Coulombe's pitch (a 10-minute slot; Talk A is budgeted at about 15 minutes and Talk B at about 12, to be trimmed with the guide below) for the **MIA XR Collective Pitch** (MIA | Mercato Internazionale Audiovisivo, Rome, 22 October 2026), for an audience of film and TV producers, distributors and IP holders. Two complete versions of the talk are drawn from one shared slide pool, and both close on the same partnership ask.
+Alex Coulombe's pitch (a 10-minute slot; Talk A is budgeted at about 16 minutes and Talk B at about 13, to be trimmed with the guide below) for the **MIA XR Collective Pitch** (MIA | Mercato Internazionale Audiovisivo, Rome, 22 October 2026), for an audience of film and TV producers, distributors and IP holders. Two complete versions of the talk are drawn from one shared slide pool, and both close on the same partnership ask.
 
 | | Talk | Thesis | Open it |
 |---|---|---|---|
@@ -25,17 +25,17 @@ Every slide carries a trim priority (`CORE`, `TRIM-1` cut first, `TRIM-2`, `TRIM
 
 **Talk A:**
 
-- Full talk: 15:25.
-- 12 min (12:00): cut `carol-how` (45s), `carol-belle` (15s), `replay-line` (35s), `camera-toy` (40s), `normal-film` (15s), `heavenue` (35s), `lincoln` (10s), `fs-flash` (10s).
-- 10 min (10:00): cut `joby` (10s), `act-a2` (10s), `intro-lens` (30s), `carol-inside` (10s), `carol-quote` (15s), `phase-tour` (45s).
-- 8 min (7:40): cut `rsc-compare` (30s), `ask-first` (30s), `carol-origin` (40s), `rsc` (40s).
+- Full talk: 16:10.
+- 12 min (11:55): cut `carol-how` (45s), `carol-belle` (15s), `replay-line` (35s), `camera-toy` (40s), `normal-film` (15s), `heavenue` (35s), `lincoln` (10s), `fs-flash` (10s), `joby` (10s), `act-a2` (10s), `intro-lens` (30s).
+- 10 min (9:45): cut `carol-inside` (10s), `carol-quote` (15s), `phase-tour` (45s), `rsc-compare` (30s), `ask-first` (30s).
+- 8 min (7:40): cut `carol-origin` (40s), `working-cut` (45s), `rsc` (40s).
 
 **Talk B:**
 
-- Full talk: 12:20.
-- 12 min (11:55): cut `pico` (10s), `fs-build` (15s).
-- 10 min (9:35): cut `fs-dbox` (10s), `joby` (10s), `carol-belle` (15s), `camera-toy` (40s), `intro-lens` (30s), `teach` (35s).
-- 8 min (7:40): cut `carol-quote` (15s), `rsc-compare` (30s), `ask-first` (30s), `rsc` (40s).
+- Full talk: 13:05.
+- 12 min (11:25): cut `pico` (10s), `fs-build` (15s), `fs-dbox` (10s), `joby` (10s), `carol-belle` (15s), `camera-toy` (40s).
+- 10 min (9:35): cut `intro-lens` (30s), `teach` (35s), `carol-quote` (15s), `rsc-compare` (30s).
+- 8 min (7:40): cut `ask-first` (30s), `rsc` (40s), `working-cut` (45s).
 
 ## Offline pack
 

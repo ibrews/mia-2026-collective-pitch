@@ -109,6 +109,7 @@ const PITCH = /* PITCH-JSON START */
       "xr-pipeline",
       "phase-tour",
       "camera-toy",
+      "working-cut",
       "rsc",
       "rsc-compare",
       "normal-film",
@@ -140,7 +141,7 @@ const PITCH = /* PITCH-JSON START */
    ],
    "cover_spoken": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.",
    "target_min": 15,
-   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 15:25. 12 min (12:00): cut carol-how (45s), carol-belle (15s), replay-line (35s), camera-toy (40s), normal-film (15s), heavenue (35s), lincoln (10s), fs-flash (10s). 10 min (10:00): cut joby (10s), act-a2 (10s), intro-lens (30s), carol-inside (10s), carol-quote (15s), phase-tour (45s). 8 min (7:40): cut rsc-compare (30s), ask-first (30s), carol-origin (40s), rsc (40s)."
+   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 16:10. 12 min (11:55): cut carol-how (45s), carol-belle (15s), replay-line (35s), camera-toy (40s), normal-film (15s), heavenue (35s), lincoln (10s), fs-flash (10s), joby (10s), act-a2 (10s), intro-lens (30s). 10 min (9:45): cut carol-inside (10s), carol-quote (15s), phase-tour (45s), rsc-compare (30s), ask-first (30s). 8 min (7:40): cut carol-origin (40s), working-cut (45s), rsc (40s)."
   },
   "b": {
    "title": "Engine Mastery\n× Craft",
@@ -186,7 +187,8 @@ const PITCH = /* PITCH-JSON START */
       "rsc",
       "rsc-compare",
       "xr-pipeline",
-      "camera-toy"
+      "camera-toy",
+      "working-cut"
      ]
     },
     {
@@ -203,7 +205,7 @@ const PITCH = /* PITCH-JSON START */
    ],
    "cover_spoken": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.",
    "target_min": 13,
-   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 12:20. 12 min (11:55): cut pico (10s), fs-build (15s). 10 min (9:35): cut fs-dbox (10s), joby (10s), carol-belle (15s), camera-toy (40s), intro-lens (30s), teach (35s). 8 min (7:40): cut carol-quote (15s), rsc-compare (30s), ask-first (30s), rsc (40s)."
+   "cover_notes": "Pause. Walk to center, wait for quiet. Buonasera, and thank you for having me.\n\nIF YOU ONLY HAVE N MINUTES: Full talk: 13:05. 12 min (11:25): cut pico (10s), fs-build (15s), fs-dbox (10s), joby (10s), carol-belle (15s), camera-toy (40s). 10 min (9:35): cut intro-lens (30s), teach (35s), carol-quote (15s), rsc-compare (30s). 8 min (7:40): cut ask-first (30s), rsc (40s), working-cut (45s)."
   }
  },
  "pool": [
@@ -690,6 +692,56 @@ const PITCH = /* PITCH-JSON START */
    "id": "camera-toy",
    "notes": "This is a concept demo, built for this talk, so you can try the idea without a headset. A simple set: two actors, a lamp, a backdrop. I can drag the camera anywhere on the plan. [click] Switch to an 85 millimeter lens, and the framing tightens. [click] Put on a 2.39 mask, the way the film will be shown. [click] Now take three shots: a wide, a two-shot, a close-up. That's a shot list, made before anyone flies to the location. In the headset, you do the same thing standing inside the scan. ALEX TO CONFIRM: this browser demo is a stand-in for the UOXR film kit prototype (2026-10-21, unmerged); say 'concept demo' and 'prototype', never 'product'. It needs WebGL; if the venue laptop lacks it, the slide says so and you skip it.",
    "trim": "TRIM-1"
+  },
+  {
+   "id": "working-cut",
+   "talks": "A+B",
+   "trim": "TRIM-3",
+   "pace": "DWELL",
+   "sec": 45,
+   "layout": "replay-line",
+   "title": "Cut Your Own Version of the Show",
+   "subtitle": "At our table today: a prototype built overnight for MIA",
+   "stations": [
+    {
+     "when": "The recording",
+     "short": "Recorded show",
+     "t": "The full show, recorded",
+     "d": "Laptop and gamepad, offline. Default scene: Dickens and Scrooge",
+     "img": "media/carol/ScroogeDickens.jpg",
+     "alt": "Scrooge and Dickens in a London street, A Christmas Carol VR"
+    },
+    {
+     "when": "You",
+     "short": "Your camera",
+     "t": "You are the camera operator",
+     "d": "Fly a virtual camera through the performance; 24, 35, 50 or 85 mm",
+     "img": "media/video/carol-replay-marley.jpg",
+     "alt": "A free camera view of a recorded Christmas Carol performance",
+     "overlay": "50 mm"
+    },
+    {
+     "when": "Your shot",
+     "short": "Credited",
+     "t": "Your shot, credited",
+     "d": "Add or replace a shot anywhere in the show",
+     "img": "media/carol/marley.png",
+     "alt": "Marley’s ghost",
+     "overlay": "Shot by &lt;your name&gt;",
+     "letterbox": true
+    },
+    {
+     "when": "A new cut",
+     "short": "Working cut",
+     "t": "A new cut of the whole show",
+     "d": "Plays back in 2.39 with a WORKING CUT title card; survives a crash; exports",
+     "img": "media/carol/dancing.jpg",
+     "alt": "Fezziwig’s party, A Christmas Carol VR",
+     "overlay": "WORKING CUT",
+     "letterbox": true
+    }
+   ],
+   "notes": "And this is what's on our table today. It's a prototype we built overnight for MIA, so be kind to it. We took the recorded full show of A Christmas Carol and handed you the camera. [click] Here's the recording. The default scene is Ari switching between Dickens and Scrooge. [click] You fly a virtual camera through it, and you pick a lens: 24, 35, 50 or 85. [click] You save your shot, anywhere in the show, and it's credited to you: shot by your name. [click] And everyone's shots add up to a new cut of the whole show, played back like a film, in 2.39. Come make a shot this afternoon. ALEX TO CONFIRM: make the on-stage claim match what you actually demo at the table (KB receipt: r849 working-cut build; a physical pad and the audio through a cut were not yet checked by a person). Say prototype, not product. The four stills are existing Carol images from this deck, not frames from the build."
   },
   {
    "id": "xr-product",
@@ -1822,6 +1874,8 @@ body.fx-fs-active #fx-fs-hint{opacity:1}
 .rl-card{margin:0;opacity:.18;transform:translateY(12px);transition:opacity .6s,transform .6s;border-radius:14px;overflow:hidden;border:2px solid var(--acc);background:rgba(10,12,20,.85)}
 .rl-card.on{opacity:.75;transform:none}.rl-card.now{opacity:1}
 .rl-card img,.rl-card video{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.rl-pic{position:relative}.rl-card.lb .rl-pic::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;box-shadow:inset 0 calc(1.6*var(--vw)) 0 #000,inset 0 calc(-1.6*var(--vw)) 0 #000}
+.rl-ov{position:absolute;left:8px;bottom:18%;z-index:2;font-size:calc(1*var(--vw));font-weight:700;color:#fff;background:rgba(6,8,16,.7);padding:.2em .55em;border-radius:6px;letter-spacing:.04em}
 .rl-card figcaption{padding:.7em .9em .9em;display:flex;flex-direction:column;gap:.25em}
 .rl-card figcaption b{font-size:calc(1*var(--vw));letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
 .rl-card figcaption span{font-size:calc(1.55*var(--vw));font-weight:700;line-height:1.15}
@@ -2646,7 +2700,7 @@ function mgBuildCameraToy(s, c) {
 function mgBuildReplayLine(s, c) {
   const ST = (c.stations || []).slice(0, 4), ACC = ['#f59e0b', '#00d4ff', '#a78bfa', '#fb7185'];
   s.innerHTML = `<div class="rl-wrap"><div class="rl-head"><h2 class="mg-title">${c.title || ''}</h2>${c.subtitle ? `<p>${c.subtitle}</p>` : ''}</div>
-    <div class="rl-stage">${ST.map((x, i) => `<figure class="rl-card" data-i="${i}" style="--acc:${ACC[i]}">${mgMedia(x.img, x)}<figcaption><b>${x.when || ''}</b><span>${x.t}</span><em>${x.d || ''}</em></figcaption></figure>`).join('')}</div>
+    <div class="rl-stage">${ST.map((x, i) => `<figure class="rl-card${x.letterbox ? ' lb' : ''}" data-i="${i}" style="--acc:${ACC[i]}"><div class="rl-pic">${mgMedia(x.img, x)}${x.overlay ? `<span class="rl-ov">${x.overlay}</span>` : ''}</div><figcaption><b>${x.when || ''}</b><span>${x.t}</span><em>${x.d || ''}</em></figcaption></figure>`).join('')}</div>
     <div class="rl-track"><div class="rl-fill"></div>${ST.map((x, i) => `<button class="rl-stop" data-i="${i}" style="left:${(i / (ST.length - 1)) * 100}%;--acc:${ACC[i]}"><i></i><span>${x.short || x.t}</span></button>`).join('')}<div class="rl-head-dot"></div></div></div>`;
   const cards = [...s.querySelectorAll('.rl-card')], stops = [...s.querySelectorAll('.rl-stop')], fill = s.querySelector('.rl-fill'), dot = s.querySelector('.rl-head-dot'), track = s.querySelector('.rl-track');
   mgGuard(track);
